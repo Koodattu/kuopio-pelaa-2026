@@ -24,6 +24,56 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
 
 ## Pääesityksen lähteet
 
+### SRC-NIST-AI-GENAI — AI-yläkäsite ja generatiivinen AI
+
+- Tila: tarkistettu virallisista NIST-lähteistä 2026-08-07
+- Suunniteltu dia: “AI ei alkanut ChatGPT:stä”
+- AI-määritelmä: konepohjainen järjestelmä, joka ihmisen määrittämien
+  tavoitteiden pohjalta tekee ennusteita, suosituksia tai päätöksiä ja vaikuttaa
+  todelliseen tai virtuaaliseen ympäristöön
+- GenAI-määritelmä: AI-mallien luokka, joka jäljittelee syötedatan rakennetta ja
+  ominaisuuksia tuottaakseen johdettua synteettistä sisältöä, kuten tekstiä,
+  kuvaa, videota tai ääntä
+- Esityksen selkokielinen tulkinta: AI on yläkäsite; GenAI on sen sisältöä
+  tuottava osa
+- AI URL: `https://csrc.nist.gov/glossary/term/artificial_intelligence`
+- GenAI URL:
+  `https://csrc.nist.gov/glossary/term/generative_artificial_intelligence`
+- Caveat: näkyvä dia käyttää selkokieltä eikä esitä ennustamista ja
+  generoimista tekoälyn ainoina alalajeina
+- Tarkistettu: kyllä, 2026-08-07
+
+### SRC-RECOMMENDERS — arjen AI-pohjaiset sisältösuositukset
+
+- Tila: tarkistettu alustojen omista ensisijaisista lähteistä 2026-08-07
+- Suunniteltu dia: “AI ei alkanut ChatGPT:stä”
+- Turvallinen väite: YouTube, TikTok ja Instagram käyttävät personoituja
+  suositus- tai järjestämisjärjestelmiä valitessaan ja järjestäessään käyttäjälle
+  näytettävää sisältöä
+- YouTube URL:
+  `https://support.google.com/youtube/answer/16533387?hl=en`
+- TikTok URL:
+  `https://newsroom.tiktok.com/how-tiktok-recommends-videos-for-you?lang=en`
+- Instagram / Meta URL:
+  `https://about.fb.com/news/2023/06/how-ai-ranks-content-on-facebook-and-instagram/`
+- Caveat: lähteet ovat alustojen omia kuvauksia. Niillä ei todisteta, että
+  jokainen yleisön jäsen käyttää palveluja tai hyväksyy niiden toimintatavat.
+- Tulkintaraja: suositusjärjestelmän käyttäminen ei tarkoita kaikkien GenAI:n
+  luovien käyttötapojen hyväksymistä. Dia ei ole tekopyhyysargumentti.
+- Tarkistettu: kyllä, 2026-08-07
+
+### SRC-OPENAI-BRAND — ChatGPT-paljastuksen virallinen tunnus
+
+- Tila: virallinen brändiohje tarkistettu 2026-08-07; lopullinen asset ladataan
+  vasta esityksen toteutusvaiheessa
+- Suunniteltu dia: avauksen ChatGPT-paljastus
+- URL: `https://openai.com/brand/`
+- Käyttöraja: käytä vain OpenAI:n tarjoamaa ajantasaista tunnusta, säilytä sen
+  mittasuhteet ja suoja-alue äläkä käytä sitä esityksen tai tapahtuman omana
+  brändinä
+- Älä käytä Toivolanranta-PowerPointiin upotettua rasteroitua kopiota
+- Tarkistettu: ohje kyllä, asset ei vielä
+
 ### SRC-GDC-2026-SENTIMENT — GDC State of the Game Industry 2026
 
 - Tila: tarkistettava
@@ -137,6 +187,23 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
 - Tuotantoraja: julkinen HTTPS-URL, mallit, palveluntarjoajan ehdot,
   osallistujakuorma, kustannuskatto, tietosuojailmoitus, säilytysaika ja
   poistomenettely ovat vielä päätettäviä.
+
+## Rakenteellinen referenssi
+
+### SRC-TOIVOLANRANTA-REFERENCE — aiempi erillinen AI-esitys
+
+- Tila: kaikki 85 diaa tarkastettu 2026-08-07
+- Paikallinen tiedosto:
+  `C:/Users/Juha/Downloads/toivolanranta_esitys.pptx`
+- Käyttö: rakenteellinen inspiraatio, ei ulkoisten faktaväitteiden lähde eikä
+  visuaalinen template
+- Sovellettavat kohdat: sana-assosiaatio ja ChatGPT-paljastus (diat 6–8),
+  AI/GenAI-erottelu (13–16), saman promptin vaihtelevuus (43 ja 55) sekä
+  ajattelua tukeva kysymysmalli (80–82)
+- Rajaus: Kuopio Pelaa -esitys ei kopioi referenssin rakennetta, kuvitusta,
+  väripalettia, työpajaa, koululaisesimerkkejä tai loppuyhteenvetoa
+- Tarkempi soveltaminen:
+  [Toivolanranta-referenssin rajaus](toivolanranta-reference-adaptation.md)
 
 ## Varadiat ja tasapainottavat lähteet
 

@@ -9,6 +9,9 @@ peliprototyyppityöpaja.
 
 - [Esityssuunnitelma](docs/presentation-plan.md) — viesti, rakenne, diat ja
   visuaalinen suunta.
+- [Toivolanranta-referenssin rajaus](docs/toivolanranta-reference-adaptation.md)
+  — mitä toisesta esityksestä sovelletaan ja mitä pidetään tarkoituksella
+  erillään.
 - [Työpajasuunnitelma](docs/workshop-plan.md) — osallistujapolku,
   fasilitointi, promptit ja varasuunnitelmat.
 - [AI Workshop Playground -kytkentä](docs/workshop-playground-plan.md) —

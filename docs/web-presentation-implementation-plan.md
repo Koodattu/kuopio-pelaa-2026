@@ -318,6 +318,10 @@ Valmis, kun koediat toimivat projektorikoossa, läppärillä ja näppäimistöll
 ### 3. Kaikki diat ja kuvaajat
 
 - toteuta diat [esityssuunnitelman](presentation-plan.md) mukaan
+- toteuta avauksen yleisötauko ja ChatGPT-tunnuksen paljastus OpenAI:n
+  virallisella ajantasaisella assetilla
+- toteuta AI/GenAI-erottelu NIST-määritelmien sekä YouTuben, TikTokin ja
+  Instagramin omien suositusjärjestelmäkuvausten pohjalta
 - lisää Recharts-kuvaajat tarkistetusta datasta
 - lisää puhujamuistiinpanot ja lähdeviitteet
 - tee QR- ja workshop-siirtymät
@@ -329,8 +333,9 @@ Valmis, kun koko esitys voidaan käydä alusta loppuun ilman placeholder-sisält
 - lisää paikalliset varademot
 - testaa AI Workshop Playgroundin PELI / MUOKKAA -polku puhelimella,
   tabletilla ja läppärillä
-- testaa tapahtumasalasana, kolme generointia, versiohistoria, `index.html`-
-  lataus, vapaaehtoinen jakolinkki ja `?safe`-palautus
+- testaa tapahtumasalasana, kolme koodigenerointia, yksi KYSY-pyyntö,
+  versiohistoria, `index.html`-lataus, vapaaehtoinen jakolinkki ja
+  `?safe`-palautus
 - kuormitustestaa arvioitu yhtäaikaisten osallistujien määrä ja tarkista
   palveluntarjoajan kiintiö sekä kustannuskatto
 - tee presenter-only- ja offline-polut näkyviksi muistiinpanoihin

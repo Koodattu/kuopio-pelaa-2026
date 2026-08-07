@@ -88,6 +88,12 @@ playgroundin, syöttävät yhteisen työpajasalasanan ja valitsevat **PELI** sek
 **MUOKKAA**. Esiintyjä avaa saman näkymän projektorille. Mallivalinta ja pohja
 pidetään esiintyjän ohjeistamassa oletuksessa.
 
+Näytä kaksi etukäteen tehtyä versiota täsmälleen samasta yksinkertaisesta
+pelipromptista. Kysy nopeasti, mitkä erot tulivat promptista ja mitkä AI:n omista
+valinnoista. Ydinviesti:
+
+> Sama prompti ei ole resepti. Se rajaa vaihtoehtoja, mutta ei määrää tulosta.
+
 ### 1:20–1:30 — Kierros 1: tee se olemassa olevaksi
 
 Osallistujat täyttävät seuraavan rungon:
@@ -115,7 +121,15 @@ jota voidaan muuttaa.
 
 ### 1:30–1:40 — Kierros 2: tee siitä peli
 
-Jokainen valitsee vain yhden parannuksen:
+Jos osallistuja ei vielä tiedä, mitä parantaa, hän käyttää ensin **KYSY**-tilaa:
+
+```text
+Nimeä kolme tapaa, joilla nykyisen pelin ainoa valinta voisi olla
+kiinnostavampi. Älä muokkaa koodia.
+```
+
+Osallistuja valitsee itse yhden ehdotuksen, vaihtaa takaisin **MUOKKAA**-tilaan
+ja pyytää toteuttamaan vain sen. Valittava parannus voi olla:
 
 - vaikeus kasvaa ajan myötä
 - riskin ottamisesta saa suuremman palkinnon
@@ -133,6 +147,11 @@ lähellä vaaroja, mutta kuolee kosketuksesta. Näytä kerroin selkeästi ruudul
 ```
 
 Esiintyjä näyttää yhden muutoksen myös yhteiseen live-protoon.
+
+Ydinviesti:
+
+> Älä pyydä AI:ta päättämään, mikä peli on hyvä. Pyydä vaihtoehtoja, valitse
+> itse ja testaa seuraus.
 
 ### 1:40–1:50 — Kierros 3: tee siitä sinun
 
@@ -186,6 +205,8 @@ parijako säilytetään.
 Työpajan havainto sidotaan esityksen väitteeseen:
 
 - Käytä AI:ta aloittamiseen, älä ajattelun lopettamiseen.
+- Sama prompti voi tuottaa eri version; ensimmäinen vastaus ei ole totuus eikä
+  suunnittelupäätös.
 - Anna AI:n koskea tylsään ennen kuin annat sen koskea sieluun.
 - Älä ulkoista makua.
 - Kerro pelaajalle, jos AI näkyy tai kuuluu.

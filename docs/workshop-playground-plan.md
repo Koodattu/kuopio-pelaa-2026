@@ -48,12 +48,14 @@ Tauon aikana osallistuja:
 4. valitsee tuotoksen tyypiksi **PELI** ja toimintatilaksi **MUOKKAA**
 5. jättää esiintyjän ohjeistaman mallin ja pohjan valituiksi.
 
-Työpajan aikana osallistuja tekee kolme tarkoituksellista generointia:
+Työpajan aikana osallistuja tekee kolme tarkoituksellista pelikierrosta. Niihin
+kuuluu vähintään kolme koodigenerointia ja toisella kierroksella valinnainen
+KYSY-pyyntö:
 
 | Aika | Playgroundissa tehtävä toiminto | Tavoiteltu tulos |
 |---:|---|---|
 | 1:20–1:30 | Ensimmäinen rajattu peliprompti | Pelattava yhden ruudun pystyleikkaus |
-| 1:30–1:40 | Yksi pelisuunnittelua parantava muutos | Selkeämpi valinta, palaute tai riski |
+| 1:30–1:40 | Kolme vaihtoehtoa KYSY-tilassa, oma valinta ja yksi MUOKKAA-pyyntö | Selkeämpi valinta, palaute tai riski |
 | 1:40–1:50 | Yksi tekijän oma rajaus | Vähemmän geneerinen, tunnistettava versio |
 
 Chat näyttää pyynnön ja AI:n yhteenvedon, editori näyttää syntyvän koodin ja
@@ -98,8 +100,8 @@ Luo `/admin`-näkymässä tapahtumakohtainen salasana, joka:
 
 - aktivoidaan vasta harjoitusta tai tapahtumaa varten
 - vanhenee pian tapahtuman jälkeen
-- sallii vähintään kolme suunniteltua generointia, kaksi debug-yritystä ja
-  teknisen epäonnistumisen marginaalin
+- sallii vähintään kolme suunniteltua koodigenerointia, yhden KYSY-pyynnön,
+  kaksi debug-yritystä ja teknisen epäonnistumisen marginaalin
 - mitoitetaan osallistujamäärän, AI-palvelun kiintiön ja budjetin mukaan.
 
 Nykyinen oletusraja on 20 pyyntöä selainta kohti. 45 minuutin työpajaan
@@ -214,8 +216,8 @@ maun.
   ensimmäisen pyynnön enintään viidessä minuutissa.
 - Ensimmäinen toimiva proto syntyy suurimmalle osalle ensimmäisen
   kymmenminuuttisen kierroksen aikana.
-- Jokaisella selaimella on riittävä pyyntökiintiö kolmeen kierrokseen ja
-  vähintään kahteen korjausyritykseen.
+- Jokaisella selaimella on riittävä pyyntökiintiö kolmeen koodigenerointiin,
+  yhteen KYSY-pyyntöön ja vähintään kahteen korjausyritykseen.
 - Mobiilin ensisijainen tehtävä onnistuu ilman koodieditorin käyttöä.
 - Esiintyjä pystyy palautumaan rikkoutuneesta demosta versiohistorian tai
   `?safe`-osoitteen avulla alle minuutissa.

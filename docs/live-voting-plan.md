@@ -14,6 +14,21 @@ läpi kulkevana vertailukohtana:
 Tulokset kuvaavat vain paikalla olevaa, itse valikoitunutta yleisöä. Niitä ei
 esitetä tutkimuksena eikä verrata GDC- tai pelaajakyselyihin tilastollisesti.
 
+## Avaus ennen äänestystyökalua
+
+Ennen Lobby-näkymään siirtymistä käytetään aika 0:00–0:03:
+
+1. Näytä esityksen ylidramaattinen otsikko.
+2. Kysy: “Kun sanon tekoäly, mikä on ensimmäinen asia, joka tulee mieleen?”
+3. Ota 2–4 huudahdusta.
+4. Paljasta virallinen ChatGPT-tunnus ja kysy “miksi juuri tämä?”.
+5. Kerro, että äänestyksen kysymykset koskevat pääasiassa generatiivista AI:ta,
+   vaikka sanaa AI käytetään arkikielessä laajemmin ja epätarkemmin.
+
+Jos kukaan ei sano ChatGPT:tä, tunnus paljastetaan silti. Avaus ei ole
+onnistumis- tai tietotesti eikä osa Live Voting -sovellusta. Vapaata tekstiä ei
+kerätä työkalulla.
+
 ## Käytettävä työkalu
 
 Äänestys ajetaan erillisellä `live-voting-visualization`-sovelluksella.
@@ -119,6 +134,11 @@ Participant View siirtyy Session Resultsiin ennen taukoa.
 Ennen ensimmäistä kysymystä:
 
 > Ensin en kerro, mitä peliala ajattelee. Katsotaan mitä tämä huone ajattelee.
+
+Tarvittaessa terminologinen muistutus:
+
+> Nyt kysyn nimenomaan generatiivisesta AI:sta: työkaluista, jotka tuottavat
+> uutta tekstiä, kuvaa, ääntä tai koodia. Kaikki AI ei tee tätä.
 
 Tuloksia käsitellessä:
 
