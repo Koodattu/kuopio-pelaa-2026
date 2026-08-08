@@ -16,7 +16,7 @@ esitetä tutkimuksena eikä verrata GDC- tai pelaajakyselyihin tilastollisesti.
 
 ## Avaus ennen äänestystyökalua
 
-Ennen Lobby-näkymään siirtymistä käytetään aika 0:00–0:03:
+Ennen Lobby-näkymään siirtymistä käytetään aika 0:00–0:05:
 
 1. Näytä esityksen ylidramaattinen otsikko.
 2. Kysy: “Kun sanon tekoäly, mikä on ensimmäinen asia, joka tulee mieleen?”
@@ -118,14 +118,14 @@ myöhempään rajakeskusteluun.
 
 | Aika | Toiminta | Presenter Controls | Presentation Display |
 |---:|---|---|---|
-| 0:03–0:06 | Liittyminen ja lyhyt käyttöohje | Istunto on Lobbyssa. Seuraa liittyjämäärää. | Näytä otsikko, QR-koodi, suora linkki ja Join Name. |
-| 0:06–0:08 | Kysymys 1 | Avaa, anna Voteille noin minuutti, sulje. | Näytä live-Result ja kommentoi vain käyttöjakauman pääpiirre. |
-| 0:08–0:11 | Kysymys 2 | Avaa, anna aikaa, sulje. | Anna yleisön nähdä jakauma; nimeä mahdollinen ristiriita. |
-| 0:11–0:14 | Kysymys 3 | Avaa, anna aikaa, sulje. | Nosta yleisin ja yllättävin Option ilman ylianalyysiä. |
-| 0:14–0:17 | Kysymys 4 | Avaa, anna aikaa, sulje. | Nimeä huoneen disclosure-raja ja jätä kysymys auki narratiivisesti. |
-| 0:17–0:18 | Siirtymä takaisin esitykseen | Pidä istunto Live-tilassa ja viimeinen Question suljettuna. | Vaihda takaisin esityssivulle. |
+| 0:05–0:08 | Liittyminen ja lyhyt käyttöohje | Istunto on Lobbyssa. Seuraa liittyjämäärää. | Näytä otsikko, QR-koodi, suora linkki ja Join Name. |
+| 0:08–0:10 | Kysymys 1 | Avaa, anna Voteille noin minuutti, sulje. | Näytä live-Result ja kommentoi vain käyttöjakauman pääpiirre. |
+| 0:10–0:13 | Kysymys 2 | Avaa, anna aikaa, sulje. | Anna yleisön nähdä jakauma; nimeä mahdollinen ristiriita. |
+| 0:13–0:16 | Kysymys 3 | Avaa, anna aikaa, sulje. | Nosta yleisin ja yllättävin Option ilman ylianalyysiä. |
+| 0:16–0:19 | Kysymys 4 | Avaa, anna aikaa, sulje. | Nimeä huoneen disclosure-raja ja jätä kysymys auki narratiivisesti. |
+| 0:19–0:20 | Siirtymä takaisin esitykseen | Pidä istunto Live-tilassa ja viimeinen Question suljettuna. | Vaihda takaisin esityssivulle. |
 
-Äänestysistuntoa ei päätetä heti. Aikaan 0:56–0:58 palataan suljettuihin
+Äänestysistuntoa ei päätetä heti. Aikaan 0:58–1:00 palataan suljettuihin
 kysymyksiin 2 ja 4, minkä jälkeen istunto päätetään. Tällöin osallistujien
 Participant View siirtyy Session Resultsiin ennen taukoa.
 
@@ -217,7 +217,7 @@ saavat havainnollistaa käyttöliittymää, mutta ne merkitään selvästi demok
 ## Onnistumiskriteerit
 
 - Yleisö liittyy ilman tiliä ja ensimmäinen Question avautuu viimeistään
-  kuuden minuutin kohdalla.
+  kahdeksan minuutin kohdalla.
 - Neljä kysymystä suljetaan 15 minuutin kokonaisajan sisällä.
 - Presentation Display näyttää tulokset projektorilta luettavasti.
 - Esityksen faktadiat palaavat vähintään kahteen alun tulokseen.

@@ -6,9 +6,15 @@ Tämä tiedosto on esityksen lähderekisteri ja julkaisun tarkistuslista. Sen
 tavoite on estää sitä, että taustamuistiinpanojen väite tai irrotettu numero
 päätyy kuvaajaan ilman alkuperäistä lähdettä, kontekstia ja caveatia.
 
-Alla olevat luvut ovat käyttäjän toimittamasta taustamateriaalista. Niitä ei ole
-vielä tässä repossa tarkistettu alkuperäisjulkaisuista. Jokainen tietue on
-oletuksena tilassa **tarkistettava**.
+Osa tietueista on nyt tarkistettu alkuperäisjulkaisuista ja osa on edelleen
+taustamateriaalin perusteella tilassa **tarkistettava**. Tietuekohtainen tila on
+aina tämän yleiskuvauksen yläpuolella.
+
+Elokuussa 2026 tuotettua Deep Research -raporttia käytetään lähteiden
+paikantamiseen ja tutkimuskysymysten jäsentämiseen, ei ulkoisen väitteen
+alkuperäislähteenä. PDF säilytti linkit Markdown-versiota paremmin. Valitut
+väitteet, kuvaajat ja hylkäysperusteet on koottu
+[tutkimus- ja kuvaajasuunnitelmaan](research-and-chart-plan.md).
 
 ## Julkaisuportti
 
@@ -43,6 +49,24 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
   generoimista tekoälyn ainoina alalajeina
 - Tarkistettu: kyllä, 2026-08-07
 
+### SRC-GAME-AI-HISTORY — peleissä käytetty AI ennen GenAI-aaltoa
+
+- Tila: Microsoft Gamingin alkuperäinen artikkeli tarkistettu 2026-08-08
+- Suunniteltu dia: “AI ei alkanut ChatGPT:stä”
+- Turvallinen väite: videopeleissä on käytetty AI:ksi kutsuttuja tekniikoita
+  kauan ennen nykyistä GenAI-aaltoa, esimerkiksi sääntöpohjaisiin
+  pelihahmoihin, pelaajan taitoluokitukseen ja matchmakingiin sekä
+  proseduraaliseen kenttien generointiin
+- Käyttö: kolme nopeasti nimettävää peliesimerkkiä AI-yläkäsitteen alle; ei
+  omaa historia-aikajanaa
+- Caveat: Microsoftin artikkeli on yrityksen oma yleiskatsaus. Esimerkeillä
+  havainnollistetaan käsitteellistä eroa, ei arvioida järjestelmien laatua tai
+  nimetä jokaista pelien automaatiota tekoälyksi.
+- Alkuperäinen URL:
+  `https://developer.microsoft.com/en-us/games/articles/2024/08/fortifying-teams-with-ai-and-optimized-workflows/`
+- Julkaistu: 2024-08-07
+- Tarkistettu: kyllä, 2026-08-08
+
 ### SRC-RECOMMENDERS — arjen AI-pohjaiset sisältösuositukset
 
 - Tila: tarkistettu alustojen omista ensisijaisista lähteistä 2026-08-07
@@ -76,64 +100,97 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
 
 ### SRC-GDC-2026-SENTIMENT — GDC State of the Game Industry 2026
 
-- Tila: tarkistettava
-- Suunniteltu dia: “Peliala käyttää AI:ta — ja suhtautuu siihen aiempaa
-  kielteisemmin”
-- Taustamuistiinpanon väite: generatiivisen AI:n vaikutuksen kielteisenä näkevien
-  osuus nousi vuosina 2024–2026 luvuista 18 % ja 30 % lukuun 52 %; vuonna 2026
-  7 % piti vaikutusta myönteisenä.
-- Tukee argumenttia: kriittisyys on kasvanut samaan aikaan kuin työkalut ja käyttö
-  ovat yleistyneet.
-- Tarkista: ovatko vuosien kysymykset, vastaajaryhmät ja vastausasteikot täysin
-  vertailukelpoisia.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Tila: väite tarkistettu GDC:n virallisesta yhteenvedosta ja vuoden 2026
+  raportista 2026-08-08; paikallinen kuvaajadata puuttuu
+- Suunniteltu dia: “Käyttö ei tarkoita hyväksyntää”
+- Turvallinen pääväite: yli 2 300 pelialan ammattilaisen kyselyssä 36 % kertoi
+  käyttävänsä generatiivisen AI:n työkaluja työssään, 52 % arvioi GenAI:n
+  vaikutuksen pelialaan kielteiseksi ja 7 % myönteiseksi
+- Kuvaajaraja: 36 %, 52 % ja 7 % ovat eri kysymysten mittareita eivätkä yhden
+  jakauman osia. Niitä ei piirretä stacked barina eikä niistä päätellä, että
+  juuri samat vastaajat käyttivät työkaluja ja suhtautuivat kielteisesti.
+- Vuosivertailu: vuoden 2026 raportti mainitsee aiempien kielteisten osuuksien
+  olleen 18 % vuonna 2024 ja 30 % vuonna 2025, mutta sanoo kyselymuutosten
+  vaikeuttavan vuosivertailua ja uuden luotettavan vertailupohjan syntyvän vasta
+  vuonna 2027
+- Otoscaveat: vuoden 2026 kysely laajeni aiempaa useampiin pelialan
+  ekosysteemin rooleihin ja painottui Pohjois-Amerikkaan sekä Länsi-Eurooppaan
+- Virallinen yhteenveto:
+  `https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/`
+- Virallinen raporttisivu: `https://reg.gdconf.com/2026-SOTI/`
+- Tarkistettu: kyllä, 2026-08-08
+- Kuvaajan tila: arvot tarkistettu, paikallinen data ei vielä luotu
 
 ### SRC-GDC-2026-USES — GDC State of the Game Industry 2026
 
-- Tila: tarkistettava
-- Suunniteltu dia: “AI on parhaimmillaan, kun se laskee aloittamisen kitkaa”
-- Taustamuistiinpanon väite: AI:ta käyttävien yleisiä käyttötapoja ovat
-  research/brainstorming 81 %, päivittäiset tehtävät 47 %, koodiapu 47 % ja
-  protoilu 35 %.
-- Tukee argumenttia: nykyinen käyttö levittäytyy tuotantoputkeen eikä tarkoita
-  vain valmiin taiteen tuottamista.
-- Tarkista: monivalintakysymys, vastaajien rajaus ja oikea nimittäjä.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Tila: väite tarkistettu GDC:n virallisesta yhteenvedosta 2026-08-08;
+  paikallinen kuvaajadata puuttuu
+- Suunniteltu dia: “Ensin vaihtoehtoja, vasta sitten peli”
+- Turvallinen pääväite: GenAI:ta työssään käyttävien yleisimmät käyttötavat
+  olivat research/brainstorming 81 %, päivittäiset tehtävät 47 %, koodiapu 47 %
+  ja prototypointi 35 %
+- Tukee argumenttia: nykyinen käyttö painottuu työn tukeen ja vaihtoehtojen
+  tuottamiseen ennen julkaistua lopputulosta
+- Nimittäjä: GenAI:ta työssään käyttävät vastaajat, ei koko kyselyn otos tai koko
+  peliala; julkinen yhteenveto ei kerro alaryhmän tarkkaa `n`:ää
+- Kysymyscaveat: monivalinta, joten prosentteja ei summata sataan. Yhdistetty
+  `research / brainstorming` ei kerro näiden kahden toiminnan erillisiä osuuksia
+  eikä käytön laatua tai vaikutusta.
+- Alkuperäinen URL:
+  `https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/`
+- Tarkistettu: kyllä, 2026-08-08
+- Kuvaajan tila: neljä pääarvoa tarkistettu, paikallinen data ei vielä luotu
 
 ### SRC-STEAM-DISCLOSURES-2025 — Totally Human Media / Ichiro Lambe
 
-- Tila: tarkistettava
-- Suunniteltu dia: “AI ei jäänyt taustatyökaluksi”
-- Taustamuistiinpanon väite: heinäkuussa 2025 Steamissa oli 7 818 peliä, jotka
-  ilmoittivat GenAI-käytöstä; määrä vastasi noin seitsemää prosenttia
-  kirjastosta, hieman alle 20:tä prosenttia vuoden 2025 julkaisuista ja noin 60
-  prosenttia ilmoituksista liittyi visuaalisiin assetteihin.
-- Tukee argumenttia: AI-käyttö on jo pelaajalle näkyvä kauppapaikka- ja
-  luottamuskysymys.
-- Caveat: ilmoitukset muodostavat vain paljastetun käytön aineiston. Niistä ei
-  voi päätellä kaikkea toteutunutta käyttöä.
-- Tarkista: analyysin päivämäärä, datan keruutapa, Steam-kirjaston nimittäjä ja
-  visuaalisten assettien luokittelu.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Tila: kirjoittajan julkaisema analyysi tarkistettu 2026-08-08; ei Valven
+  virallinen tilasto eikä itsenäisesti auditoitu raakadata
+- Suunniteltu käyttö: yksi päivämäärään sidottu faktanosto Steam/Clair Obscur
+  -tapauksessa, ei pääkuvaaja
+- Snapshot: 13.7.2025 yhteensä 7 818 Steam-peliä ilmoitti GenAI-käytöstä;
+  kirjoittajan mukaan noin 7 % noin 114 126 pelin kirjastosta ja hieman alle
+  20 % vuoden 2025 julkaisuista
+- Luokittelu: kirjoittajan mukaan noin 60 % ilmoituksista mainitsi visuaalisten
+  assettien generoinnin
+- Menetelmä: kirjoittaja kertoo käyttävänsä Steam API:a We Love Every Game
+  -löytöpalvelussaan. Raakadataa tai luokittelukoodia ei julkaistu sivulla.
+- Caveat: ilmoitukset mittaavat ilmoitettua käyttöä, eivät kaikkea toteutunutta
+  käyttöä. Seitsemän prosenttia koko kirjastosta ja hieman alle 20 prosenttia
+  vuoden 2025 julkaisuista ovat eri nimittäjiä.
+- Aikasarjaraja: kirjoittajan noin tuhannen pelin 2024-luku on muistinvarainen;
+  luotettavaa vuoden 2026 snapshotia ei löytynyt. Aikasarjakuvaajaa ei tehdä.
+- Alkuperäinen URL:
+  `https://www.totallyhuman.io/blog/the-surprising-new-number-of-genai-games-on-steam`
+- Julkaistu: 2025-07-13
+- Tarkistettu: kyllä, 2026-08-08, julkaistun analyysin sisäinen sisältö
+- Kuvaajan tila: ei pääkuvaajaa; yksittäinen faktanosto hyväksytty caveatilla
 
 ### SRC-QUANTIC-2025 — Quantic Foundry, gamer attitudes to GenAI
 
-- Tila: tarkistettava
-- Suunniteltu dia: “Työkalu, teoksen osa vai luottamuskysymys?”
-- Taustamuistiinpanon väite: kyselyssä `n = 1 799` 85 % suhtautui GenAI:n
-  käyttöön videopeleissä kielteisesti ja 63 % valitsi kielteisimmän
-  vastausvaihtoehdon. Luovat käyttötavat saivat kielteisimmän vastaanoton.
-- Tukee argumenttia: pelaajat suhtautuvat eri tavalla sisäisiin työkaluihin ja
-  pelissä näkyvään tai kuuluvaan luovaan sisältöön.
-- Caveat: otos painottuu core PC/console -yleisöön eikä edusta automaattisesti
+- Tila: tarkistettu Quantic Foundryn alkuperäisestä julkaisusta 2026-08-08;
+  paikallinen kuvaajadata puuttuu
+- Suunniteltu dia: “Luova sisältö osuu herkempään rajaan”
+- Otos: vapaaehtoinen lisäkysely Gamer Motivation Profile -testin jälkeen,
+  `n = 1 799`, loka–joulukuu 2025
+- Yleinen asenne: 85 % sijoittui neutraalin alapuolelle ja 63 % valitsi
+  kielteisimmän vaihtoehdon
+- Käyttötavat: AI-generoitu dialogi 83 % kielteinen ja AI-generoidut questit
+  77 % kielteinen. GenAI:n käytössä dynaamiseen vaikeustasoon 26 % oli
+  myönteisiä ja 24 % neutraaleja, joten kielteinen osuus on laskennallisesti
+  noin 50 %.
+- Tukee argumenttia: tässä otoksessa näkyvä luova sisältö sai kielteisemmän
+  vastaanoton kuin teknisempi käyttötapa
+- Otoscaveat: 90 % pelasi PC:llä, 74 % määrittyi core- ja 21 %
+  hardcore-pelaajiksi; 80 % oli 18–34-vuotiaita. Otos ei edusta automaattisesti
   kaikkia pelaajia.
-- Tarkista: kysymyksen tarkka sanamuoto, otoksen rekrytointi, asteikko ja
-  käyttötapakohtaiset prosentit.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Mittauscaveat: noin 50 % on johdettu arvosta `100 - 26 - 24`. Dynaaminen
+  vaikeustaso ei itsessään tarkoita GenAI:ta; lähteen kysymys koski GenAI:n
+  käyttämistä siihen.
+- Alkuperäinen URL: `https://quanticfoundry.com/2025/12/18/gen-ai/`
+- Julkaistu: 2025-12-18
+- Tarkistettu: kyllä, 2026-08-08
+- Kuvaajan tila: kolme käyttötapa-arvoa tarkistettu, yksi niistä johdettu;
+  paikallinen data ei vielä luotu
 
 ## Oma projekti
 
@@ -209,64 +266,144 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
 
 ### SRC-GDC-2026-ROLES — GDC:n roolikohtainen suhtautuminen
 
-- Tila: tarkistettava, varadia
-- Taustamuistiinpanon väite: kielteinen suhtautuminen oli visual & technical art
-  -rooleissa 64 %, game design & narrative -rooleissa 63 % ja ohjelmoinnissa
-  59 %.
+- Tila: arvot tarkistettu GDC:n virallisesta yhteenvedosta 2026-08-08, varadia
+- Turvallinen väite: GenAI:n vaikutuksen pelialaan arvioi kielteiseksi 64 %
+  visual & technical art -rooleista, 63 % game design & narrative -rooleista ja
+  59 % ohjelmoinnista
 - Käyttö: ammattilaispainotteisessa yleisössä Quantic Foundry -dian vaihtoehto.
-- Caveat: älä tulkitse syytä pelkistä prosenttieroista.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Caveat: virallinen yhteenveto nimeää nämä kielteisimmiksi ryhmiksi, joten
+  valinta ei ole koko ammattijakauma. Älä tulkitse syytä tai yksilöiden kantaa
+  pelkistä prosenttieroista.
+- Alkuperäinen URL:
+  `https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/`
+- Tarkistettu: kyllä, 2026-08-08
 
 ### SRC-GOOGLE-CLOUD-HARRIS — Google Cloud / Harris Poll
 
-- Tila: tarkistettava, varadia
-- Taustamuistiinpanon väite: 615 kehittäjän aineistossa 90 % kertoi käyttävänsä
-  AI:ta työnkuluissa ja 95 % sen vähentävän toistuvia tehtäviä. Muistiinpanoissa
-  mainitaan myös playtesting/balancing 47 %, localization/translation 45 %,
-  code generation/scripting 44 % sekä luovan alueen käyttötapoja 36 %.
-- Käyttö: näyttää, miten AI:n hyödyt ja tuottavuuslupaus myydään pelialalle.
-- Caveat: AI-palveluntarjoajan julkaisema vendor-tutkimus; esitä näkökulmana,
-  älä neutraalina alan totuutena.
-- Tarkista: tutkimuksen otanta, tilaaja, kysymykset ja prosenttien nimittäjät.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Tila: virallisen raporttisivun top-line-väitteet tarkistettu 2026-08-08,
+  varadia tai puhujamuistiinpano
+- Julkaistu otos: 615 pelinkehityksessä työskentelevää vastaajaa
+- Raportoidut top-line-väitteet: 90 % kertoi AI:n olevan työnkulussa, 95 % sen
+  auttavan automatisoimaan toistuvaa työtä ja 44 % koodi- tai scripting-tukea
+- Käyttö: näyttää, miten AI-infrastruktuuria myyvä toimija kehystää hyödyt, ja
+  opettaa miksi kyselyiden otsikkolukuja ei voi yhdistää ilman menetelmiä
+- Caveat: Google Cloud sponsoroi tutkimuksen ja myy tutkimuksen käsittelemää
+  teknologiaa. Raportoidut hyödyt ovat vastaajien ilmoituksia, eivät 95 %:lle
+  objektiivisesti mitattu tuottavuusparannus.
+- Vertailuraja: älä piirrä 90 %:a GDC:n 36 %:n vastaluvuksi; otos, kysymys ja
+  käyttömittari eroavat.
+- Alkuperäinen URL: `https://cloud.google.com/resources/games-report`
+- Julkaistu: 2025
+- Tarkistettu: kyllä top-line-väitteiden osalta, 2026-08-08
 
 ## Rajat, käytännöt ja tapausesimerkit
 
 ### SRC-STEAMWORKS-AI — Steamworksin AI disclosure -käytäntö
 
-- Tila: tarkistettava
-- Taustamuistiinpanon väite: Valve muutti sisältökyselyä tammikuussa 2024,
-  erottaa ennalta generoidun ja ajossa generoituvan sisällön ja näyttää
-  pelaajalle AI Generated Content Disclosure -osion.
+- Tila: nykyinen virallinen Steamworks-dokumentaatio tarkistettu 2026-08-08
+- Turvallinen väite: sisältökyselyn GenAI-osio ei keskity modernien
+  kehitystyökalujen yleisiin tehokkuushyötyihin vaan AI:n avulla luotuun,
+  peliin toimitettavaan ja pelaajan kuluttamaan sisältöön
+- Pre-generated: kehityksen aikana AI:n avulla luotu sisältö, joka toimitetaan
+  pelin mukana ja jota pelaaja kuluttaa
+- Live-generated: pelin ajon aikana AI:n avulla syntyvä sisältö; kehittäjän pitää
+  lisäksi kuvata suojaukset laittoman sisällön estämiseksi
 - Käyttö: tukee rajaäänestystä ja väitettä, että AI on kuluttajaluottamuksen
   kysymys.
-- Suositeltu lähde: Valven oma Steamworks-julkaisu.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Caveat: dokumentaatio kuvaa nykyistä Steam-käytäntöä eikä yleistä eettistä tai
+  oikeudellista rajaa kaikille alustoille.
+- Alkuperäinen URL:
+  `https://partner.steamgames.com/doc/gettingstarted/contentsurvey?language=english`
+- Tarkistettu: kyllä, 2026-08-08
 
 ### SRC-UBISOFT-GHOSTWRITER — Ubisoft Ghostwriter
 
-- Tila: tarkistettava, puhemateriaali tai Q&A
-- Taustamuistiinpanon väite: Ghostwriter luonnostelee NPC-barkseja, joita
-  kirjoittajat valitsevat ja muokkaavat.
+- Tila: Ubisoftin alkuperäinen esittely tarkistettu 2026-08-08, puhemateriaali
+  tai Q&A
+- Turvallinen väite: Ghostwriter tuottaa NPC-barkkien ensimmäisiä luonnoksia;
+  käsikirjoittaja määrittää tilanteen, valitsee vaihtoehdon ja muokkaa sitä
 - Käyttö: paras mahdollinen puolustus “AI apurina” -mallille ja johdanto
   junioripolkuja koskevaan vastakysymykseen.
-- Suositeltu lähde: Ubisoftin oma esittely ja mahdollinen tekijähaastattelu.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+- Caveat: Ubisoftin oma tuote- ja rekrytointihenkinen kuvaus osoittaa
+  suunnitellun työnkulun, ei riippumattomasti mitattua ajansäästöä,
+  kirjoittajien hyväksyntää tai työmarkkinavaikutusta.
+- Alkuperäinen URL:
+  `https://news.ubisoft.com/en-gb/article/7Cm07zbBGy4Xml6WgYi25d/the-convergence-of-ai-and-creativity-introducing-ghostwriter`
+- Julkaistu: 2023-03-21
+- Tarkistettu: kyllä, 2026-08-08
 
 ### SRC-SAG-AFTRA-2025 — videopelisopimuksen AI-suojat
 
-- Tila: tarkistettava, rajaäänestyksen taustamateriaali
-- Taustamuistiinpanon väite: vuoden 2025 sopimus toi suostumusta ja disclosurea
-  koskevia suojia digitaalisiin replikoihin.
+- Tila: SAG-AFTRAn virallinen sopimus- ja FAQ-sivu tarkistettu 2026-08-08,
+  vastuuosuuden puhujamuistiinpano ja varamateriaali
+- Turvallinen väite: vuoden 2025 Interactive Media Agreement toi suostumus- ja
+  disclosure-vaatimuksia AI-digitaalireplikoihin sekä mahdollisuuden keskeyttää
+  uuden materiaalin generointia koskeva suostumus lakon aikana
 - Käyttö: erottaa generoidun sisällön ihmisen äänen, identiteetin ja
-  neuvotteluaseman kopioimisesta.
-- Suositeltu lähde: SAG-AFTRAn sopimus- tai yhteenvetosivu.
-- Alkuperäinen URL: puuttuu
-- Tarkistettu: ei
+  neuvotteluaseman kopioimisesta. Pääesityksessä tämä on yksi puhuttu lause,
+  ei uusi kalvo tai yleinen lakiväite.
+- Caveat: suoja koskee sopimuksen piiriin kuuluvia esiintyjiä ja tuotantoja. Se
+  ei ole yleinen AI-laki eikä ratkaise kaikkien pelialan työntekijöiden
+  tekijänoikeus-, koulutusdata- tai työmarkkinakysymyksiä.
+- Alkuperäinen URL:
+  `https://www.sagaftra.org/contracts-industry-resources/interactive/2025-interactive-media-video-game-agreement`
+- Tarkistettu: kyllä, 2026-08-08
+
+### SRC-CLAIR-OBSCUR-2025 — placeholderit, disclosure ja palkintosääntö
+
+- Tila: tapahtumaketjun ydin tarkistettu alkuperäisestä El País -haastattelusta,
+  siihen lisätystä Sandfall-täsmennyksestä ja palkintopäätöstä raportoivasta
+  luotettavasta pelimediasta 2026-08-08
+- Suunniteltu käyttö: pääesityksen lyhyt Steam/disclosure-tapaus
+- Turvallinen tapahtumaketju: Sandfall kertoo kokeilleensa vuonna 2022 GenAI:ta
+  placeholder-tekstuureihin. Placeholder-tekstuurin esiintymiä jäi
+  julkaisuversioon, ja ne korvattiin viiden päivän sisällä julkaisuun
+  tarkoitetuilla tekstuureilla.
+- Palkintoraja: Indie Game Awards veti kaksi palkintoa takaisin. Järjestäjän
+  mukaan sääntö kielsi GenAI:n käytön ja hakuvaiheessa oli ilmoitettu, ettei
+  GenAI:ta käytetty.
+- Käyttö: tapaus näyttää, miten sisäinen kokeilu voi muuttua QA-, disclosure- ja
+  luottamuskysymykseksi, kun tuotosta päätyy julkaisuun ja ulkoinen sääntö on
+  ehdoton
+- Caveat: älä väitä, että peli tehtiin AI:lla, että kyse oli varmasti vain
+  yhdestä kuvasta tai että Steam-disclosure varmasti puuttui. Arkistoitua
+  julkaisupäivän Steam-kauppasivua ei ole tässä aineistossa varmennettu.
+- Alkuperäinen haastattelu ja Sandfall-täsmennys:
+  `https://elpais.com/cultura/2025-06-28/la-revolucion-creativa-low-cost-cuando-la-tecnologia-pone-el-arte-al-alcance-de-todos.html`
+- Palkintopäätöksen raportointi:
+  `https://www.pcgamer.com/games/rpg/indie-game-awards-pulls-two-awards-from-clair-obscur-over-generative-ai-use-we-have-a-hard-stance-against-gen-ai-in-videogames/`
+- Tarkistettu: kyllä tapahtumaketjun ydinosalta, 2026-08-08
+
+### SRC-MICROSOFT-XBOX-2026 — AI-strategia ja henkilöstövähennykset
+
+- Tila: viralliset nimitys-, tutkimus- ja uudelleenjärjestelytiedotteet
+  tarkistettu 2026-08-08, vain varadia tai Q&A
+- Tausta: Coupangin vuoden 2024 hallitusnimitys kuvaa Asha Sharman Microsoftin
+  AI Platformin Corporate Vice Presidentiksi ja Head of Productiksi
+- Nimitys: Sharma nimitettiin Microsoft Gamingin toimitusjohtajaksi 20.2.2026;
+  huhtikuusta 2026 alkaen titteli on CEO Xbox
+- Julkinen linja: nimitysviestissä Sharma sanoi, ettei yhtiö tavoittele lyhyen
+  aikavälin tehokkuutta tavalla, joka täyttäisi ekosysteemin “AI slopilla”, ja
+  kuvasi pelejä ihmisten tekemäksi taiteeksi
+- Uudelleenjärjestely: Xbox ilmoitti 6.7.2026 vähentävänsä noin 3 200 roolia
+  tilivuoden 2027 aikana, joista noin 1 600 heti
+- Xboxin ilmoittamat syyt: liiketoiminnan heikko terveys ja marginaalit, liian
+  laajaksi kasvanut studiokanta, johtamiskerrokset, hajanaisuus sekä tarve
+  keskittää investointeja
+- AI-konteksti: Microsoft Research julkaisi vuonna 2025 Muse-pelimaailma- ja
+  toimintamallin gameplay ideation -tutkimuksena
+- Tulkintaraja: AI-investoinnit, ihmiskeskeinen retoriikka ja vähennykset ovat
+  samanaikaisia tapahtumia. Lähteet eivät osoita, että AI korvasi vähennetyt
+  työntekijät. Tapausta ei käytetä kausaaliväitteenä tai pääkuvaajana.
+- Asha Sharman AI-tausta:
+  `https://ir.aboutcoupang.com/news-events/news/news-details/2024/Coupang-Names-Head-of-Product-for-the-Microsoft-AI-Group-and-Former-Meta-and-Instacart-Executive-Asha-Sharma-to-Board-of-Directors/default.aspx`
+- Microsoftin nimitystiedote:
+  `https://blogs.microsoft.com/blog/2026/02/20/asha-sharma-named-evp-and-ceo-microsoft-gaming/`
+- Xboxin uudelleenjärjestely:
+  `https://news.xbox.com/en-us/2026/07/06/resetting-xbox/`
+- Muse:
+  `https://www.microsoft.com/en-us/research/blog/introducing-muse-our-first-generative-ai-model-designed-for-gameplay-ideation/`
+- Tarkistettu: kyllä virallisten tapahtumien osalta, 2026-08-08
 
 ### SRC-CAPCOM-REMEDY — studioiden rajaukset
 
@@ -286,15 +423,32 @@ Nämä soveltuvat puhujamuistiinpanoihin, Q&A:han tai väitteiden taustoitukseen
 Niitä ei tarvita 60 minuutin pääesitykseen, ellei jokin pääväite tarvitse
 vahvempaa tutkimustukea.
 
+### SRC-METR-2025 — kokeneiden kehittäjien tuottavuuskoe
+
+- Tila: alkuperäinen tutkimuspaperi tarkistettu 2026-08-08, vain
+  puhujamuistiinpano tai Q&A
+- Tutkimusasetelma: satunnaistettu koe, jossa 16 kokenutta avoimen lähdekoodin
+  kehittäjää teki 246 tehtävää tutuissa projekteissaan alkuvuoden 2025
+  AI-työkaluilla tai ilman niitä
+- Tulos: AI-työkalujen salliminen kasvatti tehtäviin käytettyä aikaa 19 %, vaikka
+  osallistujat arvioivat niiden nopeuttaneen työtä
+- Käyttö: vastapaino oletukselle, että koettu sujuvuus on sama asia kuin
+  mitattu ajansäästö
+- Caveat: pieni ja valikoitunut otos, kokeneet avoimen lähdekoodin kehittäjät,
+  tutut koodikannat ja alkuvuoden 2025 työkalut. Tulosta ei yleistetä suoraan
+  pelinkehitykseen, aloittelijoihin tai uudempiin malleihin.
+- Alkuperäinen URL: `https://arxiv.org/abs/2507.09089`
+- Tarkistettu: kyllä tutkimuksen omien väitteiden osalta, 2026-08-08
+
 | Tunnus | Työnimi taustamuistiinpanoissa | Mahdollinen käyttö | Tarkistettava caveat |
 |---|---|---|---|
 | SRC-RESEARCH-SYNTHESIS | *Generative AI in Game Development: A Qualitative Research Synthesis* | Tuotantotapojen, pipelinejen ja arvoverkkojen muutos | Julkaisukanava, menetelmä ja katsauksen aineisto |
 | SRC-OSS-GAMEDEV | *An Empirical Study of GenAI Adoption in Open-Source Game Development* | Käytännön käyttötavat avoimen lähdekoodin peliprojekteissa | GitHub-issueiden edustavuus koko alalle |
-| SRC-METR-2025 | *Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity* | Vastapaino oletukselle, että AI nopeuttaa aina | Ei yleistetä suoraan kaikkeen pelinkehitykseen |
 | SRC-GAME-INDUSTRY-PROBLEMS | *Game Industry Problems: an Extensive Analysis of the Gray Literature* | Organisaatio- ja johtamisongelmien merkitys | Aineisto 1997–2019, ei suoraan AI-tutkimus |
 | SRC-AI-RULES-REDDIT | *AI Rules? Characterizing Reddit Community Policies Towards AI-Generated Content* | Yhteisöjen laatu- ja aitoushuolten taustoitus | Säännöt eivät ole sama asia kuin käyttäjäasenteet |
 
-Kaikista puuttuvat vielä alkuperäinen URL, julkaisutiedot ja tarkistuspäivä.
+Taulukon neljästä tarkistamattomasta varannosta puuttuvat vielä alkuperäinen
+URL, julkaisutiedot ja tarkistuspäivä.
 
 ## Kulttuuripulssi, ei tilastollinen todiste
 
@@ -311,20 +465,26 @@ vahvemman tutkimuslähteen korvikkeena.
 
 ## Kuvaaja-aineistojen tila
 
-Taustamuistiinpano viittaa seuraaviin aiemmin tuotettuihin tiedostoihin, mutta
-niitä ei ole tässä repossa:
+Pääesitykseen on valittu täsmälleen kolme datavisuaalia:
 
-- `ai_games_chart_data.csv`
-- `chart_01_gdc_negative_sentiment.png`
-- `chart_02_gdc_common_uses.png`
-- `chart_03_gdc_negative_by_role.png`
-- `chart_04_steam_genai_disclosures.png`
-- `chart_05_google_cloud_workflows.png`
-- `chart_06_quantic_foundry_gamer_attitudes.png`
+| Tunnus | Sisältö | Lähde | Tila |
+|---|---|---|---|
+| CHART-MAIN-1 | Työkäyttö 36 % ja kielteinen vaikutusarvio 52 %; myönteinen 7 % numeronostona | SRC-GDC-2026-SENTIMENT | Arvot tarkistettu; paikallinen data puuttuu |
+| CHART-MAIN-2 | Research/brainstorming 81 %, arjen tehtävät 47 %, koodiapu 47 %, prototypointi 35 % | SRC-GDC-2026-USES | Arvot tarkistettu; paikallinen data puuttuu |
+| CHART-MAIN-3 | Dialogi 83 % kielteinen, questit 77 % kielteinen, dynaaminen vaikeustaso noin 50 % kielteinen | SRC-QUANTIC-2025 | Arvot tarkistettu; noin 50 % on johdettu; paikallinen data puuttuu |
 
-PNG-kuvia ei tarvitse etsiä tai kopioida sellaisinaan. Web-esitystä varten
-kuvaajat rakennetaan Rechartsilla uudelleen vasta, kun CSV-arvot tai vastaava
-paikallinen data on tarkistettu alkuperäislähteitä vasten.
+Steamworksin sisältöraja ja Clair Obscur -tapahtumaketju toteutetaan
+prosessina ja aikajanana, ei neljäntenä kuvaajana. 7 818 Steam-pelin snapshot
+voidaan näyttää päivättynä numeronostona, jos se mahtuu puheeseen.
+
+Varamateriaaliin voidaan toteuttaa GDC:n roolikohtainen vertailu ja vuosien
+2024–2026 kolme erillistä pylvästä. Jälkimmäinen ei ole trendiviiva, koska
+vuoden 2026 raportti varoittaa kyselymuutosten vaikeuttavan vuosivertailua.
+
+Taustamuistiinpanossa mainittuja vanhoja PNG- ja CSV-tiedostoja ei tarvita.
+Web-esityksen kuvaajat rakennetaan Rechartsilla tarkistetuista arvoista. Ne
+saavat tilan **valmis** vasta, kun arvot on tallennettu paikalliseen
+`chart-data.js`-tiedostoon ja tarkistettu vielä kerran lähteitä vasten.
 
 ## Kuvaajan tarkistusmerkintä
 

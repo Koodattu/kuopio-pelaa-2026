@@ -2,7 +2,9 @@
 
 ## Tarkoitus esityksessä
 
-Kahdeksan minuutin showcase tekee “builder”-näkökulmasta konkreettisen.
+Kymmenen minuutin osuus tekee “builder”-näkökulmasta konkreettisen. Varsinainen
+live-demo kestää enintään kahdeksan minuuttia; osuudesta kaksi minuuttia
+varataan johtopäätökseen ja siirtymään tekijän työpöydältä pelaajan ruudulle.
 SuomiWoW ei ole esityksessä portfolioesittely tai teknologiapinon läpikäynti,
 vaan esimerkki siitä, miten tietty yhteisö, oikea data ja tekijän rajaukset
 muuttavat yleisen teknisen mahdollisuuden merkitykselliseksi tuotteeksi.
@@ -31,14 +33,15 @@ suunnitteludokumentissa kuvattu raid-leading- ja party-management-peli ei ole
 vielä osa tämän live-demon lupausta. Älä kutsu nykyistä versiota card
 battleriksi tai näytä tulevia pelimuotoja toteutettuina ominaisuuksina.
 
-## Kahdeksan minuutin kulku
+## Kymmenen minuutin kulku
 
 | Aika | Toiminta | Yleisölle näkyvä asia | Puheen tehtävä |
 |---:|---|---|---|
-| 0:24–0:26 | Kehystys | Yksi kuva SuomiWoWista ja otsikko “Kun raididata muuttui leikiksi” | Kerro yhdellä lauseella, mikä palvelu on ja miksi CCG syntyi. |
-| 0:26–0:29 | Avaa yksi pakka | `/ccg/open`, valittu raid tai All raids, yhden viiden kortin pakan avaus | Näytä tunne ja palaute; älä selitä jokaista kontrollia. |
-| 0:29–0:31 | Tarkastele yhtä korttia | Kortin nimi, guild, rooli, tier grade, data ja yksi näkyvä finish | Selitä, että kortti on oikean yhteisöhistorian muuttumaton snapshot eikä geneerinen fantasy-hahmo. |
-| 0:31–0:32 | Kokoelma ja teesilause | `/ccg/collection` tai yksi ennalta valittu kokoelmanäkymä | Näytä, miten yksittäinen pull liittyy pitkäaikaiseen keräilyyn, ja palaa esityksen väitteeseen. |
+| 0:40–0:42 | Kehystys | Yksi kuva SuomiWoWista ja otsikko “Kun raididata muuttui leikiksi” | Kerro yhdellä lauseella, mikä palvelu on ja miksi CCG syntyi. |
+| 0:42–0:45 | Avaa yksi pakka | `/ccg/open`, valittu raid tai All raids, yhden viiden kortin pakan avaus | Näytä tunne ja palaute; älä selitä jokaista kontrollia. |
+| 0:45–0:47 | Tarkastele yhtä korttia | Kortin nimi, guild, rooli, tier grade, data ja yksi näkyvä finish | Selitä, että kortti on oikean yhteisöhistorian muuttumaton snapshot eikä geneerinen fantasy-hahmo. |
+| 0:47–0:48 | Kokoelma ja teesilause | `/ccg/collection` tai yksi ennalta valittu kokoelmanäkymä | Näytä, miten yksittäinen pull liittyy pitkäaikaiseen keräilyyn, ja palaa esityksen väitteeseen. |
+| 0:48–0:50 | Johtopäätös ja siirtymä | Esityssivun yksi teesilause | Nimeä, mitä yhteisö, data ja rajaukset lisäsivät tekniseen toteutukseen. Käännä seuraavaksi näkökulma siihen, mitä pelaaja kohtaa. |
 
 Demo päättyy ajallaan riippumatta siitä, kuinka harvinainen pakka on. Tavoite ei
 ole saada näyttävää satunnaistulosta, vaan näyttää tuotteen idea.
@@ -95,7 +98,7 @@ Suositeltu reitti:
 
 Leaderboard, activity history, character checker, Twitch rewards, redeem codes
 ja hallintatyökalut ovat oikeita ominaisuuksia, mutta niitä ei selata tässä
-kahdeksan minuutin demossa.
+kahdeksan minuutin live-demossa.
 
 ## Ennen tapahtumaa
 
@@ -133,7 +136,8 @@ paremman tuloksen toivossa.
 
 ## Onnistumiskriteerit
 
-- Showcase kestää enintään kahdeksan minuuttia.
+- Koko osuus kestää enintään kymmenen minuuttia ja varsinainen live-demo
+  enintään kahdeksan minuuttia.
 - Yleisö ymmärtää SuomiWoW-palvelun tarkoituksen ilman teknologiapinolistaa.
 - Yksi pack opening, yksi kortti ja collection näkyvät.
 - Kortin yhteys oikeaan yhteisödataan tulee selväksi.

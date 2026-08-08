@@ -118,9 +118,10 @@ olemassa olevan, mutta ihmisen pitää tehdä siitä pelaamisen arvoinen.
 
 Uusia kokonaisminuutteja ei lisätä.
 
-- 0:00–0:03: sana-assosiaatio, ChatGPT-paljastus ja otsikon jännite
-- 0:03–0:18: nykyinen Live Voting
-- 0:18–0:22: AI-yläkäsite ja GenAI-erottelu
+- 0:00–0:05: sana-assosiaatio, ChatGPT-paljastus, lyhyt esittäytyminen ja otsikon
+  jännite
+- 0:05–0:20: Live Voting
+- 0:20–0:24: AI-yläkäsite ja GenAI-erottelu
 - myöhemmistä esitysosuuksista tiivistetään yhteensä neljä minuuttia
 - workshopin 45 minuutin rakenne ei muutu.
 

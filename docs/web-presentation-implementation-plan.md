@@ -163,13 +163,31 @@ Säännöt:
 
 ## Recharts-kuvaajat
 
-Ensisijaiset kuvaajat:
+Pääesityksen kolme kuvaajaa on päätetty
+[tutkimus- ja kuvaajasuunnitelmassa](research-and-chart-plan.md):
 
-1. pelialan kielteisen AI-suhtautumisen trendi
-2. generatiivisen AI:n yleiset käyttötavat
-3. Steam-pelien GenAI-ilmoitukset
-4. pelaajien suhtautuminen luoviin käyttötapoihin, jos aika ja lähdevarmuus
-   riittävät
+1. **Käyttö ei tarkoita hyväksyntää:** GDC 2026:n kaksi eri mittaria samalla
+   0–100-asteikolla, työkäyttö 36 % ja kielteinen vaikutusarvio 52 %.
+   Myönteinen 7 % näytetään pienenä erillisenä numeronostona.
+2. **Mihin työkalua käytetään:** GenAI:ta työssään käyttävien vastaajien
+   research/brainstorming 81 %, arjen tehtävät 47 %, koodiapu 47 % ja
+   prototypointi 35 % järjestettyinä vaakapylväinä.
+3. **Luova sisältö osuu herkempään rajaan:** Quantic Foundryn valikoituneen
+   pelaajaotoksen kielteiset osuudet GenAI-dialogille 83 %, questeille 77 % ja
+   dynaamiseen vaikeustasoon käytetylle GenAI:lle noin 50 % dot plotina tai
+   kolmena ohuena pylväänä.
+
+GDC:n roolikohtainen vertailu ja vuosien 2024–2026 kolme erillistä pylvästä
+ovat varamateriaalia. Vuosia ei yhdistetä trendiviivalla, koska vuoden 2026
+kyselymuutos rajoittaa vertailua.
+
+Steamworksin sisältöraja, Clair Obscur -tapahtumaketju ja mahdollinen 7 818
+pelin snapshot ovat tavallisia HTML/CSS-sommitteluja, eivät Recharts-kuvaajia.
+Snapshotiin merkitään päivämäärä 13.7.2025 eikä siitä rakenneta aikasarjaa.
+
+Google Cloudin 90 %:n AI-workflow-lukua ei aseteta samaan vertailuun GDC:n
+36 %:n GenAI-työkäyttöluvun kanssa. Kysymykset, otokset ja mitattava käyttö
+eivät vastaa toisiaan.
 
 Toteutusperiaatteet:
 
@@ -180,6 +198,8 @@ Toteutusperiaatteet:
 - tooltip ei saa olla ainoa paikka, jossa arvo näkyy
 - projektoriversiossa tärkeät arvot merkitään suoraan kuvaajaan
 - lähde, vuosi, otos ja olennainen caveat näkyvät dian alareunassa
+- eri kysymysten prosentteja ei pinota samaan jakaumaan eikä puuttuvia osuuksia
+  päätellä, ellei johdettu arvo ole merkitty näkyvästi
 - kuvaaja tarkistetaan lähdedataa vastaan ennen sisällön hyväksymistä
 
 ## Puhujanäkymä ja muistiinpanot
@@ -298,7 +318,8 @@ kokoelmasta. Tarkempi puhe- ja varapolku on
 - vahvista 120 minuutin runko: 60 minuutin esitys, 15 minuutin tauko ja 45
   minuutin workshop
 - tarkista kaikki luvut alkuperäislähteistä
-- päätä kolme pääkuvaajaa ja varadiat
+- toteuta kolme päätettyä pääkuvaajaa ja pidä rooli- sekä vuosivertailut
+  varadioina
 - vahvista SuomiWoW-demon tuotanto-URL, käyttökunto ja rehellinen kuvaus AI:n
   roolista projektissa
 - vahvista AI Workshop Playgroundin tuotanto-URL, tapahtumasalasana,
@@ -321,9 +342,13 @@ Valmis, kun koediat toimivat projektorikoossa, läppärillä ja näppäimistöll
 - toteuta avauksen yleisötauko ja ChatGPT-tunnuksen paljastus OpenAI:n
   virallisella ajantasaisella assetilla
 - toteuta AI/GenAI-erottelu NIST-määritelmien sekä YouTuben, TikTokin ja
-  Instagramin omien suositusjärjestelmäkuvausten pohjalta
+  Instagramin omien suositusjärjestelmäkuvausten pohjalta; lisää samalle dialle
+  kolme lyhyttä peliesimerkkiä ilman erillistä historia-aikajanaa
 - lisää Recharts-kuvaajat tarkistetusta datasta
 - lisää puhujamuistiinpanot ja lähdeviitteet
+- lisää vastuuosuuden muistiinpanoihin yksi SAG-AFTRAan lähteistetty lause
+  tunnistettavan äänen, kasvojen tai performanssin suostumus- ja
+  korvauskysymyksestä; älä tee siitä uutta kalvoa
 - tee QR- ja workshop-siirtymät
 
 Valmis, kun koko esitys voidaan käydä alusta loppuun ilman placeholder-sisältöä.
@@ -392,4 +417,3 @@ kestää 15 minuuttia ja koko ohjelma päättyy viimeistään minuutilla 120.
 - hosting-kohde ja tarvitaanko salasanaa
 - puhujamuistiinpanojen yksityisyystaso
 - käytetäänkö tapahtuman aikana ääntä
-- mitkä kolme kuvaajaa jäävät lopulliseen tunnin esitysosuuteen
