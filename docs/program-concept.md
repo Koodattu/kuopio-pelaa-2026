@@ -40,7 +40,7 @@ ja työpaja antaa yleisön testata sitä.
 | Aika | Osuus | Tehtävä kokonaisuudessa |
 |---:|---|---|
 | 0:00–0:05 | Avaus | Luo otsikon jännite, kysy mitä AI tuo mieleen ja kerro vain sen verran puhujasta ja ohjelmasta, että yleisö tietää miksi kannattaa kuunnella. Älä vielä ratkaise kysymystä. |
-| 0:05–0:20 | Gallup | Tee yleisön omasta kokemuksesta ohjelman ensimmäinen aineisto. Neljän kysymyksen pitää palata myöhemmin esitykseen; äänestys ei ole irrallinen lämmittely. |
+| 0:05–0:20 | Gallup | Tee yleisön omasta kokemuksesta ohjelman ensimmäinen aineisto. Alustava kymmenen nopean kysymyksen sarja muodostaa viisi vertailuparia, joita kommentoidaan heti; äänestys ei ole irrallinen lämmittely. Lopullinen määrä lukitaan harjoituksessa välille 8–10. |
 | 0:20–0:40 | Pääesitys I: tekijän työpöytä | Erota AI ja GenAI, näytä käytön ja epäluottamuksen rinnakkaisuus, tarkenna mihin GenAI:ta pelinteossa käytetään ja kysy, mitä tekijän työssä oikeastaan muuttuu. |
 | 0:40–0:50 | SuomiWoW ja CCG | Tee abstrakti puhe konkreettiseksi oikean projektin avulla. Näytä, miten yhteisö, data, tarkoitus ja rajaukset antavat tekniselle toteutukselle merkityksen. Varaa varsinaiselle live-demolle enintään kahdeksan minuuttia ja siirtymälle kaksi. |
 | 0:50–1:00 | Pääesitys II: pelaajan ruutu | Siirry tekemisestä vastaanottoon. Käsittele, miksi käyttötapa vaikuttaa pelaajien reaktioon sekä missä kulkevat näkyvän sisällön, kertomisen, suostumuksen ja vastuun rajat. Palaa lopuksi huoneen vastauksiin ja jätä työpajalle testattava kysymys. |

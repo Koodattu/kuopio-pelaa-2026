@@ -1,15 +1,24 @@
 # Live Voting -suunnitelma
 
+> **Tila:** ensimmäisen kierroksen ehdotus. Kymmenen kysymyksen sanamuodot,
+> järjestys ja määrä lukitaan vasta täyden presenter-harjoituksen jälkeen.
+
 ## Tavoite
 
 Esityksen alun noin 15 minuutin yleisöäänestys tekee huoneen oman ristiriidan
 näkyväksi ennen ulkoisten tilastojen näyttämistä. Tulokset toimivat esityksen
 läpi kulkevana vertailukohtana:
 
-- kuinka moni käyttää AI:ta
-- miltä sen vaikutus pelialaan tuntuu
-- mihin sitä halutaan käyttää
-- milloin käytöstä pitäisi kertoa pelaajalle
+- kuinka moni on käyttänyt generatiivista AI:ta ja kuinka moni juuri
+  pelintekoon
+- eroaako yleinen AI-asenne suhtautumisesta AI:hin pelialalla
+- pidetäänkö tekemisen helpottumista samana asiana kuin pelien paranemista
+- näyttäytyykö AI uutena sisäänkäyntinä, työn korvaajana vai molempina
+- muuttuuko reaktio, kun käyttö siirtyy bugien korjaamisesta näkyvään dialogiin.
+
+Gallup ei pyydä yleisöä ratkaisemaan AI-politiikkaa ennen esitystä. Kysymykset
+ovat nopeita ja tarkoituksella karkeita. Niiden tehtävä on tuottaa viisi
+vertailuparia, joiden epäselvyyksiä ja ristiriitoja myöhempi esitys tarkentaa.
 
 Tulokset kuvaavat vain paikalla olevaa, itse valikoitunutta yleisöä. Niitä ei
 esitetä tutkimuksena eikä verrata GDC- tai pelaajakyselyihin tilastollisesti.
@@ -50,7 +59,7 @@ ole tarpeellinen riski 12+ yleisölle.
 ## Istunnon määritys
 
 - Session Language: Finnish
-- Kysymystyyppi: neljä Single-choice Questionia
+- Kysymystyyppi: alustavasti kymmenen Single-choice Questionia viitenä parina
 - Feedback Question: ei
 - Työnimi: `Kuopio Pelaa: tekoäly ja pelit`
 - Join Name -ehdotus: `kuopio-pelaa-ai`
@@ -60,74 +69,114 @@ Join Name varmistetaan tuotantoympäristössä ennen QR-koodien tekemistä. Sit�
 kovakoodata yleisölle näkyviin materiaaleihin ennen kuin deployment ja nimi ovat
 lopulliset.
 
-## Kysymykset
+## Alustava kysymyssarja
 
-### 1. Kuinka usein käytät generatiivista tekoälyä?
+Kysymykset esitetään pareina. Ensimmäinen tulos jää Presentation Displayn
+kompaktiin previous-strip-näkymään toisen kysymyksen ajaksi, joten esiintyjä voi
+kommentoida parin eroa ilman palaamista aiempaan Questioniin.
 
-Options:
+Viisiportaisissa väitekysymyksissä käytetään aina samaa asteikkoa:
 
-1. Päivittäin
-2. Viikoittain
-3. Harvemmin
-4. Olen vain kokeillut
-5. En koskaan
+1. Täysin eri mieltä
+2. Eri mieltä
+3. Neutraali
+4. Samaa mieltä
+5. Täysin samaa mieltä
 
-Tehtävä: helppo ensimmäinen Vote, jolla osallistujat oppivat käyttöliittymän ja
-esiintyjä näkee, että yhteys toimii.
+### Pari 1 — Oma kokemus
 
-### 2. Miltä generatiivisen tekoälyn vaikutus pelialaan tuntuu juuri nyt?
+**1. Oletko käyttänyt generatiivista tekoälyä?**
 
-Options:
+- Kyllä
+- En
 
-1. Erittäin myönteiseltä
-2. Jokseenkin myönteiseltä
-3. Ristiriitaiselta
-4. Jokseenkin kielteiseltä
-5. Erittäin kielteiseltä
+**2. Oletko käyttänyt generatiivista tekoälyä pelin tai peliprototyypin
+tekemiseen?**
 
-Tehtävä: muodostaa huoneen oma lähtötilanne, johon GDC:n
-suhtautumistrendin yhteydessä palataan.
+- Kyllä
+- En
 
-### 3. Missä käyttäisit AI:ta mieluiten pelinteossa?
+Tehtävä: opettaa käyttöliittymä kahdella helpolla Vote-päätöksellä ja näyttää,
+kuinka monelle AI on tuttu yleisesti mutta uusi juuri pelinteossa.
 
-Options:
+### Pari 2 — Yleinen asenne ja peliala
 
-1. Ideoinnissa ja protoilussa
-2. Koodissa, testauksessa ja debuggaamisessa
-3. Dokumentaatiossa ja lokalisoinnissa
-4. Pelaajalle näkyvässä luovassa sisällössä
-5. En missään
+**3. Generatiivinen tekoäly on mielestäni hyvä asia.**
 
-Tehtävä: johdattaa kysymykseen siitä, madaltaako AI aloittamisen kitkaa vai
-siirtyykö se kohti lopullista luovaa sisältöä.
+Vastaus: yhteinen viisiportainen asteikko.
 
-### 4. Millä rajalla AI-käytöstä pitäisi kertoa pelaajalle?
+**4. Generatiivinen tekoäly on hyvä asia pelialalle.**
 
-Options:
+Vastaus: yhteinen viisiportainen asteikko.
 
-1. Kaikesta AI-käytöstä
-2. Kun AI näkyy tai kuuluu lopputuloksessa
-3. Vain kun sisältöä generoidaan pelin aikana
-4. Vain kun laki tai kauppapaikka vaatii
-5. Siitä ei tarvitse kertoa
+Tehtävä: näyttää, muuttuuko yleinen asenne, kun sama teknologia sidotaan
+peleihin. Eroa ei oleteta etukäteen.
 
-Tehtävä: luo silta Steam-ilmoituksiin, pelaajan luottamukseen ja esityksen
-myöhempään rajakeskusteluun.
+### Pari 3 — Helpompi ja parempi
+
+**5. Generatiivinen tekoäly tekee pelien tekemisestä helpompaa.**
+
+Vastaus: yhteinen viisiportainen asteikko.
+
+**6. Generatiivinen tekoäly tekee peleistä parempia.**
+
+Vastaus: yhteinen viisiportainen asteikko.
+
+Tehtävä: erottaa tuotannon kynnyksen madaltuminen lopputuloksen laadusta. Tämä
+on gallupin tärkein pari ja suora silta esityksen sekä työpajan kantavaan
+kysymykseen.
+
+### Pari 4 — Sisäänkäynti ja korvaaminen
+
+**7. Tekoälyn avulla kuka tahansa voi tehdä pelin.**
+
+Vastaus: yhteinen viisiportainen asteikko.
+
+**8. Tekoäly korvaa tulevaisuudessa suuren osan pelinkehittäjien työstä.**
+
+Vastaus: yhteinen viisiportainen asteikko.
+
+Tehtävä: nostaa näkyviin ohjelman otsikon kaksi kilpailevaa lupausta. Huone voi
+hyvin kannattaa molempia väitteitä; sitä ei käsitellä loogisena virheenä.
+
+### Pari 5 — Taustatyö ja näkyvä sisältö
+
+**9. Häiritsisikö generatiivisen tekoälyn käyttö pelin bugien
+korjaamisessa?**
+
+- Kyllä
+- Ei
+- En osaa sanoa
+
+**10. Häiritsisikö generatiivisen tekoälyn käyttö pelihahmojen dialogin
+kirjoittamisessa?**
+
+- Kyllä
+- Ei
+- En osaa sanoa
+
+Tehtävä: testata yhdellä konkreettisella parilla, muuttuuko reaktio käytön
+siirtyessä näkymättömästä kehitystyöstä näkyvään luovaan sisältöön. Pari
+valmistelee Quantic Foundry-, Steamworks- ja Clair Obscur -osuuksia ilman, että
+yleisöltä kysytään vielä monimutkaista disclosure-rajaa.
 
 ## 15 minuutin käyttöjärjestys
 
 | Aika | Toiminta | Presenter Controls | Presentation Display |
 |---:|---|---|---|
 | 0:05–0:08 | Liittyminen ja lyhyt käyttöohje | Istunto on Lobbyssa. Seuraa liittyjämäärää. | Näytä otsikko, QR-koodi, suora linkki ja Join Name. |
-| 0:08–0:10 | Kysymys 1 | Avaa, anna Voteille noin minuutti, sulje. | Näytä live-Result ja kommentoi vain käyttöjakauman pääpiirre. |
-| 0:10–0:13 | Kysymys 2 | Avaa, anna aikaa, sulje. | Anna yleisön nähdä jakauma; nimeä mahdollinen ristiriita. |
-| 0:13–0:16 | Kysymys 3 | Avaa, anna aikaa, sulje. | Nosta yleisin ja yllättävin Option ilman ylianalyysiä. |
-| 0:16–0:19 | Kysymys 4 | Avaa, anna aikaa, sulje. | Nimeä huoneen disclosure-raja ja jätä kysymys auki narratiivisesti. |
-| 0:19–0:20 | Siirtymä takaisin esitykseen | Pidä istunto Live-tilassa ja viimeinen Question suljettuna. | Vaihda takaisin esityssivulle. |
+| 0:08–0:10 | Pari 1: oma kokemus | Avaa, sulje ja vaihda kaksi Yes/No-kysymystä nopeasti. | Näytä ensin yleinen käyttö ja sen rinnalla käyttö pelintekoon. Kommentoi paria vasta toisen sulkeuduttua. |
+| 0:10–0:12 | Pari 2: yleinen asenne ja peliala | Aja kaksi viisiportaista väitettä peräkkäin. | Vertaa nykyistä jakaumaa previous-stripissä näkyvään yleiseen asenteeseen. |
+| 0:12–0:14 | Pari 3: helpompi ja parempi | Anna molemmille väitteille lyhyt mutta riittävä Vote-aika. | Jätä mahdollinen ero hetkeksi näkyviin; tämä on gallupin keskeinen vertailu. |
+| 0:14–0:16 | Pari 4: sisäänkäynti ja korvaaminen | Aja kaksi viisiportaista väitettä. | Nimeä mahdollinen rinnakkaisuus ilman pitkää työmarkkinakeskustelua. |
+| 0:16–0:18 | Pari 5: bugit ja dialogi | Aja kaksi kolmen vaihtoehdon kysymystä. | Vertaa taustatyötä ja näkyvää luovaa sisältöä. Jätä viimeinen pari suljettuna nykyiseksi näkymäksi. |
+| 0:18–0:20 | Huoneen lukeminen ja siirtymä | Pidä Session Live-tilassa. Nosta vain 2–3 toteutunutta eroa tai yhtäläisyyttä. | Vaihda takaisin esityssivulle viimeistään aikaan 0:20. |
 
-Äänestysistuntoa ei päätetä heti. Aikaan 0:58–1:00 palataan suljettuihin
-kysymyksiin 2 ja 4, minkä jälkeen istunto päätetään. Tällöin osallistujien
-Participant View siirtyy Session Resultsiin ennen taukoa.
+Äänestysistuntoa ei päätetä heti. Viimeinen bugit/dialogi-pari jää helposti
+palautettavaksi näkymäksi, koska kysymys 9 näkyy previous-stripissä ja kysymys
+10 nykyisenä suljettuna tuloksena. Pariin voidaan palata pääesityksen toisen
+osan alussa ennen Quantic Foundry -kuvaajaa. Istunto päätetään ennen taukoa,
+jolloin Participant View siirtyy Session Resultsiin.
 
 ## Esiintyjän puhelogiikka
 
@@ -143,15 +192,48 @@ Tarvittaessa terminologinen muistutus:
 Tuloksia käsitellessä:
 
 - sano “tässä huoneessa”, älä “pelaajat ajattelevat”
-- nosta yksi havainto per kysymys
+- keskustele ensisijaisesti kysymysparista, älä jokaisesta Questionista erikseen
+- anna nopeaan kysymykseen noin 10–20 sekuntia Vote-aikaa; täydellistä
+  osallistumisprosenttia ei odoteta
+- nosta enintään yksi havainto per pari
 - älä selitä jokaista palkkia
 - älä arvioi yksittäisten osallistujien valintoja
 - jätä osa tuloksista tarkoituksella myöhemmin ratkaistavaksi
 
-Palattaessa tuloksiin esityksen lopulla:
+Mahdollisia, tuloksesta riippuvia havaintoja:
 
-> Tätä mieltä olimme ennen kuin näimme luvut ja vedimme rajoja. Vastaukset
-> eivät ehkä muuttuneet, mutta nyt tiedämme paremmin, mitä niiden takana on.
+- “AI on monelle tuttu, mutta pelinteko voi silti olla kokonaan uusi
+  käyttötapa.”
+- “Helpompi ja parempi eivät näytä olevan tässä huoneessa sama asia.”
+- “Sama teknologia voi näyttää yhtä aikaa uutena sisäänkäyntinä ja uhkana
+  nykyiselle työlle.”
+- “Pelkkä AI:n käyttäminen ei näytä ratkaisevan suhtautumista. Myös käyttötapa
+  merkitsee.”
+
+Näitä lauseita ei käytetä, jos Result ei tue niitä. Myös parien samanlaisuus on
+kelvollinen havainto.
+
+Palattaessa viimeiseen kysymyspariin pääesityksen toisessa osassa:
+
+> Vastaukset eivät ehkä muuttuneet, mutta nyt osaamme kysyä tarkemmin, mitä
+> “AI:n käyttäminen pelissä” oikeastaan tarkoittaa.
+
+## Pacing-raja
+
+Kymmenen Questionia on nykyisen työkalun toiminnalla ylärajan tuntumassa.
+Jokainen Question pitää sulkea erikseen, sulkeminen vahvistetaan selaimen
+confirm-dialogissa ja vasta sen jälkeen voidaan avata seuraava Question.
+
+Täyden harjoituksen jälkeen valitaan toinen näistä:
+
+- **10 kysymystä:** kaikki viisi paria mahtuvat luontevasti 15 minuuttiin
+- **8 kysymystä:** poistetaan pari 2, yleinen asenne vastaan peliala; muut neljä
+  paria liittyvät suoremmin ohjelman kantavaan kysymykseen.
+
+Kysymysmäärää ei kasvateta yli kymmenen ilman, että Presenter Controls saa
+erikseen suunnitellun rapid-fire-käyttötavan tai nykyinen sulkemisvahvistus
+muuttuu. Päätös tehdään harjoituksen, ei paperilla lasketun sekuntimäärän
+perusteella.
 
 ## Käyttöjärjestely
 
@@ -187,7 +269,9 @@ Viimeistään kaksi päivää ennen:
 - varmista, että odotettu osallistujamäärä sopii työkalun testattuun
   100 osallistujan luotettavuustavoitteeseen
 - avaa Participant View vähintään kahdella eri puhelimella
-- testaa koko Lobby → neljä kysymystä → paluu suljettuihin tuloksiin → End
+- testaa koko Lobby → kymmenen kysymystä pareina → paluu viimeiseen pariin → End
+- mittaa erikseen Questionin sulkemisen, confirm-dialogin ja seuraavan
+  Questionin avaamisen todellinen rytmi
 - tarkista QR-koodi tapahtumassa käytettävältä projektorilta
 - testaa venue-verkon lisäksi esiintyjän varayhteys
 
@@ -206,7 +290,9 @@ Tilassa ennen ohjelmaa:
 Jos liittyminen tai reaaliaikapäivitys ei toimi kahden minuutin sisällä:
 
 1. Lopeta tekninen vianhaku yleisön edessä.
-2. Tee kysymykset 2 ja 4 käsiäänestyksinä.
+2. Tee korkeintaan viisi lyhyttä käsiäänestystä: aiempi GenAI-käyttö, pelinteon
+   helpottuminen, pelien paraneminen, bugien korjaaminen ja dialogin
+   kirjoittaminen.
 3. Käytä enintään viisi minuuttia koko fallbackiin.
 4. Siirry henkilökohtaiseen tarinaan ja käytä vapautunut aika esityksen
    myöhempiin keskusteluihin.
@@ -218,8 +304,10 @@ saavat havainnollistaa käyttöliittymää, mutta ne merkitään selvästi demok
 
 - Yleisö liittyy ilman tiliä ja ensimmäinen Question avautuu viimeistään
   kahdeksan minuutin kohdalla.
-- Neljä kysymystä suljetaan 15 minuutin kokonaisajan sisällä.
+- Lopullinen 8–10 kysymyksen sarja suljetaan 15 minuutin kokonaisajan sisällä.
+- Kysymykset muodostavat neljä tai viisi tarkoituksellista vertailuparia.
 - Presentation Display näyttää tulokset projektorilta luettavasti.
-- Esityksen faktadiat palaavat vähintään kahteen alun tulokseen.
+- Jokaista paria kommentoidaan enintään yhdellä havainnolla ja viimeiseen
+  bugit/dialogi-pariin voidaan palata ilman pitkää navigointia.
 - Istunto päättyy ennen taukoa ja osallistujat näkevät Session Resultsin.
 - Vapaata tekstiä, henkilötietoja tai hallintanäkymää ei näytetä yleisölle.

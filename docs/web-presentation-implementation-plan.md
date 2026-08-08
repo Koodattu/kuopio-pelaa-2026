@@ -373,8 +373,8 @@ Valmis, kun ohjelman voi vetää myös ilman osallistujien verkkoyhteyttä.
 - käy jokainen dia läpi 1920×1080- ja 1280×720-koossa
 - testaa Chrome- ja Edge-selaimilla tapahtumaläppärillä
 - tarkista mobiililanding, QR-koodi ja kaikki linkit
-- testaa Live Votingin Lobby, neljä kysymystä, suljettujen tulosten palaute ja
-  paluu esitykseen
+- testaa Live Votingin Lobby, lopullinen 8–10 kysymyksen parisarja,
+  bugit/dialogi-parin palautus ja paluu esitykseen
 - testaa SuomiWoW-siirtymä, yksi pack opening, kortin tarkastelu, kokoelman
   avaaminen ja paluu esitykseen
 - testaa AI Workshop Playgroundin avaus QR-koodista, suomenkielinen kirjautuminen,

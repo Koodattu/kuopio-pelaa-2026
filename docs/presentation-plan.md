@@ -106,7 +106,7 @@ Ajat ovat tavoiteaikoja, eivät yleisölle näytettävää sisältöä.
 | # | Aika | Dian yleisölle näkyvä pääajatus | Tehtävä ja sisältö | Visuaali tai toiminta |
 |---:|---:|---|---|---|
 | 0 | 0:00–0:05 | Mitä “tekoäly” tarkoittaa teille juuri nyt? | Ylidramaattinen otsikko, lyhyt esittäytyminen, sana-assosiaatio, ChatGPT-tunnuksen paljastus ja kysymys “miksi juuri tämä?”. Älä vielä anna ohjelman vastausta. | Otsikkodia → yleisön huudahdukset → virallinen ChatGPT-tunnus. |
-| 1 | 0:05–0:20 | Mitä tämä huone ajattelee AI:sta? | Avaa Live Voting -istunto, anna yleisön liittyä QR-koodilla ja käy läpi neljä ennalta laadittua kysymystä. | Työkalun Lobby, Participant View ja Presentation Display; katso [Live Voting -suunnitelma](live-voting-plan.md). |
+| 1 | 0:05–0:20 | Mitä tämä huone ajattelee AI:sta? | Avaa Live Voting -istunto, anna yleisön liittyä QR-koodilla ja käy nopeasti läpi alustavasti kymmenen kysymystä viitenä vertailuparina. Kommentoi parien eroja, älä jokaista palkkia. Lopullinen määrä 8–10 lukitaan harjoituksessa. | Työkalun Lobby, Participant View ja Presentation Display; katso [Live Voting -suunnitelma](live-voting-plan.md). |
 | 2 | 0:20–0:24 | AI ei alkanut ChatGPT:stä. Se oli jo valitsemassa, mitä näet. | Erota AI-yläkäsite ja GenAI. Näytä suositteleminen, järjestäminen ja tunnistaminen rinnakkain uuden sisällön generoimisen kanssa. Nimeä nopeasti myös sääntöpohjaiset pelihahmot, taitoluokitus/matchmaking ja proseduraalinen kenttien generointi. Tee selväksi, ettei tämä tee GenAI-kritiikistä tekopyhää. | Yksi selkeä yläkäsite/alajoukko-sommittelu: peleistä kolme pientä esimerkkiä ja arjesta YouTube, TikTok sekä Instagram. Ei aikajanaa tai historiakatsausta. |
 | 3 | 0:24–0:30 | Käyttö ei tarkoita hyväksyntää | Näytä GDC:n saman kyselyn kaksi eri mittaria: 36 % käyttää GenAI:ta työssään ja 52 % arvioi vaikutuksen alaan kielteiseksi. Nosta 7 % myönteinen arvio erillisenä lukuna. Vertaa jännitettä, ei vastaajaryhmien päällekkäisyyttä. | **Datavisuaali 1/3:** kaksi samalla 0–100-asteikolla olevaa pylvästä ja pieni 7 %:n numeronosto. Ei stacked baria eikä vuositrendiä. |
 | 4 | 0:30–0:35 | Ensin vaihtoehtoja, vasta sitten peli | Näytä GenAI:ta työssään käyttävien yleisimmät käyttötavat: ideointi/tutkimus, arjen tehtävät, koodiapu ja prototypointi. Peilaa tulosta yleisön suosimaan käyttökohteeseen. | **Datavisuaali 2/3:** järjestetyt vaakapylväät 81 / 47 / 47 / 35 %. Nimittäjä ja monivalintacaveat näkyviin. |
@@ -114,9 +114,9 @@ Ajat ovat tavoiteaikoja, eivät yleisölle näytettävää sisältöä.
 | 6 | 0:40–0:42 | Kun raididata muuttui leikiksi | Esittele SuomiWoW yhden lauseen tuotteena ja kerro, miksi datapalveluun syntyi CCG. | Yksi projektikuva ja teesilause; ei teknologiapinolistaa. |
 | 7 | 0:42–0:48 | Oikea yhteisö tekee datasta merkityksellistä | Avaa yksi viiden kortin pakka, tarkastele yhtä dataan sidottua korttia ja näytä kokoelma. | Live-demo; katso [SuomiWoW-showcase](project-showcase-plan.md). |
 | 8 | 0:48–0:50 | Teknisestä mahdollisuudesta ei vielä synny syytä välittää | Nimeä, mitä yhteisö, data ja tekijän rajaukset toivat toteutukseen. Käännä näkökulma tekijän työpöydältä pelaajan ruudulle. | Palaa esityssivulle ja jätä näkyviin yksi teesilause. |
-| 9 | 0:50–0:54 | Luova sisältö osuu herkempään rajaan | Näytä, että Quantic Foundryn valikoituneessa otoksessa GenAI-dialogi ja -questit kohtasivat dynaamista vaikeustasoa enemmän vastustusta. Sano ääneen erillinen identiteettiraja: tunnistettavan ihmisen äänen, kasvojen tai performanssin jäljittely on suostumus- ja korvauskysymys. | **Datavisuaali 3/3:** kolme ohutta pylvästä tai dot plot 83 / 77 / noin 50 %. Identiteettiraja on yksi puhuttu lause, ei lisäkalvo. |
+| 9 | 0:50–0:54 | Luova sisältö osuu herkempään rajaan | Palaa ensin gallupin viimeiseen bugit/dialogi-pariin ja näytä sitten, että Quantic Foundryn valikoituneessa otoksessa GenAI-dialogi ja -questit kohtasivat dynaamista vaikeustasoa enemmän vastustusta. Sano ääneen erillinen identiteettiraja: tunnistettavan ihmisen äänen, kasvojen tai performanssin jäljittely on suostumus- ja korvauskysymys. | Live Voting -parin nopea palautus → **datavisuaali 3/3:** kolme ohutta pylvästä tai dot plot 83 / 77 / noin 50 %. Identiteettiraja on yksi puhuttu lause, ei lisäkalvo. |
 | 10 | 0:54–0:58 | Pelaajalle asti päätyvä sisältö muuttaa vastuuta | Siirry Steamworksin rajaan sisäisestä tehokkuudesta julkaistuun ja live-generoituun sisältöön. Päätä Clair Obscurin lyhyeen tapahtumaketjuun: kokeilu → placeholder jäi julkaisuun → korjaus → palkintosäännön seuraus. Kysy, missä varsinainen epäonnistuminen tapahtui. | Nopea rajakaavio ja nelivaiheinen tapausaikajana, eivät lisäkuvaajia. |
-| 11 | 0:58–1:00 | Tätä mieltä olimme ennen kuin puhuimme asiasta | Palaa kahteen olennaisimpaan suljettuun kysymykseen, nimeä jännite, päätä istunto ja anna tauon paluuaika. Jätä kantava kysymys työpajassa testattavaksi. | Live Voting -tulokset → taukonäkymä, QR-koodi, lyhyt URL ja paluuaika. |
+| 11 | 0:58–1:00 | Tätä mieltä olimme ennen kuin puhuimme asiasta | Nimeä gallupin ja esityksen tärkein toteutunut jännite, päätä Voting Session ja anna tauon paluuaika. Älä selaa kaikkia kymmentä tulosta uudelleen. Jätä helpompi/parempi-kysymys työpajassa testattavaksi. | Istunnon päätös → taukonäkymä, QR-koodi, lyhyt URL ja paluuaika. |
 | — | 1:00–1:15 | Tauko | Täysi 15 minuutin tauko esityksen ja työpajan välissä. | Pysyvä taukonäkymä: paluuaika, QR-koodi ja lyhyt URL. |
 | 12 | 1:15–1:20 | Yksi ruutu. Yksi mekaniikka. Yksi vitsi. | Kokoa yleisö takaisin, varmista playground ja rajaa tehtävä. Näytä kaksi ennalta tehtyä tulosta samasta promptista. | Kolme suurta sääntöä, sama prompti / eri tulos ja yksi debug-ohje. |
 | 13 | 1:20–1:30 | Tee ensimmäinen proto | Yleisö määrittää hahmon, tavoitteen, esteen ja tunnelman. Esiintyjä tekee saman live-esimerkkinä. | Täytettävä prompttipohja ja 3–4 ideaa. |
@@ -147,8 +147,9 @@ Pidetään kaikissa versioissa:
 
 Leikkausjärjestys, jos esitysosuus uhkaa ylittää 60 minuuttia:
 
-1. Käytä Live Votingissa kolmea kysymystä neljän sijaan; säilytä liittymisaika
-   ja tulosten lyhyt käsittely.
+1. Lukitse Live Voting harjoituksen perusteella kahdeksaan kysymykseen
+   poistamalla yleinen asenne / peliala -pari. Säilytä liittymisaika sekä
+   helpompi/parempi- ja bugit/dialogi-parit.
 2. Lyhennä SuomiWoW-osuus seitsemään minuuttiin ja varsinainen live-demo viiteen
    minuuttiin: yksi pakka, yksi kortti ja teesilause. Älä selaa koko palvelua.
 3. Jätä roolikohtainen GDC-kuvaaja varamateriaaliin.
@@ -205,8 +206,8 @@ Animaation tehtävä on ohjata huomiota, ei todistaa että sivu on interaktiivin
 ## Sisällön hyväksymiskriteerit
 
 - Koko ohjelma toimii 120 minuutissa ilman kiireistä loppua.
-- Live Voting -osuus kestää enintään 15 minuuttia ja sisältää korkeintaan neljä
-  yksivalintakysymystä.
+- Live Voting -osuus kestää enintään 15 minuuttia ja sisältää harjoituksessa
+  lukittavat 8–10 yksivalintakysymystä tarkoituksellisina pareina.
 - SuomiWoW-osuus kestää enintään kymmenen minuuttia. Sen varsinainen live-demo
   kestää enintään kahdeksan minuuttia ja näyttää vain yhden pack openingin.
 - Showcase erottaa nykyisen keräilykokemuksen suunnitelluista tulevista
