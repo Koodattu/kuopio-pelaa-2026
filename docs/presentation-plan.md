@@ -82,6 +82,10 @@ Valitut väitteet, kuvaajat, caveatit ja hylätyt vertailut ovat
 Ilmais- ja maksullisten palvelujen kokemusero, sen tutkimusraja ja ehdotettu
 neljän minuutin jakso ovat
 [GenAI-kokemuksen arviointisuunnitelmassa](ai-experience-and-evaluation.md).
+Game jamien keskenään erilaiset GenAI-säännöt ja niiden mahdollinen 2–3
+minuutin työpajasilta ovat
+[game jam -sääntövertailussa](game-jam-ai-rules.md). Osuutta ei ole vielä
+lukittu aikatauluun.
 
 ## Kertomuksen kaari
 
@@ -129,6 +133,26 @@ Ajat ovat tavoiteaikoja, eivät yleisölle näytettävää sisältöä.
 | 16 | 1:40–1:50 | AI teki version. Nyt varastetaan peli takaisin ihmiselle. | Osallistuja lisää oman vitsin, paikallisen viittauksen, pelon, kokemuksen tai oudon säännön. | Maku- ja tyylipromptien lyhyt valikoima. |
 | 17 | 1:50–1:56 | Mitä hirviöitä syntyi? | Näytä ensin vieruskaverille. Ota enintään 1–3 vapaaehtoista. Kysy, mitä AI teki hyvin, typerästi ja mitä ihminen paransi. | Selkeät showcase-ohjeet. |
 | 18 | 1:56–2:00 | Maailmanloppu oli prototyyppi | Palaa avaukseen, kokoa selviytymissäännöt ja päätä kantavaan loppulauseeseen. | Viisi sääntöä, lopuksi vain päätöslause. |
+
+## Ehdokas: game jamien GenAI-säännöt
+
+Pääesitykseen harkitaan 2–3 minuutin sääntökorttiosiota juuri ennen taukoa tai
+työpajan ensimmäiseen minuuttiin. Kysymys on: jos AI kirjoittaa game jamissa
+pelin koodin, onko se huijaamista? Global Game Jamin, Ludum Daren ja GMTK:n
+viralliset säännöt antavat keskenään erilaiset vastaukset. AI-teemainen jam
+antaa vielä neljännen vastauksen: työkalun käyttö voi olla vaatimus.
+
+Osuuden tehtävä ei ole luokitella jameja AI-myönteisiksi tai -vastaisiksi. Se
+osoittaa, että sääntö kertoo tapahtuman tarkoituksesta, palkittavasta työstä ja
+valvottavuudesta. Tämä johtaa suoraan työpajan rajaukseen: kyse ei ole
+kilpailusta eikä ohjelmointitaidon kokeesta, vaan GenAI-avusteisen protoilun
+kokeilusta.
+
+Osuutta ei lisätä nykyisen 60 minuutin rungon päälle. Jos se toimii
+harjoituksessa, sille vapautetaan aika Steam/Clair-osuutta ja viimeistä
+gallup-palautusta tiivistämällä. Se ei lisää neljättä datavisuaalia. Tarkempi
+vertailu, rajat ja lähteet ovat
+[game jam -sääntövertailussa](game-jam-ai-rules.md).
 
 ## Pakollinen ja leikattava sisältö
 

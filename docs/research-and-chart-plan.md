@@ -419,6 +419,41 @@ Lähteet:
 - [El Paísin alkuperäinen haastattelu ja myöhempi Sandfall-täsmennys](https://elpais.com/cultura/2025-06-28/la-revolucion-creativa-low-cost-cuando-la-tecnologia-pone-el-arte-al-alcance-de-todos.html)
 - [Indie Game Awards -päätöstä ja järjestäjän lausuntoa raportoiva PC Gamer](https://www.pcgamer.com/games/rpg/indie-game-awards-pulls-two-awards-from-clair-obscur-over-generative-ai-use-we-have-a-hard-stance-against-gen-ai-in-videogames/)
 
+## Ehdokastapaus: mitä game jam yrittää palkita?
+
+Game jamien GenAI-säännöistä löytyi neljä aidosti erilaista virallista mallia:
+
+| Malli | Tarkistettu esimerkki | Turvallinen tulkinta |
+|---|---|---|
+| AI vaaditaan | Hugging Facen Open Source AI Game Jam 2023 vaati vähintään yhden avoimen lähdekoodin AI-työkalun käyttöä projektissa tai työnkulussa. | AI-teemaisessa kokeilussa työkalun käyttö voi olla tapahtuman tarkoitus. |
+| AI sallitaan | Global Game Jamin nykyinen globaali policy ei rajoita AI:n tai GenAI:n käyttöä, kun muu IP- ja tekijänoikeuspolitiikka täyttyy. | Ei-kilpailullinen oppimistapahtuma voi painottaa kokeilua portinvartijuuden sijaan. |
+| AI sallitaan, mutta arvostelua rajataan | Ludum Dare sallii AI-avustajat, mutta pyytää jättäytymään kategoriasta, jossa generaattori teki suurimman osan työstä. | Osallistuminen ja tietyn taidon palkitseminen voidaan erottaa toisistaan. |
+| AI:ta pyydetään välttämään ja osa käytöstä hylkää | GMTK Game Jam 2025 kielsi GenAI-kuvan ja -äänen pelissä sekä itch.io-sivulla ja kertoi valvovansa aktiivisesti juuri näitä. | Käsityöpainotus ja valvottavuus voivat yhdessä määrittää rajan. |
+
+Lisäksi mehu jam 19:n vuoden 2026 säännöissä kielletään GenAI-tuotos, mikä
+antaa suomalaisen varanoston. itch.io puolestaan pyytää merkitsemään projektin,
+jos se sisältää GenAI:n tuottamaa materiaalia. Jamin osallistumissääntö ja
+julkaisualustan disclosure ovat eri kerroksia.
+
+**Suositeltu käyttö:** 2–3 minuutin käsitteellinen sääntökorttiosuus juuri ennen
+työpajaa. Varsinainen väite on, että sääntö kertoo tapahtuman tarkoituksesta,
+palkittavasta työstä ja valvottavuudesta. Osuutta ei lisätä aikataulun päälle,
+eikä siitä tehdä neljättä pääkuvaajaa.
+
+**Kriittinen raja:** lähteet ovat tarkoituksella valittuja erilaisia
+esimerkkejä, eivät systemaattinen otos. Niistä ei voi päätellä, kuinka suuri osa
+game jameista sallii tai kieltää GenAI:n. Säännöt tarkistetaan uudelleen juuri
+ennen esitystä.
+
+Global Game Jamin omassa vapaaehtoisessa vuoden 2024 jälkikyselyssä 3 578
+vastaajasta 70 % kertoi sivustonsa sallineen AI-projektit, 18 % tiiminsä
+käyttäneen AI:ta ja 49 % kuvasi tunteensa ristiriitaisiksi. Luvut sopivat
+varamuistiinpanoon, eivät uuteen kuvaajaan: vastausaste oli hieman yli 10 %,
+otos ei ollut satunnainen eikä jakaumia voi ristiintaulukoida keskenään.
+
+Tarkempi esityshetki, lähteet ja kielletyt tulkinnat ovat
+[game jam -sääntövertailussa](game-jam-ai-rules.md).
+
 ## Varadiat ja puhujamuistiinpanot
 
 ### GDC 2024–2026 — suunta, ei puhdas trendi

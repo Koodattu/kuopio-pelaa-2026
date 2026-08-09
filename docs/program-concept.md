@@ -139,6 +139,10 @@ mielipiteestä.
   merkityksen. Se ei ole tuotekierros.
 - **Steam ja Clair Obscur** tekevät luottamuksen ja vastuun rajasta näkyvän.
   Ne eivät ole syytös kaikkea AI-käyttöä vastaan.
+- **Game jam -sääntövertailu** on mahdollinen työpajasilta: eri säännöt
+  näyttävät, että tapahtuma määrittelee, mitä se yrittää palkita. Vertailu ei
+  ole otos koko pelialan suhtautumisesta, eikä sitä ole vielä lukittu
+  pääesitykseen.
 - **Työpaja** on ohjelman käytännön koe. Se ei ole promptikurssi eikä lupaus,
   että 45 minuutissa tehdään valmis peli.
 
@@ -196,6 +200,10 @@ tilaa ohjelman kantavalta kysymykseltä.
    sidotaan vain kyvykkyyden reiluun testaamiseen. Heti perään näytetään, että
    käyttö ei tarkoita hyväksyntää ja että parempi lopputulos ei ratkaise
    käyttötavan arvo- tai vastuukysymyksiä.
+7. **Game jam -säännöistä tulee uusi logoluettelo.** Vertailu otetaan mukaan
+   vain, jos neljä lyhyttä sääntökorttia johtavat yhteen kysymykseen: mitä
+   tapahtuma yrittää palkita? Sitä ei esitetä jamien mielipidemittauksena eikä
+   lisätä aikataulun päälle.
 
 ## Onnistumisen merkit
 

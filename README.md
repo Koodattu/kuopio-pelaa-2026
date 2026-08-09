@@ -44,11 +44,16 @@ julkinen osoite on jo kytketty prototyyppiin.
   verkkosivu- ja some-esittelyt merkkirajoineen.
 - [Ohjelman kokonaisidea](docs/program-concept.md) — ohjelman kantava kysymys,
   tehtävä, yleisöpolku, päärajaukset ja seitsemän osan aikarunko.
+- [Esityksen toimituksellinen selkäranka](docs/editorial-narrative-blueprint.md)
+  — kriittinen suositus pääargumentista, yleisön matkasta, dramaturgiasta sekä
+  pidettävän ja leikattavan sisällön järjestyksestä.
 - [Esityssuunnitelma](docs/presentation-plan.md) — viesti, rakenne, diat ja
   visuaalinen suunta.
 - [GenAI-kokemuksen arviointi](docs/ai-experience-and-evaluation.md) —
   ilmais- ja maksullisten palvelujen tutkimusraja, neljän minuutin esitysjakso,
   gallup-vaihtoehdot ja yhteys työpajaan.
+- [Game jamien GenAI-säännöt](docs/game-jam-ai-rules.md) — virallisten
+  sääntöjen vertailu, kriittiset rajat ja mahdollinen työpajasilta.
 - [Toivolanranta-referenssin rajaus](docs/toivolanranta-reference-adaptation.md)
   — mitä toisesta esityksestä sovelletaan ja mitä pidetään tarkoituksella
   erillään.

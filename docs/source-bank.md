@@ -15,6 +15,9 @@ paikantamiseen ja tutkimuskysymysten jäsentämiseen, ei ulkoisen väitteen
 alkuperäislähteenä. PDF säilytti linkit Markdown-versiota paremmin. Valitut
 väitteet, kuvaajat ja hylkäysperusteet on koottu
 [tutkimus- ja kuvaajasuunnitelmaan](research-and-chart-plan.md).
+Game jamien GenAI-sääntöjä koskevat lähteet, keskenään erilaiset policy-mallit
+ja tulkintarajat on koottu lisäksi
+[game jam -sääntövertailuun](game-jam-ai-rules.md).
 
 ## Julkaisuportti
 
@@ -477,6 +480,107 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
 - Palkintopäätöksen raportointi:
   `https://www.pcgamer.com/games/rpg/indie-game-awards-pulls-two-awards-from-clair-obscur-over-generative-ai-use-we-have-a-hard-stance-against-gen-ai-in-videogames/`
 - Tarkistettu: kyllä tapahtumaketjun ydinosalta, 2026-08-08
+
+### SRC-GGJ-AI-POLICY — Global Game Jamin AI-policy ja yhteisökysely
+
+- Tila: nykyinen virallinen policy ja siinä julkaistut kyselyluvut tarkistettu
+  2026-08-09, ehdokastapaus
+- Turvallinen policy-väite: Global Game Jam ei aseta globaalilla tasolla
+  rajoituksia AI:n tai GenAI:n käytölle, kun pelit noudattavat muuta
+  tekijänoikeus- ja IP-politiikkaa. GGJ kuvaa itseään ei-kilpailulliseksi
+  tapahtumaksi.
+- Kyselyaineisto: vuoden 2024 tapahtuman jälkeen 3 578 vapaaehtoista vastausta
+  34 649 rekisteröityneeltä jammerilta, vastausaste hieman yli 10 %
+- Tarkistetut osallistujaluvut: 70 % kertoi sivustonsa sallineen AI-projektit,
+  18 % tiiminsä käyttäneen AI:ta, 49 % tunteidensa olevan ristiriitaisia, 27 %
+  hyväksyi käytön GGJ:ssä täysin, 14 % vastusti täysin ja 10 % ei ollut juuri
+  ajatellut asiaa
+- Käyttö: yksi sääntökortti ja tarvittaessa puhujamuistiinpanon vastapaino
+  yksinkertaiselle “sallittu = hyväksytty” -tulkinnalle
+- Caveat: vapaaehtoinen otos ei ole satunnainen; prosentteja ei voi
+  ristiintaulukoida; globaali policy ei kuvaa jokaisen paikallisen jamin kaikkia
+  käytäntöjä eikä koko pelialan mielipidettä
+- Alkuperäinen URL:
+  `https://globalgamejam.org/news/global-game-jam-artificial-intelligence-policy`
+- Policy alkujaan esitelty GGJ 2025:lle; sivu kuvaa sitä nykyiseksi policyksi
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-LUDUM-DARE-AI — Ludum Daren AI-FAQ
+
+- Tila: nykyinen virallinen FAQ tarkistettu 2026-08-09, ehdokastapaus
+- Turvallinen väite: AI-avustajia ja copilot-työkaluja saa käyttää, mutta
+  osallistujan pitäisi jättäytyä kategoriasta, jossa generaattori teki
+  suurimman osan työstä. FAQ käyttää noin 90 %:a ohjenuorana.
+- Järjestäjän perustelu: yleiskielto olisi vaikea toteuttaa ja valvoa, mutta
+  taiteellista työtä halutaan edelleen juhlia kategorioissa.
+- Käyttö: näyttää mallin, jossa osallistuminen sallitaan mutta palkittava taito
+  rajataan erikseen
+- Caveat: “suurin osa työstä” ja johdannaisteoksen arviointi jäävät osittain
+  osallistujan omaan harkintaan; FAQ ei ole yleinen oikeudellinen ohje
+- Alkuperäinen URL:
+  `https://ludumdare.com/resources/questions/can-i-use-ai/`
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-GMTK-JAM-AI-2025 — GMTK Game Jam 2025:n GenAI-sääntö
+
+- Tila: vuoden 2025 virallinen itch.io-sääntö tarkistettu 2026-08-09,
+  ehdokastapaus
+- Turvallinen väite: järjestäjä pyysi yleisesti olemaan käyttämättä AI:ta ja
+  kielsi GenAI:lla tehdyt kuva- ja äänisisällöt sekä pelissä että itch.io
+  -sivulla; tämä ilmoitettiin hylkäysperusteeksi
+- Valvontaraja: järjestäjä sanoi pystyvänsä aktiivisesti valvomaan juuri
+  generoitua kuvaa ja ääntä
+- Käyttö: osoittaa, että tapahtuman käsityö- ja luovuuspainotus sekä
+  valvottavuus voivat yhdessä muovata sääntöä
+- Caveat: käytä aina vuosilukua 2025; sääntö ei ole koko GMTK:n historian,
+  kaikkien jamien tai koko pelialan kanta. Älä tulkitse valvontarajaa luvaksi
+  piilottaa AI-koodiapua.
+- Alkuperäinen URL: `https://itch.io/jam/gmtk-2025`
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-HF-AI-GAME-JAM-2023 — Open Source AI Game Jam
+
+- Tila: Hugging Facen virallinen itch.io-jam-sivu tarkistettu 2026-08-09,
+  ehdokastapauksen historiallinen vastapää
+- Turvallinen väite: vuoden 2023 jam vaati vähintään yhden avoimen lähdekoodin
+  AI-työkalun käyttöä projektissa tai sen työnkulussa; myös muut AI-työkalut
+  sallittiin tämän lisäksi
+- Käyttö: näyttää, että AI-teemaisessa jamissa työkalun käyttö voi olla koko
+  osallistumisen tarkoitus
+- Caveat: kyse oli vuoden 2023 AI-erikoisjamista. Se ei kerro nykyisten game
+  jamien yleisestä linjasta eikä muodosta ajallista trendiä.
+- Alkuperäinen URL: `https://itch.io/jam/open-source-ai-game-jam`
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-MEHU-JAM-AI-2026 — suomalainen GenAI-tuotoksen kielto
+
+- Tila: mehu jam 19:n virallinen itch.io-sivu tarkistettu 2026-08-09,
+  puhujamuistiinpano tai varadia
+- Turvallinen väite: tammikuun 2026 jam kielsi generatiivisen AI:n tuotokset;
+  sivu kertoo tapahtuman olevan Finnish Game Jamin isännöimä
+- Käyttö: suomalainen esimerkki siitä, että myös ei-kilpailullinen luova jam voi
+  rajata GenAI-tuotoksen pois
+- Caveat: älä yleistä yksittäisen mehu jamin sääntöä Finnish Game Jam ry:n
+  kaikkiin tapahtumiin tai Suomen game jam -kenttään
+- Alkuperäinen URL: `https://itch.io/jam/mehu-jam-19`
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-ITCH-AI-DISCLOSURE — itch.io:n GenAI-merkintä
+
+- Tila: nykyinen virallinen laatukäytäntö tarkistettu 2026-08-09,
+  puhujamuistiinpano tai varadia
+- Turvallinen väite: itch.io pyytää merkitsemään projektin AI Disclosure
+  -kohdassa, jos se sisältää GenAI:n tuottamaa materiaalia
+- Terminologiaraja: itch.io erottaa tästä perinteisen peli-AI:n,
+  viholliskäyttäytymisen, polunhaun, proseduraalisen kenttägeneroinnin ja
+  dynaamisen vaikeuden kaltaiset omavaraiset algoritmit
+- Käyttö: osoittaa, että julkaisualustan disclosure ja yksittäisen jamin
+  osallistumissääntö ovat kaksi eri kerrosta
+- Caveat: merkintä ei itsessään tarkoita kieltoa, hyväksyntää tai kelpoisuutta
+  yksittäisen jamin arvosteluun
+- Alkuperäinen URL:
+  `https://itch.io/docs/creators/quality-guidelines#ai-disclosure`
+- Tarkistettu: kyllä, 2026-08-09
 
 ### SRC-MICROSOFT-XBOX-2026 — AI-strategia ja henkilöstövähennykset
 
