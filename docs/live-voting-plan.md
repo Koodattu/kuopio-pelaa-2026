@@ -99,6 +99,37 @@ tekemiseen?**
 Tehtävä: opettaa käyttöliittymä kahdella helpolla Vote-päätöksellä ja näyttää,
 kuinka monelle AI on tuttu yleisesti mutta uusi juuri pelinteossa.
 
+#### Vaihtoehto parille 1 — kokemuksen lähde ja syvyys
+
+Jos “Me emme arvioi samaa tekoälyä” -jakso säilyy pääesityksessä, harjoituksessa
+verrataan nykyistä paria seuraavaan vaihtoehtoon:
+
+**1. Mistä oma GenAI-kokemuksesi pääasiassa tulee?**
+
+- En ole käyttänyt GenAI:ta
+- Maksuttomista kuluttajapalveluista
+- Itse maksamastani palvelusta
+- Työn tai opintojen tarjoamasta palvelusta
+
+**2. Kuinka pitkälle olet vienyt yhden AI-tehtävän?**
+
+- En ole käyttänyt GenAI:ta
+- Yksi kysymys tai generointi
+- Muutama korjauskierros
+- Pidempi tehtävä tai projekti
+- Valmis, oikeasti käytetty lopputulos
+
+Tehtävä: erottaa käyttöoikeus kokemuksen syvyydestä ja avata pääesityksen
+neljän minuutin jakso. Jos vain toinen näistä voidaan säilyttää, syvyyskysymys
+on argumentille tärkeämpi kuin maksullisuus. Se kertoo, arvioiko vastaaja
+yksittäistä raakavastausta vai pidempää työnkulkua.
+
+Vaihtoehto **korvaa** nykyisen parin 1 eikä lisää kysymysten kokonaismäärää.
+Nykyinen yleinen käyttö / pelintekokäyttö -pari säilytetään, jos vaihtoehdon
+neljä- ja viisiportaiset vastaukset hidastavat aloitusta liikaa. Tarkempi
+sisältöraja on
+[GenAI-kokemuksen arviointisuunnitelmassa](ai-experience-and-evaluation.md).
+
 ### Pari 2 — Yleinen asenne ja peliala
 
 **3. Generatiivinen tekoäly on mielestäni hyvä asia.**
@@ -165,7 +196,7 @@ yleisöltä kysytään vielä monimutkaista disclosure-rajaa.
 | Aika | Toiminta | Presenter Controls | Presentation Display |
 |---:|---|---|---|
 | 0:05–0:08 | Liittyminen ja lyhyt käyttöohje | Istunto on Lobbyssa. Seuraa liittyjämäärää. | Näytä otsikko, QR-koodi, suora linkki ja Join Name. |
-| 0:08–0:10 | Pari 1: oma kokemus | Avaa, sulje ja vaihda kaksi Yes/No-kysymystä nopeasti. | Näytä ensin yleinen käyttö ja sen rinnalla käyttö pelintekoon. Kommentoi paria vasta toisen sulkeuduttua. |
+| 0:08–0:10 | Pari 1: oma kokemus | Avaa, sulje ja vaihda kaksi kokemuskysymystä nopeasti. Lopullinen Yes/No- tai lähde/syvyys-versio lukitaan harjoituksessa. | Näytä kysymysparin tulokset rinnakkain ja kommentoi vasta toisen sulkeuduttua. |
 | 0:10–0:12 | Pari 2: yleinen asenne ja peliala | Aja kaksi viisiportaista väitettä peräkkäin. | Vertaa nykyistä jakaumaa previous-stripissä näkyvään yleiseen asenteeseen. |
 | 0:12–0:14 | Pari 3: helpompi ja parempi | Anna molemmille väitteille lyhyt mutta riittävä Vote-aika. | Jätä mahdollinen ero hetkeksi näkyviin; tämä on gallupin keskeinen vertailu. |
 | 0:14–0:16 | Pari 4: sisäänkäynti ja korvaaminen | Aja kaksi viisiportaista väitettä. | Nimeä mahdollinen rinnakkaisuus ilman pitkää työmarkkinakeskustelua. |
@@ -204,6 +235,10 @@ Mahdollisia, tuloksesta riippuvia havaintoja:
 
 - “AI on monelle tuttu, mutta pelinteko voi silti olla kokonaan uusi
   käyttötapa.”
+- “Sana käyttänyt näyttää tarkoittavan tässä huoneessa hyvin eripituisia
+  kokeita.”
+- “Useimpien kokemus voi syntyä ilmaisessa palvelussa. Se ei vielä kerro,
+  miksi he suhtautuvat AI:hin myönteisesti tai kielteisesti.”
 - “Helpompi ja parempi eivät näytä olevan tässä huoneessa sama asia.”
 - “Sama teknologia voi näyttää yhtä aikaa uutena sisäänkäyntinä ja uhkana
   nykyiselle työlle.”
@@ -234,6 +269,11 @@ Kysymysmäärää ei kasvateta yli kymmenen ilman, että Presenter Controls saa
 erikseen suunnitellun rapid-fire-käyttötavan tai nykyinen sulkemisvahvistus
 muuttuu. Päätös tehdään harjoituksen, ei paperilla lasketun sekuntimäärän
 perusteella.
+
+Kokemuskysymystä ja myöhempää asennekysymystä ei ristiintaulukoida. Nykyinen
+työkalu näyttää kysymyskohtaiset jakaumat, joten peräkkäisistä tuloksista ei saa
+päätellä esimerkiksi, että kielteisesti vastanneet olivat samoja henkilöitä
+kuin ilmaisversiota käyttäneet.
 
 ## Käyttöjärjestely
 

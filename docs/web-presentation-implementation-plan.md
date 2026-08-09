@@ -163,6 +163,18 @@ Säännöt:
 
 ## Recharts-kuvaajat
 
+Ennen ensimmäistä GDC-kuvaajaa toteutetaan “Me emme arvioi samaa tekoälyä”
+-jakso tavallisina HTML/CSS-käsitedioina. Siinä paljastetaan vaiheittain kuusi
+arviointiin vaikuttavaa asiaa: malli, tuote, käyttöoikeus, tehtävä, työnkulku ja
+valikointi. Jakso ei ole maksullisten palvelujen vertailija eikä käytä
+Rechartsia.
+
+Mahdolliset Bitkomin 8 % ja ACCC:n 93 % pidetään ensisijaisesti
+puhujamuistiinpanoissa. Jos yksi luku myöhemmin nostetaan näkyville, se
+toteutetaan typografisena lähdenostona eikä kahden maan vertailukuvaajana.
+Tarkempi argumentti ja lähderajat ovat
+[GenAI-kokemuksen arviointisuunnitelmassa](ai-experience-and-evaluation.md).
+
 Pääesityksen kolme kuvaajaa on päätetty
 [tutkimus- ja kuvaajasuunnitelmassa](research-and-chart-plan.md):
 

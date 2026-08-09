@@ -98,6 +98,107 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
 - Älä käytä Toivolanranta-PowerPointiin upotettua rasteroitua kopiota
 - Tarkistettu: ohje kyllä, asset ei vielä
 
+### SRC-BITKOM-FREE-PAID-2025 — maksullisten GenAI-palvelujen käyttö Saksassa
+
+- Tila: Bitkom Researchin alkuperäinen tutkimustiedote tarkistettu 2026-08-09
+- Suunniteltu käyttö: “Me emme arvioi samaa tekoälyä” -jakson
+  puhujamuistiinpano; tarvittaessa yksi näkyvä numeronosto, ei pääkuvaaja
+- Otos: edustava kysely Saksassa, `n = 1 005`, vähintään 16-vuotiaat
+- Turvallinen väite: GenAI:ta käyttävistä 8 % käytti parhaillaan maksullisia
+  AI-palveluja ja 2 % oli käyttänyt niitä aiemmin mutta ei enää
+- Lisäkonteksti: 67 % kaikista vastaajista käytti ainakin joskus GenAI:ta; 22 %
+  maksamattomista voisi kuvitella maksavansa tulevaisuudessa ja 62 % ei aikonut
+  käyttää maksullista palvelua
+- Tulkintaraja: tutkimus mittaa maksamista, ei käytetyn mallin kokoa, tuloksen
+  laatua, AI-osaamista tai suhtautumista pelien GenAI-käyttöön
+- Kriittinen raja: aineistosta ei tiedetä, olivatko AI:ta kielteisesti
+  arvioivat vastaajat juuri maksuttomien palvelujen käyttäjiä
+- Alkuperäinen URL:
+  `https://bitkom-research.de/news/viele-nutzen-ki-aber-nur-wenige-bezahlen-dafuer`
+- Julkaistu: 2025-05-19
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-ACCC-FREE-PAID-2025 — ilmainen ja maksullinen ChatGPT Australiassa
+
+- Tila: Australian Competition and Consumer Commissionin julkaisema
+  alkuperäinen kyselyraportti tarkistettu 2026-08-09
+- Suunniteltu käyttö: Bitkom-luvun vahvistava toinen maa
+  puhujamuistiinpanoissa; ei erillistä maavertailukuvaajaa
+- Aineisto: Lonergan Researchin kuluttajakysely, loka–marraskuu 2024,
+  australialaiset vähintään 14-vuotiaat
+- ChatGPT-nimittäjä: ChatGPT:tä edeltäneen kuuden kuukauden aikana käyttäneet,
+  `n = 1 016`
+- Turvallinen väite: 93 % ChatGPT-käyttäjistä käytti ilmaisversiota ja 6 %
+  maksullista versiota
+- Tulkintaraja: tulos koskee ilmoitettua palvelutasoa, ei käyttötiheyttä,
+  käyttötaitoa, mallin laatua tai AI-asennetta
+- Yleistysraja: Australia ja vuoden 2024 lopun tuotetilanne eivät yksin kuvaa
+  Suomen tapahtumayleisöä tai vuoden 2026 mallitarjontaa
+- Alkuperäinen URL:
+  `https://www.accc.gov.au/system/files/dpsi-consumer-survey-research-report-lonergan-research-feb2025.pdf`
+- Julkaistu: 2025-02
+- Tarkistettu: kyllä, 2026-08-09, raportin sivut 18–19
+
+### SRC-GALLUP-USE-SENTIMENT-2026 — käyttötiheys ja Gen Z:n AI-tunteet
+
+- Tila: Gallupin alkuperäinen tulosjulkaisu tarkistettu 2026-08-09
+- Suunniteltu käyttö: kokemuksen ja myönteisen asenteen yhteyden caveat
+  puhujamuistiinpanoissa, ei näkyvä pääkuvaaja
+- Otos: `n = 1 572`, 14–29-vuotiaat yhdysvaltalaiset, probability-based Gallup
+  Panel, verkkokysely 24.2.–4.3.2026
+- Käyttötiheys: 22 % käytti GenAI:ta päivittäin, 29 % viikoittain ja 19 % ei
+  koskaan
+- Turvallinen havainto: päivittäisistä käyttäjistä 44 % kertoi olevansa
+  innostuneita ja 38 % toiveikkaita; ei-käyttäjillä osuudet olivat 4 % ja 2 %
+- Tasapainottava havainto: koko ryhmän innostus laski, toiveikkuus laski ja viha
+  lisääntyi vuodesta 2025. Gallupin mukaan edes päivittäiset käyttäjät eivät
+  muuttuneet vuoden aikana myönteisemmiksi.
+- Kausaaliraja: käyttötiheys ja myönteiset tunteet liittyvät toisiinsa, mutta
+  tutkimus ei osoita käytön aiheuttavan myönteisyyttä. Myönteisesti suhtautuvat
+  voivat myös käyttää enemmän.
+- Alkuperäinen URL:
+  `https://news.gallup.com/poll/708224/gen-adoption-steady-skepticism-climbs.aspx`
+- Julkaistu: 2026-04-08
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-OPENAI-FREE-TIER-2026 — ChatGPT Free Tier -tuotedokumentaatio
+
+- Tila: OpenAI Help Centerin ajantasainen virallinen ohje tarkistettu
+  2026-08-09
+- Suunniteltu käyttö: vastanäyttö väitteelle, että ilmaisversio tarkoittaisi
+  aina pelkkää hyvin pientä tekstimallia
+- Turvallinen väite: Free Tier sisältää keskustelun lisäksi verkkohakua,
+  data-analyysia, tiedosto- ja kuvalatauksia, GPT:iden käyttöä sekä kuvien
+  luontia; ominaisuuksilla ja mallikäytöllä on maksullisia tasoja tiukemmat
+  rajat
+- Tuoteraja: oletusmalli, ominaisuudet ja rajat voivat muuttua ajan myötä.
+  Dokumentaatio ei lupaa ilmaisen ja maksullisen tason samanlaista laatua tai
+  pääsyä kaikkiin malleihin.
+- Lähdekritiikki: palveluntarjoajan oma dokumentaatio on ensisijainen lähde
+  ominaisuuksille mutta ei riippumaton arvio niiden laadusta
+- Alkuperäinen URL:
+  `https://help.openai.com/en/articles/9275245-using-chatgpt-s-free-tier-faq`
+- Tarkistettu: kyllä, 2026-08-09
+
+### SRC-FRONTIERS-FREE-PAID-2024 — rajattu ilmais- ja tilausmallien vertailu
+
+- Tila: vertaisarvioitu Frontiers in Education -artikkeli tarkistettu
+  2026-08-09 tiivistelmän, menetelmän ja johtopäätösten osalta
+- Suunniteltu käyttö: puhujamuistiinpanon vastaesimerkki oletukselle, että
+  tilauspohjainen chatbot olisi aina ilmaista parempi; ei näkyvä numeronosto
+- Tutkimustehtävä: vision-capable chatbotien kyky tulkita kinematiikan kuvaajia
+- Turvallinen havainto: tutkimuksessa tilauspohjaiset chatbotit eivät yleisesti
+  voittaneet ilmaisia vaihtoehtoja, ja ilmainen ChatGPT-4o suoriutui tässä
+  tehtävässä paremmin kuin useat maksulliset versiot
+- Tulkintaraja: yksi koulutuksellinen ja kuvallinen tehtävä ei mittaa yleistä
+  kieli-, koodi-, kuva- tai pelinkehityskyvykkyyttä
+- Aikaraja: vertailun vuosien 2023–2024 mallit ja palvelutasot vanhenevat
+  nopeasti eikä tuloksia saa käyttää vuoden 2026 mallien rankingina
+- Alkuperäinen URL:
+  `https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1452414/full`
+- Julkaistu: 2024
+- Tarkistettu: kyllä, 2026-08-09
+
 ### SRC-GDC-2026-SENTIMENT — GDC State of the Game Industry 2026
 
 - Tila: väite tarkistettu GDC:n virallisesta yhteenvedosta ja vuoden 2026
@@ -180,6 +281,9 @@ Väite tai kuvaaja saa tilan **valmis** vasta, kun:
   noin 50 %.
 - Tukee argumenttia: tässä otoksessa näkyvä luova sisältö sai kielteisemmän
   vastaanoton kuin teknisempi käyttötapa
+- Kokemusjakson käyttö: Story- ja Design-motivaatioiden negatiiviset
+  korrelaatiot tukevat tulkintaa, että osa vastustuksesta koskee luovaa
+  merkitystä ja tekijyyttä eikä vain mallin teknistä laatua
 - Otoscaveat: 90 % pelasi PC:llä, 74 % määrittyi core- ja 21 %
   hardcore-pelaajiksi; 80 % oli 18–34-vuotiaita. Otos ei edusta automaattisesti
   kaikkia pelaajia.

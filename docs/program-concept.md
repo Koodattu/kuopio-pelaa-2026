@@ -41,7 +41,7 @@ ja työpaja antaa yleisön testata sitä.
 |---:|---|---|
 | 0:00–0:05 | Avaus | Luo otsikon jännite, kysy mitä AI tuo mieleen ja kerro vain sen verran puhujasta ja ohjelmasta, että yleisö tietää miksi kannattaa kuunnella. Älä vielä ratkaise kysymystä. |
 | 0:05–0:20 | Gallup | Tee yleisön omasta kokemuksesta ohjelman ensimmäinen aineisto. Alustava kymmenen nopean kysymyksen sarja muodostaa viisi vertailuparia, joita kommentoidaan heti; äänestys ei ole irrallinen lämmittely. Lopullinen määrä lukitaan harjoituksessa välille 8–10. |
-| 0:20–0:40 | Pääesitys I: tekijän työpöytä | Erota AI ja GenAI, näytä käytön ja epäluottamuksen rinnakkaisuus, tarkenna mihin GenAI:ta pelinteossa käytetään ja kysy, mitä tekijän työssä oikeastaan muuttuu. |
+| 0:20–0:40 | Pääesitys I: tekijän työpöytä | Erota AI ja GenAI, tarkenna mitä “AI:n kokeileminen” tarkoittaa, näytä käytön ja epäluottamuksen rinnakkaisuus, tarkenna mihin GenAI:ta pelinteossa käytetään ja kysy, mitä tekijän työssä oikeastaan muuttuu. |
 | 0:40–0:50 | SuomiWoW ja CCG | Tee abstrakti puhe konkreettiseksi oikean projektin avulla. Näytä, miten yhteisö, data, tarkoitus ja rajaukset antavat tekniselle toteutukselle merkityksen. Varaa varsinaiselle live-demolle enintään kahdeksan minuuttia ja siirtymälle kaksi. |
 | 0:50–1:00 | Pääesitys II: pelaajan ruutu | Siirry tekemisestä vastaanottoon. Käsittele, miksi käyttötapa vaikuttaa pelaajien reaktioon sekä missä kulkevat näkyvän sisällön, kertomisen, suostumuksen ja vastuun rajat. Palaa lopuksi huoneen vastauksiin ja jätä työpajalle testattava kysymys. |
 | 1:00–1:15 | Tauko | Anna yleisölle hengähdys ja pidä työpajan QR-koodi, lyhyt URL sekä täsmällinen paluuaika näkyvissä. Taukoa ei käytetä esityksen ylitykseen. |
@@ -66,6 +66,19 @@ generoidusta sisällöstä yhtenä möykkynä.
 
 Tätä ei käytetä yleisöä vastaan. Tarkoitus ei ole väittää, että YouTubea tai
 TikTokia käyttävä ihminen ei saisi kritisoida generatiivista AI:ta.
+
+Erottelua seuraa noin neljän minuutin jakso siitä, etteivät kaikki arvioi samaa
+GenAI-kokemusta. “Kokeilin AI:ta” voi tarkoittaa yhtä kysymystä ilmaisessa
+oletustuotteessa tai pitkää, maksullisella tai organisaation tarjoamalla
+työkalulla tehtyä iteratiivista työnkulkua. Malli, tuote, käyttöoikeus, tehtävä,
+konteksti, korjauskierrokset ja lopputuloksen valikointi muuttavat koetta.
+
+Jakson tarkoitus ei ole nostaa maksavia käyttäjiä oikean mielipiteen
+portinvartijoiksi. Se erottaa kyvykkyysväitteen (“mitä tämä järjestelmä osaa
+tällä tehtävällä?”) arvokysymyksestä (“mihin sitä pitäisi käyttää?”). Parempi
+malli voi muuttaa ensimmäistä vastausta, mutta se ei yksin ratkaise aineistoa,
+tekijyyttä, työtä, suostumusta, luottamusta tai vastuuta. Tarkempi sisältöraja on
+[omassa suunnitelmassaan](ai-experience-and-evaluation.md).
 
 ### 2. Mitä tekijän työpöydällä muuttuu?
 
@@ -119,6 +132,9 @@ mielipiteestä.
   muodosta tilastokatsausta kaikesta AI:sta.
 - **Puhujan oma kokemus** tekee työn muutoksen ymmärrettäväksi, mutta sitä ei
   yleistetä koko alaan.
+- **GenAI-kokemuksen tarkennus** osoittaa, miksi yksi raakavastaus ja yksi
+  kuratoitu huippudemo ovat molemmat heikkoja todisteita koko teknologian
+  puolesta tai sitä vastaan.
 - **SuomiWoW** näyttää valintojen, kontekstin ja pitkäjänteisen rakentamisen
   merkityksen. Se ei ole tuotekierros.
 - **Steam ja Clair Obscur** tekevät luottamuksen ja vastuun rajasta näkyvän.
@@ -144,6 +160,8 @@ mielipiteestä.
 
 - kattava tekoälyn historia tai tekninen selitys siitä, miten kielimalli toimii
 - yleinen AI-työkalujen vertailu tai pitkä prompt engineering -opetus
+- maksullisten AI-palvelujen myyntipuhe tai väite, että kriitikon pitäisi ensin
+  maksaa voidakseen muodostaa mielipiteen
 - yritysuutisten, irtisanomisten ja verkkokohujen luettelo
 - yritys ratkaista tekijänoikeus, lainsäädäntö ja koko työn tulevaisuus yhdessä
   tunnissa
@@ -174,6 +192,10 @@ tilaa ohjelman kantavalta kysymykseltä.
 5. **Työpaja tulkitaan näyttäväksi taikatempuksi.** Ensimmäistä generointia ei
    juhlita lopputuloksena. Ohjelman kannalta tärkeät hetket ovat testaaminen,
    yhden pelillisen päätöksen tekeminen ja yhden oman rajauksen lisääminen.
+6. **Kokemusero kuulostaa kriitikoiden vähättelyltä.** Ilmaisversioiden yleisyys
+   sidotaan vain kyvykkyyden reiluun testaamiseen. Heti perään näytetään, että
+   käyttö ei tarkoita hyväksyntää ja että parempi lopputulos ei ratkaise
+   käyttötavan arvo- tai vastuukysymyksiä.
 
 ## Onnistumisen merkit
 
@@ -181,6 +203,9 @@ Ohjelma toimii, jos:
 
 - gallupin tulokset vaikuttavat myöhempään puheeseen eivätkä unohdu aloitukseen
 - yleisö ymmärtää, miksi “käytettiinkö AI:ta?” on usein liian karkea kysymys
+- yleisö osaa kysyä kyvykkyysväitteestä vähintään mallin, tehtävän ja
+  työnkulun, mutta ei tulkitse teknistä laatua eettisen hyväksyttävyyden
+  mittariksi
 - SuomiWoW tuntuu kertomuksen välttämättömältä esimerkiltä, ei irralliselta
   omien töiden esittelyltä
 - 30 minuutin varsinainen asiaosuus pysyy valikoituna eikä muutu

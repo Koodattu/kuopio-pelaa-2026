@@ -121,7 +121,9 @@ Uusia kokonaisminuutteja ei lisätä.
 - 0:00–0:05: sana-assosiaatio, ChatGPT-paljastus, lyhyt esittäytyminen ja otsikon
   jännite
 - 0:05–0:20: Live Voting
-- 0:20–0:24: AI-yläkäsite ja GenAI-erottelu
+- 0:20–0:23: AI-yläkäsite ja GenAI-erottelu
+- 0:23–0:27: mitä “kokeilin AI:ta” tarkoittaa ja miksi kaikki eivät arvioi
+  samaa mallia, tuotetta tai työnkulkua
 - myöhemmistä esitysosuuksista tiivistetään yhteensä neljä minuuttia
 - workshopin 45 minuutin rakenne ei muutu.
 

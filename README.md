@@ -46,6 +46,9 @@ julkinen osoite on jo kytketty prototyyppiin.
   tehtävä, yleisöpolku, päärajaukset ja seitsemän osan aikarunko.
 - [Esityssuunnitelma](docs/presentation-plan.md) — viesti, rakenne, diat ja
   visuaalinen suunta.
+- [GenAI-kokemuksen arviointi](docs/ai-experience-and-evaluation.md) —
+  ilmais- ja maksullisten palvelujen tutkimusraja, neljän minuutin esitysjakso,
+  gallup-vaihtoehdot ja yhteys työpajaan.
 - [Toivolanranta-referenssin rajaus](docs/toivolanranta-reference-adaptation.md)
   — mitä toisesta esityksestä sovelletaan ja mitä pidetään tarkoituksella
   erillään.

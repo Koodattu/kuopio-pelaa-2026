@@ -55,6 +55,63 @@ Näitä varten ei lisätä kuvaajaa, tapausjaksoa tai esitysaikaa. Lähteet ovat
 Microsoft Gamingin AI-historiakatsaus ja SAG-AFTRAn vuoden 2025 Interactive
 Media Agreement -aineisto.
 
+## Uusi käsitteellinen jakso: mitä oikeastaan kokeiltiin?
+
+Pääesityksen ensimmäiseen osaan lisätään alustavasti neljän minuutin jakso
+kuluttajien GenAI-kokemuksen eroista. Se käyttää tutkimusta argumentin
+rajaamiseen mutta **ei lisää neljättä datavisuaalia**.
+
+Kahdessa eri maassa tehdyt kyselyt tukevat samaa rajattua havaintoa:
+
+| Lähde | Otos ja ajankohta | Turvallinen havainto |
+|---|---|---|
+| Bitkom Research 2025 | Edustava saksalaiskysely, `n = 1 005`, vähintään 16-vuotiaat | GenAI:ta käyttävistä 8 % maksoi parhaillaan palvelusta ja 2 % oli maksanut aiemmin. |
+| ACCC / Lonergan Research 2025 | Australialaiset ChatGPT-käyttäjät, `n = 1 016`, aineisto loka–marraskuulta 2024 | 93 % käytti ilmaisversiota ja 6 % maksullista versiota. |
+
+Turvallinen pääväite:
+
+> Useimpien kuluttajien ensikokemus GenAI:sta syntyy ilmaisessa
+> oletustuotteessa.
+
+Luvut eivät osoita:
+
+- kuinka moni kielteisesti tai myönteisesti suhtautuva käytti maksullista
+  palvelua
+- mikä malli kunkin vastaajan ilmaisen käyttöliittymän taustalla oli
+- että ilmaisversio olisi aina pieni tai huono
+- että maksaminen parantaisi tulosta kaikissa tehtävissä.
+
+Gallupin vuoden 2026 Gen Z -aineistossa päivittäinen käyttö liittyi
+myönteisempiin tunteisiin, mutta koko ryhmän suhtautuminen muuttui samalla
+kielteisemmäksi eikä päivittäisten käyttäjien asenne vuoden aikana muuttunut
+myönteisemmäksi. Tätä käytetään korrelaation caveatina, ei väitteenä että
+kokemus käännyttäisi käyttäjän.
+
+OpenAI:n ajantasainen Free Tier -ohje osoittaa, että maksuton tuote voi sisältää
+edistyneitä kyvykkyyksiä ja työkaluja mutta tiukempia käyttörajoja. Vuoden 2024
+kinematiikkakuvioihin rajattu vertailututkimus toimii lisäksi kapeana
+vastaesimerkkinä oletukselle, että maksullinen taso olisi aina parempi. Kumpikaan
+ei sovellu yleiseksi mallien laatukuvaajaksi, koska tuotteet muuttuvat nopeasti
+ja yksittäinen tehtävä ei mittaa yleistä kyvykkyyttä.
+
+Jakson tutkimuksellinen lopputulos on menetelmällinen:
+
+> Kyvykkyysväite tarvitsee nimetyn mallin, tuotteen, tehtävän, kontekstin,
+> työnkulun, yritysten määrän ja valintaperusteen. Käyttötavan hyväksyttävyys
+> tarvitsee lisäksi aineiston, tekijyyden, suostumuksen, työvaikutusten,
+> disclosuren ja vastuun arviointia.
+
+Tarkempi puherakenne, gallup-vaihtoehdot ja kielletyt tulkinnat ovat
+[GenAI-kokemuksen arviointisuunnitelmassa](ai-experience-and-evaluation.md).
+
+Lähteet:
+
+- [Bitkom Research: Viele nutzen KI, aber nur wenige bezahlen dafür](https://bitkom-research.de/news/viele-nutzen-ki-aber-nur-wenige-bezahlen-dafuer)
+- [ACCC: DPSI Consumer Survey Research Report](https://www.accc.gov.au/system/files/dpsi-consumer-survey-research-report-lonergan-research-feb2025.pdf)
+- [Gallup: Gen Z's AI Adoption Steady, but Skepticism Climbs](https://news.gallup.com/poll/708224/gen-adoption-steady-skepticism-climbs.aspx)
+- [OpenAI: ChatGPT Free Tier FAQ](https://help.openai.com/en/articles/9275245-using-chatgpt-s-free-tier-faq)
+- [Frontiers in Education: free and subscription-based chatbot comparison](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1452414/full)
+
 ## Vahvimmat esitysfaktat
 
 ### 1. Käyttö ja hyväksyntä eivät ole sama mittari
@@ -509,6 +566,8 @@ Lähde:
 | Somekommenttien myönteinen/kielteinen jakauma | Hylätty | Itsevalikoitu keskustelu ei ole mielipidemittaus. |
 | METR:n 19 % pääkuvaajana | Hylätty | Pieni, ohjelmistokehitykseen rajattu ja nopeasti vanheneva koe. |
 | ETLA:n yleinen GenAI-käyttö pääkuvaajana | Hylätty | Liian kaukana peleistä ja päällekkäinen Live Votingin kanssa. |
+| Ilmais- ja maksullisten käyttäjien AI-asenne | Hylätty kuvaajana | Maksullisuuden ja mielipiteen luotettavaa ristiintaulukointia ei löytynyt; kahden erillisen jakauman yhdistäminen olisi virhe. |
+| Ilmaisversio vastaan maksullinen yhden yleisen laatupisteen avulla | Hylätty | Mallit, tuotteet, ominaisuudet ja tehtävät vaihtuvat; hinta ei muodosta vakaata yleistä laatumittaria. |
 
 ## Lähdemuistiinpanojen minimimuoto
 
