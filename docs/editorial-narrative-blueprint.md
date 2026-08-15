@@ -109,6 +109,27 @@ Anna yleisölle vain lupaus:
 > tapahtuu tekijän työpöydällä, pelaajan ruudulla ja lopulta teidän omissa
 > käsissänne.
 
+Avauksen kaksi tulevaisuustarinaa voidaan halutessa ankkuroida yhteen
+verkkokeskusteluun. Samassa keskustelussa yksi ohjelmistokehittäjä pelkää,
+ettei ammatilla pian ole tulevaisuutta, kun taas toinen kirjoittaja näkee
+samassa kehityksessä vapautumisen: kun toimivan prototyypin toteuttaminen
+helpottuu, tekijä joutuu aikaisemmin kohtaamaan kysymyksen siitä, onko hänen
+peli-ideansa oikeasti kiinnostava.
+
+Tämän vastakkainasettelun turvallinen johtopäätös ei ole, että “koodaaminen on
+ohi”, vaan:
+
+> AI voi lyhentää matkaa ideasta ensimmäiseen pelattavaan versioon. Se ei
+> automaattisesti lyhennä samassa suhteessa matkaa pelattavasta versiosta
+> johdonmukaiseksi, testatuksi ja pelaamisen arvoiseksi peliksi.
+
+Jos ankkuria käytetään, se pidetään noin minuutissa ja kerrotaan
+parafraasina. Alkuperäisen kirjoittajan hätää, käyttäjänimiä tai kuvakaappausta
+ei käytetä viihteenä. Keskustelu näyttää kaksi tapaa tulkita sama muutos; se ei
+todista mallien kyvykkyyttä, työpaikkojen tulevaisuutta eikä pelinkehittäjien
+yleistä mielipidettä. Tämä on vaihtoehtoinen tapa sanoittaa jo suunniteltu
+“kaksi maailmanloppua”, ei uusi sisältöosuus.
+
 Tämän pitäisi tuntua tutkimuksen alulta, ei luennon alulta.
 
 ### 0:05–0:20 — Gallup: yleisö sitoutuu ennen todistusaineistoa

@@ -660,6 +660,46 @@ URL, julkaisutiedot ja tarkistuspäivä.
 
 ## Kulttuuripulssi, ei tilastollinen todiste
 
+### SRC-REDDIT-PANICKING-ENGINEER-2026 — sama oletus, kaksi tulevaisuustarinaa
+
+- Tila: käyttäjän 2026-08-15 tallettama keskustelukatkelma; vain
+  kulttuuripulssi ja mahdollinen puhujamuistiinpano
+- Keskustelun jännite: alkuperäinen kirjoittaja tulkitsee nopeasti kehittyvät
+  mallit uhaksi ohjelmistokehittäjän toimeentulolle. Samassa ketjussa
+  pelinkehitystä käsittelevä kommentti tulkitsee koodin tuottamisen kynnyksen
+  madaltumisen mahdollisuudeksi päästä nopeammin varsinaiseen
+  pelisuunnitteluun, testaamiseen ja tasapainottamiseen.
+- Turvallinen takeaway: GenAI voi lyhentää matkaa ideasta ensimmäiseen
+  pelattavaan versioon huomattavasti. Tästä ei seuraa, että matka prototyypistä
+  johdonmukaiseksi, testatuksi ja pelaamisen arvoiseksi peliksi lyhenisi yhtä
+  paljon.
+- Mahdollinen käyttö: noin minuutin anonyymi parafraasi avauksen “kahden
+  maailmanlopun” konkretisointiin. Vastakkain ovat pelko ammatin katoamisesta
+  ja innostus toteutuskynnyksen madaltumisesta; molemmat lähtevät samasta
+  oletuksesta, että toimivan koodin tuottaminen helpottuu.
+- Työpajayhteys: ensimmäinen pelattava generointi ei ole kokeen voitto vaan sen
+  lähtöpiste. Kiinnostava havainto syntyy siitä, mitä osallistujan valinta,
+  testaus, rajaus ja iterointi lisäävät versioon.
+- Rajaus: keskustelu on itse valikoitunut ja r/singularity painottuu nopeaa
+  teknologista muutosta koskeviin odotuksiin. Se kertoo ihmisten käyttämistä
+  tulevaisuustarinoista, ei muutoksen nopeudesta tai todennäköisyydestä.
+- Älä käytä faktaväitteenä: “koodaaminen on ohi”, “koodaus oli vain
+  portinvartiointia”, “idea ratkaisee 99 % onnistumisesta” tai ohjelmistotyön
+  katoaminen tietyssä ajassa. Pienen tekstipohjaisen prototyypin tuottaminen ei
+  edusta julkaistun pelin arkkitehtuuria, suorituskykyä, integraatioita,
+  ylläpitoa tai laadunvarmistusta.
+- Eettinen rajaus: älä näytä alkuperäisen kirjoittajan käyttäjänimeä tai tee
+  hänen taloudellisesta hädästään vitsiä. Jos keskustelusta käytetään myöhemmin
+  suoraa sitaattia, tarkista tarkka sanamuoto ja ketjun senhetkinen tila ensin.
+- Sivuhavainto varamateriaaliin: automaation odotus voi muuttaa opiskelua,
+  rekrytointia, osaamisen kehittämistä ja työyhteisön käyttäytymistä jo ennen
+  kuin ennustettu työpaikkavaikutus on osoitettu. Tämä on kiinnostava mutta
+  tämän esityksen työmarkkinarajauksen ulkopuolinen kysymys.
+- Alkuperäinen URL:
+  `https://old.reddit.com/r/singularity/comments/1vote1t/panicking_software_engineer/`
+- Tarkistettu: ei itsenäisesti; sisältö perustuu käyttäjän tallettamaan
+  keskustelukatkelmaan, 2026-08-15
+
 Taustamuistiinpanot mainitsevat r/gamedev-keskusteluja seuraavista aiheista:
 
 - AI-sisällön aiheuttama asset store -tulva
