@@ -5,27 +5,28 @@ kaikki on ohi... vai onko?”**. Ohjelma on kaksituntinen kokonaisuus: noin 60 m
 esitys, 15 minuutin tauko ja noin 45 minuutin osallistava
 peliprototyyppityöpaja.
 
-## Esitysprototyyppi
+## Selainesitys
 
-Repositoriossa on ensimmäinen tarkoituksella keskeneräinen selainesityksen
-prototyyppi. Sen tehtävä on tehdä ohjelman rytmi, visuaalinen suunta ja siirtymä
-esityksestä työpajaan koettaviksi ennen lopullisen sisällön kirjoittamista.
+Repositoriossa on valmis ensimmäisen version selainesitys. Se rakentaa koko
+kahden tunnin ohjelman huoneen ennakkokäsityksistä tekijän työpöydälle,
+pelaajan ruudulle ja lopulta osallistujien omaan peliprototyyppityöpajaan.
 
-Käynnistä prototyyppi:
+Käynnistä esitys:
 
 ```powershell
 npm install
 npm run dev
 ```
 
-Vite tulostaa selaimessa avattavan paikallisen osoitteen. Esityksessä on 27 diaa.
-Niissä hahmotellaan avaus, live-gallupiin siirtyminen, kaksi pääesityksen osaa,
-SuomiWoW CCG -demo, tauko ajastimineen sekä työpajan kolme kierrosta.
+Vite tulostaa selaimessa avattavan paikallisen osoitteen. Esityksessä on 34
+diaa ja 65 puhujan ohjaamaa sisältöpaljastusta. Kokonaisuuteen kuuluvat avaus,
+live-gallupiin siirtyminen, kaksi pääesityksen osaa, SuomiWoW CCG -demo, tauko
+ajastimineen sekä työpajan kolme kierrosta.
 
 Keskeiset ohjaimet:
 
-- `→`, `Space` tai `PageDown`: seuraava dia
-- `←` tai `PageUp`: edellinen dia
+- `→`, `Space` tai `PageDown`: seuraava paljastus tai dia
+- `←` tai `PageUp`: edellinen paljastus tai dia
 - `F`: koko näyttö
 - `N`: puhujan muistiinpanot ja lähteet
 - `O`: kaikki diat
@@ -35,8 +36,10 @@ Keskeiset ohjaimet:
 Puhelimella dioja voi vaihtaa pyyhkäisemällä. Kaksoisnapsautus avaa koko näytön.
 
 Live Voting- ja AI Workshop Playground -osoitteet voidaan liittää kopioimalla
-`.env.example` tiedostoksi `.env` ja täyttämällä muuttujat. SuomiWoW CCG:n
-julkinen osoite on jo kytketty prototyyppiin.
+`.env.example` tiedostoksi `.env` ja täyttämällä muuttujat. Työpajan lyhyt URL
+ja etukäteen luotu QR-kuva ovat erillisiä asetuksia, jotta niitä ei julkaista
+ennen tuotanto-osoitteen hyväksyntää. SuomiWoW CCG:n julkinen osoite on jo
+kytketty esitykseen.
 
 ## Suunnitelmat
 
@@ -76,8 +79,7 @@ julkinen osoite on jo kytketty prototyyppiin.
 
 ## Tila
 
-Suunnitelmien lisäksi repositorio sisältää toimivan ensimmäisen
-selainesitysprototyypin. Sen rakenne ja visuaalinen kieli ovat kokeiltavia, eivät
-lopullisia. Pääesityksen kolme kuvaajaa käyttävät alkuperäisjulkaisuista
+Suunnitelmien lisäksi repositorio sisältää toimivan, yhtenäiseksi viimeistellyn
+selainesityksen. Pääesityksen kolme kuvaajaa käyttävät alkuperäisjulkaisuista
 tarkistettuja ydinarvoja. Live Voting ja varsinainen työpajasovellus avataan
 esityksestä erillisinä näkymänä, kun niiden tapahtumaosoitteet ovat valmiit.
