@@ -1,272 +1,379 @@
-# Esityssuunnitelma
+# Esityksen pääsuunnitelma
 
-## Tavoite ja rajaus
+**Päivitetty 5.9.2026 molempien tutkimusmuistioiden perusteella.** Tämä on
+seuraavan PowerPoint-luonnoksen ensisijainen sisältö- ja rakennesuunnitelma.
+Se korvaa aiempien suunnitelmien ristiriitaiset aikataulut, sisältöprioriteetit
+ja päätöslauseet. HTML-esitykset säilyvät aiemman kierroksen prototyyppeinä.
+Tällä kierroksella päivitetään suunnitelma, ei esitystiedostoja tai sovelluksia.
 
-Ohjelman nimi: **Tekoäly tuli – nyt kaikki on ohi... vai onko?**
+Tutkimusperusta: [yleinen tutkimuskierros](research-pass-2026-09-05.md) ja
+[Astra ja yhden promptin pelit](astra-one-shot-games-research-2026-09-05.md).
+Muistiot sisältävät tarkemmat lähdearviot. Vanhemmat erillissuunnitelmat
+säilyvät tausta- ja työkaludokumentteina. Niiden sisältö sovitetaan tähän
+runkoon varsinaisen esityksen ja tapahtuman ajosuunnitelman valmistelussa.
 
-Julkiset verkkosivu- ja some-esittelyt ovat
-[ohjelmatekstien dokumentissa](program-copy.md).
-Ohjelman kantava kysymys, tehtävä ja yleisöpolku on määritelty ensin
-[kokonaisidean dokumentissa](program-concept.md). Tämä dokumentti tarkentaa sen
-esitysrakenteeksi.
+## Ohjelman tehtävä
 
-- Formaatti: esitys + yleisöäänestykset + tauko + ohjattu työpaja
-- Kokonaiskesto: 120 minuuttia
-- Esitys: noin 60 minuuttia
-- Tauko: 15 minuuttia esityksen ja työpajan välissä
-- Työpaja ja yhteinen lopetus: noin 45 minuuttia
-- Esityskieli: suomi
-- Ikäsuositus: 12+
-- Yleisö: pelaajat, harrastajat, pelinkehityksestä kiinnostuneet sekä ihmiset,
-  joilla ei ole aiempaa ohjelmointikokemusta
-- Sävy: utelias, suora ja itseironinen; kriittinen mutta ei
-  teknologiapelkoinen tai yleisöä vähättelevä
+Ohjelman nimi säilyy: **Tekoäly tuli – nyt kaikki on ohi... vai onko?**
+[Julkiset esittelytekstit](program-copy.md) säilyvät tässä vaiheessa ennallaan.
 
-Koko ohjelman viestintätehtävä:
+- Kesto 120 minuuttia: esitys ja gallup 60, tauko 15, työpaja ja lopetus 45.
+- Esityskieli suomi, ikäsuositus 12+.
+- Yleisö: pelaajat, harrastajat ja pelinkehityksestä kiinnostuneet.
+  Ohjelmointikokemusta ei tarvita.
+- Sävy: utelias, suora ja itseironinen. Innostus ja kritiikki saavat näkyä.
+- Lopputulos: osallistuja osaa arvioida yhtä AI-käyttöä sen tarkoituksen,
+  pelaajan kokemuksen ja vastuun kautta.
 
-> Ohjelman lopussa yleisö pystyy arvioimaan yksittäistä AI-käyttöä
-> täsmällisemmin kuin akselilla “hyvä tai paha”, koska se on nähnyt eri
-> käyttötapojen seurauksia ja kokenut itse, missä generointi auttaa sekä missä
-> tekijän harkinta, maku ja vastuu ratkaisevat.
+Kantava kysymys:
 
-Kantava loppulause:
+> Kun AI voi kirjoittaa, piirtää ja koodata, mikä tekee lopputuloksesta pelin,
+> jota joku haluaa pelata?
 
-> AI voi tehdä pelistä olemassa olevan. Ihmisen pitää tehdä siitä pelaamisen
-> arvoinen.
+Puhujan perusteltu kanta:
 
-Esityksen ei ole tarkoitus ratkaista sitä, onko AI yksiselitteisesti hyvä tai
-paha. Se auttaa yleisöä arvioimaan käyttötapaa viiden kysymyksen kautta:
+> Generatiivinen AI voi tuottaa pelattavan kokonaisuuden ja auttaa myös sen
+> suunnittelussa. Silti on ratkaistava, kenelle peli tehdään, mitä hänen
+> pitäisi kokea ja miten onnistuminen varmistetaan.
 
-1. Mihin työvaiheeseen AI:ta käytetään?
-2. Kenen aineistolla ja ehdoilla se toimii — ja jäljitelläänkö tunnistettavaa
-   ihmistä?
-3. Kuka tekee lopulliset valinnat ja kantaa vastuun?
-4. Näkyykö tai kuuluuko lopputulos pelaajalle?
-5. Onko käytöstä kerrottu ymmärrettävästi?
+Esitys tunnustaa teknisen saavutuksen. Peli voi olla hauska jo ensimmäisellä
+yrityksellä. Ihmisen lisäys voi myös huonontaa sitä. Esityksen väite ei nojaa
+siihen, että AI:lta puuttuisi ikuisesti maku tai kyky suunnitella.
 
-Terminologiassa erotetaan koko esityksen ajan:
+Pelaamisen arvo arvioidaan suhteessa tarkoitukseen. Yhden illan peli
+kavereille, pieni taideteos ja pitkäikäinen kaupallinen peli tarvitsevat
+erilaista näyttöä onnistumisesta. Pieni yleisö tai lyhyt peliaika ei tee
+pelistä epäonnistunutta. Hyvä kokemus ei puolestaan yksin ratkaise
+suostumusta, aineistojen käyttöä tai sovittuja sääntöjä.
 
-- **AI / tekoäly:** yläkäsite järjestelmille, jotka esimerkiksi ennustavat,
-  suosittelevat, järjestävät, tunnistavat tai generoivat
-- **generatiivinen AI / GenAI:** AI:n osa, joka tuottaa syötteen perusteella
-  uutta tekstiä, kuvaa, ääntä, videota tai koodia.
+## Kertomuksen rakenne
 
-Arkikielessä “AI” tarkoittaa nykyään usein GenAI:ta. Tämä havainto toimii
-avauksena, mutta faktaväitteissä ja kyselyissä käytetään aina lähteen tarkoittamaa
-tarkempaa termiä.
+Alun kaksi tulevaisuuskuvaa säilyvät: AI vie pelintekijöiden työn ja AI antaa
+kaikille mahdollisuuden tehdä pelejä. Ne johdattavat kysymään, mitä ”pelin
+tekeminen” tarkoittaa. Niitä ei käsitellä koko keskustelun tyhjentävänä kuvana
+eikä esitys lupaa ratkaista työmarkkinoiden tulevaisuutta.
 
-AI/GenAI-erottelussa nimetään myös kolme peleistä tuttua, generatiivista AI:ta
-vanhempaa käyttötapaa: sääntöpohjaiset pelihahmot, pelaajan taitoluokitus ja
-matchmaking sekä proseduraalinen kenttien generointi. Esimerkit ovat nopea
-puheankkuri, eivät oma historiakatsaus.
+| Liike | Mitä yleisö saa arvioitavakseen? | Mihin seuraava osuus vastaa? |
+|---|---|---|
+| Huoneen näkemykset | Oma kokemus ja odotukset | Puhummeko samasta käyttötavasta ja samasta onnistumisesta? |
+| Tekijän työ | Käyttöä koskeva tutkimus ja tuore Astra-esimerkki | Mitä nopea pelin tuottaminen osoittaa? |
+| Pelaamisen tarkoitus | Demon katsominen, pelaamisen ilo ja suunnittelupalaute | Kenelle tämä kokemus merkitsee jotakin? |
+| SuomiWoW | Tietty yhteisö, sen historia ja yksi todellinen valinta | Miten tarkoitus näkyy valmiissa kokemuksessa? |
+| Pelaajan luottamus | Käyttötapojen erot, pelimekaniikka ja julkaisemisen vastuu | Mitä hyväksyn ja millä perusteella? |
+| Oma kokeilu | Pelattava ajatus, pelaajan havainto ja perusteltu päätös | Mitä tästä opimme tässä tilanteessa? |
 
-## Avausvuorovaikutus
+Yleisön ei tarvitse vaihtaa mielipidettään. Tavoite on, että perustelut
+tarkentuvat. Oman projektin ja AI-demojen onnistumista arvioidaan samalla
+periaatteella.
 
-Esitys alkaa ennen Live Votingia lyhyellä huoneelle heitetyllä kysymyksellä:
+## 60 minuutin esitys
 
-> Kun sanon tekoäly, mikä on ensimmäinen asia, joka tulee mieleen?
+Ajat ovat valmistelun tavoiteaikoja. Ne sisältävät siirtymät, lyhyet
+yleisövastaukset ja videot. Aikataulu varmennetaan harjoituksessa.
 
-Otetaan 2–4 nopeaa huudahdusta. Jos joku sanoo ChatGPT, näytetään virallinen
-ChatGPT-tunnus ja kysytään “miksi juuri tämä?”. Jos kukaan ei sano sitä, tunnus
-paljastetaan silti ja kysytään, miksi juuri tästä yhdestä palvelusta tuli monelle
-koko tekoälyn synonyymi. Avaus ei saa olla riippuvainen tietystä vastauksesta.
+| Aika | Sisältö | Tehtävä ja näkyvä aineisto |
+|---|---|---|
+| 0:00–0:05 | Avaus ja sana-assosiaatio | Otsikko, lyhyt esittäytyminen, 2–4 huudahdusta siitä mitä tekoäly tuo mieleen. ChatGPT-tunnus toimii tuttuna esimerkkinä. Kerro gallupin koskevan GenAI:ta. |
+| 0:05–0:20 | Huoneen gallup | Kahdeksan kysymystä neljänä parina. Liittymiselle oma aika, tuloksista yksi havainto paria kohti. |
+| 0:20–0:24 | AI, GenAI ja kokeen rajaus | Lyhyt käsitteiden erottelu. Malli, tehtävä, työkalut, konteksti ja korjauskierrokset vaikuttavat tulokseen. Maksullisuus ei ole pääargumentti. |
+| 0:24–0:28 | Käyttö ja suhtautuminen pelialalla | GDC:n 36 / 52 / 7 %. Ensimmäinen kahdesta tilastokuvaajasta. Käyttö ja vaikutusarvio ovat eri kysymyksiä. |
+| 0:28–0:35 | Astra ja pelaamisen syy | Yksi vahva peliesimerkki, tarkka yhden promptin rajaus, tekijän kokema ilo ja konkreettinen lisäpalaute. Yleisö arvioi, haluaisiko katsoa demoa, pelata vai molempia. Lyhyt puhujan kokemus johtaa omaan projektiin. |
+| 0:35–0:45 | SuomiWoW CCG | Yhteisö ja tarkoitus, yksi pakka, yksi kortti, kokoelma sekä yksi dokumentoitu päätös. AI:n rooli kuvataan vain todennettavasti. |
+| 0:45–0:49 | Pelaajan reaktio käyttötapaan | Paluu bugit/dialogi-pariin. Quantic Foundryn käyttötapavertailu on toinen tilastokuvaaja. Erotetaan koettu laatu ja periaatteelliset rajat. |
+| 0:49–0:52 | 1001 Nights | Lyhyt esimerkki generoinnista osana pelimekaniikkaa. Keskustellaan siitä, mitä pelaaja saa tehdä. |
+| 0:52–0:57 | Julkaiseminen ja vastuu | Steamworksin ilmoitusraja, noin minuutin Clair Obscur -tapaus ja viisi täsmällistä arviointikysymystä. |
+| 0:57–1:00 | Gallupiin paluu ja työpajan tehtävä | Nosta yksi toteutunut havainto helpompi/parempi-parista. Sulje gallup, kerro tehtävä ja tauon paluuaika. |
 
-Tämän jälkeen kerrotaan vain välttämätön rajaus: Live Votingin kysymykset
-koskevat pääasiassa generatiivista AI:ta. Yläkäsitteen ja GenAI:n ero avataan
-tarkemmin heti äänestyksen jälkeen.
+Varsinaiselle asiaosuudelle jää gallupin ja SuomiWoWin ulkopuolella
+35 minuuttia, josta avaus vie viisi. Jokainen uusi aihe käyttää jonkin
+nykyisen aiheen aikaa.
 
-Tarkempi rajaus suhteessa aiempaan esitykseen on
-[Toivolanranta-referenssin soveltamissuunnitelmassa](toivolanranta-reference-adaptation.md).
-Valitut väitteet, kuvaajat, caveatit ja hylätyt vertailut ovat
-[tutkimus- ja kuvaajasuunnitelmassa](research-and-chart-plan.md).
-Ilmais- ja maksullisten palvelujen kokemusero, sen tutkimusraja ja ehdotettu
-neljän minuutin jakso ovat
-[GenAI-kokemuksen arviointisuunnitelmassa](ai-experience-and-evaluation.md).
-Game jamien keskenään erilaiset GenAI-säännöt ja niiden mahdollinen 2–3
-minuutin työpajasilta ovat
-[game jam -sääntövertailussa](game-jam-ai-rules.md). Osuutta ei ole vielä
-lukittu aikatauluun.
+## Diojen sisältöluonnos ja puheen tehtävä
 
-## Kertomuksen kaari
+Alla on 22 sisältökohtaa esitysosuudelle. Ne ovat alustava dialuonnos,
+eivät vaatimus 22 lopullisesta diasta. Gallup ja live-demo käyttävät
+erillistä sovellusta ilman uutta PowerPoint-diaa jokaiseen vaiheeseen.
 
-1. **Mitä huone ajattelee?** Otsikko ja gallup tekevät yleisön lähtötilanteen
-   näkyväksi ennen puhujan argumenttia.
-2. **Mitä tekijän työpöydällä tapahtuu?** AI/GenAI-erottelu, kysymys siitä mitä
-   “AI:n kokeileminen” oikeastaan tarkoittaa, kaksi GDC-kuvaajaa ja puhujan oma
-   kokemus siirtävät keskustelun yleisestä paniikista todellisiin
-   käyttötapoihin.
-3. **Mitä oikea projekti vaatii?** SuomiWoW ja sen CCG näyttävät, mitä yhteisö,
-   data, tarkoitus ja rajaukset lisäävät tekniseen toteutukseen.
-4. **Mitä pelaaja kohtaa?** Pelaajatutkimus, Steamworksin raja ja Clair Obscur
-   siirtävät huomion tuotannosta näkyvään sisältöön, luottamukseen ja vastuuseen.
-5. **Mitä huone ajattelee nyt?** Alun tuloksiin palataan ilman väitettä, että
-   mielipiteiden pitäisi muuttua.
-6. **Mitä tapahtuu, kun yleisö kokeilee itse?** Työpaja testaa, kuinka nopeasti
-   versio syntyy ja kuinka paljon pelillistä sekä persoonallista valintaa se
-   vielä tarvitsee.
-7. **Mitä tästä jää käteen?** Yhteinen purku vastaa otsikkoon kokemuksen kautta:
-   generointi voi nopeuttaa alkua, mutta tekijyys ja vastuu eivät katoa.
+| # | Dian työnimi | Mitä yleisö näkee? | Mitä puhuja tekee? |
+|---:|---|---|---|
+| 1 | Tekoäly tuli – nyt kaikki on ohi... vai onko? | Nimi ja niukka aloituskuva | Asettaa otsikon kaksi lupausta ja esittelee itsensä lyhyesti. |
+| 2 | Mitä tekoäly tuo mieleen? | Kysymys, tarvittaessa ChatGPT-tunnus | Kuuntelee huonetta. Avaus toimii riippumatta siitä, mainitaanko ChatGPT. |
+| 3 | Tämän huoneen näkemykset | Gallupin liittymisohje | Antaa selkeän ohjeen ja siirtyy kahdeksaan kysymykseen. |
+| 4 | Tekoäly ja generatiivinen tekoäly | Yläkäsite ja muutama konkreettinen käyttötapa | Erottaa luomisen esimerkiksi tunnistamisesta. Peleissä algoritminen toiminto voi olla sääntöpohjainen tai oppiva. |
+| 5 | Mitä kokeiltiin? | Tehtävä, välineet ja arvioitu tulos | Täsmentää, miksi yksittäinen hyvä tai huono tulos ei kuvaa kaikkea käyttöä. |
+| 6 | Käyttö ja vaikutusarvio | GDC-kuvaaja ja erillinen 7 %:n nosto | Erottaa käytön hyväksynnästä ja havainnon syy-seurausväitteestä. |
+| 7 | Astralla rakennettu peli | Bermanin peliesimerkin lyhyt kohta | Antaa saavutuksen näkyä ja kertoo täsmällisesti näytettävän version taustan. |
+| 8 | Yksi prompti, monta työvaihetta | Lyhyt prosessikuvaus | Selittää autonomisen iteroinnin. Lisäpalaute merkitään erikseen. |
+| 9 | Kenelle tämä on tehty? | Kysymys ja yksi konkreettinen palautekohta | Kysyy pelaamisen syytä. Näyttää kameran tai liikkeen muutoksen esimerkkinä kokemuksen työstämisestä. |
+| 10 | Oma tapa rakentaa | Yksi todennettava oma havainto | Kuvaa muuttunutta työtä enintään minuutissa. Ei yleistä oman työn historiaa eikä keksittyä ajansäästöä. |
+| 11 | SuomiWoW ja yhteinen raidihistoria | Palvelun tarkoitus ja yhteisö | Kertoo, kenen historia muuttuu keräilykokemukseksi. |
+| 12 | Yksi pakka, yksi kortti | Pakka, kortti ja kokoelma live-demossa | Näyttää kokemuksen. Nykyistä CCG:tä kuvataan keräilynä, ei card battlerina. |
+| 13 | Yksi päätös ja sen peruste | Todellinen ennen/jälkeen tai dokumentoitu rajaus | Nimeää tavoitteen, havainnon ja ratkaisun. Erottelee AI:n työn ja omat päätökset. |
+| 14 | Mitä pelaaja tunnistaa? | Kortin yhteys yhteisöön ja saatavilla oleva palaute | Kertoo, mitä onnistumisesta tiedetään ja mitä vasta oletetaan. |
+| 15 | GenAI:n käyttötapa ja suhtautuminen | Quantic Foundry -kuvaaja | Palaa huoneen bugit/dialogi-pariin ja kertoo tutkimuksen otosrajan. |
+| 16 | Pelaajan kokemus ja luottamus | Lyhyt kysymys laadusta ja käytön perusteista | Erottaa huonon toteutuksen, ilmoittamisen ja periaatteellisen vastustuksen. |
+| 17 | 1001 Nights | Tarinan sana muuttuu pelin esineeksi | Selittää pelaajan tavoitteen ja miten generointi kuuluu siihen. |
+| 18 | Mitä generointi antaa pelaajalle? | Yksi avoin kysymys edellisestä esimerkistä | Antaa tilaa myös myönteiselle arviolle ilman oletusta pelin menestyksestä. |
+| 19 | Peliin päätyvä sisältö | Steamworksin pre-generated/live-generated-erottelu | Kuvaa alustan ilmoitusrajan ja erottaa sen yleisestä eettisestä arviosta. |
+| 20 | Clair Obscur: kokeilu ja julkaisuvastuu | Lyhyt tapahtumaketju | Erottaa placeholderin julkaisuun jäämisen, korjauksen ja palkintotapahtuman säännöt. |
+| 21 | Viisi kysymystä AI:n käytöstä | Alla oleva arviointikehys | Yhdistää tarkoituksen, pelaajan ja vastuun. |
+| 22 | Mitä haluamme kokeilla? | Yksi huoneen tulos ja työpajan tehtävä | Päättää esityksen avoimeen kokeiluun ja antaa täyden tauon. |
 
-## 120 minuutin ohjelmarunko
+## Pääesimerkkien täsmällinen käsittely
 
-Ajat ovat tavoiteaikoja, eivät yleisölle näytettävää sisältöä.
+### Astra: tekninen saavutus ja pelaajakokemus
 
-| # | Aika | Dian yleisölle näkyvä pääajatus | Tehtävä ja sisältö | Visuaali tai toiminta |
-|---:|---:|---|---|---|
-| 0 | 0:00–0:05 | Mitä “tekoäly” tarkoittaa teille juuri nyt? | Ylidramaattinen otsikko, lyhyt esittäytyminen, sana-assosiaatio, ChatGPT-tunnuksen paljastus ja kysymys “miksi juuri tämä?”. Älä vielä anna ohjelman vastausta. | Otsikkodia → yleisön huudahdukset → virallinen ChatGPT-tunnus. |
-| 1 | 0:05–0:20 | Mitä tämä huone ajattelee AI:sta? | Avaa Live Voting -istunto, anna yleisön liittyä QR-koodilla ja käy nopeasti läpi alustavasti kymmenen kysymystä viitenä vertailuparina. Kommentoi parien eroja, älä jokaista palkkia. Lopullinen määrä 8–10 lukitaan harjoituksessa. | Työkalun Lobby, Participant View ja Presentation Display; katso [Live Voting -suunnitelma](live-voting-plan.md). |
-| 2 | 0:20–0:23 | AI ei alkanut ChatGPT:stä. Se oli jo valitsemassa, mitä näet. | Erota AI-yläkäsite ja GenAI. Näytä suositteleminen, järjestäminen ja tunnistaminen rinnakkain uuden sisällön generoimisen kanssa. Nimeä nopeasti myös sääntöpohjaiset pelihahmot, taitoluokitus/matchmaking ja proseduraalinen kenttien generointi. Tee selväksi, ettei tämä tee GenAI-kritiikistä tekopyhää. | Yksi selkeä yläkäsite/alajoukko-sommittelu: peleistä kolme pientä esimerkkiä ja arjesta YouTube, TikTok sekä Instagram. Ei aikajanaa tai historiakatsausta. |
-| 3 | 0:23–0:27 | Me emme arvioi samaa tekoälyä | Kysy, mitä “kokeilin AI:ta” tarkoittaa. Nimeä mallin, tuotteen, käyttöoikeuden, tehtävän, työnkulun ja valikoinnin erot. Kerro, että kuluttajakokemus syntyy yleensä ilmaisversiossa, mutta älä väitä kriitikoiden olevan kokemattomia. Erota kyvykkyyden arviointi siitä, mihin AI:ta pitäisi käyttää. | 2–3 käsitediaa, ei neljättä datavisuaalia: “Kokeilin AI:ta” → erojen paljastus → “Yksi huono vastaus ei todista kaikkea. Ei myöskään yksi hyvä demo.” Katso [tarkempi suunnitelma](ai-experience-and-evaluation.md). |
-| 4 | 0:27–0:33 | Käyttö ei tarkoita hyväksyntää | Näytä GDC:n saman kyselyn kaksi eri mittaria: 36 % käyttää GenAI:ta työssään ja 52 % arvioi vaikutuksen alaan kielteiseksi. Nosta 7 % myönteinen arvio erillisenä lukuna. Vertaa jännitettä, ei vastaajaryhmien päällekkäisyyttä. | **Datavisuaali 1/3:** kaksi samalla 0–100-asteikolla olevaa pylvästä ja pieni 7 %:n numeronosto. Ei stacked baria eikä vuositrendiä. |
-| 5 | 0:33–0:37 | Ensin vaihtoehtoja, vasta sitten peli | Näytä GenAI:ta työssään käyttävien yleisimmät käyttötavat: ideointi/tutkimus, arjen tehtävät, koodiapu ja prototypointi. Peilaa tulosta yleisön suosimaan käyttökohteeseen. | **Datavisuaali 2/3:** järjestetyt vaakapylväät 81 / 47 / 47 / 35 %. Nimittäjä ja monivalintacaveat näkyviin. |
-| 6 | 0:37–0:40 | Portti madaltuu. Vastuu ei katoa. | Yhdistä puhujan oma siirtymä koodin kirjoittajasta rakentajaksi kysymykseen siitä, mihin työ, taito ja vastuu siirtyvät, kun ensimmäinen versio syntyy nopeammin. | Henkilökohtainen ennen / nyt -ankkuri ja lyhyt reitti ideasta protoksi; ei kolmatta kuvaajaa. |
-| 7 | 0:40–0:42 | Kun raididata muuttui leikiksi | Esittele SuomiWoW yhden lauseen tuotteena ja kerro, miksi datapalveluun syntyi CCG. | Yksi projektikuva ja teesilause; ei teknologiapinolistaa. |
-| 8 | 0:42–0:48 | Oikea yhteisö tekee datasta merkityksellistä | Avaa yksi viiden kortin pakka, tarkastele yhtä dataan sidottua korttia ja näytä kokoelma. | Live-demo; katso [SuomiWoW-showcase](project-showcase-plan.md). |
-| 9 | 0:48–0:50 | Teknisestä mahdollisuudesta ei vielä synny syytä välittää | Nimeä, mitä yhteisö, data ja tekijän rajaukset toivat toteutukseen. Käännä näkökulma tekijän työpöydältä pelaajan ruudulle. | Palaa esityssivulle ja jätä näkyviin yksi teesilause. |
-| 10 | 0:50–0:54 | Luova sisältö osuu herkempään rajaan | Palaa ensin gallupin viimeiseen bugit/dialogi-pariin ja näytä sitten, että Quantic Foundryn valikoituneessa otoksessa GenAI-dialogi ja -questit kohtasivat dynaamista vaikeustasoa enemmän vastustusta. Sano ääneen erillinen identiteettiraja: tunnistettavan ihmisen äänen, kasvojen tai performanssin jäljittely on suostumus- ja korvauskysymys. | Live Voting -parin nopea palautus → **datavisuaali 3/3:** kolme ohutta pylvästä tai dot plot 83 / 77 / noin 50 %. Identiteettiraja on yksi puhuttu lause, ei lisäkalvo. |
-| 11 | 0:54–0:58 | Pelaajalle asti päätyvä sisältö muuttaa vastuuta | Siirry Steamworksin rajaan sisäisestä tehokkuudesta julkaistuun ja live-generoituun sisältöön. Päätä Clair Obscurin lyhyeen tapahtumaketjuun: kokeilu → placeholder jäi julkaisuun → korjaus → palkintosäännön seuraus. Kysy, missä varsinainen epäonnistuminen tapahtui. | Nopea rajakaavio ja nelivaiheinen tapausaikajana, eivät lisäkuvaajia. |
-| 12 | 0:58–1:00 | Tätä mieltä olimme ennen kuin puhuimme asiasta | Nimeä gallupin ja esityksen tärkein toteutunut jännite, päätä Voting Session ja anna tauon paluuaika. Älä selaa kaikkia kymmentä tulosta uudelleen. Jätä helpompi/parempi-kysymys työpajassa testattavaksi. | Istunnon päätös → taukonäkymä, QR-koodi, lyhyt URL ja paluuaika. |
-| — | 1:00–1:15 | Tauko | Täysi 15 minuutin tauko esityksen ja työpajan välissä. | Pysyvä taukonäkymä: paluuaika, QR-koodi ja lyhyt URL. |
-| 13 | 1:15–1:20 | Yksi ruutu. Yksi mekaniikka. Yksi vitsi. | Kokoa yleisö takaisin, varmista playground ja rajaa tehtävä. Näytä kaksi ennalta tehtyä tulosta samasta promptista. | Kolme suurta sääntöä, sama prompti / eri tulos ja yksi debug-ohje. |
-| 14 | 1:20–1:30 | Tee ensimmäinen proto | Yleisö määrittää hahmon, tavoitteen, esteen ja tunnelman. Esiintyjä tekee saman live-esimerkkinä. | Täytettävä prompttipohja ja 3–4 ideaa. |
-| 15 | 1:30–1:40 | Nyt lisätään pelisuunnittelua | Jokainen pyytää ensin kolme vaihtoehtoa KYSY-tilassa, valitsee niistä yhden ja toteuttaa vain sen MUOKKAA-tilassa. | KYSY / valitse / MUOKKAA -rytmi ja live-iterointi. |
-| 16 | 1:40–1:50 | AI teki version. Nyt varastetaan peli takaisin ihmiselle. | Osallistuja lisää oman vitsin, paikallisen viittauksen, pelon, kokemuksen tai oudon säännön. | Maku- ja tyylipromptien lyhyt valikoima. |
-| 17 | 1:50–1:56 | Mitä hirviöitä syntyi? | Näytä ensin vieruskaverille. Ota enintään 1–3 vapaaehtoista. Kysy, mitä AI teki hyvin, typerästi ja mitä ihminen paransi. | Selkeät showcase-ohjeet. |
-| 18 | 1:56–2:00 | Maailmanloppu oli prototyyppi | Palaa avaukseen, kokoa selviytymissäännöt ja päätä kantavaan loppulauseeseen. | Viisi sääntöä, lopuksi vain päätöslause. |
+Pääesimerkki on **Cloud Top Chaos** Bermanin videolta. Hänen kertomuksensa
+sisältää sekä pelaamisen iloa että lisäpromptin, joka käsittelee kameraa,
+kallistuvia tasoja ja reunojen läpi sukeltamista. Lähde on tekijän oma
+esittely, ei riippumaton koe. Näytettävää päivitettyä versiota ei nimetä
+muokkaamattomaksi yhden promptin tulokseksi.
+[Alkuperäinen video 29:18 alkaen](https://www.youtube.com/watch?v=9xa7RTC5pzo&t=1758s).
 
-## Ehdokas: game jamien GenAI-säännöt
+Seitsemän minuutin sisäinen rytmi: noin minuutti klippiin ja saavutukseen,
+minuutti työnkulkuun, kaksi yleisön pelaajakysymykseen, kaksi palautteeseen
+ja kokemuksen arviointiin sekä minuutti omaan siirtymään. Klippi lyhennetään
+tähän sopivaksi myöhemmässä aineistovalmistelussa.
 
-Pääesitykseen harkitaan 2–3 minuutin sääntökorttiosiota juuri ennen taukoa tai
-työpajan ensimmäiseen minuuttiin. Kysymys on: jos AI kirjoittaa game jamissa
-pelin koodin, onko se huijaamista? Global Game Jamin, Ludum Daren ja GMTK:n
-viralliset säännöt antavat keskenään erilaiset vastaukset. AI-teemainen jam
-antaa vielä neljännen vastauksen: työkalun käyttö voi olla vaatimus.
+Tunnistetaan kaksi erilaista kiinnostusta: halu nähdä, mitä malli osaa, ja
+halu pelata syntynyttä peliä. Ne voivat yhdistyä. Emme päättele videon
+suosiosta pelin kysyntää emmekä kysyntätiedon puutteesta, ettei kukaan halua
+pelata. Emme myöskään oleta, että AI tekisi vain grafiikkaa tai koodia.
 
-Osuuden tehtävä ei ole luokitella jameja AI-myönteisiksi tai -vastaisiksi. Se
-osoittaa, että sääntö kertoo tapahtuman tarkoituksesta, palkittavasta työstä ja
-valvottavuudesta. Tämä johtaa suoraan työpajan rajaukseen: kyse ei ole
-kilpailusta eikä ohjelmointitaidon kokeesta, vaan GenAI-avusteisen protoilun
-kokeilusta.
+Varavaihtoehto on [Sunwake](https://developers.openai.com/showcase/sunwake):
+julkinen kehityspolku näyttää konseptin, pelattavan osan, tuntuman,
+Blender-veneen ja kelluvuuden työstämisen. Sitä käsitellään usean vaiheen
+rakentamisena. Anshun grafiikkademon tarkennus ja Street Heat jäävät
+[Astra-muistioon](astra-one-shot-games-research-2026-09-05.md) keskustelua varten.
 
-Osuutta ei lisätä nykyisen 60 minuutin rungon päälle. Jos se toimii
-harjoituksessa, sille vapautetaan aika Steam/Clair-osuutta ja viimeistä
-gallup-palautusta tiivistämällä. Se ei lisää neljättä datavisuaalia. Tarkempi
-vertailu, rajat ja lähteet ovat
-[game jam -sääntövertailussa](game-jam-ai-rules.md).
+### SuomiWoW: sama näyttövaatimus omalle projektille
 
-## Pakollinen ja leikattava sisältö
+Kymmenen minuutin osuus käyttää uuden aikataulun 0:35–0:45. Varaa kaksi
+minuuttia tarkoitukselle, neljä pakan, kortin ja kokoelman näyttämiseen,
+kolme yhdelle päätökselle ja minuutti johtopäätökselle. Vanhan
+[showcase-suunnitelman](project-showcase-plan.md) reitti ja varamateriaali
+auttavat valmistelussa, mutta sen vanhaa 0:40–0:50-ajoitusta ei käytetä.
 
-Pidetään kaikissa versioissa:
+Valittava päätös tarvitsee alkuperäisen tavoitteen, havaitun ongelman tai
+rajauksen sekä selityksen ratkaisusta. Pelaajavaikutus kerrotaan havaintona
+vain, jos siitä on palautetta tai muuta näyttöä. Muuten se nimetään
+tavoitteeksi. Ennen/jälkeen-kuva ei yksin todista parempaa kokemusta.
 
-- alun sana-assosiaatio, ChatGPT-paljastus ja kysymys “miksi juuri tämä?”
-- alun 15 minuutin Live Voting -osuus ja myöhempi paluu sen tuloksiin
-- AI-yläkäsitteen ja generatiivisen AI:n lyhyt erottelu ilman
-  tekopyhyysväitettä
-- “Me emme arvioi samaa tekoälyä” -jakso, joka erottaa käytetyn tuotteen ja
-  työnkulun kyvykkyysväitteestä sekä arvokritiikistä
-- henkilökohtainen “koodaajasta builderiksi” -ankkuri
-- SuomiWoW CCG -showcase: yksi pakka, yksi kortti ja yhteys esityksen väitteeseen
-- AI:n käytön ja kasvavan epäluottamuksen ristiriita
-- reilu kuvaus hyödyistä ja tekemisen kynnyksen madaltumisesta
-- taustatyön ja pelaajalle julkaistun luovan sisällön raja
-- Steamworksin sisältöraja ja Clair Obscur -tapauksen QA-, disclosure- ja
-  sääntökysymys ilman väitettä, että peli olisi “tehty AI:lla”
-- yleisön rajaäänestys
-- workshopin kolme sääntöä
-- kierros “tee siitä sinun”
-- lopun selviytymissäännöt ja päätöslause
+Jos historiallista vertailua ei löydy, näytetään yksi nykyinen päätös ja sen
+todellinen peruste. Muutoshistoriaa tai yhteisöpalautetta ei keksitä.
+AI:n osuus kirjataan puhujan tai projektihistorian perusteella ennen
+lopullista käsikirjoitusta. ”AI ei olisi voinut keksiä tätä” korvataan
+kuvauksella siitä, kuka tässä projektissa päätti ja miksi.
 
-Leikkausjärjestys, jos esitysosuus uhkaa ylittää 60 minuuttia:
+### Pelaajaosuus: myös generoinnilla voi olla pelillinen tarkoitus
 
-“Me emme arvioi samaa tekoälyä” -jakso voidaan harjoituksessa tiivistää neljästä
-kolmeen minuuttiin, mutta sitä ei typistetä pelkäksi väitteeksi paremmista
-maksullisista malleista. Ydinlause ja kritiikin kaksi eri kohdetta säilyvät.
+**1001 Nights** on toinen ulkoinen pääpeliesimerkki. Pelaaja ohjaa tarinalla
+toisen kertojan vastauksia ja tavoittelee sanoja, joista syntyy pelin
+esineitä. Tämä auttaa arvioimaan generoitua dialogia muutenkin kuin
+kirjoittamisen kustannuksena. Esimerkki ei todista kaupallista menestystä
+eikä ratkaise aineistojen hyväksyttävyyttä.
+[Tekijöiden tutkimusesittely](https://arxiv.org/html/2503.09102v1),
+[press kit](https://1001nights.notion.site/1001-Nights-press-kit-adb983eed6c2495a94878e6e93792881).
 
-1. Lukitse Live Voting harjoituksen perusteella kahdeksaan kysymykseen
-   poistamalla yleinen asenne / peliala -pari. Säilytä liittymisaika sekä
-   helpompi/parempi- ja bugit/dialogi-parit.
-2. Lyhennä SuomiWoW-osuus seitsemään minuuttiin ja varsinainen live-demo viiteen
-   minuuttiin: yksi pakka, yksi kortti ja teesilause. Älä selaa koko palvelua.
-3. Jätä roolikohtainen GDC-kuvaaja varamateriaaliin.
-4. Poista 7 818 Steam-pelin numeronosto, mutta säilytä Steamworksin raja ja
-   Clair Obscurin nelivaiheinen tapaus.
-5. Siirrä Microsoft/Xbox ja muut ylimääräiset tapausesimerkit Q&A- tai
-   varamateriaaliin.
-6. Älä lyhennä 15 minuutin taukoa esityksen ylityksen korjaamiseksi.
+Pelaajaosuuden lopuksi säilyvät suostumus, tunnistettavan henkilön äänen tai
+performanssin käyttö, kertominen ja vastuu. Steamworksin sääntö ei anna
+yleistä hyväksyntää sisäiselle AI-käytölle. Clair Obscurista ei päätellä,
+että koko peli olisi AI:n tekemä tai että Steam-ilmoitus olisi puuttunut.
+Tapauslähteet ja rajat ovat [tutkimusmuistiossa](research-pass-2026-09-05.md).
 
-Jos workshop myöhästyy erillisestä teknisestä syystä:
+## Viisi kysymystä, jotka yleisö vie mukanaan
 
-1. Jätä lavashowcase pois, mutta säilytä vieruskaverille näyttäminen.
-2. Yhdistä workshopin toinen ja kolmas kierros; älä poista oman maun lisäämistä.
+1. **Kenelle ja miksi?** Mitä kokemusta tavoitellaan, ja mitä onnistumisesta tiedetään?
+2. **Mihin AI:ta käytettiin?** Mikä oli sen tehtävä ja kuinka paljon se päätti?
+3. **Mitä pelaaja kohtaa?** Mitä sisältöä tai toimintaa hän saa ja mitä hyötyä siitä on hänelle?
+4. **Kenen aineistoa tai työtä käyttö koskee?** Millä ehdoilla, ja jäljitelläänkö tunnistettavaa ihmistä?
+5. **Kuka valitsee, kertoo ja vastaa?** Miten laatu, käytöstä kertominen ja ongelmien korjaaminen hoidetaan?
 
-## Visuaalinen suunta
+Nämä ovat esityksen oma arviointikehys. Ne eivät ole validoitu mittari,
+yleinen lakiohje tai lupaus yhdestä oikeasta vastauksesta.
 
-Esitys tehdään verkkosivuna, mutta sen ei pidä näyttää dashboardilta tai
-komponenttikirjaston esittelyltä.
+## Gallupin sisältöpäätös
 
-- 16:9-sommittelu, joka skaalautuu projektorille ja läppärille.
-- Yksi pääväite ja yksi päävisuaali per dia.
-- Suuret otsikot, lyhyt leipäteksti ja tasaiset vasen/oikea-marginaalit.
-- Tumma, hieman dramaattinen aloitus; workshopia kohti sävy voi lämmetä ja
-  muuttua kevyemmäksi.
-- Rajattu paletti: taustaväri, tekstiväri, yksi AI:ta kuvaava korostusväri ja
-  yksi ihmisen valintaa kuvaava korostusväri.
-- Kuvaajat piirretään samalla visuaalisella kielellä kuin muu esitys. Ei
-  oletustyylisiä Recharts-kuvaajia, 3D-efektejä tai tarpeetonta selitettä.
-- Jokaisessa kuvaajassa näkyvät mittayksikkö, otos tai rajaus, lähde ja vuosi.
+Pääversio käyttää **kahdeksaa kysymystä**. Säilytetään nykyisen
+[Live Voting -suunnitelman](live-voting-plan.md) kysymykset 1–2 ja 5–10.
+Yleinen hyvä asia / hyvä asia pelialalle -pari 3–4 jää varalle. Ei erillistä
+maksuton/maksullinen-paria. Työkalun lopullisessa istunnossa kysymykset
+numeroidaan järjestyksessä 1–8.
 
-## Liike ja rytmi
+| Pari | Kysymysten aihe | Paluu esityksessä |
+|---|---|---|
+| Oma kokemus | GenAI:n käyttö ja käyttö pelinteossa | Kokeen ja tehtävän rajaus |
+| Helpompi / parempi | Tekemisen helpottuminen ja pelien paraneminen | Astra-osuus, ennen taukoa ja työpajan purku |
+| Sisäänkäynti / työn korvaaminen | Kuka tahansa voi tehdä pelin ja työn korvaaminen | Otsikon lupaukset ja tekijän työn muutos |
+| Bugit / dialogi | Häiritseekö käyttö näissä tehtävissä? | Pelaajaosuus ja 1001 Nights |
 
-Animaation tehtävä on ohjata huomiota, ei todistaa että sivu on interaktiivinen.
+15 minuutista varataan kolme liittymiseen, kaksi kullekin parille ja neljä
+tulosten lyhyeen käsittelyyn sekä siirtymään. Työn korvaamista koskeva
+vastaus kuvaa huoneen odotusta, ei esityksen vahvistamaa ennustetta.
+Jos huoneen vastaukset ovat samankaltaisia, todetaan se. Ristiriitaa ei
+rakenneta väkisin. Kahden minuutin teknisen takeltelun jälkeen siirrytään
+käsiäänestykseen.
 
-- Käytä pääasiassa opacity- ja translate-siirtymiä.
-- Paljasta sisältö puheen tahdissa 1–3 vaiheessa per dia.
-- Kuvaajan viivat tai pylväät voivat piirtyä kerran, kun dia avataan.
-- Pidä tavalliset siirtymät noin 180–300 ms ja tärkeät avaukset enintään noin
-  450 ms.
-- Älä animoi taustaa jatkuvasti.
-- Kunnioita `prefers-reduced-motion`-asetusta.
+## Tutkimus ja kuvaajat
 
-## Teksti ja esittäjän muistiinpanot
+Pääesityksessä on **kaksi tilastokuvaajaa**. Gallupin tulosnäkymät,
+pelikuvat ja prosessikuvat eivät kuulu tähän määrään.
 
-- Yleisölle näkyvä teksti on suomeksi ja puheeseen sopivaa.
-- Näkyvillä dioilla ei ole aikatauluja, tuotanto-ohjeita tai pitkiä
-  puhujamuistiinpanoja.
-- Jokaisella dialla on yksi lause, jonka yleisön tulisi muistaa.
-- Puhujamuistiinpanot säilytetään sisällön yhteydessä, mutta ne erotetaan
-  julkisesta esitysnäkymästä.
-- Jokaisen ulkoisen faktaväitteen ja kuvaajan muistiinpanoissa on lähdetunnus,
-  joka viittaa [lähdepankkiin](source-bank.md).
+| Aineisto | Näkyvä käyttö | Rajaus, joka säilytetään |
+|---|---|---|
+| GDC 2026: 36 % käyttää, 52 % kielteinen vaikutusarvio, 7 % myönteinen | Yksi vertailukuvaaja, 7 % erillisenä nostona | Pelialan ammattilaisten kysely. Eri kysymykset, vastaajaryhmien päällekkäisyyttä ei tunneta. Ei trendiä tai työpaikkavaikutusta. |
+| Quantic Foundry: dialogi 83 %, questit 77 %, dynaaminen vaikeus noin 50 % kielteinen | Yksi käyttötapavertailu | Vapaaehtoinen PC/core-painotteinen otos, n = 1 799. Noin 50 % lasketaan 100 − 26 − 24. Myös vaikeustasokysymys koski GenAI:ta. |
+| CHI 2026:n laadullinen pelinkehityssynteesi | Puhujan tausta työn sovittamisesta ja arvioinnista | Kymmenen tutkimusta vuosilta 2020–kesäkuu 2025. Ei Astran suorituskykyraja tai nykyinen nopeusmittaus. |
+| Elokuun 2026 Steam-arvostelututkimus | Laadun, huolellisuuden ja luottamuksen sanasto | Ei uutta numerokuvaajaa. Valikoitu aineisto ja käsikirjoituksen lukuerot estävät suoraviivaisen yleistyksen. |
+| MDA-suunnittelukehys | Kokemuksen ja ominaisuuslistan erottelu puhujan taustaksi | Suunnittelun apuväline vuodelta 2004, ei todiste AI:n kyvyttömyydestä. |
+| Doshi & Hauser 2024 | Työpajan tausta luovuudesta ja samankaltaisuudesta | Lyhyiden tarinoiden koe, jossa sekä yksilöllinen laatu että tuotosten samankaltaisuus kasvoivat. Ei pelialan yleislaki. |
 
-## Sisällön hyväksymiskriteerit
+Numeroiden alkuperäislähteet:
+[GDC 2026](https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/),
+[Quantic Foundry](https://quanticfoundry.com/2025/12/18/gen-ai/).
+Muiden tutkimusten linkit ja rajoitteet löytyvät kahdesta tutkimusmuistiosta.
+Kuvaajan vuosiluku, kohdejoukko ja olennainen rajaus näkyvät yleisölle.
+Täydet linkit ja laskut tulevat PowerPointin puhujamuistiinpanoihin.
 
-- Koko ohjelma toimii 120 minuutissa ilman kiireistä loppua.
-- Live Voting -osuus kestää enintään 15 minuuttia ja sisältää harjoituksessa
-  lukittavat 8–10 yksivalintakysymystä tarkoituksellisina pareina.
-- SuomiWoW-osuus kestää enintään kymmenen minuuttia. Sen varsinainen live-demo
-  kestää enintään kahdeksan minuuttia ja näyttää vain yhden pack openingin.
-- Showcase erottaa nykyisen keräilykokemuksen suunnitelluista tulevista
-  pelimuodoista eikä keksi AI:n roolia projektissa.
-- Äänestystuloksista puhutaan tämän huoneen näkemyksenä, ei edustavana
-  tutkimusaineistona.
-- Esitys päättyy viimeistään aikaan 1:00 ja tauko kestää täydet 15 minuuttia.
-- Workshop alkaa aikaan 1:15 ja sille jää 45 minuuttia yhteinen lopetus mukaan
-  lukien.
-- Workshop käyttää AI Workshop Playgroundin työpajasalasanatilaa; osallistujilta
-  ei pyydetä omia API-avaimia.
-- Esitys erottaa AI:n ja generatiivisen AI:n eikä käytä
-  suositusjärjestelmiä todisteena siitä, että kaikki GenAI-kritiikki olisi
-  epäjohdonmukaista.
-- Esitys voi todeta kuluttajakokemuksen syntyvän yleensä ilmaisversiossa, mutta
-  ei väitä kriitikoiden olevan kokemattomia, ilmaisversion olevan aina huono tai
-  maksullisen palvelun ratkaisevan käyttötavan eettistä hyväksyttävyyttä.
-- AI/GenAI-erottelu sisältää lyhyet peliesimerkit, ja vastuuosuus nimeää
-  tunnistettavan äänen, kasvojen tai performanssin erilliseksi suostumus- ja
-  korvauskysymykseksi.
-- Tunnin esitysosuudessa on täsmälleen kolme ennalta valittua datavisuaalia;
-  prosessikaaviota ja tapausaikajanaa ei esitetä tilastokuvina.
-- Jokainen numero on tarkistettu alkuperäislähteestä ja merkitty lähdepankissa
-  valmiiksi.
-- Yleisön toiminta on joka vaiheessa yksiselitteinen.
-- Päätös vastaa avauksessa asetettuun jännitteeseen eikä lopu yleiseen
-  “kiitos”-diaan.
+## Tauko ja 45 minuutin työpaja
+
+**Tauko 1:00–1:15 säilyy kokonaisena.** Näkyvissä ovat paluuaika, QR-koodi
+ja lyhyt osoite. Työpajatyökalu pysyy erillisenä sovelluksena.
+
+Uusi tehtävä:
+
+> Tee yhden ruudun pelattava ajatus tietylle ihmiselle. Katso, mitä hän
+> kokee. Päätä havainnon perusteella, mitä säilytät tai muutat.
+
+Rajaus säilyy pienenä: yksi ruutu ja yksi päämekaniikka. Osallistuja nimeää
+lisäksi pelaajan tai tilanteen sekä tavoitellun kokemuksen. Oma vitsi,
+paikallinen viittaus tai outo sääntö on mahdollinen valinta, ei pakollinen
+viimeistelykerros. Työpaja harjoittelee arviointia eikä mittaa AI:n
+tuottavuusvaikutusta tai ihmisen yleistä paremmuutta.
+
+| Aika | Toiminta | Yleisön tehtävä |
+|---|---|---|
+| 1:15–1:20 | Rajaus ja aloitus | Avaa playground. Nimeä kenelle peli on ja millaisen lyhyen kokemuksen tavoittelet. |
+| 1:20–1:30 | Ensimmäinen versio | Tee pieni proto tai seuraa yhteistä demoa. Kokeile, pääseekö alkuun ja toimiiko perustoiminto. |
+| 1:30–1:37 | Ensimmäinen pelaajahavainto | Anna parin kokeilla. Katso mitä hän ymmärtää ja tekee ennen kuin selität kaiken. Kirjaa yksi havainto. |
+| 1:37–1:47 | Yksi perusteltu valinta | Säilytä toimiva ratkaisu tai muuta yhtä asiaa. Voit pyytää vaihtoehtoja KYSY-tilassa ja toteuttaa valitun MUOKKAA-tilassa. |
+| 1:47–1:52 | Uusi kokeilu | Tarkista, näkyikö tavoiteltu vaikutus. Myös huonompi tai epäselvä tulos kelpaa. |
+| 1:52–1:56 | Lyhyt showcase | Enintään kaksi vapaaehtoista kertoo tarkoituksen, havainnon ja päätöksen. Ei paremmuuskilpailua. |
+| 1:56–2:00 | Yhteinen purku | Erota nopea syntyminen, pelaajan kokemus ja vastuu. Palaa otsikkoon ja yhteen huoneen alkuvastaukseen. |
+
+Pelaajalle annetaan kolme lyhyttä kysymystä:
+
+- Ymmärsitkö, mitä voit tehdä?
+- Mikä kohta oli kiinnostava, hauska tai turhauttava?
+- Saitko sen kokemuksen, jota tekijä tavoitteli?
+
+”Haluatko jatkaa?” sopii lisäkysymykseksi, jos jatkaminen kuuluu tavoiteltuun
+kokemukseen. Lyhyen teoksen onnistumista ei ratkaista peliajan perusteella.
+
+Jos ensimmäinen versio toimii hyvin, sen säilyttäminen on perusteltu
+päätös. Jos peli ei käynnisty, korjaus ja sen todentaminen voivat olla
+työpajan koko tulos. Muutoksia ei vaadita vain ihmisen roolin osoittamiseksi.
+
+[Työpajasuunnitelman](workshop-plan.md) debug-ohjeet ja
+[playground-suunnitelman](workshop-playground-plan.md) työkalurajat säilyvät
+valmistelun tukena. Edellisen suunnitelman ”tee siitä peli / varasta takaisin
+ihmiselle” -kierrokset korvataan yllä olevalla kululla. Omia API-avaimia ei
+pyydetä. Jakaminen on vapaaehtoista, ja 12+ yleisön käyttö-, tallennus- ja
+osallistumisrajat tarkistetaan tapahtuman valmistelussa.
+
+Verkkokatkossa käytetään valmiita versioita samasta pelistä. Versioita ei
+nimetä etukäteen huonoksi, paremmaksi ja parhaaksi. Yleisö arvioi niitä
+suhteessa sovittuun tarkoitukseen ja ehdottaa seuraavaa kokeilua.
+
+## Lopetus
+
+Purussa kysytään: mitä AI teki, mitä osallistuja päätti ja mitä pelaajalta
+opittiin? Niiden jälkeen palataan helpompi/parempi-pariin. Yksittäisten
+työpajojen tuloksia ei yleistetä koko pelialaan.
+
+Päätöslauseeksi:
+
+> Pelattavan pelin tekeminen yhdellä pyynnöllä on iso saavutus.
+> Seuraava kysymys kuuluu pelaajalle: oliko tämä sinun aikasi arvoinen?
+
+Vanha ”AI tekee olemassa olevan, ihminen pelaamisen arvoisen” -jako poistuu.
+Se olettaisi etukäteen sen, mitä esityksessä ja työpajassa arvioidaan.
+
+## Mitä jää varalle ja mitä leikataan ensin?
+
+**DLSS 5 jää varamateriaaliksi.** Saman kohtauksen ON/OFF-vertailu on hyvä
+taiteellisen tavoitteen keskusteluesimerkki, mutta pääversiossa Astra ja
+1001 Nights täyttävät jo eri tehtävät. Jos kuvallinen yleisökeskustelu
+halutaan pääversioon, DLSS 5 korvaa 1001 Nightsin saman kolmen minuutin
+paikassa. Valmistajan kuva ei ole oma riippumaton koe.
+
+Varalla säilyvät myös GDC:n käyttötapakuvaaja, Playco, muut Astra-demot,
+game jam -säännöt, Capcom, Project Genie, METR sekä laajemmat työmarkkina-,
+ympäristö- ja tekijänoikeuskysymykset. Niitä ei lisätä rungon päälle.
+Game jam -vertailu voi korvata Clair Obscurin sääntöesimerkin, jos
+yleisöpainotus sitä puoltaa. Tällöin käytetään tarkistettua vuoden 2026
+sääntöaineistoa ja samaa noin minuutin aikavarausta.
+
+Jos harjoituksessa aika ylittyy, leikataan tässä järjestyksessä:
+
+1. Poista ylimääräiset kommentit gallupista ja käsitteiden esimerkeistä.
+   Säilytä liittymisaika ja kahdeksan kysymyksen perusrakenne.
+2. Tiivistä 1001 Nights noin minuutin selitykseksi yhden kuvan avulla.
+3. Tiivistä Clair Obscur yhteen lauseeseen tai jätä se varalle.
+   Säilytä vastuun ja suostumuksen käsittely.
+4. Näytä SuomiWoWin kokoelma valmiina kuvana ja lyhennä live-siirtymiä.
+   Säilytä yksi pakka, yksi kortti ja päätöksen peruste.
+
+Taukoa ja työpajan pelaajahavaintoa ei käytetä esityksen ylityksen
+korjaamiseen. Työpajan teknisessä viiveessä poistetaan ensin lavashowcase,
+sitten yhdistetään muutoksen teko ja uusi kokeilu. Yhteinen purku säilyy.
+
+## PowerPointin myöhempi toteutussuunta
+
+- 16:9, projektorille luettava teksti ja yksi asia kerrallaan.
+- HTML-prototyypeistä hyödynnetään toimivaa rytmiä ja visuaalisia ideoita.
+  Niiden nykyinen dialista ja tekstimäärä eivät määrää PowerPointia.
+- Suuret pelikuvat, lyhyet kysymykset ja kaksi muokattavaa tilastokuvaajaa.
+  Vältetään dashboardia muistuttavia korttiruudukoita ja mallilogojen sarjaa.
+- Tumma dramaattinen avaus voi säilyä. Peliesimerkit ja oma projekti
+  tuovat konkreettiset värit ja kuvat.
+- Vain puhetta tukevat sisältöpaljastukset. Yleisön pitää ymmärtää dia
+  myös pysäytyskuvana.
+- Live Voting ja playground avataan erillisinä. Niille valmistellaan
+  selkeä siirtymädia, varakuva ja toimimattoman verkon vaihtoehto.
+- Puhujamuistiinpanoissa ovat puheen tarkoitus, lähteet, version tausta
+  ja tulkinnan kannalta olennaiset rajat. Tuotannon tarkistuslista pidetään
+  tässä suunnitelmassa, ei yleisön dioilla.
+
+## Aineistovalmius ennen PowerPointin rakentamista
+
+| Tarvittava aineisto | Tila ja seuraava valmistelutoimi |
+|---|---|
+| GDC ja Quantic Foundry | Ydinarvot tarkistettu tutkimuskierroksella. Kuvaajat rakennetaan kahden kuvan rajaukseen. |
+| Astra-esimerkki | Alkuperäislähde ja tekstityksen aikaleimat löytyvät. Tarkka kuva- ja äänikatkelma sekä näytettävä versio valitaan ennen käyttöä. |
+| SuomiWoWin AI-rooli | Puhujan tai projektihistorian vahvistus tarvitaan. Ennen sitä ei käsikirjoiteta työkaluosuuksia faktoina. |
+| SuomiWoWin päätös ja palaute | Paikannetaan todellinen päätös sekä saatavilla oleva näyttö. Ilman palautetta vaikutus ilmaistaan tavoitteena. |
+| 1001 Nights | Tutkimus ja press kit paikannettu. Valitaan lyhyt, mekaniikan ymmärrettäväksi tekevä kohta. |
+| Työpajan esimerkit | Valmistellaan ja säilytetään alkuperäinen sekä muutettu versio. Tulosta ei valita todistamaan ennalta sovittua voittajaa. |
+| Tapahtuman osoitteet ja tekniikka | Varmennetaan gallupin ja playgroundin osoitteet, käyttörajat ja esittäjän siirtymät ennen QR-koodien lukitsemista. |
+
+Lähteiden näyttäminen dioilla ei tarkoita, että ulkoiset videot tai kuvat
+olisivat meidän tekemiämme. Tarkka alkuperä ja materiaalikohtaiset ehdot
+säilytetään aineiston valmistelussa.
+
+## Valmiin luonnoksen arviointi
+
+- Aikataulu toteutuu harjoituksessa: esitys päättyy 1:00, työpaja alkaa
+  1:15 ja koko ohjelma päättyy 2:00.
+- Astra-osuus tunnustaa kyvykkyyden ja kertoo näytetyn version taustan.
+  Tuotannon nopeudesta ei päätellä yleisön kysyntää.
+- SuomiWoW vastaa kysymykseen kenelle ja miksi sekä näyttää yhden todellisen
+  päätöksen. Oma kokemus ja mitattu vaikutus erottuvat toisistaan.
+- Kaksi pääkuvaajaa säilyttävät lähteiden nimittäjät ja tulkintarajat.
+  Vanha ensikosketus ilmaisversioon -väite ei palaa käsikirjoitukseen.
+- Pelaajan hyöty, suostumus ja julkaisuvastuu käsitellään kukin omana
+  arviointikysymyksenään.
+- Työpajassa ehditään havaita pelaamista ja tehdä sen perusteella päätös.
+  Ensimmäisen version onnistuminen ja muutoksen epäonnistuminen ovat
+  hyväksyttäviä tuloksia.
+- Lopetus vastaa alun jännitteeseen ilman vaatimusta yhteisestä AI-kannasta.

@@ -1,8 +1,10 @@
 # Esityksen toimituksellinen selkäranka
 
-> **Tila:** kriittinen toinen suunnittelukierros. Tämä ei ole dialista eikä
-> lopullinen käsikirjoitus, vaan suositus siitä, mitä koko ohjelma oikeastaan
-> yrittää sanoa ja millä dramaturgialla väite kannattaa rakentaa.
+> **Tila:** aiemman toisen suunnittelukierroksen taustamuistio.
+> Tutkimuskierrokset yhdistävä [esityksen pääsuunnitelma](presentation-plan.md)
+> (5.9.2026) korvaa tämän muistion ristiriitaiset sisältöprioriteetit,
+> ajoitukset ja työpajan johtopäätökset. Tämä säilyttää aiemman perustelun
+> dramaturgian tausta-aineistona.
 
 ## Suora arvio nykyisestä ideasta
 

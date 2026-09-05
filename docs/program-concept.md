@@ -1,5 +1,10 @@
 # Ohjelman kokonaisidea
 
+> **Aiemman kierroksen taustamuistio.** Päivitetty sisältö, aikataulu ja
+> työpajan tavoite ovat [esityksen pääsuunnitelmassa](presentation-plan.md)
+> (5.9.2026). Tämän dokumentin vanhoja kellonaikoja ja kolmen kuvaajan
+> rakennetta ei käytetä seuraavan PowerPoint-luonnoksen ohjeena.
+
 ## Ensimmäisen kierroksen päätös
 
 Kyse ei ole tekoälyn puolustuspuheesta, tuomiosta tai pelialan

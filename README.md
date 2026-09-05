@@ -5,6 +5,12 @@ kaikki on ohi... vai onko?”**. Ohjelma on kaksituntinen kokonaisuus: noin 60 m
 esitys, 15 minuutin tauko ja noin 45 minuutin osallistava
 peliprototyyppityöpaja.
 
+**Ajantasainen sisältörunko:** [esityksen pääsuunnitelma](docs/presentation-plan.md)
+on päivitetty 5.9.2026 tutkimuskierrosten perusteella seuraavaa
+PowerPoint-luonnosta varten. Se sisältää aikataulun, dialuonnoksen,
+pääesimerkit ja uuden työpajakulun. Alla kuvattu selainesitys on aiemman
+kierroksen prototyyppi eikä vielä vastaa päivitettyä suunnitelmaa.
+
 ## Selainesitys
 
 Repositoriossa on valmis ensimmäisen version selainesitys. Se rakentaa koko
@@ -43,6 +49,16 @@ kytketty esitykseen.
 
 ## Suunnitelmat
 
+Sisältöä ja ajoitusta koskevissa eroissa noudatetaan pääsuunnitelmaa.
+Vanhemmat erillissuunnitelmat säilyvät tausta- ja työkaluaineistona.
+
+- [Esityksen pääsuunnitelma](docs/presentation-plan.md) — ajantasainen viesti,
+  120 minuutin rakenne, diojen sisältöluonnos, lähderajat ja PowerPointin suunta.
+- [Tutkimuskierros 5.9.2026](docs/research-pass-2026-09-05.md) — päivitetty
+  tutkimuspohja ja sisältösuositukset.
+- [Astra ja yhden promptin pelit](docs/astra-one-shot-games-research-2026-09-05.md)
+  — alkuperäiset esimerkit, tuotantotavan rajaus ja pelaamisen tarkoitus.
+
 - [Julkiset esittelytekstit](docs/program-copy.md) — vahvistettu nimi sekä
   verkkosivu- ja some-esittelyt merkkirajoineen.
 - [Ohjelman kokonaisidea](docs/program-concept.md) — ohjelman kantava kysymys,
@@ -50,8 +66,6 @@ kytketty esitykseen.
 - [Esityksen toimituksellinen selkäranka](docs/editorial-narrative-blueprint.md)
   — kriittinen suositus pääargumentista, yleisön matkasta, dramaturgiasta sekä
   pidettävän ja leikattavan sisällön järjestyksestä.
-- [Esityssuunnitelma](docs/presentation-plan.md) — viesti, rakenne, diat ja
-  visuaalinen suunta.
 - [GenAI-kokemuksen arviointi](docs/ai-experience-and-evaluation.md) —
   ilmais- ja maksullisten palvelujen tutkimusraja, neljän minuutin esitysjakso,
   gallup-vaihtoehdot ja yhteys työpajaan.
