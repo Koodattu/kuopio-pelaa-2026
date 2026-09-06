@@ -1,5 +1,11 @@
 # Web-esityksen toteutussuunnitelma
 
+**Aiemman prototyypin tekninen suunnitelma.** Seuraavan HTML-version sisältöä
+ohjaa [pääsuunnitelma](presentation-plan.md) ja visuaalista toteutusta
+[6.9.2026 laadittu ohje](presentation-direction.md). Aloita sen kolmen
+kohtauksen pilotista. Alla olevat tekniset ehdotukset sovitetaan nykyiseen
+toteutukseen; ne eivät edellytä sovellusrungon uudelleenrakentamista.
+
 ## Lopputulos
 
 Rakennetaan selainpohjainen 16:9-esitys, joka:

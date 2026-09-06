@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rauhallinen keräilyhetki · Kuopio Pelaa</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#f0ece2;color:#282e26;font:18px/1.5 "Segoe UI",sans-serif}main{max-width:1000px;margin:auto;padding:32px 24px}h1{font-size:clamp(32px,5vw,55px);letter-spacing:-.045em;line-height:1.1;margin:12px 0 20px}p{max-width:720px}button,select{font:inherit;padding:10px 16px;border:1px solid #677260;border-radius:4px;background:transparent;color:inherit;cursor:pointer}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #aa512c;outline-offset:4px}a{color:inherit}header{display:flex;gap:20px;justify-content:space-between;font-size:14px;color:#606959}.controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:24px 0}.board{position:relative;height:350px;background:#dbe1d2;border:1px solid #a5af9b;overflow:hidden}.target{position:absolute;background:#566e50;color:#fff;border:0;width:70px;height:70px;border-radius:50%;transform:translate(-50%,-50%);font-size:26px;transition:left 160ms ease,top 160ms ease}.target[hidden]{display:none}.status{font-size:24px;min-height:42px;font-weight:600}footer{margin-top:26px;border-top:1px solid #afb6a5;padding-top:16px}footer p{margin:8px 0}.note{font-size:14px;color:#606959}@media(prefers-reduced-motion:reduce){.target{transition:none}}@media(max-width:600px){main{padding:20px}.board{height:300px}header{display:block}.target{width:60px;height:60px}}
+  </style>
+</head>
+<body><main>
+  <header><span>Kuopio Pelaa 2026 · yhteinen kokeilu</span><a href="./#workshop-brief">Takaisin esitykseen</a></header>
+  <h1>Rauhallinen keräilyhetki</h1>
+  <p>Tavoite: lyhyt, rauhallinen tauko kaverille. Kerää viisi merkkiä napsauttamalla tai näppäimistöllä. Aikarajaa ei ole.</p>
+  <div class="controls"><label for="version">Versio</label><select id="version"><option value="a">A · merkki pysyy paikallaan</option><option value="b">B · merkki vaihtaa paikkaa</option></select><button id="start">Aloita</button></div>
+  <p class="status" id="status" role="status">Valitse versio ja aloita.</p>
+  <div class="board" aria-label="Keräilyalue"><button class="target" id="target" aria-label="Kerää merkki" hidden>✦</button></div>
+  <footer><p>Miltä pelaaminen tuntui? Sopiko se tavoiteltuun taukoon?</p><p>Mitä säilyttäisit tai muuttaisit seuraavaksi?</p><p class="note">Esitystä varten rakennettu paikallinen esimerkki. Versioilla on sama tavoite ja eri sijoittelusääntö. Tämä ei ole pelaajatutkimus tai aiemman AI-ajon tallenne. Mitään ei tallenneta tai lähetetä.</p></footer>
+</main>
+<script>
+  const version = document.getElementById('version');
+  const start = document.getElementById('start');
+  const target = document.getElementById('target');
+  const status = document.getElementById('status');
+  const positions = [[50,50],[23,28],[77,69],[29,72],[73,25]];
+  let collected = 0;
+  function positionTarget() {
+    const [x,y] = version.value === 'a' ? [50,50] : positions[collected];
+    target.style.left = x + '%'; target.style.top = y + '%';
+  }
+  function reset() { collected = 0; target.hidden = true; status.textContent = 'Valitse versio ja aloita.'; start.textContent = 'Aloita'; }
+  start.addEventListener('click', () => { collected = 0; positionTarget(); target.hidden = false; status.textContent = '0 / 5 kerätty'; start.textContent = 'Aloita alusta'; target.focus(); });
+  version.addEventListener('change', reset);
+  target.addEventListener('click', () => {
+    collected += 1;
+    if (collected === 5) { target.hidden = true; status.textContent = '5 / 5. Valmis. Miltä tämä tuntui?'; start.focus(); }
+    else { status.textContent = collected + ' / 5 kerätty'; positionTarget(); }
+  });
+</script></body></html>

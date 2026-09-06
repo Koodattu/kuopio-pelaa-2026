@@ -6,16 +6,19 @@ esitys, 15 minuutin tauko ja noin 45 minuutin osallistava
 peliprototyyppityöpaja.
 
 **Ajantasainen sisältörunko:** [esityksen pääsuunnitelma](docs/presentation-plan.md)
-on päivitetty 5.9.2026 tutkimuskierrosten perusteella seuraavaa
-PowerPoint-luonnosta varten. Se sisältää aikataulun, dialuonnoksen,
-pääesimerkit ja uuden työpajakulun. Alla kuvattu selainesitys on aiemman
-kierroksen prototyyppi eikä vielä vastaa päivitettyä suunnitelmaa.
+sisältää tutkimuskierrosten pohjalta aikataulun, dialuonnoksen,
+pääesimerkit ja uuden työpajakulun. Toteutussuunta on 6.9.2026 alkaen
+HTML ensin. [Visuaalinen ja kerronnallinen ohje](docs/presentation-direction.md)
+ohjaa 6.9.2026 rakennettua uutta selainesitystä.
+[Ajo-ohje](docs/presentation-runbook.md) sisältää ohjaimet, tapahtumakytkennät,
+aineiston alkuperän ja varapolut.
 
 ## Selainesitys
 
-Repositoriossa on valmis ensimmäisen version selainesitys. Se rakentaa koko
-kahden tunnin ohjelman huoneen ennakkokäsityksistä tekijän työpöydälle,
-pelaajan ruudulle ja lopulta osallistujien omaan peliprototyyppityöpajaan.
+Uusi selainesitys kattaa kahden tunnin ohjelman huoneen näkemyksistä
+Astra-esimerkkiin, SuomiWoW CCG:hen, pelaajan kokemukseen ja vastuuseen
+sekä osallistujien omaan kokeiluun. Visuaalinen suunta yhdistää vaaleat
+selitysnäkymät, tummat peliesimerkit ja muutaman puhujan ohjaaman animaation.
 
 Käynnistä esitys:
 
@@ -24,10 +27,10 @@ npm install
 npm run dev
 ```
 
-Vite tulostaa selaimessa avattavan paikallisen osoitteen. Esityksessä on 34
-diaa ja 65 puhujan ohjaamaa sisältöpaljastusta. Kokonaisuuteen kuuluvat avaus,
-live-gallupiin siirtyminen, kaksi pääesityksen osaa, SuomiWoW CCG -demo, tauko
-ajastimineen sekä työpajan kolme kierrosta.
+Vite tulostaa selaimessa avattavan paikallisen osoitteen. Esityksessä on 35
+näkymää ja 37 erillistä sisältöpaljastusta, yhteensä 72 sisältötilaa.
+Mukana ovat kahdeksan kysymyksen gallup-varapolku, kaksi tilastokuvaajaa,
+oikeat peliesimerkkien kuvat sekä tauon ja työpajan ajastimet.
 
 Keskeiset ohjaimet:
 
@@ -35,11 +38,14 @@ Keskeiset ohjaimet:
 - `←` tai `PageUp`: edellinen paljastus tai dia
 - `F`: koko näyttö
 - `N`: puhujan muistiinpanot ja lähteet
+- `P`: erillinen synkronoitu puhujanäkymä
 - `O`: kaikki diat
+- `B`: pimennä tai palauta esitys
 - `?`: näppäinohjeet
 - `Home` / `End`: alkuun / loppuun
 
-Puhelimella dioja voi vaihtaa pyyhkäisemällä. Kaksoisnapsautus avaa koko näytön.
+Puhelimella dioja voi vaihtaa pyyhkäisemällä. Koko näyttö avautuu F:llä tai
+alareunan painikkeella. Esitys säilyttää 16:9-kuvasuhteen.
 
 Live Voting- ja AI Workshop Playground -osoitteet voidaan liittää kopioimalla
 `.env.example` tiedostoksi `.env` ja täyttämällä muuttujat. Työpajan lyhyt URL
@@ -53,7 +59,11 @@ Sisältöä ja ajoitusta koskevissa eroissa noudatetaan pääsuunnitelmaa.
 Vanhemmat erillissuunnitelmat säilyvät tausta- ja työkaluaineistona.
 
 - [Esityksen pääsuunnitelma](docs/presentation-plan.md) — ajantasainen viesti,
-  120 minuutin rakenne, diojen sisältöluonnos, lähderajat ja PowerPointin suunta.
+  120 minuutin rakenne, diojen sisältöluonnos, lähderajat ja HTML-version suunta.
+- [Visuaalinen ja kerronnallinen ohje](docs/presentation-direction.md) —
+  sommittelu, tarkoituksellinen liike, referenssit ja kolmen kohtauksen pilotti.
+- [HTML-esityksen ajo-ohje](docs/presentation-runbook.md) — käynnistys,
+  puhujanäkymä, aineiston alkuperä, tapahtumakytkennät ja varapolut.
 - [Tutkimuskierros 5.9.2026](docs/research-pass-2026-09-05.md) — päivitetty
   tutkimuspohja ja sisältösuositukset.
 - [Astra ja yhden promptin pelit](docs/astra-one-shot-games-research-2026-09-05.md)
@@ -93,7 +103,13 @@ Vanhemmat erillissuunnitelmat säilyvät tausta- ja työkaluaineistona.
 
 ## Tila
 
-Suunnitelmien lisäksi repositorio sisältää toimivan, yhtenäiseksi viimeistellyn
-selainesityksen. Pääesityksen kolme kuvaajaa käyttävät alkuperäisjulkaisuista
-tarkistettuja ydinarvoja. Live Voting ja varsinainen työpajasovellus avataan
-esityksestä erillisinä näkymänä, kun niiden tapahtumaosoitteet ovat valmiit.
+Esitys on rakennettu ja tarkistettu selaimessa. Sisältö, lähteet ja puhujan
+ohjeet ovat tiedostossa `src/scenes.tsx`, esityksen ohjaus tiedostossa
+`src/presentation.tsx` ja visuaalinen toteutus tiedostossa `src/styles.css`.
+Paikallinen kahden version keräilykokeilu löytyy tiedostosta
+`public/workshop-example.html`.
+
+Tapahtuman live-gallupin ja generointityöpajan osoitteet pitää vielä kytkeä.
+Niiden puuttuessa esitys käyttää käsiäänestystä ja yhteistä paikallista
+kokeilua. Koko puheen harjoittelu sekä tapahtuman projektorin, verkon ja
+äänentoiston tarkistus kuuluvat tapahtumavalmisteluun.

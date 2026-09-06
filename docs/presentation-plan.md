@@ -1,10 +1,12 @@
 # Esityksen pääsuunnitelma
 
-**Päivitetty 5.9.2026 molempien tutkimusmuistioiden perusteella.** Tämä on
-seuraavan PowerPoint-luonnoksen ensisijainen sisältö- ja rakennesuunnitelma.
+**Sisältö päivitetty 5.9.2026 molempien tutkimusmuistioiden perusteella;
+toteutussuunta päivitetty 6.9.2026: HTML ensin.** Tämä on
+seuraavan esitysluonnoksen ensisijainen sisältö- ja rakennesuunnitelma.
 Se korvaa aiempien suunnitelmien ristiriitaiset aikataulut, sisältöprioriteetit
-ja päätöslauseet. HTML-esitykset säilyvät aiemman kierroksen prototyyppeinä.
-Tällä kierroksella päivitetään suunnitelma, ei esitystiedostoja tai sovelluksia.
+ja päätöslauseet. Uusi HTML-versio on rakennettu tämän rungon pohjalta 6.9.2026.
+Sitä ohjaa [visuaalinen ja kerronnallinen ohje](presentation-direction.md).
+[Ajo-ohje](presentation-runbook.md) kuvaa toteutuksen ja tapahtumakytkennät.
 
 Tutkimusperusta: [yleinen tutkimuskierros](research-pass-2026-09-05.md) ja
 [Astra ja yhden promptin pelit](astra-one-shot-games-research-2026-09-05.md).
@@ -92,7 +94,7 @@ nykyisen aiheen aikaa.
 
 Alla on 22 sisältökohtaa esitysosuudelle. Ne ovat alustava dialuonnos,
 eivät vaatimus 22 lopullisesta diasta. Gallup ja live-demo käyttävät
-erillistä sovellusta ilman uutta PowerPoint-diaa jokaiseen vaiheeseen.
+erillistä sovellusta ilman uutta esitysdiaa jokaiseen vaiheeseen.
 
 | # | Dian työnimi | Mitä yleisö näkee? | Mitä puhuja tekee? |
 |---:|---|---|---|
@@ -161,8 +163,9 @@ tavoitteeksi. Ennen/jälkeen-kuva ei yksin todista parempaa kokemusta.
 
 Jos historiallista vertailua ei löydy, näytetään yksi nykyinen päätös ja sen
 todellinen peruste. Muutoshistoriaa tai yhteisöpalautetta ei keksitä.
-AI:n osuus kirjataan puhujan tai projektihistorian perusteella ennen
-lopullista käsikirjoitusta. ”AI ei olisi voinut keksiä tätä” korvataan
+Puhuja vahvisti 6.9.2026, että AI rakensi koko toteutuksen ja hän teki kaikki
+suunnittelupäätökset. Tämä esitetään oman projektin työnjakona.
+”AI ei olisi voinut keksiä tätä” korvataan
 kuvauksella siitä, kuka tässä projektissa päätti ja miksi.
 
 ### Pelaajaosuus: myös generoinnilla voi olla pelillinen tarkoitus
@@ -233,7 +236,7 @@ Numeroiden alkuperäislähteet:
 [Quantic Foundry](https://quanticfoundry.com/2025/12/18/gen-ai/).
 Muiden tutkimusten linkit ja rajoitteet löytyvät kahdesta tutkimusmuistiosta.
 Kuvaajan vuosiluku, kohdejoukko ja olennainen rajaus näkyvät yleisölle.
-Täydet linkit ja laskut tulevat PowerPointin puhujamuistiinpanoihin.
+Täydet linkit ja laskut tulevat esityksen puhujamuistiinpanoihin.
 
 ## Tauko ja 45 minuutin työpaja
 
@@ -328,11 +331,16 @@ Taukoa ja työpajan pelaajahavaintoa ei käytetä esityksen ylityksen
 korjaamiseen. Työpajan teknisessä viiveessä poistetaan ensin lavashowcase,
 sitten yhdistetään muutoksen teko ja uusi kokeilu. Yhteinen purku säilyy.
 
-## PowerPointin myöhempi toteutussuunta
+## HTML-version toteutussuunta
+
+Uusi versio seuraa [visuaalisen ohjeen mukaista suuntaa](presentation-direction.md).
+Kolmen kohtauksen vaalea ja tumma käsittely tarkistettiin selaimessa.
+Toteutus sisältää 35 näkymää ja 72 sisältötilaa. PowerPoint ei ole tämän
+version toteutuskohde.
 
 - 16:9, projektorille luettava teksti ja yksi asia kerrallaan.
 - HTML-prototyypeistä hyödynnetään toimivaa rytmiä ja visuaalisia ideoita.
-  Niiden nykyinen dialista ja tekstimäärä eivät määrää PowerPointia.
+  Niiden nykyinen dialista ja tekstimäärä eivät määrää uutta versiota.
 - Suuret pelikuvat, lyhyet kysymykset ja kaksi muokattavaa tilastokuvaajaa.
   Vältetään dashboardia muistuttavia korttiruudukoita ja mallilogojen sarjaa.
 - Tumma dramaattinen avaus voi säilyä. Peliesimerkit ja oma projekti
@@ -345,14 +353,14 @@ sitten yhdistetään muutoksen teko ja uusi kokeilu. Yhteinen purku säilyy.
   ja tulkinnan kannalta olennaiset rajat. Tuotannon tarkistuslista pidetään
   tässä suunnitelmassa, ei yleisön dioilla.
 
-## Aineistovalmius ennen PowerPointin rakentamista
+## Aineistovalmius ennen esityksen rakentamista
 
 | Tarvittava aineisto | Tila ja seuraava valmistelutoimi |
 |---|---|
 | GDC ja Quantic Foundry | Ydinarvot tarkistettu tutkimuskierroksella. Kuvaajat rakennetaan kahden kuvan rajaukseen. |
 | Astra-esimerkki | Alkuperäislähde ja tekstityksen aikaleimat löytyvät. Tarkka kuva- ja äänikatkelma sekä näytettävä versio valitaan ennen käyttöä. |
-| SuomiWoWin AI-rooli | Puhujan tai projektihistorian vahvistus tarvitaan. Ennen sitä ei käsikirjoiteta työkaluosuuksia faktoina. |
-| SuomiWoWin päätös ja palaute | Paikannetaan todellinen päätös sekä saatavilla oleva näyttö. Ilman palautetta vaikutus ilmaistaan tavoitteena. |
+| SuomiWoWin AI-rooli | Puhuja vahvisti 6.9.2026: AI rakensi toteutuksen, kaikki suunnittelupäätökset ovat hänen. |
+| SuomiWoWin päätös ja palaute | Esimerkkinä julkaistun kortin muuttumattomuus ja raidihistorian säilyttäminen. Dokumentoitu päätös, ei vahvistettua pelaajavaikutusta. |
 | 1001 Nights | Tutkimus ja press kit paikannettu. Valitaan lyhyt, mekaniikan ymmärrettäväksi tekevä kohta. |
 | Työpajan esimerkit | Valmistellaan ja säilytetään alkuperäinen sekä muutettu versio. Tulosta ei valita todistamaan ennalta sovittua voittajaa. |
 | Tapahtuman osoitteet ja tekniikka | Varmennetaan gallupin ja playgroundin osoitteet, käyttörajat ja esittäjän siirtymät ennen QR-koodien lukitsemista. |
