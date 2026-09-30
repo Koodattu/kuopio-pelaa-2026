@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1600" height="900" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Pelialan vaikutusarviot ovat kielteistyneet</title><desc>GenAI:n vaikutus pelialaan • GDC:n kyselyt 2024–2026 GDC:n vuosittaisiin kyselyihin vastanneet; 2026 yli 2 300 pelialan ammattilaista. Eri vuosien otokset eivät ole sama vastaajajoukko. Vuoden 2026 kyselyn kohderyhmä ja toteutus muuttuivat. GDC varoittaa suorista vuosivertailuista. Kuva näyttää vain myönteiset ja kielteiset vaikutusarviot, ei kaikkia vastausvaihtoehtoja. GDC State of the Game Industry 2026, sivut 5 ja 22 (raportin kopio): https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf GDC:n virallinen 2026-yhteenveto: https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/</desc>
+
+
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1600" height="900"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-900)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1600" height="900" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,92%,88%); fill-rule: evenodd;"/>
+			<text x="88" y="838" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1676) scale(1,-1)">PELIALAN AMMATTILAISET</text>
+			<text x="88" y="764" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 46px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1528) scale(1,-1)">Pelialan vaikutusarviot ovat kielteistyneet</text>
+			<text x="88" y="718" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 24px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1436) scale(1,-1)">GenAI:n vaikutus pelialaan • GDC:n kyselyt 2024–2026</text>
+			<rect x="1012.6666666666666" y="217" width="413.33333333333337" height="413" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(90%,89%,84%); fill-rule: evenodd;"/>
+			<path d="M 186,217 L 1426,217 Z" style="stroke: rgb(14%,16%,14%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<text x="129.373046875" y="210.0" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,420) scale(1,-1)">0 %</text>
+			<path d="M 186,299.6 L 1426,299.6 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="118.591796875" y="292.6" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,585) scale(1,-1)">20 %</text>
+			<path d="M 186,382.2 L 1426,382.2 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="118.591796875" y="375.2" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,750) scale(1,-1)">40 %</text>
+			<path d="M 186,464.8 L 1426,464.8 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="118.591796875" y="457.8" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,915) scale(1,-1)">60 %</text>
+			<path d="M 186,547.4 L 1426,547.4 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="118.591796875" y="540.4" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1080) scale(1,-1)">80 %</text>
+			<path d="M 186,630 L 1426,630 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="107.810546875" y="623.0" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1246) scale(1,-1)">100 %</text>
+			<rect x="186" y="667" width="19" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,15%); fill-rule: evenodd;"/>
+			<text x="217" y="666" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 23px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1332) scale(1,-1)">Kielteinen vaikutus</text>
+			<rect x="560" y="667" width="19" height="19" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+			<text x="591" y="666" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 23px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1332) scale(1,-1)">Myönteinen vaikutus</text>
+			<g transform="">
+				<g transform="">
+					<rect x="290.02684563758385" y="217.0" width="91.54362416107381" height="74.34000000000003" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,15%); fill-rule: evenodd;"/>
+					<rect x="703.3601789709171" y="217.0" width="91.54362416107381" height="123.89999999999998" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,15%); fill-rule: evenodd;"/>
+					<rect x="1116.6935123042506" y="217.0" width="91.54362416107392" height="214.76" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,15%); fill-rule: evenodd;"/>
+					<rect x="403.7628635346756" y="217.0" width="91.54362416107381" height="86.73000000000002" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="817.0961968680089" y="217.0" width="91.54362416107381" height="53.69" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="1230.4295302013422" y="217.0" width="91.54362416107392" height="28.909999999999997" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform=""/>
+				<g transform=""/>
+			</g>
+			<text x="301.39680224937075" y="306.34000000000003" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,612) scale(1,-1)">18 %</text>
+			<text x="714.7301355827041" y="355.9" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,711) scale(1,-1)">30 %</text>
+			<text x="1128.0634689160374" y="446.76" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,893) scale(1,-1)">52 %</text>
+			<text x="415.1328201464625" y="318.73" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,637) scale(1,-1)">21 %</text>
+			<text x="828.4661534797958" y="285.69" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,571) scale(1,-1)">13 %</text>
+			<text x="1250.427416500629" y="260.90999999999997" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,521) scale(1,-1)">7 %</text>
+			<text x="360.45572916666663" y="172" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,344) scale(1,-1)">2024</text>
+			<text x="773.7890625" y="172" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,344) scale(1,-1)">2025</text>
+			<text x="1187.1223958333333" y="172" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,344) scale(1,-1)">2026</text>
+			<path d="M 1012.666667,213 L 1012.666667,635 Z" style="stroke: rgb(39%,40%,37%); stroke-linecap: butt; stroke-width: 1.4; stroke-dasharray: 6, 6;"/>
+			<text x="1151.1858723958333" y="658" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 21px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1316) scale(1,-1)">Kysely muuttui</text>
+			<text x="88" y="119" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,238) scale(1,-1)">2026: kohderyhmä ja kysely muuttuivat. Vuosivertailu on suuntaa antava.</text>
+			<text x="88" y="92" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,184) scale(1,-1)">Näytetään vain myönteiset ja kielteiset arviot. Eri vuosina vastasivat eri ihmiset.</text>
+			<path d="M 88,66 L 1512,66 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="88" y="37" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 17px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,74) scale(1,-1)">Lähde: GDC State of the Game Industry 2026, s. 5 ja 22 • gdconf.com</text>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1600" height="900" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Käyttö vaihtelee työpaikan mukaan</title><desc>GenAI:ta työssään käyttävien osuus • GDC 2026 GDC 2026: yli 2 300 pelialan ammattilaista. Kunkin pylvään nimittäjä on kyseisen työpaikkaryhmän vastaajat; ryhmien tarkkoja kokoja ei ilmoiteta julkisessa yhteenvedossa. 58 % koskee julkaisu-, tukipalvelu- ja markkinointi/PR-organisaatioiden yhdistettyä ryhmää. 36 % on kaikkien kyselyvastaajien käyttöaste, ei erillinen kolmas ryhmä. Käyttöaste ei mittaa hyväksyntää eikä sen perusteella voi päätellä käyttäjien vaikutusarvioita. GDC:n virallinen 2026-yhteenveto: https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/</desc>
+
+
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1600" height="900"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-900)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1600" height="900" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,92%,88%); fill-rule: evenodd;"/>
+			<text x="88" y="838" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1676) scale(1,-1)">PELIALAN AMMATTILAISET</text>
+			<text x="88" y="764" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 46px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1528) scale(1,-1)">Käyttö vaihtelee työpaikan mukaan</text>
+			<text x="88" y="718" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 24px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1436) scale(1,-1)">GenAI:ta työssään käyttävien osuus • GDC 2026</text>
+			<path d="M 548,267 L 548,569 Z" style="stroke: rgb(14%,16%,14%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<text x="531.6865234375" y="233" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,466) scale(1,-1)">0 %</text>
+			<path d="M 723.6,267 L 723.6,569 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="701.8958984375" y="233" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,466) scale(1,-1)">20 %</text>
+			<path d="M 899.2,267 L 899.2,569 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="877.4958984375" y="233" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,466) scale(1,-1)">40 %</text>
+			<path d="M 1074.8,267 L 1074.8,569 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="1053.0958984375" y="233" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,466) scale(1,-1)">60 %</text>
+			<path d="M 1250.4,267 L 1250.4,569 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="1228.6958984375" y="233" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,466) scale(1,-1)">80 %</text>
+			<path d="M 1426,267 L 1426,569 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="1398.9052734375" y="233" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,466) scale(1,-1)">100 %</text>
+			<g transform="">
+				<g transform="">
+					<rect x="548.0" y="451.03125" width="263.4" height="84.9375" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="548.0" y="300.03125" width="509.24" height="84.9375" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform=""/>
+				<g transform=""/>
+			</g>
+			<text x="88" y="483.9" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,967) scale(1,-1)">Pelinkehitysstudiot</text>
+			<text x="829.4" y="483.3" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 32px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,966) scale(1,-1)">30 %</text>
+			<text x="88" y="351.5" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,703) scale(1,-1)">Julkaisu, tukipalvelut</text>
+			<text x="88" y="314.3" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 30px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,628) scale(1,-1)">ja markkinointi / PR</text>
+			<text x="1075.24" y="332.3" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 32px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,664) scale(1,-1)">58 %</text>
+			<text x="88" y="629" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 25px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1258) scale(1,-1)">Koko kyselyssä</text>
+			<text x="294" y="629" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 35px;fill: rgb(23%,45%,41%); stroke:none;" transform="translate(0,1258) scale(1,-1)">36 %</text>
+			<text x="88" y="119" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,238) scale(1,-1)">Osuudet lasketaan kunkin työpaikkaryhmän vastaajista. 58 % koskee yhdistettyä ryhmää.</text>
+			<text x="88" y="92" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,184) scale(1,-1)">Käyttöaste, ei hyväksyntä. Koko kyselyssä yli 2 300 vastaajaa.</text>
+			<path d="M 88,66 L 1512,66 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="88" y="37" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 17px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,74) scale(1,-1)">Lähde: GDC State of the Game Industry 2026 • gdconf.com</text>
+		</g>
+	</g>
+</svg>

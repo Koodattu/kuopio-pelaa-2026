@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Miten pelimaailma reagoi? · Kuopio Pelaa 2026</title>
+  <style>
+    :root {
+      --paper: #f3efe3; --ink: #20231f; --muted: #66665c; --line: #d1cfc2;
+      --blue: #1769a5; --green: #47785a; --rust: #b64e30; --peach: #dfa68d;
+      --grey: #c5c8bd; --yellow: #f3d77f; --scale: 1;
+      font-family: "Segoe UI", Arial, sans-serif; color: var(--ink);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #252720; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; cursor: pointer; }
+    a { color: inherit; text-underline-offset: .18em; }
+    button:focus-visible, a:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+    [hidden] { display: none !important; }
+    .viewport { position: relative; height: calc(100dvh - 54px); overflow: hidden; }
+    .stage { position: absolute; left: 50%; top: 50%; width: 1600px; height: 900px; transform: translate(-50%, -50%) scale(var(--scale)); transform-origin: center; }
+    .slide { position: absolute; inset: 0; padding: 58px 88px 44px; background: var(--paper); overflow: hidden; }
+    .eyebrow { margin: 0 0 21px; font-size: 20px; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+    .eyebrow span { display: inline-block; width: 26px; height: 7px; margin: 0 13px 4px 0; background: var(--blue); }
+    h1 { margin: 0; max-width: 1424px; font-family: "Arial Black", "Segoe UI", sans-serif; font-size: 57px; line-height: 1.12; font-weight: 900; letter-spacing: -1.9px; }
+    .subtitle { margin: 18px 0 0; font-size: 27px; line-height: 1.35; color: #51554d; }
+    .chart { margin: 24px 0 0; }
+    .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .chart text { font-family: "Segoe UI", Arial, sans-serif; fill: var(--ink); }
+    .chart .tick { font-size: 21px; fill: var(--muted); }
+    .chart .label { font-size: 28px; font-weight: 600; }
+    .chart .value { font-size: 34px; font-weight: 800; }
+    .chart .grid { stroke: var(--line); stroke-width: 1; }
+    .chart .negative { fill: var(--rust); }
+    .chart .positive { fill: var(--green); }
+    .chart .usage { fill: var(--blue); }
+    .slide-footer { position: absolute; bottom: 40px; left: 88px; right: 88px; display: flex; justify-content: space-between; align-items: end; gap: 35px; font-size: 19px; line-height: 1.42; color: var(--muted); }
+    .slide-footer p { margin: 0; }
+    .slide-footer a { text-decoration-color: #a5a497; }
+    .page-number { flex: none; font-weight: 750; letter-spacing: .05em; }
+    .caveat { font-size: 22px; color: #565a51; line-height: 1.4; margin: 12px 0 0; }
+    .legend { display: flex; gap: 35px; margin-top: 24px; font-size: 23px; }
+    .key { display: inline-block; width: 17px; height: 17px; margin-right: 10px; }
+    .negative-key { background: var(--rust); }
+    .positive-key { background: var(--green); }
+    .impact .chart { margin-top: 6px; }
+    .impact-grouped .group-title { font-size: 30px; font-weight: 800; }
+    .impact-grouped .mixed { fill: #b18b36; }
+    .use-layout { display: grid; grid-template-columns: 1050px 1fr; gap: 56px; align-items: center; margin-top: 28px; }
+    .use-layout .chart { margin: 0; }
+    .use-layout .chart .label { font-size: 24px; }
+    .use-layout .chart .value { font-size: 27px; }
+    .overall { border-left: 2px solid var(--line); padding-left: 40px; }
+    .overall strong { display: block; font-size: 96px; line-height: 1; letter-spacing: -5px; color: var(--blue); }
+    .overall p { font-size: 25px; line-height: 1.4; margin: 22px 0 0; }
+    .workplace-context { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 20px; }
+    .workplace-context h2 { font-size: 20px; font-weight: 600; margin: 0 0 15px; color: var(--muted); }
+    .workplace-context p { font-size: 21px; line-height: 1.35; margin: 15px 0 0; }
+    .workplace-context b { display: block; font-size: 31px; color: var(--blue); }
+    .takeaway { margin: 40px 0 0; font-size: 32px; font-weight: 700; }
+    .attitude-head { display: flex; align-items: baseline; gap: 34px; margin-top: 40px; }
+    .attitude-head strong { font-size: 126px; line-height: 1; letter-spacing: -6px; color: var(--rust); }
+    .attitude-head p { font-size: 35px; margin: 0; }
+    .attitudes .chart { margin-top: 28px; }
+    .segments { display: grid; grid-template-columns: 1.3fr .85fr 1.3fr; gap: 28px; margin-top: 24px; }
+    .segments h2 { margin: 0 0 12px; font-size: 26px; }
+    .segments p { margin: 0 0 9px; font-size: 22px; line-height: 1.35; white-space: nowrap; }
+    .segments strong { font-size: 24px; }
+    .attitudes .very-negative { --segment: var(--rust); }
+    .attitudes .somewhat-negative { --segment: #ce795e; }
+    .attitudes .slightly-negative { --segment: var(--peach); }
+    .attitudes .neutral { --segment: var(--yellow); }
+    .attitudes .slightly-positive { --segment: #a6c58a; }
+    .attitudes .somewhat-positive { --segment: #74a36b; }
+    .attitudes .very-positive { --segment: var(--green); }
+    .attitudes .key { background: var(--segment); }
+    .attitudes rect { fill: var(--segment); }
+    .use-cases .chart { margin-top: 28px; }
+    .use-cases .takeaway { margin-top: 25px; font-size: 30px; }
+    .regions .subtitle { max-width: 1200px; }
+    .regions .chart { margin-top: 20px; }
+    .regions .chart .label { font-size: 22px; }
+    .regions .chart .value { font-size: 23px; }
+    .country-order { display: flex; align-items: center; gap: 22px; margin: 5px 0 0; font-size: 23px; font-weight: 600; color: var(--muted); }
+    .country-order .order-line { flex: 1; border-top: 2px solid var(--line); }
+    .region-legend { display: flex; align-items: center; gap: 32px; margin: 5px 0 0; font-size: 23px; }
+    .region-legend > span { white-space: nowrap; }
+    .why-columns { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 36px; }
+    .why-columns article { display: flex; flex-direction: column; align-items: flex-start; }
+    .why-columns h2 { display: inline-block; margin: 0 0 23px; padding-bottom: 9px; border-bottom: 7px solid var(--yellow); font-size: 36px; line-height: 1.15; }
+    .why-columns article:nth-child(2) h2 { border-color: #a9d4e7; }
+    .why-columns article:nth-child(3) h2 { border-color: #b8d39d; }
+    .why-columns p { font-size: 28px; line-height: 1.4; margin: 0; }
+    .why-columns .evidence { width: 100%; margin-top: auto; padding-top: 22px; font-size: 23px; line-height: 1.38; }
+    .evidence strong { display: block; margin-top: 7px; color: var(--blue); font-size: 27px; }
+    .evidence small { display: block; margin-top: 5px; color: var(--muted); font-size: 19px; }
+    .discussion-line { margin: 28px 0 0; padding-top: 23px; border-top: 2px solid var(--line); font-size: 33px; line-height: 1.3; font-weight: 700; }
+    .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 55px; position: relative; margin-top: 50px; }
+    .timeline::before { content: ""; height: 3px; background: var(--line); position: absolute; left: 0; right: 0; top: 89px; }
+    .milestone { position: relative; }
+    .year { display: block; font-size: 65px; line-height: 1; font-weight: 800; letter-spacing: -2px; color: var(--blue); }
+    .year small { font-size: 24px; letter-spacing: 0; font-weight: 600; }
+    .milestone::before { content: ""; position: absolute; top: 81px; left: 0; width: 19px; height: 19px; background: var(--blue); border: 4px solid var(--paper); border-radius: 50%; }
+    .milestone h2 { font-size: 33px; line-height: 1.22; margin: 62px 0 18px; }
+    .milestone p { font-size: 27px; line-height: 1.43; margin: 0; }
+    .steam .takeaway { margin-top: 38px; padding-top: 24px; border-top: 2px solid var(--line); line-height: 1.3; }
+    .game { padding: 0; }
+    .game-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+    .game-label { position: absolute; top: 55px; left: 72px; padding: 29px 34px; background: var(--paper); }
+    .game-label .eyebrow { margin-bottom: 14px; }
+    .game-label h1 { font-size: 70px; }
+    .game-label p:last-child { margin: 16px 0 0; font-size: 24px; }
+    .game-caption { position: absolute; left: 72px; bottom: 89px; margin: 0; background: var(--paper); padding: 14px 22px; font-size: 27px; font-weight: 600; }
+    .game .slide-footer { left: 94px; right: 72px; bottom: 34px; color: #f4efe4; font-size: 18px; text-shadow: 0 1px 5px #000; }
+    .anticipation-voices { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; margin-top: 58px; }
+    .anticipation-voices article { border-top: 6px solid var(--green); padding-top: 24px; }
+    .anticipation-voices h2 { font-size: 29px; margin: 0 0 27px; }
+    .anticipation-voices h2 small { display: block; font-size: 21px; font-weight: 400; color: var(--muted); margin-top: 7px; }
+    .anticipation-voices .enthusiasm { font-size: 37px; line-height: 1.23; font-weight: 800; color: var(--green); margin: 0 0 24px; }
+    .anticipation-voices p { font-size: 28px; line-height: 1.45; margin: 0; }
+    .anticipation .takeaway { margin-top: 51px; }
+    .setup-headline { margin: 36px 0 0; padding: 26px 32px; border-left: 7px solid var(--blue); background: #e9e6da; }
+    .setup-headline figcaption { font-size: 20px; color: var(--muted); margin-bottom: 16px; }
+    .setup-headline blockquote { margin: 0; font-size: 36px; line-height: 1.3; font-weight: 750; }
+    .setup-context { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; margin-top: 36px; }
+    .setup-context h2 { margin: 0 0 15px; font-size: 30px; }
+    .setup-context p { margin: 0; font-size: 27px; line-height: 1.4; }
+    .reaction h1 { max-width: 1280px; }
+    .reaction-body { display: grid; grid-template-columns: 1fr 1.12fr; gap: 70px; margin-top: 45px; align-items: start; }
+    .reaction-body h2 { font-size: 30px; margin: 0 0 23px; }
+    .reaction-body p { font-size: 27px; line-height: 1.42; margin: 0 0 19px; }
+    .reaction-voice { border-left: 2px solid var(--line); padding-left: 45px; }
+    .reaction-voice blockquote { font-size: 33px; line-height: 1.35; font-weight: 700; margin: 0 0 17px; color: var(--rust); }
+    .reaction-voice .attribution { font-size: 21px; color: var(--muted); }
+    .audience-question { margin: 42px 0 0; padding-left: 24px; border-left: 8px solid var(--yellow); font-size: 36px; font-weight: 750; line-height: 1.32; }
+    .controls { height: 54px; display: flex; justify-content: center; gap: 8px; align-items: center; color: #eeeae0; background: #252720; font-size: 14px; }
+    .controls button { background: transparent; color: inherit; border: 0; padding: 8px 13px; border-radius: 4px; }
+    .controls button:hover { background: #41443b; }
+    .controls button:disabled { opacity: .3; cursor: default; }
+    .controls .counter { min-width: 60px; font-variant-numeric: tabular-nums; }
+    .controls .divider { height: 18px; width: 1px; background: #626458; margin: 0 6px; }
+    dialog { border: 0; border-radius: 6px; padding: 32px; width: min(820px, calc(100vw - 32px)); max-height: 85dvh; background: var(--paper); color: var(--ink); font-size: 18px; line-height: 1.6; }
+    dialog::backdrop { background: #0009; }
+    dialog h2 { margin: 0 40px 22px 0; font-size: 27px; line-height: 1.25; }
+    dialog h3 { margin: 28px 0 8px; font-size: 18px; }
+    dialog p { margin: 0 0 15px; }
+    dialog .close { position: absolute; right: 19px; top: 13px; border: 0; background: transparent; font-size: 29px; }
+    .overview-list { list-style: none; margin: 0; padding: 0; }
+    .overview-list button { width: 100%; text-align: left; color: var(--ink); background: none; border: 0; border-bottom: 1px solid var(--line); padding: 15px 10px; font-size: 18px; }
+    .overview-list button:hover, .overview-list button[aria-current] { background: #e3e4d6; }
+    .overview-list span { color: var(--blue); display: inline-block; width: 35px; font-weight: 800; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    :fullscreen .viewport { height: 100dvh; }
+    :fullscreen .controls { display: none; }
+    @media (max-width: 600px) { .controls { gap: 0; font-size: 12px; } .controls button { padding: 8px; } .controls .divider { margin: 0 3px; } }
+    @media print {
+      @page { size: 1600px 900px; margin: 0; }
+      body { background: var(--paper); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .viewport { display: block; height: auto; overflow: visible; }
+      .stage { position: relative; left: auto; top: auto; transform: none; height: auto; }
+      .slide, .slide[hidden] { display: block !important; position: relative; width: 1600px; height: 900px; break-after: page; }
+      .slide:last-child { break-after: auto; }
+      .controls, dialog, .sr-only { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="viewport" aria-label="Miten pelimaailma reagoi tekoälyyn">
+    <div class="stage">
+      <section class="slide impact" id="gdc-asenteet" aria-labelledby="title-1">
+        <p class="eyebrow"><span></span>Pelialan ammattilaiset · GDC</p>
+        <h1 id="title-1">Mitä peliala ajattelee GenAI:sta?</h1>
+        <p class="subtitle">Arvio generatiivisen tekoälyn vaikutuksesta pelialaan</p>
+        <div class="legend" aria-hidden="true"><span><i class="key negative-key"></i>Kielteinen vaikutus</span><span><i class="key positive-key"></i>Myönteinen vaikutus</span></div>
+        <figure class="chart" id="impact-chart" aria-label="GDC: kielteinen vaikutus 18 prosenttia vuonna 2024, 30 vuonna 2025 ja 52 vuonna 2026. Myönteinen vaikutus vastaavasti 21, 13 ja 7 prosenttia."></figure>
+        <p class="caveat">Vuoden 2026 kysely muuttui. Vuosien luvut eivät ole suoraan vertailukelpoisia.</p>
+        <footer class="slide-footer"><p><a href="https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/" target="_blank" rel="noreferrer">GDC State of the Game Industry 2026</a> · yli 2 300 vastaajaa vuonna 2026<br>Näytetty vain kielteiset ja myönteiset arviot. Eri vuosina eri vastaajajoukot.</p><span class="page-number">01 / 13</span></footer>
+        <template class="notes">
+          <p>“Tässä oli meidän huoneemme näkemys. Entä ihmiset, jotka työskentelevät pelialalla?”</p>
+          <p>Näytä ensin, mitä kysyttiin: vaikutusta koko alaan. Vuoden 2026 vastaajista 52 % arvioi vaikutuksen kielteiseksi ja 7 % myönteiseksi. Aiemmissa kyselyissä kielteinen osuus oli pienempi.</p>
+          <p>Vuonna 2026 kohderyhmä ja kyselyn toteutus muuttuivat. Älä kuvaa lukuja samojen ihmisten mielipiteiden muutoksena tai tarkkana vuosittaisena trendinä. GDC itse varoittaa suorista vuosivertailuista. Myös muut vastausvaihtoehdot jätetään tästä kuvaajasta pois.</p>
+          <p><strong>Siirtymä:</strong> “Mutta kielteinen suhtautuminen alan kehitykseen ei vielä kerro, käytetäänkö näitä työkaluja.”</p>
+          <h3>Lähde ja rajaus</h3>
+          <p><a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf" target="_blank" rel="noreferrer">GDC 2026, raportin kopio, sivut 5 ja 22</a>. Pelialan ammattilaiset; ei pelaajakysely eikä vain länsimaiden edustava otos.</p>
+        </template>
+      </section>
+
+      <section class="slide impact-grouped" id="gdc-asenteet-ryhmitelty" aria-labelledby="title-impact-grouped" hidden>
+        <p class="eyebrow"><span></span>Pelialan ammattilaiset · GDC 2026</p>
+        <h1 id="title-impact-grouped">Yli puolet arvioi vaikutuksen kielteiseksi.</h1>
+        <p class="subtitle">Arvio generatiivisen tekoälyn vaikutuksesta pelialaan · GDC-kyselyt 2024–2026</p>
+        <figure class="chart" id="impact-grouped-chart" role="img" aria-label="Myönteinen vaikutus: 2024, 21 prosenttia; 2025, 13 prosenttia; 2026, 7 prosenttia. Sekä myönteinen että kielteinen vaikutus: 2024, 57 prosenttia; 2025, 51 prosenttia; 2026, 30 prosenttia. Kielteinen vaikutus: 2024, 18 prosenttia; 2025, 30 prosenttia; 2026, 52 prosenttia. Kaikkien kolmen ryhmän asteikko on 0–100 prosenttia. Vuoden 2026 kysely muuttui."></figure>
+        <p class="caveat">* Vuoden 2026 kysely muuttui. Vuosien luvut eivät ole suoraan vertailukelpoisia.</p>
+        <footer class="slide-footer"><p>GDC State of the Game Industry <a href="https://web.engr.oregonstate.edu/~mjb/cs519/2024StateOfTheGameIndustry.pdf#page=14" target="_blank" rel="noreferrer">2024</a> · <a href="https://spainaudiovisualhub.digital.gob.es/content/dam/seteleco-hub-audiovisual/resources/pdf/State_of_the_Game_Industry_2025.pdf#page=17" target="_blank" rel="noreferrer">2025</a> · <a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=22" target="_blank" rel="noreferrer">2026</a> · Eri vuosina eri vastaajajoukot.<br>Muut vastaukset (100 % − näytetyt): 2024 4 % · 2025 6 % · 2026 11 %.</p><span class="page-number">02 / 13</span></footer>
+        <template class="notes">
+          <p>“Vasemmalla ovat myönteiset arviot, keskellä sekä myönteisiä että kielteisiä vaikutuksia näkevät ja oikealla kielteiset arviot.”</p>
+          <p>Myönteisiä arvioita on kyselyissä 21 %, 13 % ja 7 %. Mixed impact -vastauksia on 57 %, 51 % ja 30 %. Kielteisiä on 18 %, 30 % ja 52 %. Vuoden 2024 suurin ryhmä näki sekä myönteisiä että kielteisiä vaikutuksia; vuoden 2026 vastaajista yli puolet arvioi vaikutuksen kielteiseksi.</p>
+          <p>Ryhmillä on sama nollasta alkava 0–100 prosentin asteikko. Jokaisen ryhmän vuoden 2026 pylväs on merkitty taustalla ja tähdellä, koska kohderyhmä ja kyselyn toteutus muuttuivat. GDC varoittaa suorista vuosivertailuista. Älä esitä lukuja samojen ihmisten mielipiteiden muutoksena tai tarkkana vuosittaisena trendinä.</p>
+          <p>Kysymys koskee vaikutusta koko pelialaan, ei vastaajan omaa työkalujen käyttöä. Mixed impact on oma vastausluokkansa; se ei tarkoita samaa kuin “ei vaikutusta” tai “en tiedä”. Muut vastaukset on merkitty alaviitteeseen erotuksena sadasta prosentista: 4 %, 6 % ja 11 %. Nämä ovat laskettuja jäännösosuuksia pyöristetyistä luvuista. Vuonna 2024 ne jakautuivat 1 %:iin “ei vaikutusta” ja 3 %:iin “en tiedä”.</p>
+          <p><strong>Siirtymä:</strong> “Mutta kielteinen suhtautuminen alan kehitykseen ei vielä kerro, käytetäänkö näitä työkaluja.”</p>
+          <h3>Lähde ja rajaus</h3>
+          <p><a href="https://web.engr.oregonstate.edu/~mjb/cs519/2024StateOfTheGameIndustry.pdf#page=14" target="_blank" rel="noreferrer">GDC 2024, s. 14</a>: mixed impact 57 %. <a href="https://spainaudiovisualhub.digital.gob.es/content/dam/seteleco-hub-audiovisual/resources/pdf/State_of_the_Game_Industry_2025.pdf#page=17" target="_blank" rel="noreferrer">GDC 2025, painettu s. 16 (PDF:n 17. sivu)</a>: 51 %. <a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=22" target="_blank" rel="noreferrer">GDC 2026, s. 22</a>: 30 %. Vuoden 2026 kyselyssä oli yli 2 300 vastaajaa; menetelmämuutoksista kerrotaan sivulla 5. Pelialan ammattilaiset; ei pelaajakysely eikä vain länsimaiden edustava otos.</p>
+        </template>
+      </section>
+
+      <section class="slide" id="gdc-kaytto" aria-labelledby="title-2" hidden>
+        <p class="eyebrow"><span></span>Pelialan ammattilaiset · GDC</p>
+        <h1 id="title-2">Työkaluja käytetään jo.</h1>
+        <p class="subtitle">Mihin GenAI:ta käytetään? · Osuus työkaluja käyttävistä vastaajista · GDC 2026</p>
+        <div class="use-layout">
+          <figure class="chart" id="usage-chart" aria-label="GenAI-käyttäjien käyttötavat: tutkimus ja ideointi 81 prosenttia; sähköpostit, aikataulut ja muut arjen tehtävät 47; koodiapu 47; prototypointi 35; testaus ja virheiden korjaus 22; markkinointi ja promootiosisältö 20; pelimateriaalin generointi 19; personoitu sisältö 12; proseduraalinen generointi 10; pelaajalle näkyvät ominaisuudet 5; muu käyttö 8 prosenttia."></figure>
+          <aside class="overall"><strong>36 %</strong><p>kaikista vastaajista<br>käyttää GenAI:ta työssä</p><div class="workplace-context"><h2>Käyttö työpaikan mukaan</h2><p><b>30 %</b>Pelinkehitysstudiot</p><p><b>58 %</b>Julkaisu, tukipalvelut<br>ja markkinointi / PR</p></div></aside>
+        </div>
+        <footer class="slide-footer"><p><a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=20" target="_blank" rel="noreferrer">GDC State of the Game Industry 2026, s. 19–20</a> · koko kysely: yli 2 300 vastaajaa<br>Pylväät: vain GenAI-käyttäjät, useita valintoja sallittu. Oikealla: käyttöaste kaikista / työpaikkaryhmittäin.</p><span class="page-number">03 / 13</span></footer>
+        <template class="notes">
+          <p>“Työkalun käyttäminen ja sen vaikutusten hyväksyminen ovat kaksi eri kysymystä.”</p>
+          <p>36 % kaikista GDC-vastaajista kertoo käyttävänsä GenAI:ta työssään. Kuvaajan kaikki 11 käyttötapaa koskevat vain näitä käyttäjiä. Esimerkiksi 81 % ei ole osuus koko pelialasta. Vastaaja sai valita useita käyttötapoja, joten pylväät eivät summaudu sataan.</p>
+          <p>Tutkimus ja ideointi on yleisin käyttötapa. Päivittäisiin tehtäviin sisältyvät sähköpostit ja aikataulutus. Pelimateriaalin generointi tarkoittaa lähteen asset generation -luokkaa. Pelaajalle näkyvät ominaisuudet on erillinen kyselyn luokka: myös muissa luokissa tuotettu sisältö voi päätyä pelaajan nähtäväksi.</p>
+          <p>Oikealla säilyvät työpaikkaryhmien käyttöasteet. 58 % on julkaisu-, tukipalvelu- ja markkinointi/PR-organisaatioiden yhteinen ryhmä. Edellisen dian perusteella ei voi päätellä, miten juuri käyttäjät arvioivat AI:n vaikutuksia.</p>
+          <p><strong>Siirtymä:</strong> “Entä ne ihmiset, joiden pitäisi lopulta haluta pelata näitä pelejä?”</p>
+          <h3>Lähde ja rajaus</h3>
+          <p><a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=20" target="_blank" rel="noreferrer">GDC 2026, sivut 19–20</a>. Koko kyselyssä oli yli 2 300 vastaajaa; käyttötapakysymykseen vastasivat GenAI-käyttäjät. Mukana myös personoitu sisältö ja muu käyttö.</p>
+        </template>
+      </section>
+
+      <section class="slide attitudes" id="pelaajien-asenteet" aria-labelledby="title-3" hidden>
+        <p class="eyebrow"><span></span>Pelaajat · Quantic Foundry</p>
+        <h1 id="title-3">Tässä pelaajajoukossa: vahva ei.</h1>
+        <p class="subtitle">Suhtautuminen GenAI:n käyttöön peleissä · loka–joulukuu 2025</p>
+        <div class="attitude-head"><strong>85 %</strong><p>suhtautui kielteisesti</p></div>
+        <figure class="chart" id="attitudes-chart" role="img" aria-label="Suhtautuminen GenAI:n käyttöön peleissä: erittäin kielteinen 62,7 %, melko kielteinen 15,9 %, hieman kielteinen 6,8 %, neutraali 6,0 %, hieman myönteinen 3,0 %, melko myönteinen 2,8 %, erittäin myönteinen 1,8 %."></figure>
+        <div class="segments" aria-hidden="true">
+          <div><h2>Kielteiset</h2>
+            <p><i class="key very-negative"></i><strong>62,7 %</strong> erittäin kielteinen</p>
+            <p><i class="key somewhat-negative"></i><strong>15,9 %</strong> melko kielteinen</p>
+            <p><i class="key slightly-negative"></i><strong>6,8 %</strong> hieman kielteinen</p>
+          </div>
+          <div><h2>Neutraalit</h2>
+            <p><i class="key neutral"></i><strong>6,0 %</strong> neutraali</p>
+          </div>
+          <div><h2>Myönteiset</h2>
+            <p><i class="key slightly-positive"></i><strong>3,0 %</strong> hieman myönteinen</p>
+            <p><i class="key somewhat-positive"></i><strong>2,8 %</strong> melko myönteinen</p>
+            <p><i class="key very-positive"></i><strong>1,8 %</strong> erittäin myönteinen</p>
+          </div>
+        </div>
+        <footer class="slide-footer"><p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry</a> · vapaaehtoinen kysely, n = 1 799 · aktiiviset PC- ja konsolipelaajat painottuvat<br>Ei kaikkia pelaajia edustava otos. Näytetyt osuudet yhteensä 99,0 %; 0,9 % ei osaa sanoa jätetty pois. Pyöristysero 0,1 %.</p><span class="page-number">04 / 13</span></footer>
+        <template class="notes">
+          <p>“Tässä pelaajajoukossa suhtautuminen oli vahvasti kielteistä. Moni valitsi kaikkein kielteisimmän vaihtoehdon.”</p>
+          <p>Quantic Foundryn vapaaehtoiseen lisäkyselyyn vastasi 1 799 ihmistä. Aktiiviset PC- ja konsolipelaajat painottuvat. Kerro otoksen rajaus ääneen ennen kuin annat yleisön tulkita 85 prosenttia kaikkien pelaajien mielipiteeksi.</p>
+          <p><strong>Siirtymä:</strong> “Mutta mitä vastaaja ajattelee, kun kysymyksessä lukee vain ‘AI peleissä’?”</p>
+          <h3>Lähde ja laskenta</h3>
+          <p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry, 18.12.2025</a>. <a href="https://i0.wp.com/quanticfoundry.com/wp-content/uploads/2025/12/00-overall-ai.png" target="_blank" rel="noreferrer">Alkuperäisen kaavion</a> osuudet: erittäin kielteinen 62,7 %, melko kielteinen 15,9 %, hieman kielteinen 6,8 %, neutraali 6,0 %, hieman myönteinen 3,0 %, melko myönteinen 2,8 %, erittäin myönteinen 1,8 % ja ei tiedä tarpeeksi vastatakseen 0,9 %. Kielteiset yhteensä 85,4 % (nostoluvussa pyöristetty 85 %), myönteiset 7,6 %. Julkaistut osuudet summautuvat pyöristyksen vuoksi 99,9 prosenttiin. Kaaviosta ja selitteestä on jätetty pois 0,9 % ei osaa sanoa -vastauksia. Muut osuudet säilyvät alkuperäisinä; niitä ei ole skaalattu uudelleen.</p>
+        </template>
+      </section>
+
+      <section class="slide use-cases" id="kayttotavalla-on-valia" aria-labelledby="title-4" hidden>
+        <p class="eyebrow"><span></span>Pelaajat · Quantic Foundry</p>
+        <h1 id="title-4">Mitä pelaajat vastustavat eniten?</h1>
+        <p class="subtitle">Kielteinen suhtautuminen GenAI:n eri käyttötapoihin</p>
+        <figure class="chart" id="uses-chart" aria-label="GenAI:n käyttö kuvamateriaaliin: noin 91 prosenttia kielteisiä. Musiikkiin ja äänitehosteisiin: noin 88 prosenttia. Tarinankerrontaan ja dialogiin: 83 prosenttia. Tehtäviin: 77 prosenttia. Dynaamiseen vaikeustason säätöön: noin 43 prosenttia."></figure>
+        <p class="takeaway">Kuvamateriaali herättää enemmän vastustusta kuin vaikeustason säätö.</p>
+        <footer class="slide-footer"><p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry 2025</a> · kaikki 5 käyttötapaa · vapaaehtoinen kysely, n = 1 799<br>≈ = kahden pyöristetyn kielteisen osuuden summa. Vaikeustason säätö ei itsessään edellytä GenAI:ta.</p><span class="page-number">05 / 13</span></footer>
+        <template class="notes">
+          <p>“Edellä nähtiin vahva ei. Mutta vastustavatko pelaajat kaikkia käyttötapoja yhtä paljon? AI:n tekemä kuva, musiikki tai dialogi saa tässä porukassa aika suoran ein. Vaikeustason säätämiseen suhtaudutaan vähemmän kielteisesti. Käyttötavalla siis on väliä.”</p>
+          <p>Kielteisyys vaihtelee saman kyselyn sisällä käyttötavan mukaan. Vaikeustason kohdalla pienempi kielteinen osuus ei tarkoita, että enemmistö olisi innostunut. Kysymykset koskivat nimenomaan generatiivista tekoälyä, vaikka vaikeustason säätämiseen on muitakin menetelmiä.</p>
+          <p><strong>Siirtymä:</strong> “Nämä olivat tiettyjä vastaajajoukkoja. Näyttääkö keskustelu samalta eri puolilla maailmaa?”</p>
+          <h3>Lähde ja laskenta</h3>
+          <p><a href="https://i0.wp.com/quanticfoundry.com/wp-content/uploads/2025/12/03-ai-use.png" target="_blank" rel="noreferrer">Quantic Foundryn alkuperäinen käyttötapakuvaaja</a>. Erittäin kielteinen + jokseenkin kielteinen: kuvamateriaali 83 + 8 ≈ 91 %, musiikki / äänitehosteet 77 + 11 ≈ 88 %, tarinankerronta / dialogi 70 + 13 = 83 %, tehtävät 59 + 18 = 77 %, vaikeustaso 27 + 16 ≈ 43 %. Artikkeli ilmoittaa myös dialogin 83 % ja tehtävien 77 % suoraan.</p>
+          <p><strong>Korjaus aiempaan versioon:</strong> vaikeustason 50 % sisälsi virheellisesti myös “en tiedä tarpeeksi vastatakseni” -vastaukset ja pyöristyseroja. Tässä käytetään suoraan alkuperäisen kuvaajan kielteisiä osuuksia. “En tiedä” ei ole kielteinen vastaus.</p>
+        </template>
+      </section>
+
+      <section class="slide regions" id="maat" aria-labelledby="title-5" hidden>
+        <p class="eyebrow"><span></span>Maavertailu · AI yleisesti</p>
+        <h1 id="title-5">Sama AI, eri odotukset.</h1>
+        <p class="subtitle">“AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa.”<br>Samaa mieltä olevien osuus</p>
+        <figure class="chart" id="regions-chart" role="img" aria-label="Samaa mieltä olevien osuus 27 valitussa maassa, suurimmasta pienimpään."></figure>
+        <p class="country-order"><span>← Enemmän samaa mieltä</span><span class="order-line" aria-hidden="true"></span><span>Vähemmän samaa mieltä →</span></p>
+        <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a> · näytetty 27 / 32 maata · koko kysely: n = 23 532 · AI yleisesti<br>Osassa maista otos on väestöä kaupunkilaisempi, koulutetumpi ja/tai varakkaampi.</p><span class="page-number">06 / 13</span></footer>
+        <template class="notes">
+          <p>“Oma uutisvirta antaa helposti vaikutelman, että juuri sen keskustelu on koko maailman keskustelu.”</p>
+          <p>Nosta esiin Kiina, Japani ja Yhdysvallat. Japanin 50 % muistuttaa myös Aasian sisäisistä eroista. Maiden yhdistäminen kahdeksi yksimieliseksi leiriksi hävittäisi olennaista vaihtelua.</p>
+          <p>Näytetyt 27 maata on järjestetty samaa mieltä olevien osuuden mukaan. Etelä-Afrikka, Australia, Uusi-Seelanti, Turkki ja Israel on jätetty pois molemmista maavertailuista. Myös esimerkiksi Peru ja Meksiko sijoittuvat korkealle. Suomi ei ollut mukana kyselyssä.</p>
+          <p>Pylväs mittaa samanmielisyyttä väitteen kanssa. Loppuosa ei ole kokonaan eri mieltä: mukana on myös epävarmoja vastauksia. Vaaka-akseli näyttää maiden järjestyksen, ei erillistä myönteinen–kielteinen-asteikkoa. Pystyakseli alkaa nollasta.</p>
+          <p>Kysymys on AI:sta yleisesti. Tästä ei voi suoraan päätellä kiinalaisten tai amerikkalaisten pelaajien suhtautumista GenAI:lla tehtyihin peleihin.</p>
+          <p><strong>Siirtymä:</strong> “Mistä tällaiset erot sitten voivat johtua?”</p>
+          <h3>Lähde ja rajaus</h3>
+          <p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a>. Verkkokysely 20.3.–3.4.2026. Maaotokset noin 500–1 000 vastaajaa. n = 23 532 tarkoittaa koko 32 maan kyselyä, ei esityksen 27 maan rajausta. Osassa maista vastaajat ovat väestöä kaupunkilaisempia, koulutetumpia ja/tai varakkaampia. Raportin 32 maan keskiarvoa ei ole lisätty maapylvääksi.</p>
+        </template>
+      </section>
+
+      <section class="slide regions" id="maat-alueet" aria-labelledby="title-maat-alueet" hidden>
+        <p class="eyebrow"><span></span>Maavertailu · AI yleisesti · alueet väreinä</p>
+        <h1 id="title-maat-alueet">Sama AI, eri odotukset.</h1>
+        <p class="subtitle">“AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa.”<br>Samaa mieltä olevien osuus</p>
+        <figure class="chart" id="regions-coloured-chart" role="img" aria-label="Samaa mieltä olevien osuus 27 valitussa maassa, suurimmasta pienimpään. Pylväiden värit kuvaavat alueita."></figure>
+        <div class="region-legend" id="region-legend" aria-label="Pylväiden aluevärit"></div>
+        <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a> · näytetty 27 / 32 maata · koko kysely: n = 23 532 · AI yleisesti<br>Osassa maista otos on väestöä kaupunkilaisempi, koulutetumpi ja/tai varakkaampi.</p><span class="page-number">07 / 13</span></footer>
+        <template class="notes">
+          <p>“Lisätään alueiden värit ja keskitytään näihin neljään ryhmään. Maiden luvut ja keskinäinen järjestys pysyvät samoina.”</p>
+          <p>Aasian maita on paljon kärjessä, mutta myös Latinalaisessa Amerikassa odotukset ovat korkealla. Japani näyttää samalla, ettei Aasia ole yksi yhtenäinen joukko.</p>
+          <p>Värit ovat tätä esitystä varten tehty aluejako, eivät kyselyn vastausluokkia tai aluekeskiarvoja. Meksiko kuuluu Latinalaiseen Amerikkaan; USA ja Kanada ovat oma ryhmänsä. Tältä dialta on jätetty pois Etelä-Afrikka, Australia, Uusi-Seelanti, Turkki ja Israel. Näytetään 27 tutkimuksen 32 maasta.</p>
+          <p>Pylväs mittaa samaa mieltä olevien osuutta. Muu osuus ei ole kokonaan kielteinen, vaan sisältää myös epävarmoja vastauksia. Kysely koskee AI:ta yleisesti, ei vain pelejä. Suomi ei ollut mukana.</p>
+          <p><strong>Siirtymä:</strong> “Mistä tällaiset erot sitten voivat johtua?”</p>
+          <h3>Lähde ja rajaus</h3>
+          <p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a>. Sama aineisto kuin edellisellä dialla: verkkokysely 20.3.–3.4.2026. n = 23 532 on koko 32 maan kyselyn vastaajamäärä, ei tämän 27 maan rajauksen vastaajamäärä. Osassa maista vastaajat ovat väestöä kaupunkilaisempia, koulutetumpia ja/tai varakkaampia.</p>
+        </template>
+      </section>
+
+      <section class="slide" id="miksi-erot" aria-labelledby="title-6" hidden>
+        <p class="eyebrow"><span></span>Maavertailu · keskustelu</p>
+        <h1 id="title-6">Miksi suhtautuminen eroaa?</h1>
+          <p class="subtitle">Sama teknologia. Eri odotukset siitä, kenen elämä paranee.</p>
+          <div class="why-columns">
+            <article>
+              <h2>Odotettu hyöty</h2>
+              <p>Kiinassa AI:lta odotetaan vaurastumista. USA:ssa alan johtajat varoittavat myös työn katoamisesta. <b>Uusi mahdollisuus vai uhka omalle asemalle?</b></p>
+              <p class="evidence">Odottaa AI:n parantavan maan taloutta:
+                <strong>Kiina 77 % · USA 24 %</strong>
+                <small>Ipsos 2026 · seuraavat 3–5 vuotta</small>
+              </p>
+            </article>
+            <article>
+              <h2>Luottamus</h2>
+              <p>Kiinassa hallintoon ja teknologiayhtiöihin luotetaan AI:n käyttäjinä paljon USA:ta enemmän. <b>Uskotaanko hyödyn jakautuvan myös itselle?</b></p>
+              <p class="evidence">Luottamus siihen, että AI:ta käytetään yleiseksi hyväksi:
+                <strong>Kiinassa selvästi vahvempi</strong>
+                <small>University of Melbourne / KPMG 2025</small>
+              </p>
+            </article>
+            <article>
+              <h2>Oma kokemus</h2>
+              <p>Kiinassa AI on jo useamman käytössä. <b>Oma hyöty voi ruokkia luottamusta.</b> Huono ensikokeilu taas voi jättää aivan toisen kuvan.</p>
+              <p class="evidence">Käyttää AI:ta vähintään muutaman kuukauden välein:
+                <strong>Kiina 89 % · USA 53 %</strong>
+                <small>University of Melbourne / KPMG 2025</small>
+              </p>
+            </article>
+          </div>
+          <p class="discussion-line">Pelottaako enemmän jäädä AI-junasta vai menettää oma paikkansa?</p>
+          <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=27" target="_blank" rel="noreferrer">Ipsos 2026, s. 27</a> · <a href="https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/trust-attitudes-artificial-intelligence-global-report.pdf" target="_blank" rel="noreferrer">Melbourne / KPMG 2025, s. 21, 55–57</a> · Puhe-esimerkit muistiinpanoissa<br>Mahdollisia selityksiä. Kiina ja USA eivät edusta koko Aasiaa ja länttä; myös maiden sisällä on eroja.</p><span class="page-number">08 / 13</span></footer>
+          <template class="notes">
+            <p><strong>Avaus:</strong> “Mun mielestä tässä kiinnostavaa on se, mitä ihmiset uskovat AI:n tekevän juuri heidän tulevaisuudelleen. Toiselle se on mahdollisuus vaurastua. Toiselle se kuulostaa siltä, että joku aikoo säästää hänen palkkansa.”</p>
+            <h3>Odotettu hyöty: mukaan seuraavaan nousuun</h3>
+            <p>“Jos näet AI:n seuraavana isona kasvun mahdollisuutena, et halua jäädä siitä pois. Jos taas kuulet jatkuvasti, että sillä korvataan ihmisiä, ei ole ihme, jos se ei innosta.” Tämä on keskustelun tulkintakehys, ei kyselystä todistettu syy.</p>
+            <p><strong>Konkreettiset puhe-esimerkit:</strong> Kiinan valtioneuvoston AI Plus -linjaus (8/2025) liittää AI:n talouskasvuun, teollisuuteen ja elämänlaatuun. Dario Amodei puolestaan arvioi tammikuun 2026 esseessään AI:n voivan syrjäyttää puolet uran alkuvaiheen toimistotyöpaikoista 1–5 vuodessa. Se on hänen ennusteensa, ei toteutunut työpaikkakato. Hän käsittelee myös kasvun mahdollisuuksia. Esimerkit havainnollistavat erilaisia viestejä; ne eivät mittaa koko idän ja lännen keskustelua.</p>
+            <p>“Sama teknologia voidaan siis esitellä meille aika eri tarinana.” Pelottelu on arvio viestinnän tavasta, ei kaikkien työpaikkahuolien selitys. AI:n taloushyötyihin uskominen ja oman työn puolesta huolehtiminen voivat esiintyä yhtä aikaa.</p>
+            <h3>Luottamus: uskotaanko muutoksen ohjaajiin?</h3>
+            <p>“Jos uskot, että päättäjät ja yritykset pystyvät tekemään tästä meille hyvän asian, lähtökohta on toinen kuin jos odotat niiden keräävän hyödyt ja jättävän haitat muille.” Kyselyssä kiinalaisvastaajien luottamus sekä hallintoon että suuriin teknologiayhtiöihin AI:n kehittäjinä ja käyttäjinä oli selvästi yhdysvaltalaisvastaajia suurempaa.</p>
+            <p>Kiinan taloudellista nousua voi pohtia yhtenä luottamuksen historiallisena taustana. Kysely ei kuitenkaan osoita, että juuri se aiheutti luottamuksen tai että vastaajat antaisivat noususta kaiken kunnian nykyhallinnolle. Luottamus toimijoihin ei myöskään todista niiden toimivan vastuullisesti. Väite aiempien talousjunien missaamisesta vaatisi tarkemman ajanjakson ja perustelun.</p>
+            <h3>Oma kokemus: hyöty muuttuu omakohtaiseksi</h3>
+            <p>“Jos AI auttaa mua jo tekemään jotain, mitä en ennen osannut tai ehtinyt, hyöty ei ole enää pelkkä lupaus. Jos mun ainoa kokeilu oli huono, mieleen voi jäädä, että tämähän on ihan turha.” Kyse on mahdollisesta mekanismista: käyttö voi muuttaa asenteita, ja myönteinen asenne voi lisätä käyttöä.</p>
+            <p>Käyttöluku sisältää tietoisen käytön vapaa-ajalla, työssä tai opiskelussa vähintään muutaman kuukauden välein. Se ei tarkoita päivittäistä käyttöä eikä vain generatiivista AI:ta. Samassa tutkimuksessa Japanin luku oli 50 % ja Norjan 71 %: maanosaraja ei selitä kaikkea.</p>
+            <p>Huonon ilmaismallikokeilun vaikutusta voi käsitellä omana havaintona, jos sellaisia kokemuksia on. Nämä lähteet eivät osoita, että lännen skeptisyys johtuisi heikommista malleista tai että parhaat mallit poistaisivat vastustuksen. Myös kokenut käyttäjä voi suhtautua AI:hin kriittisesti.</p>
+            <p><strong>Yleisölle:</strong> “Kumpi teitä mietityttää enemmän: että jäätte tästä muutoksesta ulos, vai se, mitä muutos vie mennessään?”</p>
+            <p><strong>Siirtymä:</strong> “Kaiken tämän keskellä pelialustan pitää kuitenkin päättää, millä ehdoilla pelejä julkaistaan.”</p>
+            <h3>Lähteet ja lukujen rajaukset</h3>
+            <p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=27" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 2–4 ja 27</a>: AI:n lisääntyvän käytön odotetaan parantavan maan taloutta seuraavien 3–5 vuoden aikana, Kiina 77 %, USA 24 %. Verkkokysely 20.3.–3.4.2026. Kiinan otos painottuu koko väestöä kaupunkilaisempiin, koulutetumpiin ja varakkaampiin vastaajiin.</p>
+            <p><a href="https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/trust-attitudes-artificial-intelligence-global-report.pdf" target="_blank" rel="noreferrer">Gillespie ym., University of Melbourne / KPMG: Trust, attitudes and use of artificial intelligence (2025)</a>, s. 20–21, 55–57. Aineisto kerättiin 11/2024–1/2025, yli 48 000 vastaajaa 47 maassa. Luottamusvertailu koskee AI:n kehittämistä ja käyttöä yleiseksi hyväksi; mukaan lasketaan kohtalainen, korkea ja erittäin korkea luottamus. Eri kyselyt, ajankohdat ja mittarit eivät osoita syy–seuraussuhteita.</p>
+            <p><a href="https://english.www.gov.cn/policies/latestreleases/202508/27/content_WS68ae7976c6d0868f4e8f51a0.html" target="_blank" rel="noreferrer">Kiinan valtioneuvoston AI Plus -linjaus, 27.8.2025</a> (hallinnon oma tavoiteviestintä) · <a href="https://darioamodei.com/essay/the-adolescence-of-technology" target="_blank" rel="noreferrer">Dario Amodei: The Adolescence of Technology, 1/2026</a>, osio “Economic disruption and concentration”.</p>
+          </template>
+      </section>
+
+      <section class="slide steam" id="steam" aria-labelledby="title-7" hidden>
+        <p class="eyebrow"><span></span>Pelialustat · Steam</p>
+        <h1 id="title-7">AI:n pelisääntöjä etsitään yhä.</h1>
+        <p class="subtitle">Steam: oikeusepävarmuudesta käytännön rajanvetoon</p>
+        <div class="timeline">
+          <article class="milestone"><span class="year">2023</span><h2>Epävarmuus esti<br>julkaisuja.</h2><p>AI-sisältö johti hylkäyksiin, kun sen oikeuksia ei voitu varmistaa.</p></article>
+          <article class="milestone"><span class="year">2024</span><h2>Kerro, miten<br>käytät AI:ta.</h2><p>AI-sisällölle ilmoitusmenettely. Pelatessa syntyvälle sisällölle myös suojaukset.</p></article>
+          <article class="milestone"><span class="year">Nyt</span><h2>Mitä päätyy<br>pelaajalle?</h2><p>Nykyohje keskittyy pelin sisältöön. Työkalujen yleiset tehokkuushyödyt erotetaan siitä.</p></article>
+        </div>
+        <p class="takeaway">Pelkkä kyllä tai ei ei riitä.<br>Raja pitää myös pystyä valvomaan.</p>
+        <footer class="slide-footer"><p><a href="https://www.gamedeveloper.com/business/valve-says-legal-uncertainty-surrounding-ai-models-behind-steam-pushback" target="_blank" rel="noreferrer">Valven lausunto 2023</a> · <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3862463747997849619" target="_blank" rel="noreferrer">Steamworks 2024</a> · <a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey?language=english" target="_blank" rel="noreferrer">Steamworksin nykyohje</a><br>Nykyohje tarkistettu 30.9.2026. Aikajana ei kuvaa kaikkia AI-pelejä koskevaa yleiskieltoa.</p><span class="page-number">09 / 13</span></footer>
+        <template class="notes">
+          <p>Vuonna 2023 kyse oli oikeuksiin ja koulutusaineistoihin liittyvästä epävarmuudesta ja julkaisuhylkäyksistä. Älä sano, että Steam julisti pysyvän kaikkia AI-pelejä koskevan kiellon.</p>
+          <p>Vuonna 2024 Valve avasi reitin useimmille AI:ta käyttäville peleille: kehittäjä ilmoittaa sisällöstä ja erottaa etukäteen tuotetun sekä pelin aikana syntyvän sisällön. Jälkimmäiseen vaaditaan myös suojauksia laitonta sisältöä vastaan.</p>
+          <p>Nykyohje painottaa pelaajan kohtaamaa sisältöä, kuten kuvia, ääntä ja tekstiä. Ilmoittaminen ei poista vastuuta sisällöstä. “Nyt” kuvaa tarkistettua nykytilaa, ei täsmällistä muutosajankohtaa.</p>
+          <p><strong>Oma tulkinta:</strong> “Minusta tämä kertoo siitä, että me vielä haemme suhtautumistamme AI:hin. Se on jo osa työkalupakkia. Kaikkea käyttöä ei näe valmiista pelistä, eikä jokaista työvaihetta voi käytännössä valvoa. Siksi pitää päättää, mihin raja vedetään ja mitä oikeasti tarkastetaan.” Tämä on puhujan tulkinta valvonnan vaikeudesta, ei Valven lausunto siitä, että valvonta olisi mahdotonta tai tarpeetonta.</p>
+          <p>Vuoden 2023 hylkäykset osoittavat varovaisuutta oikeusepävarmuuden edessä. Ne eivät todista, että Valve olisi yrittänyt poistaa kaiken AI:n ja sitten luopunut yrityksestä. Nykyinen ilmoitusmenettely on yhä sääntelyä ja valvontaa, ei niistä luopumista.</p>
+          <p><strong>Siirtymä:</strong> “Mutta vaikka peli täyttäisi alustan säännöt, pelaaja voi vetää oman rajansa ihan eri kohtaan.”</p>
+          <h3>Lähteet</h3>
+          <p><a href="https://www.gamedeveloper.com/business/valve-says-legal-uncertainty-surrounding-ai-models-behind-steam-pushback" target="_blank" rel="noreferrer">Valven lausunto, Game Developer, 3.7.2023</a><br><a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3862463747997849619" target="_blank" rel="noreferrer">Steamworks, tammikuu 2024</a><br><a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey?language=english" target="_blank" rel="noreferrer">Steamworks Content Survey</a></p>
+        </template>
+      </section>
+
+      <section class="slide game" id="amsterdam" aria-labelledby="title-8" hidden>
+        <img class="game-image" src="media/1666-amsterdam-panache.png" alt="1666: Amsterdam: Noa käyttää sauvaa, josta leviää punaista taikuutta pimeässä ympäristössä." width="1920" height="1080">
+        <div class="game-label"><p class="eyebrow">Yksi peli keskustelun keskellä</p><h1 id="title-8">1666: Amsterdam</h1><p>Patrice Désilets · Panache Digital Games</p></div>
+        <p class="game-caption">Assassin’s Creedin luojiin kuuluvan Désilets’n uusi peli.</p>
+        <footer class="slide-footer"><p>Kuva: Panache Digital Games / <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, 28.8.2026</a></p><span class="page-number">10 / 13</span></footer>
+        <template class="notes">
+          <p>Anna ensin pelille hetki tilaa. Kerro Désilets’n yhteys Assassin’s Creediin ja esittele yliluonnollinen Amsterdam. Kuvassa on Noa ja hänen taikuutensa.</p>
+          <p>Kerro oma aito ensivaikutelmasi pelistä. Älä väitä kaikkien ensin innostuneen siitä tai järjestä tässä uutta gallupia. Peliesittelyyn kuuluva “pelaisitko?” tulee seuraavassa osuudessa.</p>
+          <p><strong>Siirtymä:</strong> “Ja tämä peli myös herätti kiinnostusta. Katsotaan kaksi konkreettista esimerkkiä.”</p>
+          <h3>Aineisto</h3>
+          <p><a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, Désilets’n haastattelu, 28.8.2026</a>. Kuvan oikeudet: Panache Digital Games. Julkaistu pelikuva, ei tätä esitystä varten generoitu kuva.</p>
+        </template>
+      </section>
+
+      <section class="slide anticipation" id="amsterdam-odotukset" aria-labelledby="title-amsterdam-anticipation" hidden>
+        <p class="eyebrow"><span></span>1666: Amsterdam · odotukset</p>
+        <h1 id="title-amsterdam-anticipation">Tätä peliä odotettiin.</h1>
+        <p class="subtitle">Kaksi toimittajaa kuvaa innostustaan ennen AI-kohua.</p>
+        <div class="anticipation-voices">
+          <article><h2>Jordan Gerblick<small>GamesRadar+</small></h2>
+            <p class="enthusiasm">Traileri vei mukanaan.</p>
+            <p>Historiallinen kaupunki, musta magia ja synkkä tunnelma osuivat hänen makuunsa. Hän kertoo innostuneensa pelistä heti esittelyssä.</p>
+          </article>
+          <article><h2>Ashley Bardhan<small>GamesRadar+</small></h2>
+            <p class="enthusiasm">Uusi pelimaailma herätti odotuksia.</p>
+            <p>Désilets’n uusi peli tuntui poikkeuksellisen kiinnostavalta. Noa, noituus ja omaperäinen lähtökohta vetivät puoleensa.</p>
+          </article>
+        </div>
+        <p class="takeaway">Kiinnostus peliin oli olemassa jo ennen AI-keskustelua.</p>
+        <footer class="slide-footer"><p>GamesRadar+: <a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">Jordan Gerblick</a> · <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">Ashley Bardhan</a><br>Suomenkieliset tiivistelmät jälkikäteen kuvatuista ensireaktioista. Kaksi esimerkkiä, ei yleisön mielipidemittaus.</p><span class="page-number">11 / 13</span></footer>
+        <template class="notes">
+          <p>“Tämä ei siis ollut peli, joka ei kiinnostanut ketään. Näissä kommenteissa oli ihan aitoa innostusta: maailma, tunnelma ja tunnetun tekijän uusi peli kiinnostivat jo itsessään.”</p>
+          <p>Gerblick kuvaa jälkikäteen, kuinka Summer Game Festin paljastustraileri herätti hänessä innostusta. Bardhan muistelee niin ikään vahvaa kiinnostustaan ennen kuin kuuli AI:n käytöstä. Dian tekstit ovat suomenkielisiä tiivistelmiä, eivät suoria sitaatteja tai ennen kohua julkaistuja arvioita.</p>
+          <p>Pidä tämä dia innostuksessa. Nosta Ashley Bardhan nimeltä esiin: hänen myöhempään ristiriitaiseen suhtautumiseensa palataan vastauksen yhteydessä. Näin yleisö voi seurata saman ihmisen kokemusta.</p>
+          <p><strong>Siirtymä:</strong> “Sitten keskusteluun tuli tieto tekoälyn käytöstä. Katsotaan, mitä silloin tapahtui.”</p>
+          <p>Kaksi toimittajaa ei osoita koko yleisön suhtautumista. Lähteet tukevat esimerkkejä kiinnostuksesta ja sen muutoksesta, eivät väitettä, että kaikki kielteisyys johtuisi yksin AI:sta.</p>
+          <p><a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">Gerblickin kuvaus ensinnostuksesta</a> · <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">Bardhanin kuvaus kiinnostuksesta ja ristiriidasta</a>.</p>
+        </template>
+      </section>
+
+      <section class="slide setup" id="amsterdam-kohu" aria-labelledby="title-amsterdam-setup" hidden>
+        <p class="eyebrow"><span></span>1666: Amsterdam · kohun alku</p>
+        <h1 id="title-amsterdam-setup">Sitten puhe kääntyi tekoälyyn.</h1>
+        <p class="subtitle">Kesäkuu 2026 · prologidemo toi AI:n käytön näkyviin</p>
+        <figure class="setup-headline">
+          <figcaption>GamesRadar+ · ote uutisotsikosta</figcaption>
+          <blockquote lang="en">“Assassin's Creed creator's new game is the latest to feature AI-generated assets its devs forgot to take out”</blockquote>
+        </figure>
+        <div class="setup-context">
+          <article><h2>AI-sisältöä päätyi demoon.</h2><p>Studio vahvisti AI:lla tehtyjä kuvia pelin muotokuvissa ja markkinointimateriaalissa.</p></article>
+          <article><h2>Tekotapa nousi arvioitavaksi.</h2><p>AI-epäilyt herättivät kritiikkiä. Pelin kiinnostavuuden rinnalle nousi kysymys siitä, miten se oli tehty.</p></article>
+        </div>
+        <footer class="slide-footer"><p><a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">GamesRadar+, Jordan Gerblick · raportti ja Panachen lausunto</a><br>Studion mukaan varhaisia versioita oli jäänyt mukaan vahingossa. Ei mittausta kohun laajuudesta.</p><span class="page-number">12 / 13</span></footer>
+        <template class="notes">
+          <p>“Tässä oli kiinnostava peli ja tunnettu tekijä. Sitten prologidemosta alettiin epäillä AI:lla tehtyä sisältöä. Studio tarkisti asian ja vahvisti, että mukana oli tällaisia kuvia. Keskusteluun tuli pelin lisäksi sen tekemisen tapa.”</p>
+          <p>Panachen 9.6.2026 julkaisemaa lausuntoa lainaavan GamesRadar+-raportin mukaan varhaisia AI:lla tuotettuja versioita oli päätynyt prologiin, muun muassa pelin muotokuviin, sekä ulkoiseen markkinointimateriaaliin. Studio kuvasi tätä vahingoksi. Älä esitä tahallista salaamista todistettuna.</p>
+          <p>Englanninkielinen ote on uutisotsikon alku, ei tekijän suora sitaatti. Selitä sen sisältö suomeksi: Assassin’s Creedin tekijän uudessa pelissä oli AI-materiaalia, joka tekijöiden mukaan oli jäänyt poistamatta. Lähde kuvaa kritiikkiä, mutta ei mittaa sen yleisyyttä.</p>
+          <p>Älä kuvaa tilannetta pelkkänä sisäisen ideointityökalun käyttönä: tässä tapauksessa sisältöä oli päätynyt myös demoon. Säästä poistamisesta ja tulevasta käytöstä annettu lupaus seuraavalle dialle.</p>
+          <p><strong>Siirtymä:</strong> “Miten tekijät vastasivat tähän — ja riittikö vastaus poistamaan epäluulon?”</p>
+          <p><a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">GamesRadar+: prologidemon AI-sisältö ja Panachen lausunto</a>.</p>
+        </template>
+      </section>
+
+      <section class="slide reaction" id="amsterdam-reaktio" aria-labelledby="title-9" hidden>
+        <p class="eyebrow"><span></span>1666: Amsterdam · vastaanotto</p>
+        <h1 id="title-9">AI poistettiin. Poistuiko epäluulo?</h1>
+        <p class="subtitle">AI:n käyttö herätti vastustusta. Tekijä vastasi — mutta vakuuttiko se?</p>
+        <div class="reaction-body">
+          <article><h2>Mitä tekijä kertoi?</h2>
+            <p>Patrice Désilets’n mukaan AI:ta oli käytetty lähinnä konsepti- ja esituotantovaiheessa.</p>
+            <p>Hän kertoi AI-sisällön olevan poistettu ja lupasi, ettei AI:ta enää käytetä.</p>
+          </article>
+          <article class="reaction-voice"><h2>Sama toimittaja, uusi ristiriita</h2>
+            <blockquote lang="en">“for me, 1666: Amsterdam will always have the stain of AI on it”</blockquote>
+            <p class="attribution">Ashley Bardhan · GamesRadar+</p>
+            <p>Silti hän halusi pelata — ja palautti pelin toivelistalleen.</p>
+          </article>
+        </div>
+        <p class="audience-question">Jos AI-sisältö poistetaan,<br>muuttaako se sinun suhtautumistasi?</p>
+        <footer class="slide-footer"><p><a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, haastattelu ja Ashley Bardhanin kommentaari, 28.8.2026</a><br>Tekijän lausunto ja yhden toimittajan reaktio. Ei yleisöä edustava mielipidemittaus.</p><span class="page-number">13 / 13</span></footer>
+        <template class="notes">
+          <p>Désilets kertoi GamesRadarille, että AI:ta oli käytetty erityisesti konsepti- ja esituotantovaiheessa, että AI-sisältö oli poistettu ja ettei käyttöä jatkettaisi. Tämä on tekijän lausunto.</p>
+          <p>Tapauksesta on raportoitu vastareaktio ja sitä seurannut vastaus. Meillä ei ole edustavaa ennen–jälkeen-mittausta yleisön mielipiteestä tai näyttöä AI-kohun vaikutuksesta myyntiin.</p>
+          <p>Palauta mieleen odotusdian Ashley Bardhan: häntä kiinnosti juuri tämä peli. Bardhan kuvaa artikkelissa ristiriitaista suhtautumistaan: AI:n käyttö häiritsi häntä edelleen, mutta peli kiinnosti ja hän palautti sen toivelistalleen. Selitä englanninkielisen sitaatin ajatus suomeksi: AI:n leima jäi hänen mielessään peliin. Älä yleistä tätä kaikkien pelaajien mielipiteeksi tai esitä sitaattia toimituksen yhteisenä kantana.</p>
+          <p>Kysy dian kysymys avoimesti. Anna tilaa sekä niille, joille valmistustavalla on suuri merkitys, että niille, jotka painottavat omaa pelikokemusta. Muutama vastaus riittää.</p>
+          <p><strong>Siirtymä peliesimerkkeihin:</strong> “Nyt on katsottu tutkimuksia, sääntöjä ja reaktioita. Katsotaan seuraavaksi muutama peli. Pelaisitko sinä näitä?”</p>
+          <h3>Lähde</h3>
+          <p><a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, 28.8.2026</a>.</p>
+        </template>
+      </section>
+    </div>
+  </main>
+
+  <nav class="controls" aria-label="Esityksen ohjaus">
+    <button id="previous" aria-label="Edellinen dia" title="Edellinen dia (←)">←</button>
+    <button id="overview" class="counter" title="Dialuettelo (O)" aria-label="Avaa dialuettelo">1 / 13</button>
+    <button id="next" aria-label="Seuraava dia" title="Seuraava dia (→ tai välilyönti)">→</button>
+    <span class="divider" aria-hidden="true"></span>
+    <button id="notes" title="Puhujamuistiinpanot ja lähteet (N)">Muistiinpanot</button>
+    <button id="fullscreen" title="Koko näyttö (F); poistu Esc-näppäimellä">Koko näyttö</button>
+  </nav>
+  <p class="sr-only" id="announcement" aria-live="polite"></p>
+  <dialog id="dialog" aria-labelledby="dialog-title"><button class="close" aria-label="Sulje">×</button><h2 id="dialog-title"></h2><div id="dialog-content"></div></dialog>
+  <noscript><p style="color:white;text-align:center">Esityksen kuvaajat ja navigointi tarvitsevat JavaScriptin.</p></noscript>
+
+  <script>
+    // Base charts: public/charts/ai-attitudes-2026-09-29/data.json. Percent axes start at zero.
+    // Expanded usage: GDC 2026 p. 20, all 11 categories, among GenAI users (multiple choice).
+    // Expanded player uses: Quantic Foundry 03-ai-use.png, all 5 categories.
+    // Negative totals = very + somewhat negative. Difficulty is 27 + 16 = ~43, NOT the old 50.
+    // Expanded countries: Ipsos AI Monitor 2026 p. 13, all 32 countries, % agree (descending).
+    // Inline data keeps the deck usable from file://, without a server or a network connection.
+    const data = {
+      impact: { years: [2024, 2025, 2026], negative: [18, 30, 52], positive: [21, 13, 7], mixed: [57, 51, 30] },
+      usageLabels: ['Tutkimus / ideointi', 'Sähköpostit ja muut arjen tehtävät', 'Koodiapu', 'Prototypointi', 'Testaus / virheiden korjaus', 'Markkinointi / promootiosisältö', 'Pelimateriaalin generointi', 'Personoitu sisältö', 'Proseduraalinen generointi', 'Pelaajalle näkyvät ominaisuudet', 'Muu käyttö'],
+      usage: [81, 47, 47, 35, 22, 20, 19, 12, 10, 5, 8], attitudes: [62.7, 15.9, 6.8, 6.0, 3.0, 2.8, 1.8],
+      useLabels: ['Kuvamateriaali', 'Musiikki / äänitehosteet', 'Tarinankerronta / dialogi', 'Tehtävät (questit)', ['Dynaaminen', 'vaikeustason säätö']],
+      uses: [91, 88, 83, 77, 43],
+      countries: ['Kiina', 'Intia', 'Indonesia', 'Thaimaa', 'Peru', 'Malesia', 'Singapore', 'Etelä-Korea', 'Meksiko', 'Etelä-Afrikka', 'Turkki', 'Kolumbia', 'Chile', 'Argentiina', 'Brasilia', 'Espanja', 'Italia', 'Israel', 'Japani', 'Unkari', 'Irlanti', 'Puola', 'Ruotsi', 'Uusi-Seelanti', 'Australia', 'Belgia', 'Iso-Britannia', 'Ranska', 'Yhdysvallat', 'Alankomaat', 'Saksa', 'Kanada'],
+      regional: [85, 80, 77, 74, 71, 70, 68, 67, 66, 66, 65, 63, 60, 56, 56, 54, 53, 51, 50, 50, 47, 47, 47, 46, 43, 41, 38, 38, 38, 38, 37, 34]
+    };
+    const svg = (width, height, body) => `<svg viewBox="0 0 ${width} ${height}" aria-hidden="true">${body}</svg>`;
+    const text = (x, y, value, cls = 'label', extra = '') => `<text x="${x}" y="${y}" class="${cls}" ${extra}>${value}</text>`;
+    const rect = (x, y, width, height, cls) => `<rect x="${x}" y="${y}" width="${width}" height="${height}" class="${cls}"/>`;
+    // Presentation groups select the countries shown in both charts; Mexico is in Latin America.
+    const regionGroups = [
+      { name: 'Aasia', color: '#c4473a', countries: ['Kiina', 'Intia', 'Indonesia', 'Thaimaa', 'Malesia', 'Singapore', 'Etelä-Korea', 'Japani'] },
+      { name: 'Eurooppa', color: '#3676c8', countries: ['Espanja', 'Italia', 'Unkari', 'Irlanti', 'Puola', 'Ruotsi', 'Belgia', 'Iso-Britannia', 'Ranska', 'Alankomaat', 'Saksa'] },
+      { name: 'Latinalainen Amerikka', color: '#4e873b', countries: ['Peru', 'Meksiko', 'Kolumbia', 'Chile', 'Argentiina', 'Brasilia'] },
+      { name: 'USA ja Kanada', color: '#263950', countries: ['Yhdysvallat', 'Kanada'] }
+    ];
+
+    function horizontalChart({ width, height, left, top, plotWidth, rowHeight, barHeight, labels, values, color, approximate = [], gapBefore = -1, gapSize = 0 }) {
+      const bottom = top + labels.length * rowHeight + (gapBefore >= 0 ? gapSize : 0);
+      let content = '';
+      for (let tick = 0; tick <= 100; tick += 25) {
+        const x = left + plotWidth * tick / 100;
+        content += `<line x1="${x}" y1="${top - 10}" x2="${x}" y2="${bottom - 10}" class="grid"/>`;
+        content += text(x, bottom + 24, tick + (tick === 100 ? ' %' : ''), 'tick', 'text-anchor="middle"');
+      }
+      labels.forEach((label, i) => {
+        const y = top + i * rowHeight + (gapBefore >= 0 && i >= gapBefore ? gapSize : 0);
+        const labelLines = Array.isArray(label) ? label : [label];
+        const center = y + barHeight / 2;
+        labelLines.forEach((line, j) => {
+          content += text(left - 28, center + 9 + (j - (labelLines.length - 1) / 2) * 30, line, 'label', 'text-anchor="end"');
+        });
+        content += rect(left, y, plotWidth * values[i] / 100, barHeight, color);
+        content += text(left + plotWidth * values[i] / 100 + 17, center + 11, `${approximate.includes(i) ? '≈ ' : ''}${values[i]} %`, 'value');
+      });
+      return svg(width, height, content);
+    }
+
+    function renderCharts() {
+      const baseline = 356, scale = 2.85;
+      let impact = '<rect x="971" y="20" width="393" height="385" fill="#e7e7d9"/>';
+      for (let tick = 0; tick <= 100; tick += 25) {
+        const y = baseline - tick * scale;
+        impact += `<line x1="85" y1="${y}" x2="1364" y2="${y}" class="grid"/>`;
+        impact += text(64, y + 7, tick + (tick === 100 ? ' %' : ''), 'tick', 'text-anchor="end"');
+      }
+      impact += '<line x1="945" y1="20" x2="945" y2="405" stroke="#9b9e90" stroke-dasharray="7 7"/>';
+      impact += text(1168, 47, 'Kysely muuttui', 'tick', 'text-anchor="middle"');
+      data.impact.years.forEach((year, i) => {
+        const center = [300, 735, 1170][i];
+        const n = data.impact.negative[i], p = data.impact.positive[i];
+        impact += rect(center - 112, baseline - n * scale, 98, n * scale, 'negative');
+        impact += rect(center + 13, baseline - p * scale, 98, p * scale, 'positive');
+        impact += text(center - 63, baseline - n * scale - 15, n + ' %', 'value', 'text-anchor="middle"');
+        impact += text(center + 62, baseline - p * scale - 15, p + ' %', 'value', 'text-anchor="middle"');
+        impact += text(center, 396, year, 'label', 'text-anchor="middle"');
+      });
+      document.querySelector('#impact-chart').innerHTML = svg(1424, 425, impact);
+      let groupedImpact = '';
+      const groupedBaseline = 395, groupedScale = 3;
+      [
+        { left: 65, labels: ['Myönteinen vaikutus'], values: data.impact.positive, color: 'positive' },
+        { left: 540, labels: ['Sekä myönteinen', 'että kielteinen'], values: data.impact.mixed, color: 'mixed' },
+        { left: 1015, labels: ['Kielteinen vaikutus'], values: data.impact.negative, color: 'negative' }
+      ].forEach(({ left, labels, values, color }) => {
+        groupedImpact += `<rect x="${left + 272}" y="80" width="106" height="375" fill="#e7e7d9"/>`;
+        labels.forEach((label, i) => {
+          groupedImpact += text(left + 195, labels.length === 1 ? 50 : 35 + i * 30, label, `group-title ${color}`, 'text-anchor="middle"');
+        });
+        for (let tick = 0; tick <= 100; tick += 25) {
+          const y = groupedBaseline - tick * groupedScale;
+          groupedImpact += `<line x1="${left}" y1="${y}" x2="${left + 390}" y2="${y}" class="grid"/>`;
+          groupedImpact += text(left - 16, y + 7, tick + (tick === 100 ? ' %' : ''), 'tick', 'text-anchor="end"');
+        }
+        data.impact.years.forEach((year, i) => {
+          const center = left + 65 + i * 130;
+          groupedImpact += rect(center - 35, groupedBaseline - values[i] * groupedScale, 70, values[i] * groupedScale, color);
+          groupedImpact += text(center, groupedBaseline - values[i] * groupedScale - 15, values[i] + ' %', 'value', 'text-anchor="middle"');
+          groupedImpact += text(center, 435, year + (year === 2026 ? '*' : ''), 'label', 'text-anchor="middle"');
+        });
+      });
+      document.querySelector('#impact-grouped-chart').innerHTML = svg(1424, 470, groupedImpact);
+      document.querySelector('#usage-chart').innerHTML = horizontalChart({width:1050,height:505,left:405,top:8,plotWidth:560,rowHeight:42,barHeight:26,labels:data.usageLabels,values:data.usage,color:'usage'});
+      let stacked = '', offset = 0;
+      data.attitudes.forEach((value, i) => {
+        stacked += rect(offset * 14.24, 10, value * 14.24, 102, ['very-negative','somewhat-negative','slightly-negative','neutral','slightly-positive','somewhat-positive','very-positive'][i]);
+        offset += value;
+      });
+      [0,25,50,75,100].forEach(tick => { stacked += text(tick * 14.24, 149, tick + (tick === 100 ? ' %' : ''), 'tick', `text-anchor="${tick === 0 ? 'start' : tick === 100 ? 'end' : 'middle'}"`); });
+      document.querySelector('#attitudes-chart').innerHTML = svg(1424, 160, stacked);
+      document.querySelector('#uses-chart').innerHTML = horizontalChart({width:1424,height:455,left:440,top:10,plotWidth:885,rowHeight:75,barHeight:43,labels:data.useLabels,values:data.uses,color:'negative',approximate:[0,1,4],gapBefore:4,gapSize:20});
+      const countryRegions = Object.fromEntries(regionGroups.flatMap(region => region.countries.map(country => [country, region])));
+      const countryRows = data.countries.map((country, i) => ({ country, value: data.regional[i], region: countryRegions[country] })).filter(row => row.region);
+      [
+        { selector: '#regions-chart', rows: countryRows, showRegions: false },
+        { selector: '#regions-coloured-chart', rows: countryRows, showRegions: true }
+      ].forEach(({ selector, rows, showRegions }) => {
+        const countryLeft = 62, countryWidth = 1350, countryTop = 25, countryHeight = 270;
+        const countryBaseline = countryTop + countryHeight, countryStep = countryWidth / rows.length;
+        let countries = '';
+        for (let tick = 0; tick <= 100; tick += 25) {
+          const y = countryBaseline - countryHeight * tick / 100;
+          countries += `<line x1="${countryLeft}" y1="${y}" x2="${countryLeft + countryWidth}" y2="${y}" class="grid"/>`;
+          countries += text(countryLeft - 16, y + 7, tick + (tick === 100 ? ' %' : ''), 'tick', 'text-anchor="end"');
+        }
+        rows.forEach(({ country, value }, i) => {
+          const center = countryLeft + countryStep * (i + 0.5);
+          const height = countryHeight * value / 100;
+          const labelY = countryBaseline + 25;
+          countries += rect(center - 15, countryBaseline - height, 30, height, 'usage');
+          countries += text(center, countryBaseline - height - 11, value, 'value', 'text-anchor="middle"');
+          countries += text(center + 4, labelY, country, 'label', `text-anchor="end" transform="rotate(-55 ${center + 4} ${labelY})"`);
+        });
+        const chart = document.querySelector(selector);
+        chart.innerHTML = svg(1424, 445, countries);
+        if (showRegions) {
+          chart.querySelectorAll('rect').forEach((bar, i) => { bar.style.fill = rows[i].region.color; });
+        }
+        const coverage = `${rows.length} valittua maata${showRegions ? ', alueet väreinä' : ''}`;
+        chart.setAttribute('aria-label', `Samaa mieltä olevien osuus, ${coverage}: ` + rows.map(({ country, value, region }) => `${country}${showRegions ? ` (${region.name})` : ''} ${value} %`).join(', ') + '.');
+      });
+      document.querySelector('#region-legend').innerHTML = regionGroups.map(region => `<span><i class="key" style="background:${region.color}" aria-hidden="true"></i>${region.name}</span>`).join('');
+    }
+
+    const slides = Array.from(document.querySelectorAll('.slide'));
+    const dialog = document.querySelector('#dialog');
+    let index = 0;
+    function indexFromHash() {
+      const hash = location.hash.slice(1);
+      const byId = slides.findIndex(slide => slide.id === hash);
+      return byId >= 0 ? byId : /^\d+$/.test(hash) ? Number(hash) - 1 : 0;
+    }
+    function goTo(nextIndex) {
+      index = Math.max(0, Math.min(slides.length - 1, nextIndex));
+      slides.forEach((slide, i) => { slide.hidden = i !== index; });
+      document.querySelector('#previous').disabled = index === 0;
+      document.querySelector('#next').disabled = index === slides.length - 1;
+      document.querySelector('#overview').textContent = `${index + 1} / ${slides.length}`;
+      const title = slides[index].querySelector('h1').textContent;
+      document.title = `${title} · Kuopio Pelaa 2026`;
+      document.querySelector('#announcement').textContent = `Dia ${index + 1} / ${slides.length}: ${title}`;
+      // replaceState avoids filling browser history for every presentation click.
+      history.replaceState(null, '', '#' + slides[index].id);
+    }
+    function resize() {
+      const viewport = document.querySelector('.viewport');
+      const scale = Math.min(viewport.clientWidth / 1600, viewport.clientHeight / 900);
+      document.documentElement.style.setProperty('--scale', scale);
+    }
+    function openDialog(title, content) {
+      document.querySelector('#dialog-title').textContent = title;
+      document.querySelector('#dialog-content').replaceChildren(content);
+      dialog.showModal();
+    }
+    function showNotes() {
+      openDialog(slides[index].querySelector('h1').textContent, slides[index].querySelector('.notes').content.cloneNode(true));
+    }
+    function showOverview() {
+      const list = document.createElement('ol'); list.className = 'overview-list';
+      slides.forEach((slide, i) => {
+        const li = document.createElement('li'), button = document.createElement('button'), number = document.createElement('span');
+        number.textContent = String(i + 1).padStart(2, '0');
+        button.append(number, slide.querySelector('h1').textContent);
+        if (i === index) button.setAttribute('aria-current', 'step');
+        button.addEventListener('click', () => { dialog.close(); goTo(i); });
+        li.append(button); list.append(li);
+      });
+      openDialog('Miten pelimaailma reagoi?', list);
+    }
+    async function fullscreen() {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else await document.documentElement.requestFullscreen();
+      } catch {
+        const message = document.createElement('p'); message.textContent = 'Koko näyttö ei avautunut. Voit käyttää selaimen F11-näppäintä.';
+        openDialog('Koko näyttö', message);
+      }
+    }
+    document.querySelector('#previous').addEventListener('click', () => goTo(index - 1));
+    document.querySelector('#next').addEventListener('click', () => goTo(index + 1));
+    document.querySelector('#overview').addEventListener('click', showOverview);
+    document.querySelector('#notes').addEventListener('click', showNotes);
+    document.querySelector('#fullscreen').addEventListener('click', fullscreen);
+    dialog.querySelector('.close').addEventListener('click', () => dialog.close());
+    document.addEventListener('keydown', event => {
+      if (dialog.open || event.altKey || event.ctrlKey || event.metaKey) return;
+      const key = event.key.toLowerCase();
+      if (event.target.closest('a,button,input,select,textarea') && [' ', 'enter'].includes(key)) return;
+      if (['arrowright', 'pagedown', ' '].includes(key)) { event.preventDefault(); goTo(index + 1); }
+      else if (['arrowleft', 'pageup'].includes(key)) { event.preventDefault(); goTo(index - 1); }
+      else if (key === 'home') { event.preventDefault(); goTo(0); }
+      else if (key === 'end') { event.preventDefault(); goTo(slides.length - 1); }
+      else if (key === 'n') showNotes();
+      else if (key === 'o') showOverview();
+      else if (key === 'f') fullscreen();
+    });
+    let touchStart = null;
+    document.querySelector('.viewport').addEventListener('pointerdown', event => {
+      if (event.pointerType === 'touch' && !event.target.closest('a,button')) touchStart = { x: event.clientX, y: event.clientY };
+    });
+    document.querySelector('.viewport').addEventListener('pointerup', event => {
+      if (!touchStart) return;
+      const dx = event.clientX - touchStart.x, dy = event.clientY - touchStart.y;
+      touchStart = null;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) goTo(index + (dx < 0 ? 1 : -1));
+    });
+    document.querySelector('.viewport').addEventListener('pointercancel', () => { touchStart = null; });
+    window.addEventListener('resize', resize);
+    document.addEventListener('fullscreenchange', resize);
+    window.addEventListener('hashchange', () => goTo(indexFromHash()));
+    renderCharts(); goTo(indexFromHash()); resize();
+  </script>
+</body>
+</html>

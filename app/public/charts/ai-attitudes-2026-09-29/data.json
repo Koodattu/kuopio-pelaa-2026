@@ -1,0 +1,87 @@
+{
+  "prepared": "2026-09-29",
+  "language": "fi",
+  "unit": "percent",
+  "charts": [
+    {
+      "id": "01-gdc-vaikutusarviot",
+      "title": "Pelialan vaikutusarviot ovat kielteistyneet",
+      "subtitle": "GenAI:n vaikutus pelialaan • GDC:n kyselyt 2024–2026",
+      "categories": ["2024", "2025", "2026"],
+      "series": [
+        {"label": "Kielteinen vaikutus", "values": [18, 30, 52]},
+        {"label": "Myönteinen vaikutus", "values": [21, 13, 7]}
+      ],
+      "population": "GDC:n vuosittaisiin kyselyihin vastanneet; 2026 yli 2 300 pelialan ammattilaista. Eri vuosien otokset eivät ole sama vastaajajoukko.",
+      "notes": [
+        "Vuoden 2026 kyselyn kohderyhmä ja toteutus muuttuivat. GDC varoittaa suorista vuosivertailuista.",
+        "Kuva näyttää vain myönteiset ja kielteiset vaikutusarviot, ei kaikkia vastausvaihtoehtoja."
+      ],
+      "sources": [
+        {"title": "GDC State of the Game Industry 2026, sivut 5 ja 22 (raportin kopio)", "url": "https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf"},
+        {"title": "GDC:n virallinen 2026-yhteenveto", "url": "https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/"}
+      ]
+    },
+    {
+      "id": "02-gdc-kaytto-tyopaikoilla",
+      "title": "Käyttö vaihtelee työpaikan mukaan",
+      "subtitle": "GenAI:ta työssään käyttävien osuus • GDC 2026",
+      "categories": ["Pelinkehitysstudiot", "Julkaisu, tukipalvelut ja markkinointi / PR"],
+      "series": [{"label": "Käyttää GenAI:ta työssään", "values": [30, 58]}],
+      "overall_percent": 36,
+      "population": "GDC 2026: yli 2 300 pelialan ammattilaista. Kunkin pylvään nimittäjä on kyseisen työpaikkaryhmän vastaajat; ryhmien tarkkoja kokoja ei ilmoiteta julkisessa yhteenvedossa.",
+      "notes": [
+        "58 % koskee julkaisu-, tukipalvelu- ja markkinointi/PR-organisaatioiden yhdistettyä ryhmää.",
+        "36 % on kaikkien kyselyvastaajien käyttöaste, ei erillinen kolmas ryhmä.",
+        "Käyttöaste ei mittaa hyväksyntää eikä sen perusteella voi päätellä käyttäjien vaikutusarvioita."
+      ],
+      "sources": [{"title": "GDC:n virallinen 2026-yhteenveto", "url": "https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/"}]
+    },
+    {
+      "id": "03-pelaajien-suhtautuminen",
+      "title": "Pelaajien suhtautuminen tässä otoksessa",
+      "subtitle": "GenAI:n käyttö peleissä • Quantic Foundry, loka–joulukuu 2025",
+      "categories": ["Erittäin kielteinen", "Muu kielteinen", "Muut vastaukset"],
+      "series": [{"label": "Osuus vastaajista", "values": [63, 22, 15]}],
+      "negative_total_percent": 85,
+      "population": "Vapaaehtoinen lisäkysely Gamer Motivation Profile -testin yhteydessä, n = 1 799. Otos painottui core/hardcore-pelaajiin; 90 % pelasi PC:llä ja 57 % konsoleilla (alustat voivat olla päällekkäisiä).",
+      "derivations": [
+        {"category": "Muu kielteinen", "formula": "85 - 63 = 22", "approximate": true},
+        {"category": "Muut vastaukset", "formula": "100 - 85 = 15", "approximate": true}
+      ],
+      "notes": [
+        "85 % ja 63 % ovat lähteen pyöristettyjä arvoja. 22 % ja 15 % on johdettu niistä.",
+        "Muut vastaukset ei tarkoita pelkkiä myönteisiä vastauksia. Otosta ei yleistetä kaikkiin pelaajiin."
+      ],
+      "sources": [{"title": "Quantic Foundry: Gamers Are Overwhelmingly Negative About Gen AI in Video Games", "url": "https://quanticfoundry.com/2025/12/18/gen-ai/"}]
+    },
+    {
+      "id": "04-pelaajat-kayttotavat",
+      "title": "GenAI:n käyttötapa vaikuttaa vastaukseen",
+      "subtitle": "Kielteisesti suhtautuneiden osuus • Quantic Foundry, loka–joulukuu 2025",
+      "categories": ["Dialogi", "Tehtävät (questit)", "Dynaaminen vaikeustason säätö"],
+      "series": [{"label": "Kielteinen suhtautuminen", "values": [83, 77, 50]}],
+      "population": "Sama vapaaehtoinen, aktiivisiin PC- ja konsolipelaajiin painottuva Quantic Foundryn kysely, n = 1 799.",
+      "derivations": [{"category": "Dynaaminen vaikeustason säätö", "formula": "100 - 26 (myönteinen) - 24 (neutraali) = noin 50", "approximate": true}],
+      "notes": [
+        "Kysymykset koskivat nimenomaan GenAI:n käyttöä mainittuihin tarkoituksiin.",
+        "Dynaaminen vaikeustaso ei itsessään edellytä GenAI:ta. Noin 50 % on laskettu lähteen pyöristetyistä osuuksista."
+      ],
+      "sources": [{"title": "Quantic Foundry: The Specific Use of Gen AI Matters", "url": "https://quanticfoundry.com/2025/12/18/gen-ai/"}]
+    },
+    {
+      "id": "05-ai-asenteet-maittain",
+      "title": "AI:hin suhtaudutaan eri tavoin eri maissa",
+      "subtitle": "AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa.",
+      "categories": ["Kiina", "Intia", "Etelä-Korea", "Japani", "Ruotsi", "Iso-Britannia", "Yhdysvallat", "Saksa"],
+      "series": [{"label": "Samaa mieltä", "values": [85, 80, 67, 50, 47, 38, 38, 37]}],
+      "population": "Ipsos Global Advisor, 20.3.–3.4.2026: n = 23 532 yhteensä 32 maassa. Kuva näyttää valitut kahdeksan maata, ei koko tutkimusta. Noin 1 000 vastaajaa / maa, paitsi Etelä-Korea ja Ruotsi noin 500 / maa.",
+      "notes": [
+        "Kysymys koskee AI:ta yleisesti, ei pelien GenAI:n hyväksyntää.",
+        "Kiinan ja Intian otokset ovat väestöä kaupungistuneempia, koulutetumpia ja/tai varakkaampia.",
+        "Maista ei lasketa länsi–itä-keskiarvoja; Japani ei edusta koko Aasiaa."
+      ],
+      "sources": [{"title": "Ipsos AI Monitor 2026, sivut 13 ja 48", "url": "https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf"}]
+    }
+  ]
+}

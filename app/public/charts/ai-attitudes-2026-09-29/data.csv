@@ -1,0 +1,25 @@
+﻿chart,category,series,percent,derived,formula,source_url
+01-gdc-vaikutusarviot,2024,Kielteinen vaikutus,18,False,,https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf
+01-gdc-vaikutusarviot,2025,Kielteinen vaikutus,30,False,,https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf
+01-gdc-vaikutusarviot,2026,Kielteinen vaikutus,52,False,,https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf
+01-gdc-vaikutusarviot,2024,Myönteinen vaikutus,21,False,,https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf
+01-gdc-vaikutusarviot,2025,Myönteinen vaikutus,13,False,,https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf
+01-gdc-vaikutusarviot,2026,Myönteinen vaikutus,7,False,,https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf
+02-gdc-kaytto-tyopaikoilla,Pelinkehitysstudiot,Käyttää GenAI:ta työssään,30,False,,https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/
+02-gdc-kaytto-tyopaikoilla,"Julkaisu, tukipalvelut ja markkinointi / PR",Käyttää GenAI:ta työssään,58,False,,https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/
+02-gdc-kaytto-tyopaikoilla,Kaikki vastaajat,Erillinen kokonaisluku,36,False,,https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/
+03-pelaajien-suhtautuminen,Erittäin kielteinen,Osuus vastaajista,63,False,,https://quanticfoundry.com/2025/12/18/gen-ai/
+03-pelaajien-suhtautuminen,Muu kielteinen,Osuus vastaajista,22,True,85 - 63 = 22,https://quanticfoundry.com/2025/12/18/gen-ai/
+03-pelaajien-suhtautuminen,Muut vastaukset,Osuus vastaajista,15,True,100 - 85 = 15,https://quanticfoundry.com/2025/12/18/gen-ai/
+03-pelaajien-suhtautuminen,Kielteiset yhteensä,Erillinen kokonaisluku,85,False,,https://quanticfoundry.com/2025/12/18/gen-ai/
+04-pelaajat-kayttotavat,Dialogi,Kielteinen suhtautuminen,83,False,,https://quanticfoundry.com/2025/12/18/gen-ai/
+04-pelaajat-kayttotavat,Tehtävät (questit),Kielteinen suhtautuminen,77,False,,https://quanticfoundry.com/2025/12/18/gen-ai/
+04-pelaajat-kayttotavat,Dynaaminen vaikeustason säätö,Kielteinen suhtautuminen,50,True,100 - 26 (myönteinen) - 24 (neutraali) = noin 50,https://quanticfoundry.com/2025/12/18/gen-ai/
+05-ai-asenteet-maittain,Kiina,Samaa mieltä,85,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Intia,Samaa mieltä,80,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Etelä-Korea,Samaa mieltä,67,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Japani,Samaa mieltä,50,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Ruotsi,Samaa mieltä,47,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Iso-Britannia,Samaa mieltä,38,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Yhdysvallat,Samaa mieltä,38,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf
+05-ai-asenteet-maittain,Saksa,Samaa mieltä,37,False,,https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf

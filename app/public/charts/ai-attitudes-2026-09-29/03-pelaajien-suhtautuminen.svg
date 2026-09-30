@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1600" height="900" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Pelaajien suhtautuminen tässä otoksessa</title><desc>GenAI:n käyttö peleissä • Quantic Foundry, loka–joulukuu 2025 Vapaaehtoinen lisäkysely Gamer Motivation Profile -testin yhteydessä, n = 1 799. Otos painottui core/hardcore-pelaajiin; 90 % pelasi PC:llä ja 57 % konsoleilla (alustat voivat olla päällekkäisiä). 85 % ja 63 % ovat lähteen pyöristettyjä arvoja. 22 % ja 15 % on johdettu niistä. Muut vastaukset ei tarkoita pelkkiä myönteisiä vastauksia. Otosta ei yleistetä kaikkiin pelaajiin. Quantic Foundry: Gamers Are Overwhelmingly Negative About Gen AI in Video Games: https://quanticfoundry.com/2025/12/18/gen-ai/</desc>
+
+
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1600" height="900"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-900)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1600" height="900" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,92%,88%); fill-rule: evenodd;"/>
+			<text x="88" y="838" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1676) scale(1,-1)">PELAAJAT</text>
+			<text x="88" y="764" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 46px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1528) scale(1,-1)">Pelaajien suhtautuminen tässä otoksessa</text>
+			<text x="88" y="718" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 24px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1436) scale(1,-1)">GenAI:n käyttö peleissä • Quantic Foundry, loka–joulukuu 2025</text>
+			<text x="88" y="542" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 108px;fill: rgb(64%,28%,15%); stroke:none;" transform="translate(0,1084) scale(1,-1)">85 %</text>
+			<text x="443" y="594" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 37px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1188) scale(1,-1)">suhtautui kielteisesti</text>
+			<text x="443" y="544" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 37px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1088) scale(1,-1)">GenAI:n käyttöön peleissä</text>
+			<g transform="">
+				<g transform="">
+					<rect x="88.0" y="340.0" width="897.12" height="114.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,15%); fill-rule: evenodd;"/>
+					<rect x="985.12" y="340.0" width="313.2800000000001" height="114.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(80%,60%,49%); fill-rule: evenodd;"/>
+					<rect x="1298.4" y="340.0" width="213.5999999999999" height="114.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,79%,74%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform=""/>
+				<g transform=""/>
+			</g>
+			<text x="486.10394531249995" y="383.0" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 44px;fill: rgb(94%,92%,88%); stroke:none;" transform="translate(0,766) scale(1,-1)">63 %</text>
+			<text x="1091.3039453125" y="383.0" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 44px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,766) scale(1,-1)">22 %</text>
+			<text x="1354.7439453125" y="383.0" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 44px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,766) scale(1,-1)">15 %</text>
+			<rect x="88" y="271" width="22" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(64%,28%,15%); fill-rule: evenodd;"/>
+			<text x="123" y="271" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 25px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,542) scale(1,-1)">Erittäin kielteinen</text>
+			<rect x="660" y="271" width="22" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(80%,60%,49%); fill-rule: evenodd;"/>
+			<text x="695" y="271" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 25px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,542) scale(1,-1)">Muu kielteinen</text>
+			<rect x="1130" y="271" width="22" height="22" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(77%,79%,74%); fill-rule: evenodd;"/>
+			<text x="1165" y="271" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 25px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,542) scale(1,-1)">Muut vastaukset</text>
+			<text x="1165" y="229" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,458) scale(1,-1)">sisältää neutraalit</text>
+			<text x="1165" y="204" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,408) scale(1,-1)">ja myönteiset vastaukset</text>
+			<text x="88" y="119" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,238) scale(1,-1)">Vapaaehtoinen otos, n = 1 799; painottuu aktiivisiin PC- ja konsolipelaajiin.</text>
+			<text x="88" y="92" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,184) scale(1,-1)">22 % ja 15 % on laskettu lähteen pyöristetyistä kokonaisluvuista.</text>
+			<path d="M 88,66 L 1512,66 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="88" y="37" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 17px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,74) scale(1,-1)">Lähde: Quantic Foundry, 18.12.2025 • quanticfoundry.com/2025/12/18/gen-ai/</text>
+		</g>
+	</g>
+</svg>

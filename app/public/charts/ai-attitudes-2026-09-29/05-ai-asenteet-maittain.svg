@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1600" height="900" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink"><title>AI:hin suhtaudutaan eri tavoin eri maissa</title><desc>AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa. Ipsos Global Advisor, 20.3.–3.4.2026: n = 23 532 yhteensä 32 maassa. Kuva näyttää valitut kahdeksan maata, ei koko tutkimusta. Noin 1 000 vastaajaa / maa, paitsi Etelä-Korea ja Ruotsi noin 500 / maa. Kysymys koskee AI:ta yleisesti, ei pelien GenAI:n hyväksyntää. Kiinan ja Intian otokset ovat väestöä kaupungistuneempia, koulutetumpia ja/tai varakkaampia. Maista ei lasketa länsi–itä-keskiarvoja; Japani ei edusta koko Aasiaa. Ipsos AI Monitor 2026, sivut 13 ja 48: https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf</desc>
+
+
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1600" height="900"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-900)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1600" height="900" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,92%,88%); fill-rule: evenodd;"/>
+			<text x="88" y="838" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1676) scale(1,-1)">KANSAINVÄLINEN NÄKÖKULMA • AI YLEISESTI</text>
+			<text x="88" y="764" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 46px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1528) scale(1,-1)">AI:hin suhtaudutaan eri tavoin eri maissa</text>
+			<text x="88" y="718" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 24px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1436) scale(1,-1)">AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa.</text>
+			<path d="M 390,186 L 390,676 Z" style="stroke: rgb(14%,16%,14%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<text x="373.6865234375" y="152" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,304) scale(1,-1)">0 %</text>
+			<path d="M 597.2,186 L 597.2,676 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="575.4958984375" y="152" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,304) scale(1,-1)">20 %</text>
+			<path d="M 804.4,186 L 804.4,676 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="782.6958984375" y="152" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,304) scale(1,-1)">40 %</text>
+			<path d="M 1011.6,186 L 1011.6,676 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="989.8958984375" y="152" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,304) scale(1,-1)">60 %</text>
+			<path d="M 1218.8,186 L 1218.8,676 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="1197.0958984375" y="152" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,304) scale(1,-1)">80 %</text>
+			<path d="M 1426,186 L 1426,676 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="1398.9052734375" y="152" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 20px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,304) scale(1,-1)">100 %</text>
+			<g transform="">
+				<g transform="">
+					<rect x="390.0" y="628.1484375" width="880.5999999999999" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="566.8984375" width="828.8" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="505.6484375" width="694.1199999999999" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="444.3984375" width="518.0" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="383.1484375" width="486.91999999999996" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="321.8984375" width="393.67999999999995" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="260.6484375" width="393.67999999999995" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<rect x="390.0" y="199.3984375" width="383.31999999999994" height="34.453125" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(23%,45%,41%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform=""/>
+				<g transform=""/>
+			</g>
+			<text x="88" y="637.055" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1274) scale(1,-1)">Kiina</text>
+			<text x="1288.6" y="636.535" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1273) scale(1,-1)">85 %</text>
+			<text x="88" y="575.805" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1151) scale(1,-1)">Intia</text>
+			<text x="1236.8" y="575.285" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1150) scale(1,-1)">80 %</text>
+			<text x="88" y="514.555" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1029) scale(1,-1)">Etelä-Korea</text>
+			<text x="1102.12" y="514.035" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,1028) scale(1,-1)">67 %</text>
+			<text x="88" y="453.305" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,906) scale(1,-1)">Japani</text>
+			<text x="926.0" y="452.785" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,905) scale(1,-1)">50 %</text>
+			<text x="88" y="392.055" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,784) scale(1,-1)">Ruotsi</text>
+			<text x="894.92" y="391.535" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,783) scale(1,-1)">47 %</text>
+			<text x="88" y="330.805" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,661) scale(1,-1)">Iso-Britannia</text>
+			<text x="801.68" y="330.285" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,660) scale(1,-1)">38 %</text>
+			<text x="88" y="269.555" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,539) scale(1,-1)">Yhdysvallat</text>
+			<text x="801.68" y="269.035" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,538) scale(1,-1)">38 %</text>
+			<text x="88" y="208.305" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 26px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,416) scale(1,-1)">Saksa</text>
+			<text x="791.3199999999999" y="207.785" style="font-family: 'Segoe UI', sans-serif; font-weight: 700; font-size: 28px;fill: rgb(14%,16%,14%); stroke:none;" transform="translate(0,415) scale(1,-1)">37 %</text>
+			<text x="88" y="677" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 21px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,1354) scale(1,-1)">Samaa mieltä</text>
+			<text x="88" y="119" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,238) scale(1,-1)">Yleinen AI-asenne, ei pelien GenAI:n hyväksyntä. Koko tutkimus: n = 23 532 / 32 maata.</text>
+			<text x="88" y="92" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 19px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,184) scale(1,-1)">Kiinan ja Intian otokset painottuvat kaupungistuneempaan, koulutetumpaan ja/tai varakkaampaan väestöön.</text>
+			<path d="M 88,66 L 1512,66 Z" style="stroke: rgb(83%,82%,78%); stroke-linecap: butt; stroke-width: 1;"/>
+			<text x="88" y="37" style="font-family: 'Segoe UI', sans-serif; font-weight: 400; font-size: 17px;fill: rgb(39%,40%,37%); stroke:none;" transform="translate(0,74) scale(1,-1)">Lähde: Ipsos AI Monitor 2026, s. 13 ja 48 • 20.3.–3.4.2026 • Valitut maat</text>
+		</g>
+	</g>
+</svg>
