@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clair Obscur · Tekoäly ja pelit</title>
+  <style>
+    :root { --paper:#f3efe3; --ink:#20231f; --muted:#66665c; --line:#d1cfc2; --blue:#1769a5; --rust:#b64e30; --scale:1; font-family:"Segoe UI",Arial,sans-serif; color:var(--ink); }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#252720; }
+    [hidden] { display:none !important; }
+    .viewport { position:relative; height:calc(100dvh - 54px); overflow:hidden; }
+    .stage { position:absolute; left:50%; top:50%; width:1600px; height:900px; transform:translate(-50%,-50%) scale(var(--scale)); }
+    .slide { position:absolute; inset:0; padding:58px 88px 44px; background:var(--paper); }
+    .eyebrow { margin:0 0 24px; font-size:20px; font-weight:750; letter-spacing:.09em; text-transform:uppercase; color:var(--muted); }
+    .eyebrow::before { content:""; display:inline-block; width:26px; height:7px; margin:0 13px 4px 0; background:var(--blue); }
+    h1 { margin:0; font-family:"Arial Black","Segoe UI",sans-serif; font-size:66px; line-height:1.13; font-weight:900; letter-spacing:-2px; }
+    h1 span { color:var(--rust); }
+    .timeline { display:grid; grid-template-columns:1fr 1fr 1.2fr; gap:48px; margin-top:66px; }
+    .step { border-top:3px solid var(--line); padding-top:20px; }
+    .date { margin:0 0 18px; font-size:21px; font-weight:750; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+    h2 { font-size:33px; line-height:1.2; margin:0 0 16px; }
+    .step p:not(.date) { margin:0; font-size:27px; line-height:1.42; }
+    .step:last-child { border-color:var(--rust); }
+    .question { position:absolute; left:88px; right:88px; bottom:136px; padding-top:26px; border-top:1px solid var(--line); font-size:35px; line-height:1.3; font-weight:700; margin:0; }
+    footer { position:absolute; left:88px; right:88px; bottom:40px; font-size:18px; line-height:1.45; color:var(--muted); }
+    a { color:inherit; text-underline-offset:.2em; }
+    .controls { height:54px; display:flex; justify-content:center; align-items:center; gap:28px; color:#eee; font-size:14px; }
+    button { font:inherit; padding:7px 12px; background:transparent; color:inherit; border:1px solid #777; border-radius:4px; cursor:pointer; }
+    button:focus-visible, a:focus-visible { outline:3px solid var(--blue); outline-offset:4px; }
+    .notes { position:fixed; bottom:66px; left:50%; transform:translateX(-50%); width:min(900px,94vw); max-height:70vh; overflow:auto; padding:28px 34px; background:white; border:2px solid var(--blue); box-shadow:0 8px 35px #0005; font-size:19px; line-height:1.5; }
+    .notes h2 { font-size:24px; }
+    @media print { @page { size:1600px 900px; margin:0; } body { background:var(--paper); } .viewport { height:900px; overflow:visible; } .stage { position:relative; left:0; top:0; transform:none; } .controls,.notes { display:none !important; } }
+  </style>
+</head>
+<body>
+  <main class="viewport">
+    <div class="stage">
+      <section class="slide" aria-labelledby="title">
+        <p class="eyebrow">Clair Obscur: Expedition 33</p>
+        <h1>AI-tekstuurit poistettiin.<br><span>Kaksi palkintoa silti lähti.</span></h1>
+        <div class="timeline">
+          <div class="step">
+            <p class="date">2022 · Kehitys</p>
+            <h2>Väliaikainen kokeilu</h2>
+            <p>Sandfall kokeili generatiivista AI:ta väliaikaisiin tekstuureihin.</p>
+          </div>
+          <div class="step">
+            <p class="date">2025 · Julkaisu</p>
+            <h2>Osa jäi peliin</h2>
+            <p>Studion mukaan tekstuurit jäivät laadunvarmistuksessa huomaamatta. Ne korvattiin viiden päivän sisällä julkaisusta.</p>
+          </div>
+          <div class="step">
+            <p class="date">Joulukuu 2025 · Indie Game Awards</p>
+            <h2>Vuoden peli + debyyttipeli</h2>
+            <p>Molemmat palkinnot peruttiin. Kilpailu kielsi GenAI:n käytön. Järjestäjän mukaan osallistuja oli vakuuttanut, ettei GenAI:ta käytetty.</p>
+          </div>
+        </div>
+        <p class="question">Missä meni raja: kokeilussa, julkaisussa vai kilpailun säännöissä?</p>
+        <footer>Lähteet: Sandfallin selvennys / <a href="https://elpais.com/cultura/2025-06-28/la-revolucion-creativa-low-cost-cuando-la-tecnologia-pone-el-arte-al-alcance-de-todos.html" target="_blank" rel="noreferrer">El País, 28.6.2025 (päivitetty)</a> · <a href="https://www.pcgamer.com/games/rpg/indie-game-awards-pulls-two-awards-from-clair-obscur-over-generative-ai-use-we-have-a-hard-stance-against-gen-ai-in-videogames/" target="_blank" rel="noreferrer">PC Gamer, 21.12.2025</a></footer>
+      </section>
+    </div>
+  </main>
+  <nav class="controls" aria-label="Esityksen ohjaus">
+    <span>1 / 1</span>
+    <button id="notes-toggle" aria-expanded="false" aria-controls="notes">Muistiinpanot · N</button>
+    <button id="fullscreen">Koko näyttö · F</button>
+  </nav>
+  <aside class="notes" id="notes" hidden>
+    <h2>Mitä sanon tästä?</h2>
+    <p>“Tässä on vähän erilainen tapaus. Kysymys ei ollut kokonaan AI:lla tehdystä pelistä, vaan kehityksen aikaisesta kokeilusta, joka päätyi vahingossa julkaisuun.”</p>
+    <p>“Palkintojen kohdalla ratkaisi myös se, mihin kilpailuun osallistuttiin ja mitä järjestäjälle oli kerrottu. Indie Game Awards kielsi generatiivisen AI:n käytön kehityksessä. Pelkkä sisällön poistaminen ei siis muuttanut pelin kelpoisuutta.”</p>
+    <p>“Minusta kiinnostava kysymys on tämä: kun arvioimme peliä, kuinka pitkälle sen tekemisen historia kuuluu arvioon?”</p>
+    <p><strong>Tarkennus:</strong> kyse on Indie Game Awardsista, ei The Game Awardsista. Tämä tapaus ei yksin kerro pelaajien yleisestä suhtautumisesta AI:hin. Tekstuurien määrästä tai Steam-ilmoituksen puuttumisesta ei tehdä väitettä.</p>
+  </aside>
+  <script>
+    const viewport = document.querySelector('.viewport');
+    const notes = document.querySelector('#notes');
+    const notesButton = document.querySelector('#notes-toggle');
+    function resize() { document.documentElement.style.setProperty('--scale', Math.min(viewport.clientWidth / 1600, viewport.clientHeight / 900)); }
+    function toggleNotes() { notes.hidden = !notes.hidden; notesButton.setAttribute('aria-expanded', String(!notes.hidden)); }
+    async function fullscreen() { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen(); }
+    notesButton.addEventListener('click', toggleNotes);
+    document.querySelector('#fullscreen').addEventListener('click', () => fullscreen().catch(() => {}));
+    document.addEventListener('keydown', event => {
+      if (event.ctrlKey || event.altKey || event.metaKey || event.target.closest('button,a')) return;
+      if (event.key.toLowerCase() === 'n') toggleNotes();
+      if (event.key.toLowerCase() === 'f') fullscreen().catch(() => {});
+      if (event.key === 'Escape') { notes.hidden = true; notesButton.setAttribute('aria-expanded', 'false'); }
+    });
+    window.addEventListener('resize', resize);
+    resize();
+  </script>
+</body>
+</html>
