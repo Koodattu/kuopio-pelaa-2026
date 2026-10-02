@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>Miten pelimaailma reagoi? · Kuopio Pelaa 2026</title>
+  <title>Tekoäly ja pelit · Kuopio Pelaa 2026</title>
   <style>
     :root {
       --paper: #f3efe3; --ink: #20231f; --muted: #66665c; --line: #d1cfc2;
@@ -135,6 +135,56 @@
     .reaction-voice blockquote { font-size: 33px; line-height: 1.35; font-weight: 700; margin: 0 0 17px; color: var(--rust); }
     .reaction-voice .attribution { font-size: 21px; color: var(--muted); }
     .audience-question { margin: 42px 0 0; padding-left: 24px; border-left: 8px solid var(--yellow); font-size: 36px; font-weight: 750; line-height: 1.32; }
+
+
+    /* Questions, choices and examples for the next three sections. */
+    .story-slide h1 { max-width: 1400px; }
+    .story-slide .quiet { color: var(--muted); font-size: 24px; line-height: 1.4; }
+    .story-slide .short-line { margin: 36px 0 0; font-size: 34px; line-height: 1.35; }
+    .story-slide .blue { color: var(--blue); }
+    .story-slide .green { color: var(--green); }
+    .story-slide .rust { color: var(--rust); }
+    .story-slide .big-line { font-size: 62px; font-weight: 750; line-height: 1.22; letter-spacing: -1.5px; margin: 48px 0 0; }
+    .story-slide .pause-body { margin-top: 90px; }
+    .story-slide.pause h1 { max-width: 1350px; font-size: 82px; line-height: 1.14; }
+    .story-slide .choice-line { display: flex; gap: 70px; margin: 90px 0 52px; font-size: 53px; font-weight: 750; }
+    .story-slide .afterthought { font-size: 35px; line-height: 1.4; margin: 36px 0 0; }
+    .showcase-media { margin: 30px 0 0; position: relative; }
+    .showcase-media img { width: 1040px; height: 585px; object-fit: contain; display: block; }
+    .showcase-aside { position: absolute; left: 1090px; right: 0; top: 100px; }
+    .showcase-aside h2 { font-size: 32px; line-height: 1.25; margin: 0 0 26px; }
+    .showcase-aside p { font-size: 25px; line-height: 1.45; }
+    .demo-link { display: inline-block; padding: 14px 18px; background: var(--blue); color: white; text-decoration: none; font-size: 24px; font-weight: 650; }
+    .story-two { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; margin-top: 60px; align-items: start; }
+    .story-two h2 { font-size: 36px; margin: 0 0 25px; }
+    .story-two p { font-size: 33px; line-height: 1.4; margin: 0 0 25px; }
+    .story-teaser { display: grid; grid-template-columns: 1fr 650px; gap: 50px; align-items: center; margin-top: 30px; }
+    .story-teaser img { width: 650px; height: 540px; object-fit: contain; }
+    .story-teaser p { font-size: 43px; line-height: 1.35; margin: 0 0 25px; }
+    .story-teaser .quiet { font-size: 25px; }
+    .story-diagram { display: block; width: 100%; height: 365px; margin-top: 40px; }
+    .story-diagram text { font-family: "Segoe UI", Arial, sans-serif; }
+    .craft-chain { display: flex; justify-content: space-between; gap: 25px; margin-top: 90px; padding-top: 27px; border-top: 4px solid var(--line); }
+    .craft-chain h2 { margin: 0 0 17px; font-size: 37px; color: var(--blue); }
+    .craft-chain p { margin: 0; font-size: 28px; line-height: 1.4; }
+    .visual-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 35px; }
+    .visual-pair figure { margin: 0; }
+    .visual-pair svg { width: 100%; height: 350px; display: block; }
+    .visual-pair figcaption { font-size: 33px; margin-top: 20px; font-weight: 700; }
+    .story-quote { padding-left: 30px; border-left: 7px solid var(--yellow); font-size: 46px; line-height: 1.3; margin: 0; }
+    .story-quote cite { display: block; margin-top: 28px; font-size: 26px; font-style: normal; color: var(--muted); }
+    .sound-words { display: flex; justify-content: space-between; align-items: baseline; margin-top: 105px; }
+    .sound-words b { font-size: 80px; letter-spacing: -2px; }
+    .sound-words b:nth-child(2) { font-family: Georgia, serif; color: var(--rust); }
+    .sound-words b:nth-child(3) { color: var(--muted); }
+    .repair-loop { display: flex; align-items: center; gap: 32px; margin-top: 105px; font-size: 46px; font-weight: 700; }
+    .repair-loop span { color: var(--blue); }
+    .scope-list { list-style: none; margin: 0; padding: 0; font-size: 35px; line-height: 1.7; }
+    .scope-list s { color: var(--muted); text-decoration-thickness: 2px; }
+    .scope-list b { color: var(--blue); }
+    .twist-number { font-size: 134px; line-height: 1; font-weight: 850; letter-spacing: -7px; color: var(--blue); margin: 45px 0 24px; }
+    .nights-image { display: block; width: 1424px; height: 470px; object-fit: contain; margin-top: 25px; }
+    .nights-flow { font-size: 31px; font-weight: 700; margin: 19px 0 0; text-align: center; }
     .controls { height: 54px; display: flex; justify-content: center; gap: 8px; align-items: center; color: #eeeae0; background: #252720; font-size: 14px; }
     .controls button { background: transparent; color: inherit; border: 0; padding: 8px 13px; border-radius: 4px; }
     .controls button:hover { background: #41443b; }
@@ -167,7 +217,7 @@
   </style>
 </head>
 <body>
-  <main class="viewport" aria-label="Miten pelimaailma reagoi tekoälyyn">
+  <main class="viewport" aria-label="Tekoäly ja pelit · esitys">
     <div class="stage">
       <section class="slide impact" id="gdc-asenteet" aria-labelledby="title-1">
         <p class="eyebrow"><span></span>Pelialan ammattilaiset · GDC</p>
@@ -176,7 +226,7 @@
         <div class="legend" aria-hidden="true"><span><i class="key negative-key"></i>Kielteinen vaikutus</span><span><i class="key positive-key"></i>Myönteinen vaikutus</span></div>
         <figure class="chart" id="impact-chart" aria-label="GDC: kielteinen vaikutus 18 prosenttia vuonna 2024, 30 vuonna 2025 ja 52 vuonna 2026. Myönteinen vaikutus vastaavasti 21, 13 ja 7 prosenttia."></figure>
         <p class="caveat">Vuoden 2026 kysely muuttui. Vuosien luvut eivät ole suoraan vertailukelpoisia.</p>
-        <footer class="slide-footer"><p><a href="https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/" target="_blank" rel="noreferrer">GDC State of the Game Industry 2026</a> · yli 2 300 vastaajaa vuonna 2026<br>Näytetty vain kielteiset ja myönteiset arviot. Eri vuosina eri vastaajajoukot.</p><span class="page-number">01 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://gdconf.com/article/gdc-2026-state-of-the-game-industry-reveals-impact-of-layoffs-generative-ai-and-more/" target="_blank" rel="noreferrer">GDC State of the Game Industry 2026</a> · yli 2 300 vastaajaa vuonna 2026<br>Näytetty vain kielteiset ja myönteiset arviot. Eri vuosina eri vastaajajoukot.</p><span class="page-number">01 / 35</span></footer>
         <template class="notes">
           <p>“Tässä oli meidän huoneemme näkemys. Entä ihmiset, jotka työskentelevät pelialalla?”</p>
           <p>Näytä ensin, mitä kysyttiin: vaikutusta koko alaan. Vuoden 2026 vastaajista 52 % arvioi vaikutuksen kielteiseksi ja 7 % myönteiseksi. Aiemmissa kyselyissä kielteinen osuus oli pienempi.</p>
@@ -193,7 +243,7 @@
         <p class="subtitle">Arvio generatiivisen tekoälyn vaikutuksesta pelialaan · GDC-kyselyt 2024–2026</p>
         <figure class="chart" id="impact-grouped-chart" role="img" aria-label="Myönteinen vaikutus: 2024, 21 prosenttia; 2025, 13 prosenttia; 2026, 7 prosenttia. Sekä myönteinen että kielteinen vaikutus: 2024, 57 prosenttia; 2025, 51 prosenttia; 2026, 30 prosenttia. Kielteinen vaikutus: 2024, 18 prosenttia; 2025, 30 prosenttia; 2026, 52 prosenttia. Kaikkien kolmen ryhmän asteikko on 0–100 prosenttia. Vuoden 2026 kysely muuttui."></figure>
         <p class="caveat">* Vuoden 2026 kysely muuttui. Vuosien luvut eivät ole suoraan vertailukelpoisia.</p>
-        <footer class="slide-footer"><p>GDC State of the Game Industry <a href="https://web.engr.oregonstate.edu/~mjb/cs519/2024StateOfTheGameIndustry.pdf#page=14" target="_blank" rel="noreferrer">2024</a> · <a href="https://spainaudiovisualhub.digital.gob.es/content/dam/seteleco-hub-audiovisual/resources/pdf/State_of_the_Game_Industry_2025.pdf#page=17" target="_blank" rel="noreferrer">2025</a> · <a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=22" target="_blank" rel="noreferrer">2026</a> · Eri vuosina eri vastaajajoukot.<br>Muut vastaukset (100 % − näytetyt): 2024 4 % · 2025 6 % · 2026 11 %.</p><span class="page-number">02 / 13</span></footer>
+        <footer class="slide-footer"><p>GDC State of the Game Industry <a href="https://web.engr.oregonstate.edu/~mjb/cs519/2024StateOfTheGameIndustry.pdf#page=14" target="_blank" rel="noreferrer">2024</a> · <a href="https://spainaudiovisualhub.digital.gob.es/content/dam/seteleco-hub-audiovisual/resources/pdf/State_of_the_Game_Industry_2025.pdf#page=17" target="_blank" rel="noreferrer">2025</a> · <a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=22" target="_blank" rel="noreferrer">2026</a> · Eri vuosina eri vastaajajoukot.<br>Muut vastaukset (100 % − näytetyt): 2024 4 % · 2025 6 % · 2026 11 %.</p><span class="page-number">02 / 35</span></footer>
         <template class="notes">
           <p>“Vasemmalla ovat myönteiset arviot, keskellä sekä myönteisiä että kielteisiä vaikutuksia näkevät ja oikealla kielteiset arviot.”</p>
           <p>Myönteisiä arvioita on kyselyissä 21 %, 13 % ja 7 %. Mixed impact -vastauksia on 57 %, 51 % ja 30 %. Kielteisiä on 18 %, 30 % ja 52 %. Vuoden 2024 suurin ryhmä näki sekä myönteisiä että kielteisiä vaikutuksia; vuoden 2026 vastaajista yli puolet arvioi vaikutuksen kielteiseksi.</p>
@@ -213,7 +263,7 @@
           <figure class="chart" id="usage-chart" aria-label="GenAI-käyttäjien käyttötavat: tutkimus ja ideointi 81 prosenttia; sähköpostit, aikataulut ja muut arjen tehtävät 47; koodiapu 47; prototypointi 35; testaus ja virheiden korjaus 22; markkinointi ja promootiosisältö 20; pelimateriaalin generointi 19; personoitu sisältö 12; proseduraalinen generointi 10; pelaajalle näkyvät ominaisuudet 5; muu käyttö 8 prosenttia."></figure>
           <aside class="overall"><strong>36 %</strong><p>kaikista vastaajista<br>käyttää GenAI:ta työssä</p><div class="workplace-context"><h2>Käyttö työpaikan mukaan</h2><p><b>30 %</b>Pelinkehitysstudiot</p><p><b>58 %</b>Julkaisu, tukipalvelut<br>ja markkinointi / PR</p></div></aside>
         </div>
-        <footer class="slide-footer"><p><a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=20" target="_blank" rel="noreferrer">GDC State of the Game Industry 2026, s. 19–20</a> · koko kysely: yli 2 300 vastaajaa<br>Pylväät: vain GenAI-käyttäjät, useita valintoja sallittu. Oikealla: käyttöaste kaikista / työpaikkaryhmittäin.</p><span class="page-number">03 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://investgame.net/wp-content/uploads/2026/01/2026-01-29-dec052f4_d88e_48ce_9f83_a18ce2f2a6e5_541400_GDC26_PDF_SOTI_Report.pdf#page=20" target="_blank" rel="noreferrer">GDC State of the Game Industry 2026, s. 19–20</a> · koko kysely: yli 2 300 vastaajaa<br>Pylväät: vain GenAI-käyttäjät, useita valintoja sallittu. Oikealla: käyttöaste kaikista / työpaikkaryhmittäin.</p><span class="page-number">03 / 35</span></footer>
         <template class="notes">
           <p>“Työkalun käyttäminen ja sen vaikutusten hyväksyminen ovat kaksi eri kysymystä.”</p>
           <p>36 % kaikista GDC-vastaajista kertoo käyttävänsä GenAI:ta työssään. Kuvaajan kaikki 11 käyttötapaa koskevat vain näitä käyttäjiä. Esimerkiksi 81 % ei ole osuus koko pelialasta. Vastaaja sai valita useita käyttötapoja, joten pylväät eivät summaudu sataan.</p>
@@ -246,7 +296,7 @@
             <p><i class="key very-positive"></i><strong>1,8 %</strong> erittäin myönteinen</p>
           </div>
         </div>
-        <footer class="slide-footer"><p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry</a> · vapaaehtoinen kysely, n = 1 799 · aktiiviset PC- ja konsolipelaajat painottuvat<br>Ei kaikkia pelaajia edustava otos. Näytetyt osuudet yhteensä 99,0 %; 0,9 % ei osaa sanoa jätetty pois. Pyöristysero 0,1 %.</p><span class="page-number">04 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry</a> · vapaaehtoinen kysely, n = 1 799 · aktiiviset PC- ja konsolipelaajat painottuvat<br>Ei kaikkia pelaajia edustava otos. Näytetyt osuudet yhteensä 99,0 %; 0,9 % ei osaa sanoa jätetty pois. Pyöristysero 0,1 %.</p><span class="page-number">04 / 35</span></footer>
         <template class="notes">
           <p>“Tässä pelaajajoukossa suhtautuminen oli vahvasti kielteistä. Moni valitsi kaikkein kielteisimmän vaihtoehdon.”</p>
           <p>Quantic Foundryn vapaaehtoiseen lisäkyselyyn vastasi 1 799 ihmistä. Aktiiviset PC- ja konsolipelaajat painottuvat. Kerro otoksen rajaus ääneen ennen kuin annat yleisön tulkita 85 prosenttia kaikkien pelaajien mielipiteeksi.</p>
@@ -262,7 +312,7 @@
         <p class="subtitle">Kielteinen suhtautuminen GenAI:n eri käyttötapoihin</p>
         <figure class="chart" id="uses-chart" aria-label="GenAI:n käyttö kuvamateriaaliin: noin 91 prosenttia kielteisiä. Musiikkiin ja äänitehosteisiin: noin 88 prosenttia. Tarinankerrontaan ja dialogiin: 83 prosenttia. Tehtäviin: 77 prosenttia. Dynaamiseen vaikeustason säätöön: noin 43 prosenttia."></figure>
         <p class="takeaway">Kuvamateriaali herättää enemmän vastustusta kuin vaikeustason säätö.</p>
-        <footer class="slide-footer"><p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry 2025</a> · kaikki 5 käyttötapaa · vapaaehtoinen kysely, n = 1 799<br>≈ = kahden pyöristetyn kielteisen osuuden summa. Vaikeustason säätö ei itsessään edellytä GenAI:ta.</p><span class="page-number">05 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://quanticfoundry.com/2025/12/18/gen-ai/" target="_blank" rel="noreferrer">Quantic Foundry 2025</a> · kaikki 5 käyttötapaa · vapaaehtoinen kysely, n = 1 799<br>≈ = kahden pyöristetyn kielteisen osuuden summa. Vaikeustason säätö ei itsessään edellytä GenAI:ta.</p><span class="page-number">05 / 35</span></footer>
         <template class="notes">
           <p>“Edellä nähtiin vahva ei. Mutta vastustavatko pelaajat kaikkia käyttötapoja yhtä paljon? AI:n tekemä kuva, musiikki tai dialogi saa tässä porukassa aika suoran ein. Vaikeustason säätämiseen suhtaudutaan vähemmän kielteisesti. Käyttötavalla siis on väliä.”</p>
           <p>Kielteisyys vaihtelee saman kyselyn sisällä käyttötavan mukaan. Vaikeustason kohdalla pienempi kielteinen osuus ei tarkoita, että enemmistö olisi innostunut. Kysymykset koskivat nimenomaan generatiivista tekoälyä, vaikka vaikeustason säätämiseen on muitakin menetelmiä.</p>
@@ -279,7 +329,7 @@
         <p class="subtitle">“AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa.”<br>Samaa mieltä olevien osuus</p>
         <figure class="chart" id="regions-chart" role="img" aria-label="Samaa mieltä olevien osuus 27 valitussa maassa, suurimmasta pienimpään."></figure>
         <p class="country-order"><span>← Enemmän samaa mieltä</span><span class="order-line" aria-hidden="true"></span><span>Vähemmän samaa mieltä →</span></p>
-        <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a> · näytetty 27 / 32 maata · koko kysely: n = 23 532 · AI yleisesti<br>Osassa maista otos on väestöä kaupunkilaisempi, koulutetumpi ja/tai varakkaampi.</p><span class="page-number">06 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a> · näytetty 27 / 32 maata · koko kysely: n = 23 532 · AI yleisesti<br>Osassa maista otos on väestöä kaupunkilaisempi, koulutetumpi ja/tai varakkaampi.</p><span class="page-number">06 / 35</span></footer>
         <template class="notes">
           <p>“Oma uutisvirta antaa helposti vaikutelman, että juuri sen keskustelu on koko maailman keskustelu.”</p>
           <p>Nosta esiin Kiina, Japani ja Yhdysvallat. Japanin 50 % muistuttaa myös Aasian sisäisistä eroista. Maiden yhdistäminen kahdeksi yksimieliseksi leiriksi hävittäisi olennaista vaihtelua.</p>
@@ -298,7 +348,7 @@
         <p class="subtitle">“AI:ta hyödyntävistä tuotteista ja palveluista on enemmän hyötyä kuin haittaa.”<br>Samaa mieltä olevien osuus</p>
         <figure class="chart" id="regions-coloured-chart" role="img" aria-label="Samaa mieltä olevien osuus 27 valitussa maassa, suurimmasta pienimpään. Pylväiden värit kuvaavat alueita."></figure>
         <div class="region-legend" id="region-legend" aria-label="Pylväiden aluevärit"></div>
-        <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a> · näytetty 27 / 32 maata · koko kysely: n = 23 532 · AI yleisesti<br>Osassa maista otos on väestöä kaupunkilaisempi, koulutetumpi ja/tai varakkaampi.</p><span class="page-number">07 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=13" target="_blank" rel="noreferrer">Ipsos AI Monitor 2026, s. 13 ja 48</a> · näytetty 27 / 32 maata · koko kysely: n = 23 532 · AI yleisesti<br>Osassa maista otos on väestöä kaupunkilaisempi, koulutetumpi ja/tai varakkaampi.</p><span class="page-number">07 / 35</span></footer>
         <template class="notes">
           <p>“Lisätään alueiden värit ja keskitytään näihin neljään ryhmään. Maiden luvut ja keskinäinen järjestys pysyvät samoina.”</p>
           <p>Aasian maita on paljon kärjessä, mutta myös Latinalaisessa Amerikassa odotukset ovat korkealla. Japani näyttää samalla, ettei Aasia ole yksi yhtenäinen joukko.</p>
@@ -341,7 +391,7 @@
             </article>
           </div>
           <p class="discussion-line">Pelottaako enemmän jäädä AI-junasta vai menettää oma paikkansa?</p>
-          <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=27" target="_blank" rel="noreferrer">Ipsos 2026, s. 27</a> · <a href="https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/trust-attitudes-artificial-intelligence-global-report.pdf" target="_blank" rel="noreferrer">Melbourne / KPMG 2025, s. 21, 55–57</a> · Puhe-esimerkit muistiinpanoissa<br>Mahdollisia selityksiä. Kiina ja USA eivät edusta koko Aasiaa ja länttä; myös maiden sisällä on eroja.</p><span class="page-number">08 / 13</span></footer>
+          <footer class="slide-footer"><p><a href="https://www.ipsos.com/sites/default/files/ct/news/documents/2026-06/Ipsos-AI-Monitor-2026.pdf#page=27" target="_blank" rel="noreferrer">Ipsos 2026, s. 27</a> · <a href="https://kpmg.com/kpmg-us/content/dam/kpmg/pdf/2025/trust-attitudes-artificial-intelligence-global-report.pdf" target="_blank" rel="noreferrer">Melbourne / KPMG 2025, s. 21, 55–57</a> · Puhe-esimerkit muistiinpanoissa<br>Mahdollisia selityksiä. Kiina ja USA eivät edusta koko Aasiaa ja länttä; myös maiden sisällä on eroja.</p><span class="page-number">08 / 35</span></footer>
           <template class="notes">
             <p><strong>Avaus:</strong> “Mun mielestä tässä kiinnostavaa on se, mitä ihmiset uskovat AI:n tekevän juuri heidän tulevaisuudelleen. Toiselle se on mahdollisuus vaurastua. Toiselle se kuulostaa siltä, että joku aikoo säästää hänen palkkansa.”</p>
             <h3>Odotettu hyöty: mukaan seuraavaan nousuun</h3>
@@ -374,7 +424,7 @@
           <article class="milestone"><span class="year">Nyt</span><h2>Mitä päätyy<br>pelaajalle?</h2><p>Nykyohje keskittyy pelin sisältöön. Työkalujen yleiset tehokkuushyödyt erotetaan siitä.</p></article>
         </div>
         <p class="takeaway">Pelkkä kyllä tai ei ei riitä.<br>Raja pitää myös pystyä valvomaan.</p>
-        <footer class="slide-footer"><p><a href="https://www.gamedeveloper.com/business/valve-says-legal-uncertainty-surrounding-ai-models-behind-steam-pushback" target="_blank" rel="noreferrer">Valven lausunto 2023</a> · <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3862463747997849619" target="_blank" rel="noreferrer">Steamworks 2024</a> · <a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey?language=english" target="_blank" rel="noreferrer">Steamworksin nykyohje</a><br>Nykyohje tarkistettu 30.9.2026. Aikajana ei kuvaa kaikkia AI-pelejä koskevaa yleiskieltoa.</p><span class="page-number">09 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://www.gamedeveloper.com/business/valve-says-legal-uncertainty-surrounding-ai-models-behind-steam-pushback" target="_blank" rel="noreferrer">Valven lausunto 2023</a> · <a href="https://steamcommunity.com/groups/steamworks/announcements/detail/3862463747997849619" target="_blank" rel="noreferrer">Steamworks 2024</a> · <a href="https://partner.steamgames.com/doc/gettingstarted/contentsurvey?language=english" target="_blank" rel="noreferrer">Steamworksin nykyohje</a><br>Nykyohje tarkistettu 30.9.2026. Aikajana ei kuvaa kaikkia AI-pelejä koskevaa yleiskieltoa.</p><span class="page-number">09 / 35</span></footer>
         <template class="notes">
           <p>Vuonna 2023 kyse oli oikeuksiin ja koulutusaineistoihin liittyvästä epävarmuudesta ja julkaisuhylkäyksistä. Älä sano, että Steam julisti pysyvän kaikkia AI-pelejä koskevan kiellon.</p>
           <p>Vuonna 2024 Valve avasi reitin useimmille AI:ta käyttäville peleille: kehittäjä ilmoittaa sisällöstä ja erottaa etukäteen tuotetun sekä pelin aikana syntyvän sisällön. Jälkimmäiseen vaaditaan myös suojauksia laitonta sisältöä vastaan.</p>
@@ -391,7 +441,7 @@
         <img class="game-image" src="media/1666-amsterdam-panache.png" alt="1666: Amsterdam: Noa käyttää sauvaa, josta leviää punaista taikuutta pimeässä ympäristössä." width="1920" height="1080">
         <div class="game-label"><p class="eyebrow">Yksi peli keskustelun keskellä</p><h1 id="title-8">1666: Amsterdam</h1><p>Patrice Désilets · Panache Digital Games</p></div>
         <p class="game-caption">Assassin’s Creedin luojiin kuuluvan Désilets’n uusi peli.</p>
-        <footer class="slide-footer"><p>Kuva: Panache Digital Games / <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, 28.8.2026</a></p><span class="page-number">10 / 13</span></footer>
+        <footer class="slide-footer"><p>Kuva: Panache Digital Games / <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, 28.8.2026</a></p><span class="page-number">10 / 35</span></footer>
         <template class="notes">
           <p>Anna ensin pelille hetki tilaa. Kerro Désilets’n yhteys Assassin’s Creediin ja esittele yliluonnollinen Amsterdam. Kuvassa on Noa ja hänen taikuutensa.</p>
           <p>Kerro oma aito ensivaikutelmasi pelistä. Älä väitä kaikkien ensin innostuneen siitä tai järjestä tässä uutta gallupia. Peliesittelyyn kuuluva “pelaisitko?” tulee seuraavassa osuudessa.</p>
@@ -416,7 +466,7 @@
           </article>
         </div>
         <p class="takeaway">Kiinnostus peliin oli olemassa jo ennen AI-keskustelua.</p>
-        <footer class="slide-footer"><p>GamesRadar+: <a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">Jordan Gerblick</a> · <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">Ashley Bardhan</a><br>Suomenkieliset tiivistelmät jälkikäteen kuvatuista ensireaktioista. Kaksi esimerkkiä, ei yleisön mielipidemittaus.</p><span class="page-number">11 / 13</span></footer>
+        <footer class="slide-footer"><p>GamesRadar+: <a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">Jordan Gerblick</a> · <a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">Ashley Bardhan</a><br>Suomenkieliset tiivistelmät jälkikäteen kuvatuista ensireaktioista. Kaksi esimerkkiä, ei yleisön mielipidemittaus.</p><span class="page-number">11 / 35</span></footer>
         <template class="notes">
           <p>“Tämä ei siis ollut peli, joka ei kiinnostanut ketään. Näissä kommenteissa oli ihan aitoa innostusta: maailma, tunnelma ja tunnetun tekijän uusi peli kiinnostivat jo itsessään.”</p>
           <p>Gerblick kuvaa jälkikäteen, kuinka Summer Game Festin paljastustraileri herätti hänessä innostusta. Bardhan muistelee niin ikään vahvaa kiinnostustaan ennen kuin kuuli AI:n käytöstä. Dian tekstit ovat suomenkielisiä tiivistelmiä, eivät suoria sitaatteja tai ennen kohua julkaistuja arvioita.</p>
@@ -439,7 +489,7 @@
           <article><h2>AI-sisältöä päätyi demoon.</h2><p>Studio vahvisti AI:lla tehtyjä kuvia pelin muotokuvissa ja markkinointimateriaalissa.</p></article>
           <article><h2>Tekotapa nousi arvioitavaksi.</h2><p>AI-epäilyt herättivät kritiikkiä. Pelin kiinnostavuuden rinnalle nousi kysymys siitä, miten se oli tehty.</p></article>
         </div>
-        <footer class="slide-footer"><p><a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">GamesRadar+, Jordan Gerblick · raportti ja Panachen lausunto</a><br>Studion mukaan varhaisia versioita oli jäänyt mukaan vahingossa. Ei mittausta kohun laajuudesta.</p><span class="page-number">12 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://www.gamesradar.com/games/action/1666-amsterdam-dev-apologizes-for-ai-in-prologue-demo-says-full-game-will-not-include-any-assets-generated-by-ai/" target="_blank" rel="noreferrer">GamesRadar+, Jordan Gerblick · raportti ja Panachen lausunto</a><br>Studion mukaan varhaisia versioita oli jäänyt mukaan vahingossa. Ei mittausta kohun laajuudesta.</p><span class="page-number">12 / 35</span></footer>
         <template class="notes">
           <p>“Tässä oli kiinnostava peli ja tunnettu tekijä. Sitten prologidemosta alettiin epäillä AI:lla tehtyä sisältöä. Studio tarkisti asian ja vahvisti, että mukana oli tällaisia kuvia. Keskusteluun tuli pelin lisäksi sen tekemisen tapa.”</p>
           <p>Panachen 9.6.2026 julkaisemaa lausuntoa lainaavan GamesRadar+-raportin mukaan varhaisia AI:lla tuotettuja versioita oli päätynyt prologiin, muun muassa pelin muotokuviin, sekä ulkoiseen markkinointimateriaaliin. Studio kuvasi tätä vahingoksi. Älä esitä tahallista salaamista todistettuna.</p>
@@ -466,7 +516,7 @@
           </article>
         </div>
         <p class="audience-question">Jos AI-sisältö poistetaan,<br>muuttaako se sinun suhtautumistasi?</p>
-        <footer class="slide-footer"><p><a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, haastattelu ja Ashley Bardhanin kommentaari, 28.8.2026</a><br>Tekijän lausunto ja yhden toimittajan reaktio. Ei yleisöä edustava mielipidemittaus.</p><span class="page-number">13 / 13</span></footer>
+        <footer class="slide-footer"><p><a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, haastattelu ja Ashley Bardhanin kommentaari, 28.8.2026</a><br>Tekijän lausunto ja yhden toimittajan reaktio. Ei yleisöä edustava mielipidemittaus.</p><span class="page-number">13 / 35</span></footer>
         <template class="notes">
           <p>Désilets kertoi GamesRadarille, että AI:ta oli käytetty erityisesti konsepti- ja esituotantovaiheessa, että AI-sisältö oli poistettu ja ettei käyttöä jatkettaisi. Tämä on tekijän lausunto.</p>
           <p>Tapauksesta on raportoitu vastareaktio ja sitä seurannut vastaus. Meillä ei ole edustavaa ennen–jälkeen-mittausta yleisön mielipiteestä tai näyttöä AI-kohun vaikutuksesta myyntiin.</p>
@@ -477,12 +527,391 @@
           <p><a href="https://www.gamesradar.com/games/action/after-ai-backlash-assassins-creed-creator-says-1666-amsterdam-wont-be-using-any-ai-anymore-and-only-used-it-in-conception-and-pre-production/" target="_blank" rel="noreferrer">GamesRadar+, 28.8.2026</a>.</p>
         </template>
       </section>
+
+
+      <section class="slide story-slide " id="pelaisitko" aria-labelledby="title-pelaisitko" hidden>
+        <p class="eyebrow"><span></span>Katsotaan peliä</p>
+        <h1 id="title-pelaisitko">Pelaisitko sinä tätä?</h1>
+
+        <div class="showcase-media">
+          <img src="media/cloud-top-chaos.png" alt="Cloud Top Chaos: vaaleanpunainen hahmo värikkäällä tasohyppelyradalla.">
+          <div class="showcase-aside"><h2>Cloud Top Chaos</h2>
+            <a class="demo-link" href="https://www.youtube.com/watch?v=9xa7RTC5pzo&amp;t=1758s" target="_blank" rel="noreferrer">Katso katkelma ↗</a>
+            <p>AI:lla tehty demo.<br>Näytettyä versiota<br>on jatkokehitetty.</p>
+          </div>
+        </div>
+        <footer class="slide-footer"><p><a href="https://www.youtube.com/watch?v=9xa7RTC5pzo&amp;t=1758s" target="_blank" rel="noreferrer">Matthew Berman · demo 29:18 →</a> · Ensiversio yhdellä promptilla tekijän mukaan; videolla jatkokehitetty versio</p><span class="page-number">14 / 35</span></footer>
+        <template class="notes">
+        <p>“Nyt riittää hetkeksi se, mitä muut tästä ajattelevat. Katsotaan peliä. Pelaisitko sinä tätä?”</p>
+        <p>Avaa video noin kohdasta 29:18. Anna pelille tilaa ennen omaa tulkintaasi. Kuuntele pari reaktiota. Video avautuu uuteen välilehteen; tämä dia ei sisällä pelattavaa versiota.</p>
+        <p>Bermanin mukaan ensiversio syntyi yhdellä promptilla. Hän kertoo noin 29:49–29:57, että näytettyyn versioon tehtiin jatkoprompti Brianin palautteen perusteella. Älä sano videon versiota muokkaamattomaksi one-shot-tulokseksi. Pelin toimivuutta ei ole testattu itsenäisesti.</p>
+        <p><strong>Seuraavaksi:</strong> “Mikä sai sinut vastaamaan noin?”</p></template>
+      </section>
+
+      <section class="slide story-slide pause" id="mika-sai-kiinnostumaan" aria-labelledby="title-mika-sai-kiinnostumaan" hidden>
+        <p class="eyebrow"><span></span>Teidän vuoro</p>
+        <h1 id="title-mika-sai-kiinnostumaan">Mikä ratkaisi?</h1>
+
+        <div class="choice-line"><span class="green">Pelaisin.</span><span>Ehkä.</span><span class="rust">En pelaisi.</span></div>
+        <p class="big-line">Yksi asia.<br>Mikä sai sinut vastaamaan noin?</p>
+        <footer class="slide-footer"><p>Kuopio Pelaa 2026</p><span class="page-number">15 / 35</span></footer>
+        <template class="notes">
+        <p>Pysähdy tähän. Pyydä kaksi erilaista perustelua, älä kaikkien mielipidettä vuorotellen. “Tämä genre ei kiinnosta” on myös hyvä vastaus.</p>
+        <p>Älä toimita yleisölle valmista johtopäätöstä teknisestä saavutuksesta ja pelin laadusta. Ota talteen heidän sanansa: kamera, ulkonäkö, vaikeus, liike, tylsyys, hauskuus. Niihin voi palata seuraavissa kohdissa.</p>
+        <p>Tämä on keskustelu nähtyjen esimerkkien jälkeen, ei alkuperäiseen gallupiin vertailukelpoinen mittaus.</p>
+        <p><strong>Seuraavaksi:</strong> “Entä jos saman mahdollisuuden ottaa oman idean lähtökohdaksi?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="oma-idea" aria-labelledby="title-oma-idea" hidden>
+        <p class="eyebrow"><span></span>Muiden demosta omaan ideaan</p>
+        <h1 id="title-oma-idea">Entä jos tekisin oman?</h1>
+
+        <div class="story-teaser">
+          <div><p>Mikä olisi sellainen idea,<br>jonka <b>minä</b> haluaisin nähdä?</p><p class="quiet">Minun projektini: SuomiWoW.<br>Tähän palataan kohta.</p></div>
+          <img src="media/suomiwow-card.png" alt="Korttinäkymä Juha Ala-Rantalan SuomiWoW-projektista.">
+        </div>
+        <footer class="slide-footer"><p>Oma projekti · SuomiWoW</p><span class="page-number">16 / 35</span></footer>
+        <template class="notes">
+        <p>“Minullakin on oma projekti, SuomiWoW. Siihen palataan kohta. Mutta ensin kiinnostaa se kohta, jossa muiden demon katsomisesta siirtyy oman idean tekemiseen.”</p>
+        <p>Tässä on oma olemassa oleva projekti, ei keksitty tarina ensimmäisestä AI-kokeilustasi. Sano omin sanoin, mikä juuri näissä mahdollisuuksissa kiinnostaa sinua. Älä väitä SuomiWoWia one-shot-tuotokseksi tai määrittele AI:n osuutta ilman omaa vahvistustasi.</p>
+        <p>Pidä tämä lyhyenä vilautuksena. SuomiWoW-esittely säilyy myöhempänä omana kokonaisuutenaan.</p>
+        <p><strong>Seuraavaksi:</strong> “Aloitetaan pienemmästä. Jos saisit muuttaa äskeisestä pelistä yhden asian, mikä se olisi?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="ensimmainen-muutos" aria-labelledby="title-ensimmainen-muutos" hidden>
+        <p class="eyebrow"><span></span>Otetaan tekijän paikka</p>
+        <h1 id="title-ensimmainen-muutos">Mitä muuttaisit ensimmäisenä?</h1>
+
+        <div class="showcase-media">
+          <img src="media/cloud-top-chaos.png" alt="Sama Cloud Top Chaos -pelikuva kuin aiemmassa demossa.">
+          <div class="showcase-aside"><h2>Vain yksi asia.</h2><p>Sinä päätät.</p></div>
+        </div>
+        <footer class="slide-footer"><p><a href="https://www.youtube.com/watch?v=9xa7RTC5pzo&amp;t=1758s" target="_blank" rel="noreferrer">Matthew Berman · demo 29:18 →</a> · Keskustelun lähtökuva</p><span class="page-number">17 / 35</span></footer>
+        <template class="notes">
+        <p>Pyydä yksi ehdotus. Älä aloita luettelemalla valmiita kehityskohteita. Jos ehdotus on laaja, kysy: “Mikä olisi sen ensimmäinen pieni muutos?”</p>
+        <p>“Tässä tehtiin jo pelisuunnittelua: päätettiin, mitä kokemuksessa halutaan muuttaa.”</p>
+        <p>Seuraava hyppyesimerkki on ennalta valmisteltu havainnollistus. Älä esitä sitä yleisön valintana, jos he ehdottavat muuta. Sano silloin: “Pidetään tuo mielessä. Näytän yhdellä hyppyesimerkillä, miten pieni muutos leviää eri puolille peliä.”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="ohjelmointi" aria-labelledby="title-ohjelmointi" hidden>
+        <p class="eyebrow"><span></span>Kokeillaan yhtä muutosta</p>
+        <h1 id="title-ohjelmointi">“Voisiko hyppy tuntua paremmalta?”</h1>
+
+        <svg class="story-diagram" viewBox="0 0 1400 365" role="img" aria-label="Kaksi hahmoteltua hyppyrataa: lyhyt ja napakka sekä korkea ja leijuva.">
+          <g fill="#20231f"><text x="40" y="38" font-size="30" font-weight="700">Napakka</text><text x="760" y="38" font-size="30" font-weight="700">Leijuva</text></g>
+          <g fill="#bfc5b6"><rect x="30" y="270" width="185" height="32"/><rect x="430" y="270" width="185" height="32"/><rect x="750" y="270" width="185" height="32"/><rect x="1150" y="270" width="185" height="32"/></g>
+          <g fill="none" stroke-width="8" stroke-linecap="round"><path d="M175 250 Q325 105 480 250" stroke="#1769a5"/><path d="M895 250 C960 5 1110 5 1200 250" stroke="#47785a"/></g>
+          <circle cx="175" cy="250" r="19" fill="#1769a5"/><circle cx="895" cy="250" r="19" fill="#47785a"/>
+          <text x="40" y="350" font-size="25" fill="#66665c">Nopea paluu maahan</text><text x="760" y="350" font-size="25" fill="#66665c">Enemmän aikaa ilmassa</text>
+        </svg>
+        <p class="short-line">AI:lta voi pyytää muutosta. <b>Kumpi tuntuu oikealta pelatessa?</b></p>
+        <footer class="slide-footer"><p>Havainnollistava luonnos tätä esitystä varten</p><span class="page-number">18 / 35</span></footer>
+        <template class="notes">
+        <p>“Tällaisen pyynnön voi esittää tavallisella kielellä. Mutta mitä parempi tarkoittaa? Napakkaa? Leijuvaa? Helpompaa?”</p>
+        <p>Kaaret ovat tätä esitystä varten tehty kaavio. Ne eivät ole mitattuja hyppyratoja, mallien tuloksia tai Cloud Top Chaosin ennen–jälkeen-versioita.</p>
+        <p>Ohjelmoinnissa muutetaan esimerkiksi nopeutta, painovoimaa ja ohjauksen joustoa. AI voi auttaa toteutuksessa, mutta toive tarkentuu kokeilemalla. Kumpikaan kaari ei ole yleisesti parempi.</p>
+        <p><strong>Seuraavaksi:</strong> “Mutta jos hyppy muuttuu, mitä muuta pitää muuttaa?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="pelin-monet-taidot" aria-labelledby="title-pelin-monet-taidot" hidden>
+        <p class="eyebrow"><span></span>Pieni muutos leviää</p>
+        <h1 id="title-pelin-monet-taidot">Yksi hyppy ei ole yksi asia.</h1>
+
+        <div class="craft-chain">
+          <div><h2>Koodi</h2><p>Miten liike toimii?</p></div>
+          <div><h2>Animaatio</h2><p>Miltä liike näyttää?</p></div>
+          <div><h2>Ääni</h2><p>Miltä osuma tuntuu?</p></div>
+          <div><h2>Kenttä</h2><p>Mihin nyt yltää?</p></div>
+        </div>
+        <p class="big-line">Pidempikin hyppy voi pilata radan.</p>
+        <footer class="slide-footer"><p>Sama hyppyesimerkki · ei väite demossa havaitusta virheestä</p><span class="page-number">19 / 35</span></footer>
+        <template class="notes">
+        <p>“Tämä on minusta peleissä kiinnostava kohta: yksi pieni asia yhdistää monta erilaista taitoa.” Tämä on ehdotettu puhemuoto; käytä omaa luontevaa ilmaisua.</p>
+        <p>Korkeampi hyppy voi tehdä aiemmasta esteestä turhan. Animaatio voi laskeutua eri aikaan kuin hahmo. Ääni voi kertoa osumasta liian aikaisin.</p>
+        <p>Tämä korvaa osastoluettelon. Suunnittelu, koodi, animaatio ja ääni näkyvät saman tilanteen osina. AI:lle voidaan antaa tehtäviä eri kohdista, mutta muutosten yhteensopivuus pitää kokeilla.</p>
+        <p><strong>Seuraavaksi:</strong> “Vaihdetaankin koko tunnelmaa. Kumpaan suuntaan te veisitte tämän?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="kuva-ja-tyyli" aria-labelledby="title-kuva-ja-tyyli" hidden>
+        <p class="eyebrow"><span></span>Valitse suunta</p>
+        <h1 id="title-kuva-ja-tyyli">Kumpaan maailmaan lähtisit?</h1>
+
+        <div class="visual-pair">
+          <figure><svg viewBox="0 0 670 350" role="img" aria-label="A: leikkisä, vaalea tasohyppelyluonnos">
+ <rect width="670" height="350" rx="3" fill="#cae9ef"/>
+ <circle cx="535" cy="65" r="36" fill="#fff3bd"/><path d="M0 225 L130 90 260 225 380 100 550 250 670 125V350H0Z" fill="#fff3bd" opacity=".4"/>
+ <g fill="#52856a"><path d="M20 280H180V325H20Z"/><path d="M250 220H400V260H250Z"/><path d="M470 160H650V200H470Z"/></g>
+ <g fill="#a3426e"><circle cx="111" cy="218" r="23"/><rect x="91" y="237" width="40" height="40" rx="10"/></g>
+ <path d="M575 156V78h52l-18 20 18 20h-48" fill="#bd5329" stroke="#bd5329" stroke-width="5"/>
+ </svg><figcaption>A · Leikkisä</figcaption></figure>
+          <figure><svg viewBox="0 0 670 350" role="img" aria-label="B: tumma ja uhkaava versio samasta kaaviosta">
+ <rect width="670" height="350" rx="3" fill="#222c3a"/>
+ <circle cx="535" cy="65" r="36" fill="#786982"/><path d="M0 225 L130 90 260 225 380 100 550 250 670 125V350H0Z" fill="#786982" opacity=".4"/>
+ <g fill="#788599"><path d="M20 280H180V325H20Z"/><path d="M250 220H400V260H250Z"/><path d="M470 160H650V200H470Z"/></g>
+ <g fill="#e6c571"><circle cx="111" cy="218" r="23"/><rect x="91" y="237" width="40" height="40" rx="10"/></g>
+ <path d="M575 156V78h52l-18 20 18 20h-48" fill="#dc744e" stroke="#dc744e" stroke-width="5"/>
+ </svg><figcaption>B · Uhkaava</figcaption></figure>
+        </div>
+        <p class="short-line">Sama rata. Eri lupaus siitä, millainen peli on.</p>
+        <footer class="slide-footer"><p>Havainnollistava luonnos tätä esitystä varten</p><span class="page-number">20 / 35</span></footer>
+        <template class="notes">
+        <p>Pyydä nopea A/B-valinta. Kysy yhdeltä ihmiseltä, mitä hän odottaa valitsemaltaan peliltä.</p>
+        <p>Nämä ovat tarkoituksella yksinkertaisia tyylikaavioita, eivät kuvageneraattorin tuloksia tai kaksi oikeaa peliä. AI:n kanssa voi tutkia värien, hahmojen, ympäristöjen ja käyttöliittymän suuntia ennen lopullista valintaa.</p>
+        <p>Älä selitä kumpaakaan paremmaksi. Nosta esiin, miten visuaalinen valinta synnyttää odotuksen ennen ensimmäistä painallusta.</p>
+        <p><strong>Seuraavaksi:</strong> “Mutta tunnelma ei ole kuvan ainoa tehtävä.”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="kuvan-tehtava" aria-labelledby="title-kuvan-tehtava" hidden>
+        <p class="eyebrow"><span></span>Pieni testi</p>
+        <h1 id="title-kuvan-tehtava">Mistä tässä pääsee eteenpäin?</h1>
+
+        <div class="visual-pair">
+          <figure><svg viewBox="0 0 670 350" role="img" aria-label="A: tasot ja hahmo erottuvat taustasta heikosti">
+ <rect width="670" height="350" rx="3" fill="#334553"/>
+ <circle cx="535" cy="65" r="36" fill="#516574"/><path d="M0 225 L130 90 260 225 380 100 550 250 670 125V350H0Z" fill="#516574" opacity=".4"/>
+ <g fill="#425261"><path d="M20 280H180V325H20Z"/><path d="M250 220H400V260H250Z"/><path d="M470 160H650V200H470Z"/></g>
+ <g fill="#4b5d6b"><circle cx="111" cy="218" r="23"/><rect x="91" y="237" width="40" height="40" rx="10"/></g>
+ <path d="M575 156V78h52l-18 20 18 20h-48" fill="#5b6d7b" stroke="#5b6d7b" stroke-width="5"/>
+ </svg><figcaption>A</figcaption></figure>
+          <figure><svg viewBox="0 0 670 350" role="img" aria-label="B: tasot, hahmo ja maalimerkki erottuvat selvästi">
+ <rect width="670" height="350" rx="3" fill="#334553"/>
+ <circle cx="535" cy="65" r="36" fill="#516574"/><path d="M0 225 L130 90 260 225 380 100 550 250 670 125V350H0Z" fill="#516574" opacity=".4"/>
+ <g fill="#a5bba9"><path d="M20 280H180V325H20Z"/><path d="M250 220H400V260H250Z"/><path d="M470 160H650V200H470Z"/></g>
+ <g fill="#f1cc68"><circle cx="111" cy="218" r="23"/><rect x="91" y="237" width="40" height="40" rx="10"/></g>
+ <path d="M575 156V78h52l-18 20 18 20h-48" fill="#f29163" stroke="#f29163" stroke-width="5"/>
+ </svg><figcaption>B</figcaption></figure>
+        </div>
+        <p class="short-line">Grafiikka kertoo myös, <b>mitä voi tehdä</b>.</p>
+        <footer class="slide-footer"><p>Havainnollistava luonnos tätä esitystä varten</p><span class="page-number">21 / 35</span></footer>
+        <template class="notes">
+        <p>“Mistä tunnistat hahmon? Entä seuraavan alustan ja maalin?”</p>
+        <p>Vasen kaavio on tarkoituksella tehty heikosti erottuvaksi havainnollistusta varten. Se ei ole AI:n epäonnistuminen. Molemmissa on sama geometria.</p>
+        <p>Tässä tulevat luettavuus, käyttöliittymä ja yhtenäinen tyyli. Tuotettua kuvaa ei valita vain näyttävyyden perusteella: sen pitää toimia liikkeessä ja muun sisällön kanssa. Myös oikeudet käyttöön pitää selvittää.</p>
+        <p><strong>Seuraavaksi:</strong> “Ja kuvasta tulee vielä eri asia, kun hahmon pitää liikkua.”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="mallit-ja-animaatio" aria-labelledby="title-mallit-ja-animaatio" hidden>
+        <p class="eyebrow"><span></span>Kuva alkaa liikkua</p>
+        <h1 id="title-mallit-ja-animaatio">Entä kun hahmo hyppää?</h1>
+
+        <svg class="story-diagram" viewBox="0 0 1400 365" role="img" aria-label="Kolme yksinkertaista asentoa: ponnistus, ilmalento ja laskeutuminen.">
+          <path d="M40 285H1360" stroke="#d1cfc2" stroke-width="3"/>
+          <g fill="none" stroke="#1769a5" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M220 172L250 217 207 246 258 276M250 217L289 247 275 276M232 191L178 209M232 191L284 186"/>
+            <path d="M700 112L700 170 650 207M700 170L750 207M700 135L650 90M700 135L750 90"/>
+            <path d="M1170 177L1190 220 1140 250 1160 278M1190 220L1230 250 1207 278M1178 194L1123 182M1178 194L1231 181"/>
+          </g>
+          <g fill="#1769a5"><circle cx="208" cy="146" r="24"/><circle cx="700" cy="77" r="24"/><circle cx="1160" cy="148" r="24"/></g>
+          <g font-size="29" fill="#20231f" text-anchor="middle"><text x="235" y="342">Ponnistus</text><text x="700" y="342">Ilmalento</text><text x="1180" y="342">Laskeutuminen</text></g>
+        </svg>
+        <p class="short-line">3D-malli antaa muodon. <b>Liike ja ajoitus antavat painon.</b></p>
+        <footer class="slide-footer"><p>Havainnollistava luonnos tätä esitystä varten</p><span class="page-number">22 / 35</span></footer>
+        <template class="notes">
+        <p>“Hahmon voi piirtää hienoksi yhdessä asennossa. Pelissä sen pitää toimia joka suunnasta ja siirtyä liikkeestä toiseen.”</p>
+        <p>Tämä on liikkeen kaavio, ei 3D-mallin tai animaatiotyökalun tulos. Mallinnus, materiaalit, hahmon liikuttamiseen tarvittava rakenne ja animaatio ovat omia tehtäviään. AI voi auttaa materiaalin tuottamisessa ja työvaiheissa; käyttökelpoisuus riippuu toteutuksesta.</p>
+        <p>Kytke takaisin hyppyyn: jos laskeutumisanimaatio tapahtuu ennen törmäystä, liike tuntuu oudolta. Pelimoottorissa pitää huomioida myös törmäysrajat, mittakaava ja suorituskyky.</p>
+        <p><strong>Seuraavaksi:</strong> “Entä jos sama hahmo sanoo sinulle näin?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="kirjoittaminen" aria-labelledby="title-kirjoittaminen" hidden>
+        <p class="eyebrow"><span></span>Kumpi kiinnostaa?</p>
+        <h1 id="title-kirjoittaminen">Sama tehtävä. Eri syy tehdä se.</h1>
+
+        <div class="story-two">
+          <blockquote class="story-quote">“Hae avain.”<cite>Toimintaohje</cite></blockquote>
+          <blockquote class="story-quote">“Hae avain.<br>Minä pidän ne täällä.”<cite>Tilanne, jossa joku tarvitsee sinua</cite></blockquote>
+        </div>
+        <p class="big-line">Muutama sana muuttaa panokset.</p>
+        <footer class="slide-footer"><p>Kirjoitettu dialogiesimerkki · ei mallivertailu</p><span class="page-number">23 / 35</span></footer>
+        <template class="notes">
+        <p>Lue repliikit. Kysy, millaisen tilanteen yleisö kuvitteli jälkimmäisen ympärille.</p>
+        <p>“Minua kiinnostaa tässä se, mitä pelaaja alkaa ajatella ja tuntea. Ei vain se, kuinka paljon dialogia saadaan kirjoitettua.” Tämä on puheluonnos, jota voit muokata oman kantasi mukaiseksi.</p>
+        <p>AI:n kanssa voi luonnostella hahmojen ääniä, tarinaa, vaihtoehtoisia repliikkejä ja käännöksiä. Tekijä valitsee motiivin, pitää maailman johdonmukaisena ja tarkistaa lopputuloksen. Esimerkkirepliikit on kirjoitettu tätä diaa varten.</p>
+        <p><strong>Seuraavaksi:</strong> “Sitten otetaan kuva hetkeksi pois mielestä. Mitä tässä kuuluu?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="aani-ja-musiikki" aria-labelledby="title-aani-ja-musiikki" hidden>
+        <p class="eyebrow"><span></span>Kuuntele mielessäsi</p>
+        <h1 id="title-aani-ja-musiikki">Miltä sama laskeutuminen kuulostaa?</h1>
+
+        <div class="sound-words"><b class="blue">TÖMPS.</b><b>KLANG!</b><b>…</b></div>
+        <p class="big-line">Painava? Leikkisä? Pelottava?</p>
+        <p class="short-line">Ääniefekti kertoo osumasta. Musiikki muuttaa odotusta.</p>
+        <footer class="slide-footer"><p>Sanallinen ääniesimerkki · ei äänentoistoa</p><span class="page-number">24 / 35</span></footer>
+        <template class="notes">
+        <p>Tässä ei ole äänitiedostoa. Voit sanoa tömps ja klang itse tai pyytää yleisöä kuvittelemaan ne. Älä paina olematonta toistonappia tai odota toistoa.</p>
+        <p>“Sama kuva, mutta aivan eri tunne. Ja jos taustalla soi uhkaava musiikki, odotat jo jotain tapahtuvaksi.”</p>
+        <p>AI voi auttaa etsimään ääniefektin, puheen tai musiikin suuntaa. Pelissä ratkaisevat myös ajoitus, voimakkuus ja se, kestääkö ääntä kuunnella sadannen kerran. Puheen ja musiikin käytölle tarvitaan asianmukaiset oikeudet.</p>
+        <p><strong>Seuraavaksi:</strong> “Nyt on liikettä, kuvaa, ääntä. Okei. Sehän toimii.”</p></template>
+      </section>
+
+      <section class="slide story-slide pause" id="sehan-toimii" aria-labelledby="title-sehan-toimii" hidden>
+        <p class="eyebrow"><span></span>Ensimmäinen onnistuminen</p>
+        <h1 id="title-sehan-toimii">Okei. Sehän toimii.</h1>
+
+        <div class="pause-body"><p class="big-line green">Hahmo liikkuu.<br>Maaliin pääsee.</p><p class="afterthought">Valmis?</p></div>
+        <footer class="slide-footer"><p>Ajatellaan prototyyppiä</p><span class="page-number">25 / 35</span></footer>
+        <template class="notes">
+        <p>Anna onnistumiselle hetki. Älä käännä kaikkea heti epäonnistumiseksi. “Onhan tämä jo hieno asia. Tässä on jotain, jota voi kokeilla.”</p>
+        <p>Tämä on keskustelun rytmiä muuttava kuvitteellisen kehitystilanteen pysähdys. Se ei väitä uutta, tässä tehtyä testiä Cloud Top Chaosista.</p>
+        <p>Kysy “Valmis?” ja pidä pieni tauko ennen seuraavaa diaa. Älä täytä taukoa uudella luettelolla.</p></template>
+      </section>
+
+      <section class="slide story-slide " id="paitsi-kun" aria-labelledby="title-paitsi-kun" hidden>
+        <p class="eyebrow"><span></span>Palataan oikeaan demoon</p>
+        <h1 id="title-paitsi-kun">Paitsi kun…</h1>
+
+        <div class="story-two">
+          <div><h2 class="blue">Kamera vaatii korjausta.</h2><p>Pelaajan pitää nähdä,<br>minne hän on menossa.</p></div>
+          <div><h2 class="rust">Hahmo menee reunan läpi.</h2><p>Törmäys pitää korjata,<br>vaikka muu peli toimii.</p></div>
+        </div>
+        <p class="short-line">Cloud Top Chaosin tekijä kertoi myös näistä jatkokorjauksista.</p>
+        <footer class="slide-footer"><p><a href="https://www.youtube.com/watch?v=9xa7RTC5pzo&amp;t=1758s" target="_blank" rel="noreferrer">Matthew Berman · demo 29:18 →</a> · Tekijän kuvaamat jatkokorjaukset noin 30:31–30:44</p><span class="page-number">26 / 35</span></footer>
+        <template class="notes">
+        <p>“Nämä eivät ole nyt minun keksimiäni AI:n epäonnistumisia. Saman demon tekijä kertoi myös jatkokorjauksista.”</p>
+        <p>Berman käsittelee noin 30:31–30:44 palautetta: hiirtä seuraava kamera, alustojen voimakkaampi kallistuminen ja korjaus hahmon sukeltamiseen alustojen reunojen läpi. Tässä nostetaan niistä kamera ja törmäys. Emme ole itse toistaneet virheitä.</p>
+        <p>Älä päättele tästä, että generointi olisi hyödytöntä tai että tällaisia virheitä tulisi vain AI:lla. Pointti on, että myös vaikuttava demo etenee palautteen ja korjausten kautta.</p>
+        <p><strong>Seuraavaksi:</strong> “Tämä on tekemistä: huomataan, tarkennetaan, korjataan ja kokeillaan uudelleen.”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="testaus-ja-tuotanto" aria-labelledby="title-testaus-ja-tuotanto" hidden>
+        <p class="eyebrow"><span></span>Työ jatkuu</p>
+        <h1 id="title-testaus-ja-tuotanto">Korjataan. Kokeillaan uudestaan.</h1>
+
+        <div class="repair-loop"><b>Havainto</b><span>→</span><b>Muutos</b><span>→</span><b>Pelitesti</b><span>↺</span></div>
+        <p class="big-line">Korjaantuiko ongelma?<br>Toimiiko muu peli yhä?</p>
+        <footer class="slide-footer"><p>Testaus ja eri osien yhteensovittaminen</p><span class="page-number">27 / 35</span></footer>
+        <template class="notes">
+        <p>“AI:lta voi pyytää korjausta. Sitten pitää vielä katsoa, tuliko oikea asia korjatuksi.”</p>
+        <p>AI voi auttaa testitapausten ideoinnissa, virheiden selvittämisessä ja sopivissa ympäristöissä testien ajamisessa. Automaattinen tarkistus ei yksin vastaa siihen, miltä peli tuntuu.</p>
+        <p>Käytä yleisön alussa ehdottamaa muutosta: mitä sen jälkeen pitäisi kokeilla? Näin keskustelu palaa heidän omaan havaintoonsa.</p>
+        <p><strong>Seuraavaksi:</strong> “Ja sitten tulee vaikeampi päätös kuin uuden ominaisuuden tilaaminen.”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="rajaaminen" aria-labelledby="title-rajaaminen" hidden>
+        <p class="eyebrow"><span></span>Minun pitää päättää</p>
+        <h1 id="title-rajaaminen">Mitä jätän tekemättä?</h1>
+
+        <div class="story-two">
+          <ul class="scope-list"><li><b>Yksi toimiva rata.</b></li><li><s>Kymmenen pelimuotoa.</s></li><li><s>Sata erilaista asua.</s></li><li><s>Avoin maailma.</s></li></ul>
+          <div><p class="big-line">Kaikki ideat<br>eivät kuulu<br>tähän versioon.</p></div>
+        </div>
+        <footer class="slide-footer"><p>Kuvitteellinen prototyypin rajaus</p><span class="page-number">28 / 35</span></footer>
+        <template class="notes">
+        <p>“Kun uusia asioita voi pyytää lisää, voi tulla sellainen olo, että lisätään nyt vielä tämäkin. Mutta jonkun pitää rajata, mitä ollaan tekemässä.”</p>
+        <p>Lista on kuvitteellisen tasohyppelyprototyypin rajaus, ei oma projektihistoriasi. Omasta kokemuksesta voi kertoa tässä vain, jos sinulla on oikea esimerkki.</p>
+        <p>Tämä käsittelee tuotantoa: mitä tehdään nyt, missä järjestyksessä, millä ajalla ja milloin seuraava versio on riittävän valmis. AI voi auttaa työn jäsentämisessä; vastuu valinnoista jää tekijälle.</p>
+        <p><strong>Seuraavaksi:</strong> “Kun olemme saaneet sen toimimaan, palataan vielä alkuperäiseen kysymykseen.”</p></template>
+      </section>
+
+      <section class="slide story-slide pause" id="pelaanko-lisaa" aria-labelledby="title-pelaanko-lisaa" hidden>
+        <p class="eyebrow"><span></span>Takaisin pelaajan paikalle</p>
+        <h1 id="title-pelaanko-lisaa">Toimii. Mutta pelaanko lisää?</h1>
+
+        <div class="pause-body"><p class="big-line">Ensimmäinen minuutti on kokeilu.</p><p class="big-line blue">Miksi antaisin tälle seuraavan?</p></div>
+        <footer class="slide-footer"><p>Kuopio Pelaa 2026</p><span class="page-number">29 / 35</span></footer>
+        <template class="notes">
+        <p>Palaa alun vastauksiin. “Muistatteko, mitä sanoitte haluavanne tästä pelistä? Saatiinko se aikaan vai vain lisää ominaisuuksia?”</p>
+        <p>Älä pyydä uutta pitkää keskustelua. Tämä kokoaa kehitysosuuden pelaajan kokemukseen. Ohjelmointi, kuva, ääni ja tarina palvelevat samaa kokonaisuutta.</p>
+        <p><strong>Seuraavaksi:</strong> “Entä jos yhä useampi pystyy tekemään tällaisen kokeilun?”</p></template>
+      </section>
+
+      <section class="slide story-slide pause" id="kuka-voi-tehda" aria-labelledby="title-kuka-voi-tehda" hidden>
+        <p class="eyebrow"><span></span>Vaihdetaan mittakaavaa</p>
+        <h1 id="title-kuka-voi-tehda">Jos minä pystyn tekemään tämän…</h1>
+
+        <p class="twist-number">1 000 000</p>
+        <p class="big-line">…mitä jos miljoona muutakin pystyy?</p>
+        <p class="quiet">Ajatuskoe.</p>
+        <footer class="slide-footer"><p>Kuopio Pelaa 2026</p><span class="page-number">30 / 35</span></footer>
+        <template class="notes">
+        <p>“Yksittäiselle ihmiselle tämä voi avata mahdollisuuden kokeilla omaa ideaa. Mutta kun katsotaan koko pelikenttää, kysymys muuttuu.”</p>
+        <p>Miljoona on ajatuskoe, ei tutkimustulos tai ennuste. Älä väitä, että kaikki tekijät pääsisivät samaan lopputulokseen. Osaaminen, työkalut, raha ja aika vaikuttavat edelleen.</p>
+        <p>Anna tilaa myös innostukselle: uusia tekijöitä, pieniä yleisöjä ja ideoita, joita kukaan yritys ei tilaisi. Tämä johtaa seuraavan dian löydettävyyskysymykseen.</p></template>
+      </section>
+
+      <section class="slide story-slide " id="pelaajan-hyoty" aria-labelledby="title-pelaajan-hyoty" hidden>
+        <p class="eyebrow"><span></span>Mahdollisuus ja uusi pulma</p>
+        <h1 id="title-pelaajan-hyoty">Kuka löytää sinun pelisi?</h1>
+
+        <div class="story-two">
+          <div><h2 class="green">Peli juuri pienelle porukalle.</h2><p>Sellainen, jota ei muuten<br>ehkä syntyisi.</p></div>
+          <div><h2>Miten se päätyy oikeille ihmisille?</h2><p>Pelaajan aika<br>on edelleen rajallinen.</p></div>
+        </div>
+        <p class="big-line">Tekeminen ja kiinnostuksen herättäminen<br>ovat kaksi eri työtä.</p>
+        <footer class="slide-footer"><p>Pelaajan aika ja pelien löydettävyys</p><span class="page-number">31 / 35</span></footer>
+        <template class="notes">
+        <p>“Kaikkien pelien ei tarvitse olla seuraava maailmanlaajuinen hitti. Mutta sen pienenkin porukan pitää löytää omansa.”</p>
+        <p>Tässä voi viitata SuomiWoW-yhteisöön: suomalainen raidiyhteisö on konkreettinen yleisö. Älä vielä avaa koko projektia tai väitä tiettyä käyttäjämäärää.</p>
+        <p>Lisää tuotantoa voi tuoda sekä kiinnostavia erikoisuuksia että vaikeammin seulottavaa sisältöä. Tämä on mahdollinen seuraus, ei näistä demoista mitattu vaikutus.</p>
+        <p><strong>Seuraavaksi:</strong> “Tekijälle tulee vielä toinen kysymys. Mitä minulta aletaan odottaa?”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="tyon-muutos" aria-labelledby="title-tyon-muutos" hidden>
+        <p class="eyebrow"><span></span>Entä työ?</p>
+        <h1 id="title-tyon-muutos">Mitä minulta aletaan odottaa?</h1>
+
+        <div class="story-two">
+          <blockquote class="story-quote">“Ehditään kokeilla<br>parempaa ratkaisua.”</blockquote>
+          <blockquote class="story-quote">“Tämänhän pitäisi<br>valmistua jo huomenna.”</blockquote>
+        </div>
+        <p class="big-line">Kuka päättää, mihin hyöty käytetään?</p>
+        <footer class="slide-footer"><p>Kuvitteelliset repliikit · mahdollisia seurauksia työssä</p><span class="page-number">32 / 35</span></footer>
+        <template class="notes">
+        <p>Vaihda sävyä repliikkien välillä. Ne ovat kuvitteellisia tapoja suhtautua mahdolliseen tuottavuushyötyyn, eivät lainauksia omasta työpaikastasi.</p>
+        <p>“Sama työkalu voi antaa tilaa paremmalle tekemiselle tai kasvattaa painetta. Se, miten työt järjestetään, on ihmisten päätös.”</p>
+        <p>Tarvittaessa avaa osaamisen muutos: kuka osaa määritellä ongelman, tunnistaa laadun ja korjata virheen? Toisaalta, mistä aloittelija saa kokemuksensa? Älä lupaa tiettyä työpaikkavaikutusta tai toista GDC-kuvaajia.</p>
+        <p><strong>Seuraavaksi:</strong> “Mutta olemme tähän asti puhuneet AI:sta enimmäkseen tekijän työkaluna. Vaihdetaan vielä kerran näkökulmaa.”</p></template>
+      </section>
+
+      <section class="slide story-slide pause" id="ai-pelin-sisalla" aria-labelledby="title-ai-pelin-sisalla" hidden>
+        <p class="eyebrow"><span></span>Vielä yksi suunnanmuutos</p>
+        <h1 id="title-ai-pelin-sisalla">Entä jos AI:n kanssa pelataan?</h1>
+
+        <div class="pause-body"><p class="big-line">Tähän asti: AI auttaa tekemään pelin.</p><p class="big-line blue">Seuraavaksi: AI vastaa pelaajalle.</p></div>
+        <footer class="slide-footer"><p>Kuopio Pelaa 2026</p><span class="page-number">33 / 35</span></footer>
+        <template class="notes">
+        <p>Pidä tämä lyhyenä käänteenä. Ei uutta työkalulistaa.</p>
+        <p>“Tässä on eri kysymys. Voisiko AI:n vastaamisesta itsestään tehdä kiinnostavan pelimekaniikan?”</p>
+        <p>Tämä erottaa tuotantotyökalun ja pelin aikaisen ominaisuuden. Pelissä voidaan käyttää kumpaakin, vain toista tai ei kumpaakaan.</p>
+        <p><strong>Seuraavaksi:</strong> Näytä 1001 Nights heti; älä selitä tapausta etukäteen kokonaan.</p></template>
+      </section>
+
+      <section class="slide story-slide " id="1001-nights" aria-labelledby="title-1001-nights" hidden>
+        <p class="eyebrow"><span></span>1001 Nights</p>
+        <h1 id="title-1001-nights">Puhu itsellesi ase.</h1>
+
+        <p class="subtitle">Houkuttele kuningas mainitsemaan ase tarinassaan.</p>
+        <img class="nights-image" src="media/1001-nights.png" alt="1001 Nights: tarinassa mainittu tikari muuttuu Spirited Glowing Dagger -asekortiksi.">
+        <p class="nights-flow">Sinä kerrot → kuningas jatkaa → tarinan ase muuttuu pelivälineeksi.</p>
+        <footer class="slide-footer"><p><a href="https://arxiv.org/html/2503.09102v1" target="_blank" rel="noreferrer">Fu ym. · 1001 Nights · CHI EA 2025</a> · Kuva ja mekaniikka tutkimusjulkaisusta</p><span class="page-number">34 / 35</span></footer>
+        <template class="notes">
+        <p>“Tässä tarinankerronta on tapa pelata. Yrität saada kuninkaan mainitsemaan aseen. Kun se onnistuu, saat tarinasta varusteen käyttöösi.”</p>
+        <p>Näytä kuvasta tekstin ja kortin yhteys. 1001 Nights yhdistää kielimallin, säännöt ja pelaajan tavoitteen. Aseiden tunnistuksessa käytetään määriteltyjä avainsanoja; tämä ei tarkoita, että mikä tahansa tekstissä mainittu asia muuttuisi vapaasti toimivaksi esineeksi.</p>
+        <p>Lähde kuvaa pelin aikaista AI:n käyttöä. Se ei kerro, että kehitystyö olisi tehty ilman GenAI:ta. Pidä tapaus tässä yhdessä sisältödiassa.</p>
+        <p><strong>Seuraavaksi:</strong> “Nyt muiden esimerkeistä siihen omaan projektiin.”</p></template>
+      </section>
+
+      <section class="slide story-slide " id="omaan-projektiin" aria-labelledby="title-omaan-projektiin" hidden>
+        <p class="eyebrow"><span></span>Takaisin siihen omaan ideaan</p>
+        <h1 id="title-omaan-projektiin">Minun vuoroni näyttää.</h1>
+
+        <div class="story-teaser">
+          <div><p><b class="blue">SuomiWoW</b></p><p>Suomalaisen raidiyhteisön<br>historiaa keräilykorteiksi.</p></div>
+          <img src="media/suomiwow-card.png" alt="SuomiWoW-projektin korttinäkymä, sama kuva kuin osion alussa.">
+        </div>
+        <footer class="slide-footer"><p>Oma projekti · SuomiWoW</p><span class="page-number">35 / 35</span></footer>
+        <template class="notes">
+        <p>“Alussa vilautin tämän. Näytän nyt, mistä siinä on kyse ja mitä itse lähdin tekemään.”</p>
+        <p>Tämä päättää uudet osiot ja avaa oman projektisi esittelyn. Kerro omin sanoin lähtöidea ja se, kenelle teit. Erota todennettavat AI:n käyttövaiheet yleisestä puheesta; älä keksi aikaa, virheitä tai onnistumisia tarinan tarpeisiin.</p>
+        <p>Nykyinen SuomiWoW CCG on pakanavaus- ja keräilykokemus. Älä esittele suunniteltua korttitaistelua valmiina toimintona. Varsinainen SuomiWoW-demo ja työpaja jatkavat tämän luonnoksen jälkeen.</p></template>
+      </section>
     </div>
   </main>
 
   <nav class="controls" aria-label="Esityksen ohjaus">
     <button id="previous" aria-label="Edellinen dia" title="Edellinen dia (←)">←</button>
-    <button id="overview" class="counter" title="Dialuettelo (O)" aria-label="Avaa dialuettelo">1 / 13</button>
+    <button id="overview" class="counter" title="Dialuettelo (O)" aria-label="Avaa dialuettelo">1 / 35</button>
     <button id="next" aria-label="Seuraava dia" title="Seuraava dia (→ tai välilyönti)">→</button>
     <span class="divider" aria-hidden="true"></span>
     <button id="notes" title="Puhujamuistiinpanot ja lähteet (N)">Muistiinpanot</button>
@@ -669,7 +1098,7 @@
         button.addEventListener('click', () => { dialog.close(); goTo(i); });
         li.append(button); list.append(li);
       });
-      openDialog('Miten pelimaailma reagoi?', list);
+      openDialog('Esityksen diat', list);
     }
     async function fullscreen() {
       try {
