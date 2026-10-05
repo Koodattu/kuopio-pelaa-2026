@@ -1,0 +1,161 @@
+{
+  "created": "2026-10-05",
+  "language": "fi",
+  "description": "AI-assisted still-image meme adaptations for Kuopio Pelaa 2026. Output images are alternatives for the presenter; the presentation is not automatically modified.",
+  "memes": [
+    {
+      "id": "01-aina-on-ollut",
+      "format": "Always Has Been",
+      "source": "https://imgflip.com/memetemplate/252600902/Always-Has-Been",
+      "image": "https://i.imgflip.com/46e43q.png",
+      "reference": "always-has-been.png",
+      "captions": [
+        "HETKINEN... SLOPPIA OLI JO ENNEN AI:TA?",
+        "AINA ON OLLUT."
+      ],
+      "placement": "Asset flips / AI slop",
+      "slide": "asset-flip",
+      "output": "01-aina-on-ollut.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "02-onko-tama-ai-sloppia",
+      "format": "Is This a Pigeon",
+      "source": "https://imgflip.com/memetemplate/100777631/Is-This-A-Pigeon",
+      "image": "https://i.imgflip.com/1o00in.jpg",
+      "reference": "is-this-a-pigeon.jpg",
+      "captions": [
+        "INTERNET NYKYÄÄN",
+        "MICROSOFT SAM / WINDOWS XP",
+        "ONKO TÄMÄ AI-SLOPPIA?"
+      ],
+      "placement": "Microsoft Sam / old technology, new label",
+      "slide": "sam-ja-slop",
+      "output": "02-onko-tama-ai-sloppia.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "03-viestinnan-kaksi-nappia",
+      "format": "Two Buttons",
+      "source": "https://imgflip.com/memetemplate/87743020/Two-Buttons",
+      "image": "https://i.imgflip.com/1g8my4.jpg",
+      "reference": "two-buttons.jpg",
+      "captions": [
+        "KERRO TYÖKALUISTA AVOIMESTI",
+        "VÄLTÄ AI-KOHU",
+        "PELISTUDION VIESTINTÄ"
+      ],
+      "placement": "Public communication about AI use; a general tension, not an allegation about one studio",
+      "slide": "ai-lupaus",
+      "output": "03-viestinnan-kaksi-nappia.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "04-chatista-agenttiin",
+      "format": "Cheems vs Buff Doge",
+      "source": "https://imgflip.com/memetemplate/342017495/Cheems-vs-Buff-Doge",
+      "image": "https://i.imgflip.com/5nmmdz.png",
+      "reference": "cheems-buff-doge.png",
+      "captions": [
+        "KOPIOIN KOODIA CHATISTA",
+        "AGENTTI KOODAA. MINÄ TESTAAN."
+      ],
+      "placement": "Chat interface versus coding agent workflow",
+      "slide": "vastaus-vai-projekti",
+      "output": "04-chatista-agenttiin.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "05-se-on-prototyyppi",
+      "format": "Batman Slapping Robin",
+      "source": "https://imgflip.com/memetemplate/438680/Batman-Slapping-Robin",
+      "image": "https://i.imgflip.com/9ehk.jpg",
+      "reference": "batman-robin.jpg",
+      "captions": [
+        "PELINI ON VAL—",
+        "PROTOTYYPPI."
+      ],
+      "placement": "Playable first result versus finished game",
+      "slide": "sehan-toimii",
+      "output": "05-se-on-prototyyppi.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "06-lisaan-vain-moninpelin",
+      "format": "Domino Effect",
+      "source": "https://imgflip.com/memetemplate/162372564/Domino-Effect",
+      "image": "https://i.imgflip.com/2oo7h0.jpg",
+      "reference": "domino-effect.jpg",
+      "captions": [
+        "RAKENNAN OMAN MMORPG:N",
+        "LISÄÄN VAIN MONINPELIN"
+      ],
+      "placement": "Scope creep; before workshop scope guidance",
+      "slide": "rajaaminen",
+      "output": "06-lisaan-vain-moninpelin.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "07-skatelauta-azerothiin",
+      "format": "Distracted Boyfriend",
+      "source": "https://imgflip.com/memetemplate/112126428/Distracted-Boyfriend",
+      "image": "https://i.imgflip.com/1ur9b0.jpg",
+      "reference": "distracted-boyfriend.jpg",
+      "captions": [
+        "SKATELAUTA AZEROTHIIN",
+        "MODAAJA",
+        "ALKUPERÄINEN PELI"
+      ],
+      "placement": "Game mashups and modding",
+      "slide": "pelit-sekaisin",
+      "output": "07-skatelauta-azerothiin.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "08-vanhat-lempparit",
+      "format": "They Don't Know / Party Corner",
+      "source": null,
+      "image": null,
+      "reference": null,
+      "captions": [
+        "NE EIVÄT TIEDÄ, ETTÄ VANHA LEMPIPELINI TOIMII TAAS."
+      ],
+      "placement": "The personal value of retro-game preservation",
+      "slide": "vanha-peli-takaisin",
+      "output": "08-vanhat-lempparit.png",
+      "creation": "New AI-generated drawing using the familiar party-corner meme format"
+    },
+    {
+      "id": "09-yksi-hauska-mekaniikka",
+      "format": "Expanding Brain",
+      "source": "https://imgflip.com/memetemplate/93895088/Expanding-Brain",
+      "image": "https://i.imgflip.com/1jwhww.jpg",
+      "reference": "expanding-brain.jpg",
+      "captions": [
+        "LISÄÄ GRAFIIKKAA",
+        "LISÄÄ SISÄLTÖÄ",
+        "LISÄÄ TEKOÄLYÄ",
+        "YKSI HAUSKA PELIMEKANIIKKA"
+      ],
+      "placement": "Creative direction and choosing a small, enjoyable core",
+      "slide": "oma-luova-suunta",
+      "output": "09-yksi-hauska-mekaniikka.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    },
+    {
+      "id": "10-pelataan-uudestaan",
+      "format": "Success Kid",
+      "source": "https://imgflip.com/memetemplate/445148122/Success-kid",
+      "image": "https://i.imgflip.com/7d12hm.jpg",
+      "reference": "success-kid.jpg",
+      "captions": [
+        "ENSIMMÄINEN PROTOTYYPPI",
+        "JOKU HALUSI PELATA UUDESTAAN"
+      ],
+      "placement": "Workshop success / player experience matters",
+      "slide": "tyopaja-jako",
+      "output": "10-pelataan-uudestaan.png",
+      "creation": "AI-assisted adaptation of the linked template"
+    }
+  ]
+}

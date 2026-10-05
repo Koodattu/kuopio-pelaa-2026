@@ -1,0 +1,90 @@
+KUOPIO PELAA 2026 – MEEMIKUVAT
+5.10.2026
+
+Kymmenen PNG-kuvaa suomalaisin tekstein.
+Kuvat ovat valmiita yksittäisiä kuvia PowerPointiin.
+Kuvasuhteet vaihtelevat alkuperäisen meemimuodon mukaan; säilytä kuvasuhde.
+Kuvat on luotu tai muokattu generatiivisella tekoälyllä.
+Esityksen dioja ei ole muutettu tässä työssä.
+
+01 AINA ON OLLUT
+Kohta: AI-slop ja asset flipit.
+"HETKINEN... SLOPPIA OLI JO ENNEN AI:TA?" / "AINA ON OLLUT."
+Vitsi koskee heikkolaatuisen sisällön pitkää historiaa.
+
+02 ONKO TÄMÄ AI-SLOPPIA?
+Kohta: Microsoft Sam, vanha teknologia ja uusi leima.
+Pigeon-meemi: internet nykyään tunnistaa Microsoft Samin AI-slopiksi.
+
+03 VIESTINNÄN KAKSI NAPPIA
+Kohta: studioiden julkinen viestintä AI:n käytöstä.
+"KERRO TYÖKALUISTA AVOIMESTI" / "VÄLTÄ AI-KOHU".
+Yleinen viestintäjännite; kuva ei esitä väitettä tietystä studiosta.
+
+04 CHATISTA AGENTTIIN
+Kohta: chatin ja koodaavan agentin ero.
+"KOPIOIN KOODIA CHATISTA" / "AGENTTI KOODAA. MINÄ TESTAAN."
+Cheems ja Buff Doge.
+
+05 SE ON PROTOTYYPPI
+Kohta: ensimmäisestä toimivasta versiosta testaamiseen.
+"PELINI ON VAL—" / "PROTOTYYPPI."
+Batman ja Robin.
+
+06 LISÄÄN VAIN MONINPELIN
+Kohta: projektin rajaaminen tai siirtymä omaan isoon projektiin.
+Pieni domino: "LISÄÄN VAIN MONINPELIN".
+Iso domino: "RAKENNAN OMAN MMORPG:N".
+
+07 SKATELAUTA AZEROTHIIN
+Kohta: modaus ja pelien yhdistäminen.
+Distracted Boyfriend: modderi, alkuperäinen peli, houkutteleva yhdistelmä.
+
+08 VANHAT LEMPPARIT
+Kohta: vanhojen pelien säilyttäminen.
+"NE EIVÄT TIEDÄ, ETTÄ VANHA LEMPIPELINI TOIMII TAAS."
+Uusi piirros party-corner-meemimuodosta.
+
+09 YKSI HAUSKA MEKANIIKKA
+Kohta: ihmisen luova suunta tai työpajan rajaus.
+Lisää grafiikkaa -> lisää sisältöä -> lisää tekoälyä -> yksi hauska pelimekaniikka.
+Expanding Brain; pystysuuntainen kuva.
+
+10 PELATAAN UUDESTAAN
+Kohta: työpajan pelitestaus tai loppuyhteenveto.
+"ENSIMMÄINEN PROTOTYYPPI" / "JOKU HALUSI PELATA UUDESTAAN".
+Success Kid.
+
+Valitse muutama; kaikkia kymmentä ei tarvitse käyttää.
+Vahvimmat aloitusvalinnat: 01, 02, 05, 07 ja 10.
+
+TEMPLATE-LÄHTEET
+Always Has Been
+https://imgflip.com/memetemplate/252600902/Always-Has-Been
+
+Is This a Pigeon
+https://imgflip.com/memetemplate/100777631/Is-This-A-Pigeon
+
+Two Buttons
+https://imgflip.com/memetemplate/87743020/Two-Buttons
+
+Cheems vs Buff Doge
+https://imgflip.com/memetemplate/342017495/Cheems-vs-Buff-Doge
+
+Batman Slapping Robin
+https://imgflip.com/memetemplate/438680/Batman-Slapping-Robin
+
+Domino Effect
+https://imgflip.com/memetemplate/162372564/Domino-Effect
+
+Distracted Boyfriend
+https://imgflip.com/memetemplate/112126428/Distracted-Boyfriend
+
+Expanding Brain
+https://imgflip.com/memetemplate/93895088/Expanding-Brain
+
+Success Kid
+https://imgflip.com/memetemplate/445148122/Success-kid
+
+manifest.json sisältää tiedostonimet, tekstit, paikat ja lähdelinkit.
+

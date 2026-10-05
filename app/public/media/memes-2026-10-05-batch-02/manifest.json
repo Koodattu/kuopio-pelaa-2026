@@ -1,0 +1,124 @@
+{
+  "created": "2026-10-05",
+  "batch": 2,
+  "language": "fi",
+  "description": "Eight additional still-image meme options based on the approved captions. Existing batch and presentation remain untouched.",
+  "memes": [
+    {
+      "id": "11-stonks",
+      "format": "Stonks",
+      "source": "https://imgflip.com/memetemplate/376421161/Stonks-Blank",
+      "image": "https://i.imgflip.com/6840fd.jpg",
+      "reference": "stonks.jpg",
+      "captions": [
+        "Säästin AI:lla päivän töitä.",
+        "Projekti kasvoi kuukaudella."
+      ],
+      "placement": "AI-tuottavuus, projektin rajaaminen tai oma projekti",
+      "slide": "rajaaminen",
+      "output": "11-stonks.png"
+    },
+    {
+      "id": "12-firman-some",
+      "format": "Monkey Puppet",
+      "source": "https://imgflip.com/memetemplate/148909805/Monkey-Puppet",
+      "image": "https://i.imgflip.com/2gnnjh.jpg",
+      "reference": "monkey-puppet.jpg",
+      "captions": [
+        "Firman some: ”Meillä ei käytetä tekoälyä.”",
+        "Minä, jolla agentti pyörii taustalla:"
+      ],
+      "placement": "Julkiset AI-linjaukset ja arkinen kehitystyö; kuvitteellinen työpaikkavitsi",
+      "slide": "ai-lupaus",
+      "output": "12-firman-some.png"
+    },
+    {
+      "id": "13-ettehan",
+      "format": "Anakin and Padmé, four panels",
+      "source": "https://imgflip.com/memetemplate/322841258/Anakin-Padme-4-Panel",
+      "image": "https://i.imgflip.com/5c7lwq.png",
+      "reference": "anakin-padme.png",
+      "captions": [
+        "Lopullisessa pelissä ei ole AI-sisältöä.",
+        "Eli ette käyttäneet AI:ta tekemiseen?",
+        "",
+        "…ettehän?"
+      ],
+      "placement": "Valmiin pelin AI-sisältö ja kehityksessä käytetyt työkalut ovat eri kysymyksiä",
+      "slide": "capcom-raja",
+      "output": "13-ettehan.png"
+    },
+    {
+      "id": "14-ei-bugeja",
+      "format": "Surprised Pikachu",
+      "source": "https://imgflip.com/memetemplate/155067746/Surprised-Pikachu",
+      "image": "https://i.imgflip.com/2kbn1e.jpg",
+      "reference": "pikachu.jpg",
+      "captions": [
+        "Laitoin promptiin ”ei bugeja”.",
+        "Pelissä on bugi."
+      ],
+      "placement": "Ensimmäisestä toimivasta versiosta testaamiseen",
+      "slide": "sehan-toimii",
+      "output": "14-ei-bugeja.png"
+    },
+    {
+      "id": "15-seitsemas-kierros",
+      "format": "Groundhog Day",
+      "source": "https://imgflip.com/memetemplate/459039203/Bill-Murray-Groundhog-Day",
+      "image": "https://i.imgflip.com/7laswz.png",
+      "reference": "groundhog-day.png",
+      "captions": [
+        "”Olet aivan oikeassa. Nyt sen pitäisi toimia.”",
+        "Seitsemäs kierros."
+      ],
+      "placement": "Iterointi, virheenkorjaus ja AI:n toistuvat vakuuttelut",
+      "slide": "paitsi-kun",
+      "output": "15-seitsemas-kierros.png"
+    },
+    {
+      "id": "16-joo",
+      "format": "Yes Chad",
+      "source": "https://imgflip.com/memetemplate/239659130/Yes-Chad",
+      "image": "https://i.imgflip.com/3yoq62.png",
+      "reference": "yes-chad.png",
+      "captions": [
+        "Pelataanko WoWia, Minecraftia vai Skatea?",
+        "Joo."
+      ],
+      "placement": "Pelien yhdistäminen ja modaus; sanallinen vitsi, ei väite tietystä kuvakaappauksesta",
+      "slide": "pelit-sekaisin",
+      "output": "16-joo.png"
+    },
+    {
+      "id": "17-se-yksi-peli",
+      "format": "Expanding Brain",
+      "source": "https://imgflip.com/memetemplate/93895088/Expanding-Brain",
+      "image": "https://i.imgflip.com/1jwhww.jpg",
+      "reference": "expanding-brain.jpg",
+      "captions": [
+        "Uusi peli.",
+        "Enemmän pelejä.",
+        "Loputtomasti pelejä.",
+        "Se yksi peli vuodelta 1998."
+      ],
+      "placement": "Vanhojen pelien säilyttäminen ja pelaajien nostalgia",
+      "slide": "vanha-peli-takaisin",
+      "output": "17-se-yksi-peli.png"
+    },
+    {
+      "id": "18-maskin-takana",
+      "format": "Scooby-Doo mask reveal",
+      "source": "https://imgflip.com/memetemplate/145139900/Scooby-doo-mask-reveal",
+      "image": "https://i.imgflip.com/2eeunw.jpg",
+      "reference": "scooby-doo.jpg",
+      "captions": [
+        "AI-SLOP",
+        "ASSET FLIP"
+      ],
+      "placement": "Vanha ilmiö uuden nimilapun takana; vaihtoehto astronauttimeemille",
+      "slide": "asset-flip",
+      "output": "18-maskin-takana.png"
+    }
+  ]
+}
