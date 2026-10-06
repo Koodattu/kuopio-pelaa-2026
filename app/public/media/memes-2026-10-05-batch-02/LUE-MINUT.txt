@@ -1,0 +1,59 @@
+KUOPIO PELAA — MEEMIVAIHTOEHDOT, ERÄ 2
+5.10.2026
+
+Kahdeksan uutta vaihtoehtoa (11–18). Ensimmäinen erä säilyy erillään.
+PNG-kuvat voi lisätä suoraan PowerPointiin.
+Kuvat ovat vaihtoehtoja eri kohtiin esitystä; niitä ei ole lisätty HTML-dioihin.
+
+TOTEUTUKSESTA
+Anakin–Padmé- ja Pikachu-muokkaukset eivät onnistuneet kuvatyökalun
+turvasuodatuksen vuoksi. Meemeissä 13 ja 14 on siksi alkuperäiset
+sarjakuvahahmot, mutta samat hyväksytyt vitsit.
+
+11-stonks.png — Stonks
+Teksti: Säästin AI:lla päivän töitä. / Projekti kasvoi kuukaudella.
+Paikka: AI-tuottavuus, projektin rajaaminen tai oma projekti
+Koko: 1448 × 1086 px
+Pohja: https://imgflip.com/memetemplate/376421161/Stonks-Blank
+
+12-firman-some.png — Monkey Puppet
+Teksti: Firman some: ”Meillä ei käytetä tekoälyä.” / Minä, jolla agentti pyörii taustalla:
+Paikka: Julkiset AI-linjaukset ja arkinen kehitystyö; kuvitteellinen työpaikkavitsi
+Koko: 1448 × 1086 px
+Pohja: https://imgflip.com/memetemplate/148909805/Monkey-Puppet
+
+13-ettehan.png — Original four-panel developer conversation
+Teksti: Lopullisessa pelissä ei ole AI-sisältöä. / Eli ette käyttäneet AI:ta tekemiseen? / …ettehän?
+Paikka: Valmiin pelin AI-sisältö ja kehityksessä käytetyt työkalut ovat eri kysymyksiä
+Koko: 1254 × 1254 px
+Kuva: alkuperäinen kuvitus, ei muokattu elokuva- tai hahmokuva.
+
+14-ei-bugeja.png — Original surprised developer reaction
+Teksti: Laitoin promptiin ”ei bugeja”. / Pelissä on bugi.
+Paikka: Ensimmäisestä toimivasta versiosta testaamiseen
+Koko: 1254 × 1254 px
+Kuva: alkuperäinen kuvitus, ei muokattu elokuva- tai hahmokuva.
+
+15-seitsemas-kierros.png — Groundhog Day
+Teksti: ”Olet aivan oikeassa. Nyt sen pitäisi toimia.” / Seitsemäs kierros.
+Paikka: Iterointi, virheenkorjaus ja AI:n toistuvat vakuuttelut
+Koko: 1595 × 986 px
+Pohja: https://imgflip.com/memetemplate/459039203/Bill-Murray-Groundhog-Day
+
+16-joo.png — Yes Chad
+Teksti: Pelataanko WoWia, Minecraftia vai Skatea? / Joo.
+Paikka: Pelien yhdistäminen ja modaus; sanallinen vitsi, ei väite tietystä kuvakaappauksesta
+Koko: 1694 × 929 px
+Pohja: https://imgflip.com/memetemplate/239659130/Yes-Chad
+
+17-se-yksi-peli.png — Expanding Brain
+Teksti: Uusi peli. / Enemmän pelejä. / Loputtomasti pelejä. / Se yksi peli vuodelta 1998.
+Paikka: Vanhojen pelien säilyttäminen ja pelaajien nostalgia
+Koko: 1059 × 1485 px
+Pohja: https://imgflip.com/memetemplate/93895088/Expanding-Brain
+
+18-maskin-takana.png — Scooby-Doo mask reveal
+Teksti: AI-SLOP / ASSET FLIP
+Paikka: Vanha ilmiö uuden nimilapun takana; vaihtoehto astronauttimeemille
+Koko: 1086 × 1448 px
+Pohja: https://imgflip.com/memetemplate/145139900/Scooby-doo-mask-reveal
