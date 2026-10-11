@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1424 340" role="img" aria-labelledby="title desc">
+<title id="title">Sähkönkulutuksen laskuesimerkki, kWh</title>
+<desc id="desc">Kaikki arvot ovat laskuoletuksia, eivät työpajan mittauksia. Yhden kutsun editit 0,15; kymmenen kutsun agenttiesimerkki 1,50; LED-valot 0,80 kilowattituntia.</desc>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#20231f">
+<path d="M455.0 22 V286" stroke="#d1cfc2"/><text x="455.0" y="321" text-anchor="middle" font-size="22" fill="#66665c">0</text>
+<path d="M701.875 22 V286" stroke="#d1cfc2"/><text x="701.875" y="321" text-anchor="middle" font-size="22" fill="#66665c">0,5</text>
+<path d="M948.75 22 V286" stroke="#d1cfc2"/><text x="948.75" y="321" text-anchor="middle" font-size="22" fill="#66665c">1</text>
+<path d="M1195.625 22 V286" stroke="#d1cfc2"/><text x="1195.625" y="321" text-anchor="middle" font-size="22" fill="#66665c">1,5</text>
+<text x="1350" y="321" font-size="22" fill="#66665c">kWh</text>
+<text x="0" y="55" font-size="29" font-weight="700">Työpajan tapainen editointi</text>
+<text x="0" y="86" font-size="22" fill="#66665c">625 pyyntöä × 1 mallikutsu</text>
+<rect x="455" y="34" width="74.06249999999999" height="57" fill="#1769a5"/>
+<text x="546.0625" y="72" font-size="31" font-weight="750">0,15</text>
+<text x="0" y="145" font-size="29" font-weight="700">Agenttiesimerkki</text>
+<text x="0" y="176" font-size="22" fill="#66665c">625 tehtävää × 10 mallikutsua</text>
+<rect x="455" y="124" width="740.625" height="57" fill="#47785a"/>
+<text x="1212.625" y="162" font-size="31" font-weight="750">1,50</text>
+<text x="0" y="235" font-size="29" font-weight="700">Luokan LED-valot</text>
+<text x="0" y="266" font-size="22" fill="#66665c">20 × 20 W × 2 h</text>
+<rect x="455" y="214" width="395.0" height="57" fill="#a78632"/>
+<text x="867.0" y="252" font-size="31" font-weight="750">0,80</text>
+</g></svg>

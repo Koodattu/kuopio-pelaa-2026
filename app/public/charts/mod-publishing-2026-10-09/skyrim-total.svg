@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="720" height="225" preserveAspectRatio="xMinYMin meet" viewBox="0 0 720 225" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="720" height="225"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-225)" style="clip-path: url(#clip)">
+		<g transform="">
+			<g transform="">
+				<path d="M 95,100.333333 L 699,100.333333 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 0.8;"/>
+				<path d="M 95,156.666667 L 699,156.666667 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 0.8;"/>
+				<path d="M 95,213 L 699,213 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 0.8;"/>
+				<g transform="">
+					<g transform="">
+						<path d="M 95,44 L 699,44 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform=""/>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,95,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2016</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,208.25,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2018</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,321.5,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2020</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,434.75,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2022</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,548,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2024</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,661.25,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2026</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform=""/>
+					<g transform=""/>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,85,44)">
+							<text x="-10.78125" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,85,100.333333)">
+							<text x="-59.384765625" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">50 000</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,85,156.666667)">
+							<text x="-70.166015625" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">100 000</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,85,213)">
+							<text x="-70.166015625" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">150 000</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<polyline points="95 44, 99.71875 44, 104.4375 44, 109.1562 44, 113.875 44, 118.5938 44, 123.3125 44, 128.0312 44, 132.75 44, 137.4688 44.76388, 142.1875 47.26283, 146.9062 48.30725, 151.625 49.03169, 156.3438 49.46095, 161.0625 49.89585, 165.7812 50.17301, 170.5 50.45355, 175.2188 50.77127, 179.9375 51.13067, 184.6562 51.51937, 189.375 51.93962, 194.0938 52.41169, 198.8125 52.82405, 203.5312 53.20036, 208.25 53.63976, 212.9688 54.0217, 217.6875 54.46448, 222.4062 54.97148, 227.125 55.51341, 231.8438 55.95168, 236.5625 56.46657, 241.2812 56.95103, 246 57.37466, 250.7188 57.83096, 255.4375 58.27149, 260.1562 58.77961, 264.875 59.36661, 269.5938 59.90741, 274.3125 60.49215, 279.0312 61.05773, 283.75 61.64247, 288.4688 62.28242, 293.1875 62.93814, 297.9062 63.54992, 302.625 64.05805, 307.3438 64.59659, 312.0625 65.03937, 316.7812 65.55651, 321.5 66.19533, 326.2188 66.97499, 330.9375 67.84027, 335.6562 68.78103, 340.375 69.8232, 345.0938 70.72791, 349.8125 71.55376, 354.5312 72.44383, 359.25 73.19869, 363.9688 73.93553, 368.6875 74.76701, 373.4062 75.53765, 378.125 76.58433, 382.8438 77.55326, 387.5625 78.72612, 392.2812 79.89222, 397 81.07973, 401.7188 82.03739, 406.4375 83.09984, 411.1562 84.52395, 415.875 85.77905, 420.5938 86.94515, 425.3125 88.29828, 430.0312 89.70774, 434.75 91.26141, 439.4688 92.50638, 444.1875 93.67699, 448.9062 94.98167, 453.625 96.23565, 458.3438 97.51667, 463.0625 99.13118, 467.7812 100.7919, 472.5 102.4053, 477.2188 103.7877, 481.9375 105.2828, 486.6562 106.966, 491.375 108.789, 496.0938 110.5466, 500.8125 112.2715, 505.5312 114.0967, 510.25 115.9163, 514.9688 117.7493, 519.6875 119.9317, 524.4062 122.0679, 529.125 123.6756, 533.8438 125.538, 538.5625 127.3452, 543.2812 129.1523, 548 131.2457, 552.7188 133.1317, 557.4375 135.3783, 562.1562 137.6733, 566.875 139.8883, 571.5938 141.771, 576.3125 143.8813, 581.0312 145.6704, 585.75 147.6849, 590.4688 149.5259, 595.1875 151.4795, 599.9062 153.7621, 604.625 156.1597, 609.3438 158.4029, 614.0625 161.3254, 618.7812 163.4548, 623.5 165.6946, 628.2188 167.9198, 632.9375 169.6898, 637.6562 171.8046, 642.375 173.7424, 647.0938 176.3754, 651.8125 178.7448, 656.5312 181.1379, 661.25 183.6177, 665.9688 185.6175, 670.6875 187.7908, 675.4062 190.0059, 680.125 192.0677, 684.8438 194.2906, 689.5625 196.8504, 694.2812 199.5927, 699 202.495" style="stroke: rgb(9%,41%,64%); stroke-linecap: round; stroke-width: 3.2; fill: None; fill-rule: evenodd;"/>
+				</g>
+			</g>
+			<circle cx="699" cy="202.49496" r="4.2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,41%,64%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

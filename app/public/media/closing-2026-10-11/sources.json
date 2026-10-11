@@ -1,0 +1,20 @@
+{
+  "powerloom-1835.jpg": {
+    "title": "Power Loom Weaving",
+    "date": 1835,
+    "illustrator": "T. Allom",
+    "engraver": "J. Tingle",
+    "publication": "Edward Baines, History of the Cotton Manufacture in Great Britain",
+    "source": "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Powerloom_weaving_in_1835.jpg",
+    "rights": "Public domain"
+  },
+  "prototype-a.png": {
+    "source": "../../workshop-example.html",
+    "capture": "Actual A version after one click; presentation demonstration, not an AI-run recording"
+  },
+  "prototype-b.png": {
+    "source": "../../workshop-example.html",
+    "capture": "Actual B version after one click; presentation demonstration, not an AI-run recording"
+  }
+}

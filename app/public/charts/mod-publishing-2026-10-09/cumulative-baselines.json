@@ -1,0 +1,29 @@
+{
+  "retrieved_at": "2026-10-09T09:28:59.949945+00:00",
+  "series": {
+    "minecraft": {
+      "before_2022": 1583,
+      "through_2026_09": 76509,
+      "monthly_sum": 74926,
+      "difference": 0
+    },
+    "skyrim": {
+      "before_2022": 40569,
+      "through_2026_09": 140676,
+      "monthly_sum": 100107,
+      "difference": 0
+    },
+    "stardew": {
+      "before_2022": 6717,
+      "through_2026_09": 34135,
+      "monthly_sum": 27418,
+      "difference": 0
+    },
+    "cyberpunk": {
+      "before_2022": 2165,
+      "through_2026_09": 24371,
+      "monthly_sum": 22206,
+      "difference": 0
+    }
+  }
+}

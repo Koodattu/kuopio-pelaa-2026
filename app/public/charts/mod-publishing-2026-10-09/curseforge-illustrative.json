@@ -1,0 +1,33 @@
+{
+  "type": "Illustration, not measured historical time series",
+  "anchors": [
+    {
+      "date": "2009-05-17",
+      "projects": 0,
+      "status": "Assumed zero at Minecraft first public release; not CurseForge launch"
+    },
+    {
+      "date": "2025-02-01",
+      "projects": 200000,
+      "status": "User-supplied February 2025 milestone; first day is plotting convention"
+    },
+    {
+      "date": "2026-08-01",
+      "projects": 300000,
+      "status": "User-supplied August 2026 milestone; first day is plotting convention"
+    }
+  ],
+  "model": "A * (exp(k * years_since_start) - 1)",
+  "A": 3015.010587057456,
+  "k": 0.2679130158050539,
+  "sources": [
+    "https://www.minecraft.net/en-us/about-minecraft",
+    "https://blog.curseforge.com/200k-mods-on-minecraft/",
+    "https://blog.curseforge.com/curseforge-august-newsletter-300k-minecraft-mods-pubg-is-in/"
+  ],
+  "caveats": [
+    "No observations between anchors",
+    "Milestone category scope not verified as mods only",
+    "Smooth curvature is imposed by the chosen model; it does not demonstrate exponential growth"
+  ]
+}

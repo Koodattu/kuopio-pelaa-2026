@@ -1,0 +1,25 @@
+{
+  "kind": "Illustrative calculation, NOT measured electricity consumption or model benchmark",
+  "workshop_model": "gpt-6-luna (presenter-specified)",
+  "participants": 25,
+  "requests_per_person": 25,
+  "assumed_Wh_per_model_call": 0.24,
+  "workshop_calls_per_request": 1,
+  "illustrative_agent_calls_per_task": 10,
+  "assumed_LED_luminaires": 20,
+  "assumed_watts_per_luminaire": 20,
+  "hours_of_lighting": 2,
+  "coefficient_source": "https://cloud.google.com/blog/products/infrastructure/measuring-the-environmental-impact-of-ai-inference",
+  "coefficient_scope": "Google self-reported May 2025 median Gemini Apps text prompt. Reused as a constant only for arithmetic illustration; NOT a GPT-6-luna estimate. Median does not determine an aggregate total.",
+  "exclusions": [
+    "AI training and hardware lifecycle",
+    "participant devices and networks",
+    "other classroom loads",
+    "agent tool execution"
+  ],
+  "limitations": [
+    "Model, input/output length and reasoning change energy consumption.",
+    "Ten agent calls and the lighting setup are assumptions.",
+    "Lighting and AI are additive uses, not interchangeable total footprints."
+  ]
+}

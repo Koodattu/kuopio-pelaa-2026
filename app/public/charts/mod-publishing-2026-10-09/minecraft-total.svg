@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="720" height="225" preserveAspectRatio="xMinYMin meet" viewBox="0 0 720 225" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="720" height="225"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-225)" style="clip-path: url(#clip)">
+		<g transform="">
+			<g transform="">
+				<path d="M 95,128.5 L 699,128.5 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 0.8;"/>
+				<path d="M 95,213 L 699,213 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 0.8;"/>
+				<g transform="">
+					<g transform="">
+						<path d="M 95,44 L 699,44 Z" style="stroke: rgb(81%,81%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform=""/>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,95,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2020</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,185.6,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2021</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,276.2,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2022</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,366.8,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2023</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,457.4,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2024</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,548,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2025</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,638.6,33)">
+							<text x="-21.5625" y="-20.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-40) scale(1,-1)">2026</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform=""/>
+					<g transform=""/>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,85,44)">
+							<text x="-10.78125" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,85,128.5)">
+							<text x="-59.384765625" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">50 000</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,85,213)">
+							<text x="-70.166015625" y="-8.0" style="font-family: Segoe UI; font-size: 20px;fill: rgb(40%,40%,36%); stroke:none;" transform="translate(0,-16) scale(1,-1)">100 000</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<polyline points="95 44, 102.55 44, 110.1 44, 117.65 44, 125.2 44, 132.75 44, 140.3 44, 147.85 44, 155.4 44, 162.95 44.05577, 170.5 44.11661, 178.05 44.31941, 185.6 44.52559, 193.15 44.72501, 200.7 44.8619, 208.25 45.00555, 215.8 45.17624, 223.35 45.44157, 230.9 45.64944, 238.45 45.87252, 246 46.04321, 253.55 46.20714, 261.1 46.41501, 268.65 46.67527, 276.2 46.91018, 283.75 47.12312, 291.3 47.36479, 298.85 47.60815, 306.4 48.4109, 313.95 49.12408, 321.5 49.69868, 329.05 50.45918, 336.6 51.07096, 344.15 51.43769, 351.7 52.2134, 359.25 52.88771, 366.8 53.72257, 374.35 54.37998, 381.9 55.06781, 389.45 56.11561, 397 56.95047, 404.55 58.72497, 412.1 60.02627, 419.65 61.22279, 427.2 62.46663, 434.75 63.63273, 442.3 64.91544, 449.85 66.0714, 457.4 67.40143, 464.95 68.96806, 472.5 70.86086, 480.05 72.48664, 487.6 74.21551, 495.15 75.92072, 502.7 78.29517, 510.25 80.40429, 517.8 82.44581, 525.35 84.32847, 532.9 86.22127, 540.45 88.03295, 548 90.29248, 555.55 92.44554, 563.1 94.94336, 570.65 97.33809, 578.2 100.0151, 585.75 102.4639, 593.3 105.3893, 600.85 108.6087, 608.4 112.1949, 615.95 115.1321, 623.5 118.5611, 631.05 121.4037, 638.6 126.93, 646.15 131.2124, 653.7 136.6644, 661.25 141.4792, 668.8 149.2211, 676.35 155.3389, 683.9 163.7771, 691.45 169.0482, 699 173.3002" style="stroke: rgb(9%,41%,64%); stroke-linecap: round; stroke-width: 3.2; fill: None; fill-rule: evenodd;"/>
+				</g>
+			</g>
+			<circle cx="699" cy="173.30021000000002" r="4.2" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(9%,41%,64%); fill-rule: evenodd;"/>
+		</g>
+	</g>
+</svg>

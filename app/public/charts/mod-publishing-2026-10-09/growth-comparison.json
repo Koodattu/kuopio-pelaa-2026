@@ -1,0 +1,86 @@
+{
+  "retrieved_at": "2026-10-09T09:29:03.799298+00:00",
+  "metric": "Public published Nexus projects by creation date; uploader hidden excluded; Q3 = July through September",
+  "series": [
+    {
+      "id": 6119,
+      "name": "Helldivers 2",
+      "domainName": "helldivers2",
+      "q3_2025": 1861,
+      "q3_2026": 1947,
+      "growth_percent": 4.6
+    },
+    {
+      "id": 3474,
+      "name": "Baldur's Gate 3",
+      "domainName": "baldursgate3",
+      "q3_2025": 1334,
+      "q3_2026": 1372,
+      "growth_percent": 2.8
+    },
+    {
+      "id": 6993,
+      "name": "Monster Hunter Wilds",
+      "domainName": "monsterhunterwilds",
+      "q3_2025": 415,
+      "q3_2026": 338,
+      "growth_percent": -18.6
+    },
+    {
+      "id": 7804,
+      "name": "Stellar Blade",
+      "domainName": "stellarblade",
+      "q3_2025": 933,
+      "q3_2026": 338,
+      "growth_percent": -63.8
+    },
+    {
+      "id": 7286,
+      "name": "Kingdom Come: Deliverance II",
+      "domainName": "kingdomcomedeliverance2",
+      "q3_2025": 200,
+      "q3_2026": 290,
+      "growth_percent": 45.0
+    },
+    {
+      "id": 7587,
+      "name": "Oblivion Remastered",
+      "domainName": "oblivionremastered",
+      "q3_2025": 321,
+      "q3_2026": 115,
+      "growth_percent": -64.2
+    },
+    {
+      "id": 6063,
+      "name": "Palworld",
+      "domainName": "palworld",
+      "q3_2025": 163,
+      "q3_2026": 1621,
+      "growth_percent": 894.5
+    },
+    {
+      "id": 4333,
+      "name": "Elden Ring",
+      "domainName": "eldenring",
+      "q3_2025": 328,
+      "q3_2026": 580,
+      "growth_percent": 76.8
+    },
+    {
+      "id": 3667,
+      "name": "Valheim",
+      "domainName": "valheim",
+      "q3_2025": 42,
+      "q3_2026": 525,
+      "growth_percent": 1150.0
+    },
+    {
+      "id": 1151,
+      "name": "Fallout 4",
+      "domainName": "fallout4",
+      "q3_2025": 1772,
+      "q3_2026": 2393,
+      "growth_percent": 35.0
+    }
+  ]
+}
