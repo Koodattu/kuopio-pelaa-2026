@@ -64,6 +64,8 @@ Vanhemmat erillissuunnitelmat säilyvät tausta- ja työkaluaineistona.
   sommittelu, tarkoituksellinen liike, referenssit ja kolmen kohtauksen pilotti.
 - [HTML-esityksen ajo-ohje](docs/presentation-runbook.md) — käynnistys,
   puhujanäkymä, aineiston alkuperä, tapahtumakytkennät ja varapolut.
+- [Esitystyylin opas](presentation-style/README.md) — PowerPoint-esityksen
+  tyyli uudelleenkäytettävänä ohjeena muihin aiheisiin (englanniksi).
 - [Tutkimuskierros 5.9.2026](docs/research-pass-2026-09-05.md) — päivitetty
   tutkimuspohja ja sisältösuositukset.
 - [Astra ja yhden promptin pelit](docs/astra-one-shot-games-research-2026-09-05.md)
